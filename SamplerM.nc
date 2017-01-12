@@ -138,7 +138,7 @@ implementation {
 			//call Leds.led0Off();
 			_printf("rec: %d->%d: %d until me\n", source, bcpkt->receiver, hopps);
 			if(hopps != 0) {
-				uint16_t timeToWait = (hopps + 1) * TIME_MAX_MESSAGE_SENDING;
+				uint16_t timeToWait = hopps * TIME_MAX_MESSAGE_SENDING;
 				_printf("Time to wait: %d\n", timeToWait);
 				call DropTimer.startOneShot(timeToWait);
 			}

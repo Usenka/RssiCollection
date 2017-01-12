@@ -2,7 +2,8 @@
 #define RADIOIMAGING_H 
 
 #define MAX_MSG_PAYLOAD 28
-#define _printf(...) if(TOS_NODE_ID == 1) {printf(__VA_ARGS__);printfflush();}
+#define _printf(...) printf(__VA_ARGS__);printfflush()
+//#define _printf(...) if(TOS_NODE_ID == 1) {printf(__VA_ARGS__);printfflush();}
 //#define _printf(...) ;
 
 enum {

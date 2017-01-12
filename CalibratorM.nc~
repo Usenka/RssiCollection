@@ -78,6 +78,7 @@ module CalibratorM {
 
 	void nl_received_msg(uint16_t id, int8_t rssi, int8_t nHop) {
 		// increase message counter for a specific node
+		_printf("receivedBC: s: %d; rssi: %d; nHop%d", id, rssi, nHop);
 		nodeList[id].msg_counter++;
 		nodeList[id].last_rssi = rssi-45;
 		nodeList[id].inRange = TRUE;
