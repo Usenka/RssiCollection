@@ -2,7 +2,7 @@ TINYOS_ROOT_DIR?=../../..
 
 COMPONENT=RadioImagingAppC
 TOSMAKE_PRE_EXE_DEPS += Java
-TOSMAKE_CLEAN_EXTRA = *.class ./JavaRecources/*.class RadioImageMsg.java ScheduleMsg.java CommandMsg.java
+TOSMAKE_CLEAN_EXTRA = *.class ./JavaRecources/*.class RadioImageMsg.java ScheduleMsg.java CommandMsg.java *~ ./JavaRecources/*~
 
 Java: $(wildcard *.java) RadioImageMsg.java ScheduleMsg.java CommandMsg.java RssiReceive.class
 	javac ./JavaRecources/*.java

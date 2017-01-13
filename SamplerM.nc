@@ -17,14 +17,17 @@ implementation {
 	message_t s_msg;
 	bool sBusy = FALSE;
 
-	Node* nodeList;
-	uint8_t* schedule;
+	Node* nodeList;	
+	uint8_t* schedule;	//The schedule is saved as an array of ids. The nodes send in the order they are listed in this array
 
 	uint8_t attachedNodeList = FALSE;
 	uint8_t attachedSchedule = FALSE;
 
 	uint8_t sourceInCaseOfDrop = 0;
 	
+	/*This methode evaluates the node i have to send to now. before is the node that send me the message, next is the one now in turn
+	In theory it should not be possible to reach the return 0. But it happen that this methode returns 0 when the round is finished 
+	(when the root received the last message and calls this methode)*/
 	uint8_t getNextInSchedule(uint8_t before, uint8_t next) {	
 		uint8_t i;	
 		for(i = 0; i<NUMBER_OF_NODES*2; i++) {
@@ -41,12 +44,16 @@ implementation {
    	 	nodeList[id].inRange = TRUE;
 	}
 
+	/*This methode evaluates the amount of nodes that send a message before me. Source is the source of a received message, receiver is the receiver of that message. 
+	It returns 0 if the node does not appear in the schedule anymore (e.g. when it already send a message).
+	As an example if node 1 send a message to node 2 and node 5 receives that message 5 will call this methode. Source will now be 1 and reveiver 2. If know 2, 3 and 4 need 
+	to send a message before 5 this method should return 3 (This methode is somewhat complex since you have to take into account that a node could appear multiple times 
+	inside the schedule)*/
 	uint8_t getNodeCountUntilMe(uint8_t source, uint8_t receiver) {
 		uint8_t i;	
 		bool counting = FALSE;
 		uint8_t counter = 0;
-		/*if(TOS_NODE_ID == 2)      
-			printf("START getNodeCountUntilMe\n");*/
+		
 		for(i = 0; i<NUMBER_OF_NODES*2; i++) {
 			if(schedule[i] == source && schedule[i+1] == receiver) {
 				i++;
@@ -60,20 +67,17 @@ implementation {
 			
 			if(schedule[i] == TOS_NODE_ID && counting == TRUE) {
 				sourceInCaseOfDrop = schedule[i-1];
-				/*if(TOS_NODE_ID == 2)      
-					printf("END getNodeCountUntilMe\n");*/
+				
 				return counter;
 			}
 
 			if(schedule[i] == 0) {
-				/*if(TOS_NODE_ID == 2)      
-					printf("END getNodeCountUntilMe\n");*/
+				
 				return 0;
 			}
 
 		}
-		/*if(TOS_NODE_ID == 2)      
-			printf("END getNodeCountUntilMe\n");*/
+		
 
 		return 0;
 	}
@@ -91,10 +95,8 @@ implementation {
 
 		if(next > 0) {
 			SampleMsg* spkt = (SampleMsg*) (call Packet_.getPayload(&s_msg, sizeof(SampleMsg)));
-			//addHopInfoToBCMsg(spkt, next);
 			spkt->receiver = next;
 
-			//printf("broadcastTimer: bs: %d\n", sendBroadcasts);
 
 			post sendSample();
 		} else {
@@ -158,7 +160,7 @@ implementation {
 		//uint8_t next = getNextInSchedule(TOS_NODE_ID, spkt->receiver);
 		_printf("sen: %d->%d: %d until me\n", TOS_NODE_ID, spkt->receiver, hopps);
 		if(hopps != 0) {
-			uint16_t timeToWait = (hopps + 1) * TIME_MAX_MESSAGE_SENDING;
+			uint16_t timeToWait = hopps * TIME_MAX_MESSAGE_SENDING;
 			_printf("Time to wait: %d\n", timeToWait);
 			call DropTimer.startOneShot(timeToWait);
 		}
