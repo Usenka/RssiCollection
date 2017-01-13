@@ -1,0 +1,437 @@
+[2730] rec: 9->8: 18 until me
+[2921] Time to wait: 360
+[2921] rec: 8->7: 17 until me
+Time [2922] to wait: 340
+[2922] rec: 13->7: 14 until me
+[2923] Time to wait: 280
+[2923] rec: 7->5: 13 until me
+Time [2932] to wait: 260
+[2933] rec: 19->12: 8 until me
+[2960] Time to wait: 160
+rec: 12->2[3203] 6: 7 until me
+Time to wait: [3203] 140
+[3204] rec: 12->16: 5 until me
+[3204] Time to wait: 100
+[3204] rec: 16->6: 4 until me
+[3207] Time to wait: 80
+[3218] rec: 28->6: 2 until me
+[3218] Time to wait: 40
+[3218] DropTimer Fired...
+[3219] Send To = 4
+[3224] sen: 11->4: 0 until me
+[7650] Flag received
+[7653] 1 1 22 0
+Received Request: n[7654] ext = 0
+received Image msgs [7655] 2 | send Image msgs: 0
+[7656] Got Ack for IMG send to 14
+r[7657] eceived Image msgs 2 | send [7657] Image msgs: 1
+[7658] Got Ack for IMG send to 14
+r[7658] eceived Image msgs 2 | send [7701] Image msgs: 2
+Update
+Collect[7701] ion done 0
+[9620] rec: 15->23: 32 until me
+[9628] Time to wait: 640
+[9628] rec: 15->29: 30 until me
+[9628] Time to wait: 600
+[9692] rec: 15->10: 27 until me
+[9701] Time to wait: 540
+[9701] rec: 10->27: 26 until me
+[9721] Time to wait: 520
+[9726] rec: 30->25: 24 until me
+[9727] Time to wait: 480
+[9847] rec: 10->3: 20 until me
+[10097] Time to wait: 400
+[10097] rec: 9->8: 18 until me
+[10098] Time to wait: 360
+[10098] rec: 8->7: 17 until me
+[10100] Time to wait: 340
+[10100] rec: 13->7: 14 until me
+[10100] Time to wait: 280
+[10100] rec: 7->5: 13 until me
+[10101] Time to wait: 260
+[10106] rec: 18->20: 10 until me
+[10106] Time to wait: 200
+rec: 19->1[10106] 2: 8 until me
+Time to wait: [10106] 160
+rec: 12->26: 7 until me
+[10107] Time to wait: 140
+[10107] rec: 12->26: 7 until me
+[10107] Time to wait: 140
+[10107] rec: 16->6: 4 until me
+[10107] Time to wait: 80
+[10108] rec: 28->6: 2 until me
+[10108] Time to wait: 40
+[10152] DropTimer Fired...
+[10300] Send To = 4
+[10310] sen: 11->4: 0 until me
+[14119] Flag received
+[14121] 2 2 22 0
+Received Request: n[14121] ext = 0
+received Image msgs [14122] 1 | send Image msgs: 0
+Got A[14122] ck for IMG send to 14
+receiv[14122] ed Image msgs 1 | send Image[14122]  msgs: 1
+Update
+Collection d[14123] one 0
+[15969] rec: 9->8: 18 until me
+[16010] Time to wait: 360
+[16010] rec: 8->7: 17 until me
+[16011] Time to wait: 340
+[16011] rec: 7->21: 16 until me
+[16038] Time to wait: 320
+[16105] rec: 13->7: 14 until me
+[16105] Time to wait: 280
+[16105] rec: 19->12: 8 until me
+[16105] Time to wait: 160
+[16105] rec: 12->26: 7 until me
+[16106] Time to wait: 140
+[16110] rec: 12->16: 5 until me
+[16238] Time to wait: 100
+[16266] rec: 16->6: 4 until me
+Time [16266] to wait: 80
+[16266] rec: 28->6: 2 until me
+[16266] Time to wait: 40
+[16266] DropTimer Fired...
+[16269] Send To = 4
+[16321] sen: 11->4: 0 until me
+[20227] Flag received
+[20227] 3 3 22 0
+Received Request: n[20227] ext = 0
+received Image msgs [20227] 1 | send Image msgs: 0
+[20227] Got Ack for IMG send to 14
+r[20228] eceived Image msgs 1 | send [20228] Image msgs: 1
+Update
+Collect[20228] ion done 0
+[21754] rec: 15->23: 32 until me
+[21761] Time to wait: 640
+[21761] rec: 15->29: 30 until me
+[21761] Time to wait: 600
+[21834] rec: 15->10: 27 until me
+[21869] Time to wait: 540
+[21869] rec: 10->27: 26 until me
+Tim[21869] e to wait: 520
+[21912] rec: 10->3: 20 until me
+[21919] Time to wait: 400
+[21964] rec: 9->8: 18 until me
+[21983] Time to wait: 360
+[21983] rec: 8->7: 17 until me
+[21983] Time to wait: 340
+[21984] rec: 7->21: 16 until me
+[21984] Time to wait: 320
+[22118] rec: 18->20: 10 until me
+[22135] Time to wait: 200
+[22136] rec: 12->26: 7 until me
+[22137] Time to wait: 140
+[22159] rec: 16->6: 4 until me
+[22169] Time to wait: 80
+[22223] rec: 28->6: 2 until me
+[22281] Time to wait: 40
+[22283] DropTimer Fired...
+[22283] Send To = 4
+[22283] sen: 11->4: 0 until me
+[26338] Flag received
+[26339] 4 4 22 0
+Received Request: n[26340] ext = 0
+received Image msgs [26340] 1 | send Image msgs: 0
+Got A[26341] ck for IMG send to 14
+receiv[26341] ed Image msgs 1 | send Image[26341]  msgs: 1
+Update
+Collection d[26341] one 0
+[28133] rec: 9->8: 18 until me
+[28133] Time to wait: 360
+[28133] rec: 8->7: 17 until me
+[28133] Time to wait: 340
+[28134] rec: 7->21: 16 until me
+[28134] Time to wait: 320
+[28173] rec: 13->7: 14 until me
+[28178] Time to wait: 280
+[28328] rec: 19->12: 8 until me
+[28331] Time to wait: 160
+[28331] rec: 12->26: 7 until me
+Time[28331]  to wait: 140
+[28331] rec: 12->16: 5 until me
+[28331] Time to wait: 100
+[28369] rec: 16->6: 4 until me
+[28419] Time to wait: 80
+[28420] DropTimer Fired...
+[28420] Send To = 4
+[28420] sen: 11->4: 0 until me
+[32483] Flag received
+[32483] 5 5 22 0
+Received Request: n[32483] ext = 0
+received Image msgs [32484] 1 | send Image msgs: 0
+Got A[32484] ck for IMG send to 14
+receiv[32484] ed Image msgs 1 | send Image[32484]  msgs: 1
+Update
+Collection d[32484] one 0
+[34075] rec: 15->23: 32 until me
+[34193] Time to wait: 640
+[34193] rec: 15->29: 30 until me
+[34193] Time to wait: 600
+[34193] rec: 15->10: 27 until me
+[34193] Time to wait: 540
+[34193] rec: 10->27: 26 until me
+[34193] Time to wait: 520
+[34194] rec: 30->25: 24 until me
+[34194] Time to wait: 480
+[34194] rec: 10->3: 20 until me
+[34223] Time to wait: 400
+[34230] rec: 9->8: 18 until me
+[34230] Time to wait: 360
+[34230] rec: 8->7: 17 until me
+[34230] Time to wait: 340
+[34449] rec: 12->26: 7 until me
+[34523] Time to wait: 140
+[34523] rec: 16->6: 4 until me
+[34525] Time to wait: 80
+[34540] DropTimer Fired...
+[34627] Send To = 4
+[34627] sen: 11->4: 0 until me
+[38731] Flag received
+[38731] 6 6 22 0
+Received Request: n[38731] ext = 0
+received Image msgs [38731] 1 | send Image msgs: 0
+[38731] Got Ack for IMG send to 14
+r[38731] eceived Image msgs 1 | send [38732] Image msgs: 1
+Update
+Collect[38732] ion done 0
+[40265] rec: 15->23: 32 until me
+[40324] Time to wait: 640
+[40324] rec: 15->29: 30 until me
+[40324] Time to wait: 600
+[40324] rec: 31->15: 28 until me
+[40330] Time to wait: 560
+[40576] rec: 15->10: 27 until me
+Tim[40576] e to wait: 540
+[40577] rec: 30->25: 24 until me
+[40577] Time to wait: 480
+[40577] rec: 10->3: 20 until me
+[40577] Time to wait: 400
+[40577] rec: 9->8: 18 until me
+[40577] Time to wait: 360
+[40578] rec: 8->7: 17 until me
+[40578] Time to wait: 340
+[40578] rec: 13->7: 14 until me
+[40578] Time to wait: 280
+[40631] rec: 19->12: 8 until me
+[40660] Time to wait: 160
+[40660] rec: 12->26: 7 until me
+Time[40661]  to wait: 140
+[40661] rec: 19->12: 8 until me
+Time[40661]  to wait: 160
+[40661] rec: 12->26: 7 until me
+Time[40661]  to wait: 140
+[40662] rec: 12->16: 5 until me
+[40702] Time to wait: 100
+[40781] rec: 16->6: 4 until me
+[40781] Time to wait: 80
+[40781] rec: 28->6: 2 until me
+[40781] Time to wait: 40
+[40781] DropTimer Fired...
+[40781] Send To = 4
+[40804] sen: 11->4: 0 until me
+[45256] Flag received
+[45256] 7 7 22 0
+Received Request: n[45257] ext = 0
+received Image msgs [45258] 1 | send Image msgs: 0
+Got A[45258] ck for IMG send to 14
+receiv[45258] ed Image msgs 1 | send Image[45258]  msgs: 1
+Update
+Collection d[45259] one 0
+[47007] rec: 9->8: 18 until me
+[47024] Time to wait: 360
+[47025] rec: 8->7: 17 until me
+[47025] Time to wait: 340
+[47059] rec: 13->7: 14 until me
+[47083] Time to wait: 280
+[47083] rec: 13->7: 14 until me
+[47083] Time to wait: 280
+[47195] rec: 12->26: 7 until me
+[47218] Time to wait: 140
+[47223] rec: 16->6: 4 until me
+[47243] Time to wait: 80
+[47296] DropTimer Fired...
+[47317] Send To = 4
+[47317] sen: 11->4: 0 until me
+[51808] Flag received
+[51808] 8 8 22 0
+Received Request: n[51808] ext = 0
+received Image msgs [51809] 1 | send Image msgs: 0
+[51809] Got Ack for IMG send to 14
+r[51809] eceived Image msgs 1 | send [51809] Image msgs: 1
+Update
+Collect[51810] ion done 0
+[53646] rec: 8->7: 17 until me
+[53657] Time to wait: 340
+[53658] rec: 7->21: 16 until me
+Time[53658]  to wait: 320
+[53658] rec: 13->7: 14 until me
+[53658] Time to wait: 280
+[53695] rec: 7->5: 13 until me
+[53705] Time to wait: 260
+[53743] rec: 19->12: 8 until me
+[53757] Time to wait: 160
+[53757] rec: 12->26: 7 until me
+Time[53794]  to wait: 140
+[53796] rec: 12->16: 5 until me
+[53796] Time to wait: 100
+[53796] rec: 16->6: 4 until me
+Time [53797] to wait: 80
+[53844] rec: 28->6: 2 until me
+[53844] Time to wait: 40
+[53904] DropTimer Fired...
+[53914] Send To = 4
+[53915] sen: 11->4: 0 until me
+[57413] Flag received
+[57414] 9 9 22 0
+Received Request: n[57414] ext = 0
+received Image msgs [57414] 1 | send Image msgs: 0
+Got A[57414] ck for IMG send to 14
+receiv[57414] ed Image msgs 1 | send Image[57416]  msgs: 1
+Update
+Collection d[57417] one 0
+[58846] rec: 15->23: 32 until me
+[59107] Time to wait: 640
+[59107] rec: 15->29: 30 until me
+[59107] Time to wait: 600
+[59108] rec: 15->10: 27 until me
+[59108] Time to wait: 540
+[59113] rec: 10->27: 26 until me
+Tim[59197] e to wait: 520
+[59197] rec: 30->25: 24 until me
+[59197] Time to wait: 480
+[59198] rec: 10->3: 20 until me
+[59198] Time to wait: 400
+[59198] rec: 9->8: 18 until me
+[59198] Time to wait: 360
+[59198] rec: 8->7: 17 until me
+Time [59198] to wait: 340
+[59198] rec: 7->21: 16 until me
+Time[59199]  to wait: 320
+[59199] rec: 13->7: 14 until me
+[59199] Time to wait: 280
+[59199] rec: 18->20: 10 until me
+[59199] Time to wait: 200
+rec: 19->1[59199] 2: 8 until me
+Time to wait: [59200] 160
+rec: 12->26: 7 until me
+[59212] Time to wait: 140
+[59324] rec: 12->26: 7 until me
+[59325] Time to wait: 140
+[59325] rec: 12->16: 5 until me
+[59325] Time to wait: 100
+[59325] rec: 16->6: 4 until me
+[59325] Time to wait: 80
+[59325] DropTimer Fired...
+[59326] Send To = 4
+[59326] sen: 11->4: 0 until me
+[63814] Flag received
+[63815] 10 10 22 0
+Received Request:[63816]  next = 0
+received Image msg[63817] s 1 | send Image msgs: 0
+[63818] Retransmission IMG to 14
+[63818] Got Ack for IMG send to 14
+[63819] received Image msgs 1 | send[63867]  Image msgs: 1
+Update
+Collec[63867] tion done 0
+[65719] rec: 9->8: 18 until me
+[65752] Time to wait: 360
+[65752] rec: 8->7: 17 until me
+Time [65753] to wait: 340
+[65753] rec: 13->7: 14 until me
+[65758] Time to wait: 280
+[65861] rec: 19->12: 8 until me
+[65862] Time to wait: 160
+[65862] rec: 12->26: 7 until me
+Time[65862]  to wait: 140
+[65862] rec: 12->16: 5 until me
+[65862] Time to wait: 100
+[65904] rec: 16->6: 4 until me
+[65905] Time to wait: 80
+[65966] rec: 28->6: 2 until me
+[65980] Time to wait: 40
+[66002] DropTimer Fired...
+[66009] Send To = 4
+[66010] sen: 11->4: 0 until me
+[70424] Flag received
+[70424] 11 11 22 0
+Received Request:[70425]  next = 0
+received Image msg[70425] s 1 | send Image msgs: 0
+Got[70425]  Ack for IMG send to 14
+rece[70425] ived Image msgs 1 | send Ima[70426] ge msgs: 1
+Update
+Collection[70426]  done 0
+[72262] rec: 9->8: 18 until me
+[72353] Time to wait: 360
+[72353] rec: 7->21: 16 until me
+[72353] Time to wait: 320
+[72353] rec: 13->7: 14 until me
+[72353] Time to wait: 280
+[72354] rec: 7->5: 13 until me
+[72354] Time to wait: 260
+[72354] rec: 19->12: 8 until me
+[72354] Time to wait: 160
+[72396] rec: 12->26: 7 until me
+[72398] Time to wait: 140
+[72398] rec: 12->16: 5 until me
+[72398] Time to wait: 100
+[72398] rec: 16->6: 4 until me
+Time [72449] to wait: 80
+[72451] rec: 28->6: 2 until me
+[72451] Time to wait: 40
+[72493] DropTimer Fired...
+[72498] Send To = 4
+[72498] sen: 11->4: 0 until me
+[76004] Flag received
+[76005] 12 12 22 0
+Received Request:[76005]  next = 0
+received Image msg[76005] s 1 | send Image msgs: 0
+Got[76005]  Ack for IMG send to 14
+rece[76005] ived Image msgs 1 | send Ima[76006] ge msgs: 1
+Update
+Collection[76006]  done 0
+[77633] rec: 9->8: 18 until me
+[77734] Time to wait: 360
+rec: 8->7:[77735]  17 until me
+Time to wait: 3[77735] 40
+[77735] rec: 13->7: 14 until me
+[77735] Time to wait: 280
+[77735] rec: 7->5: 13 until me
+Time [77735] to wait: 260
+[77790] rec: 12->26: 7 until me
+[77803] Time to wait: 140
+[77803] rec: 12->16: 5 until me
+[77803] Time to wait: 100
+[77804] rec: 16->6: 4 until me
+[77804] Time to wait: 80
+[77909] DropTimer Fired...
+[77909] Send To = 4
+[77909] sen: 11->4: 0 until me
+[81392] Flag received
+[81392] 13 13 22 0
+Received Request:[81392]  next = 0
+received Image msg[81392] s 1 | send Image msgs: 0
+[81393] Got Ack for IMG send to 14
+r[81393] eceived Image msgs 1 | send [81393] Image msgs: 1
+Update
+Collect[81393] ion done 0
+[82933] rec: 9->8: 18 until me
+[82968] Time to wait: 360
+[82968] rec: 8->7: 17 until me
+Time [82968] to wait: 340
+rec: 7->21: 16 [82968] until me
+Time to wait: 320
+[82969] rec: 13->7: 14 until me
+[82969] Time to wait: 280
+[83012] rec: 18->20: 10 until me
+[83019] Time to wait: 200
+[83020] rec: 19->12: 8 until me
+[83020] Time to wait: 160
+[83061] rec: 12->26: 7 until me
+Time[83062]  to wait: 140
+[83062] rec: 12->16: 5 until me
+[83062] Time to wait: 100
+[83063] rec: 16->6: 4 until me
+[83063] Time to wait: 80
+[83194] DropTimer Fired...
+[83197] Send To = 4
+[83200] sen: 11->4: 0 until me

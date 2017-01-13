@@ -1,0 +1,506 @@
+[2804] rec: 21->13: 0 until me
+[2821] rec: 18->20: 0 until me
+[2821] rec: 20->19: 0 until me
+[2866] rec: 19->12: 0 until me
+[3011] rec: 12->26: 0 until me
+[3012] rec: 16->6: 0 until me
+[3026] rec: 28->6: 0 until me
+[3134] rec: 11->4: 0 until me
+[6408] Flag received
+[6408] 1 1 17 0
+Received Request: n[6408] ext = 32
+Got Ack for FLAG se[6409] nd to 32
+[6459] req Image from: 32; rec from[6460] : 32; source: 29 --- 17 17
+G[6460] ot the whole image from 29 o[6461] ver 32
+forwarded to 20
+[6461] Got Ack for IMG send to 20
+r[6510] eceived Image msgs 1 | send [6511] Image msgs: 1
+[6679] Flag received
+[6680] 1 1 18 17
+Received Request: [6680] next = 32
+[6680] Got Ack for FLAG send to 32
+[6682] req Image from: 32; rec from[6682] : 32; source: 32 --- 18 18
+G[6731] ot the whole image from 32 o[6733] ver 32
+forwarded to 20
+Got A[6734] ck for IMG send to 20
+receiv[6735] ed Image msgs 1 | send Image[6735]  msgs: 1
+[6936] Flag received
+[6936] 1 1 19 18
+Received Request: [6936] next = 0
+received Image msgs[6937]  2 | send Image msgs: 0
+Got [6937] Ack for IMG send to 20
+recei[6937] ved Image msgs 2 | send Imag[6937] e msgs: 1
+Got Ack for IMG se[6947] nd to 20
+received Image msgs[6947]  2 | send Image msgs: 2
+Upda[6986] te
+Collection done 0
+[9684] rec: 31->15: 3 until me
+[9688] Time to wait: 60
+[9730] Send To = 25
+[9743] sen: 30->25: 0 until me
+[9779] rec: 22->24: 0 until me
+[9910] rec: 21->13: 0 until me
+[9962] rec: 20->19: 0 until me
+[10147] rec: 18->20: 0 until me
+[10148] rec: 19->12: 0 until me
+[10148] rec: 20->19: 0 until me
+[10148] rec: 12->26: 0 until me
+[10148] rec: 19->12: 0 until me
+[10152] rec: 26->12: 0 until me
+rec:[10316]  12->26: 0 until me
+[10316] rec: 16->6: 0 until me
+[10316] rec: 28->6: 0 until me
+[10316] rec: 11->4: 0 until me
+[12907] Flag received
+[12908] 2 2 17 0
+Received Request: n[12909] ext = 32
+[12909] Got Ack for FLAG send to 32
+[12961] req Image from: 32; rec from[12961] : 32; source: 29 --- 17 17
+G[12961] ot the whole image from 29 o[12961] ver 32
+forwarded to 20
+Got A[12961] ck for IMG send to 20
+receiv[12962] ed Image msgs 1 | send Image[13012]  msgs: 1
+[13183] Flag received
+[13183] 2 2 18 17
+Received Request: [13183] next = 32
+[13184] Got Ack for FLAG send to 32
+[13184] req Image from: 32; rec from[13184] : 32; source: 32 --- 18 18
+G[13233] ot the whole image from 32 o[13236] ver 32
+forwarded to 20
+[13236] Got Ack for IMG send to 20
+r[13237] eceived Image msgs 1 | send [13237] Image msgs: 1
+[13428] Flag received
+[13428] 2 2 19 18
+Received Request: [13428] next = 0
+received Image msgs[13428]  1 | send Image msgs: 0
+[13429] Got Ack for IMG send to 20
+r[13429] eceived Image msgs 1 | send [13429] Image msgs: 1
+Update
+Collect[13429] ion done 0
+[15981] rec: 21->13: 0 until me
+[16068] rec: 18->20: 0 until me
+[16089] rec: 20->19: 0 until me
+[16255] rec: 19->12: 0 until me
+[16255] rec: 12->26: 0 until me
+[16255] rec: 16->6: 0 until me
+[16256] rec: 28->6: 0 until me
+[16256] rec: 11->4: 0 until me
+[19111] Flag received
+[19111] 3 3 17 0
+Received Request: n[19111] ext = 32
+[19112] Got Ack for FLAG send to 32
+[19161] req Image from: 32; rec from[19162] : 32; source: 29 --- 17 17
+G[19162] ot the whole image from 29 o[19162] ver 32
+forwarded to 20
+Got A[19162] ck for IMG send to 20
+receiv[19219] ed Image msgs 1 | send Image[19220]  msgs: 1
+[19383] Flag received
+[19384] 3 3 18 17
+Received Request: [19384] next = 32
+[19384] Got Ack for FLAG send to 32
+[19384] req Image from: 32; rec from[19384] : 32; source: 32 --- 18 18
+G[19435] ot the whole image from 32 o[19436] ver 32
+forwarded to 20
+Got A[19437] ck for IMG send to 20
+receiv[19437] ed Image msgs 1 | send Image[19437]  msgs: 1
+[19639] Flag received
+[19639] 3 3 19 18
+Received Request: [19639] next = 0
+received Image msgs[19639]  1 | send Image msgs: 0
+[19640] Got Ack for IMG send to 20
+r[19640] eceived Image msgs 1 | send [19640] Image msgs: 1
+Update
+Collect[19641] ion done 0
+[21847] rec: 31->15: 3 until me
+[21864] Time to wait: 60
+[21864] Send To = 25
+[21874] sen: 30->25: 0 until me
+[21933] rec: 22->24: 0 until me
+[21933] rec: 24->10: 0 until me
+[22110] rec: 18->20: 0 until me
+[22111] rec: 20->19: 0 until me
+[22111] rec: 19->12: 0 until me
+[22111] rec: 12->26: 0 until me
+[22159] rec: 16->6: 0 until me
+[22217] rec: 28->6: 0 until me
+[25136] Flag received
+[25137] 4 4 17 0
+Received Request: n[25137] ext = 32
+[25137] Got Ack for FLAG send to 32
+[25189] req Image from: 32; rec from[25189] : 32; source: 29 --- 17 17
+G[25189] ot the whole image from 29 o[25189] ver 32
+forwarded to 20
+Got A[25189] ck for IMG send to 20
+receiv[25241] ed Image msgs 1 | send Image[25242]  msgs: 1
+[25431] Flag received
+[25431] 4 4 18 17
+Received Request: [25431] next = 32
+[25432] Got Ack for FLAG send to 32
+[25432] req Image from: 32; rec from[25432] : 32; source: 32 --- 18 18
+G[25432] ot the whole image from 32 o[25482] ver 32
+forwarded to 20
+[25482] Got Ack for IMG send to 20
+r[25482] eceived Image msgs 1 | send [25482] Image msgs: 1
+[25668] Flag received
+[25668] 4 4 19 18
+Received Request: [25668] next = 0
+received Image msgs[25669]  1 | send Image msgs: 0
+Got [25669] Ack for IMG send to 20
+recei[25669] ved Image msgs 1 | send Imag[25669] e msgs: 1
+Update
+Collection [25669] done 0
+[28262] rec: 18->20: 0 until me
+[28269] rec: 20->19: 0 until me
+[28271] rec: 19->12: 0 until me
+[28271] rec: 12->26: 0 until me
+[28369] rec: 16->6: 0 until me
+[28419] rec: 28->6: 0 until me
+[31314] Flag received
+[31314] 5 5 17 0
+Received Request: n[31314] ext = 32
+[31314] Got Ack for FLAG send to 32
+[31366] req Image from: 32; rec from[31366] : 32; source: 29 --- 17 17
+G[31366] ot the whole image from 29 o[31368] ver 32
+forwarded to 20
+[31368] Got Ack for IMG send to 20
+r[31369] eceived Image msgs 1 | send [31369] Image msgs: 1
+[31577] Flag received
+[31578] 5 5 18 17
+Received Request: [31578] next = 32
+[31578] Got Ack for FLAG send to 32
+[31578] req Image from: 32; rec from[31579] : 32; source: 32 --- 18 18
+G[31627] ot the whole image from 32 o[31627] ver 32
+forwarded to 20
+Got A[31628] ck for IMG send to 20
+receiv[31628] ed Image msgs 1 | send Image[31628]  msgs: 1
+[31818] Flag received
+[31818] 5 5 19 18
+Received Request: [31818] next = 0
+received Image msgs[31818]  1 | send Image msgs: 0
+Got [31818] Ack for IMG send to 20
+recei[31819] ved Image msgs 1 | send Imag[31819] e msgs: 1
+Update
+Collection [31819] done 0
+[34073] rec: 23->15: 6 until me
+[34085] Time to wait: 120
+[34085] rec: 31->15: 3 until me
+[34085] Time to wait: 60
+[34124] Send To = 25
+[34156] sen: 30->25: 0 until me
+[34172] rec: 24->10: 0 until me
+[34295] rec: 21->13: 0 until me
+[34362] rec: 18->20: 0 until me
+[34478] rec: 20->19: 0 until me
+[34478] rec: 19->12: 0 until me
+[34489] rec: 12->26: 0 until me
+[34489] rec: 16->6: 0 until me
+[34540] rec: 28->6: 0 until me
+[37642] Flag received
+[37642] 6 6 17 0
+Received Request: n[37642] ext = 32
+Got Ack for FLAG se[37643] nd to 32
+[37689] req Image from: 32; rec from[37689] : 32; source: 29 --- 17 17
+G[37689] ot the whole image from 29 o[37689] ver 32
+forwarded to 20
+[37690] Retransmission IMG to 20
+[37739] Got Ack for IMG send to 20
+[37740] received Image msgs 1 | send[37740]  Image msgs: 1
+[37937] Flag received
+[37937] 6 6 18 17
+Received Request: [37937] next = 32
+[37937] Got Ack for FLAG send to 32
+[37938] req Image from: 32; rec from[37938] : 32; source: 32 --- 18 18
+G[37938] ot the whole image from 32 o[38001] ver 32
+forwarded to 20
+Got A[38002] ck for IMG send to 20
+receiv[38002] ed Image msgs 1 | send Image[38003]  msgs: 1
+[38179] Flag received
+[38179] 6 6 19 18
+Received Request: [38179] next = 0
+received Image msgs[38180]  1 | send Image msgs: 0
+Got [38180] Ack for IMG send to 20
+recei[38180] ved Image msgs 1 | send Imag[38180] e msgs: 1
+Update
+Collection [38180] done 0
+[40265] rec: 23->15: 6 until me
+[40280] Time to wait: 120
+[40280] rec: 29->31: 4 until me
+[40280] Time to wait: 80
+[40313] rec: 31->15: 3 until me
+[40628] Time to wait: 60
+[40628] Send To = 25
+[40629] sen: 30->25: 0 until me
+[40629] rec: 22->24: 0 until me
+[40629] rec: 21->13: 0 until me
+[40629] rec: 20->19: 0 until me
+[40629] rec: 19->12: 0 until me
+[40636] rec: 12->26: 0 until me
+[40664] rec: 20->19: 0 until me
+[40793] rec: 19->12: 0 until me
+rec:[40794]  26->12: 0 until me
+[40796] rec: 12->26: 0 until me
+[40796] rec: 26->12: 0 until me
+[40797] rec: 12->16: 0 until me
+[40797] rec: 16->6: 0 until me
+[40797] rec: 28->6: 0 until me
+[44031] Flag received
+[44031] 7 7 17 0
+Received Request: n[44032] ext = 32
+[44032] Got Ack for FLAG send to 32
+[44084] req Image from: 32; rec from[44084] : 32; source: 29 --- 17 17
+G[44085] ot the whole image from 29 o[44085] ver 32
+forwarded to 20
+Got A[44139] ck for IMG send to 20
+receiv[44141] ed Image msgs 1 | send Image[44142]  msgs: 1
+[44312] Flag received
+[44312] 7 7 18 17
+Received Request: [44312] next = 32
+[44312] Got Ack for FLAG send to 32
+[44313] req Image from: 32; rec from[44313] : 32; source: 32 --- 18 18
+G[44362] ot the whole image from 32 o[44363] ver 32
+forwarded to 20
+Got A[44363] ck for IMG send to 20
+receiv[44363] ed Image msgs 1 | send Image[44363]  msgs: 1
+[44552] Flag received
+[44552] 7 7 19 18
+Received Request: [44552] next = 0
+received Image msgs[44553]  2 | send Image msgs: 0
+Got [44553] Ack for IMG send to 20
+recei[44553] ved Image msgs 2 | send Imag[44553] e msgs: 1
+Got Ack for IMG se[44553] nd to 20
+received Image msgs[44554]  2 | send Image msgs: 2
+Upda[44603] te
+Collection done 0
+[47065] rec: 21->13: 0 until me
+[47114] rec: 18->20: 0 until me
+[47189] rec: 20->19: 0 until me
+[47190] rec: 19->12: 0 until me
+[47190] rec: 12->26: 0 until me
+[47190] rec: 26->12: 0 until me
+[47214] rec: 16->6: 0 until me
+[47276] rec: 28->6: 0 until me
+[47320] rec: 11->4: 0 until me
+[50549] Flag received
+[50550] 8 8 17 0
+Received Request: n[50550] ext = 32
+Got Ack for FLAG se[50551] nd to 32
+Flag received
+8 8 1[50551] 7 17
+[50603] req Image from: 32; rec from[50607] : 32; source: 29 --- 17 17
+G[50615] ot the whole image from 29 o[50616] ver 32
+forwarded to 20
+[50667] Got Ack for IMG send to 20
+[50669] received Image msgs 1 | send[50670]  Image msgs: 1
+[50836] Flag received
+[50837] 8 8 18 17
+Received Request: [50837] next = 32
+[50838] Got Ack for FLAG send to 32
+[50838] req Image from: 32; rec from[50838] : 32; source: 32 --- 18 18
+G[50888] ot the whole image from 32 o[50889] ver 32
+forwarded to 20
+Got A[50889] ck for IMG send to 20
+receiv[50889] ed Image msgs 1 | send Image[50890]  msgs: 1
+[51073] Flag received
+[51073] 8 8 19 18
+Received Request: [51074] next = 0
+received Image msgs[51074]  2 | send Image msgs: 0
+Got [51074] Ack for IMG send to 20
+recei[51074] ved Image msgs 2 | send Imag[51074] e msgs: 1
+Got Ack for IMG se[51074] nd to 20
+received Image msgs[51074]  2 | send Image msgs: 2
+Upda[51124] te
+Collection done 0
+[53678] rec: 21->13: 0 until me
+[53725] rec: 18->20: 0 until me
+[53768] rec: 20->19: 0 until me
+[53777] rec: 19->12: 0 until me
+[53821] rec: 16->6: 0 until me
+[53826] rec: 28->6: 0 until me
+[56368] Flag received
+[56369] 9 9 17 0
+Received Request: n[56369] ext = 32
+[56369] Got Ack for FLAG send to 32
+[56422] req Image from: 32; rec from[56422] : 32; source: 29 --- 17 17
+G[56423] ot the whole image from 29 o[56423] ver 32
+forwarded to 20
+Got A[56424] ck for IMG send to 20
+receiv[56471] ed Image msgs 1 | send Image[56471]  msgs: 1
+[56641] Flag received
+[56641] 9 9 18 17
+Received Request: [56641] next = 32
+Got Ack for FLAG s[56642] end to 32
+[56644] req Image from: 32; rec from[56644] : 32; source: 32 --- 18 18
+G[56645] ot the whole image from 32 o[56645] ver 32
+forwarded to 20
+[56690] Got Ack for IMG send to 20
+r[56691] eceived Image msgs 1 | send [56691] Image msgs: 1
+[56890] Flag received
+[56890] 9 9 19 18
+Received Request: [56890] next = 0
+received Image msgs[56891]  1 | send Image msgs: 0
+Got [56891] Ack for IMG send to 20
+recei[56891] ved Image msgs 1 | send Imag[56891] e msgs: 1
+Update
+Collection [56893] done 0
+[58846] rec: 23->15: 6 until me
+[58857] Time to wait: 120
+[58857] rec: 31->15: 3 until me
+[58857] Time to wait: 60
+[58959] Send To = 25
+[59267] sen: 30->25: 0 until me
+[59267] rec: 22->24: 0 until me
+[59269] rec: 24->10: 0 until me
+[59269] rec: 20->19: 0 until me
+[59269] rec: 18->20: 0 until me
+[59269] rec: 19->12: 0 until me
+[59270] rec: 12->26: 0 until me
+[59270] rec: 19->12: 0 until me
+[59270] rec: 26->12: 0 until me
+rec:[59275]  12->26: 0 until me
+[59291] rec: 26->12: 0 until me
+[59291] rec: 12->16: 0 until me
+[59291] rec: 16->6: 0 until me
+[59293] rec: 28->6: 0 until me
+[59293] rec: 11->4: 0 until me
+[62591] Flag received
+[62591] 10 10 17 0
+Received Request:[62591]  next = 32
+[62591] Got Ack for FLAG send to 32
+[62637] req Image from: 32; rec from[62637] : 32; source: 29 --- 17 17
+G[62637] ot the whole image from 29 o[62687] ver 32
+forwarded to 20
+Got A[62688] ck for IMG send to 20
+receiv[62688] ed Image msgs 1 | send Image[62689]  msgs: 1
+[62889] Flag received
+[62889] 10 10 18 17
+Received Request[62889] : next = 32
+[62890] Got Ack for FLAG send to 32
+[62890] req Image from: 32; rec from[62890] : 32; source: 32 --- 18 18
+G[62948] ot the whole image from 32 o[62948] ver 32
+forwarded to 20
+Got A[62948] ck for IMG send to 20
+receiv[62949] ed Image msgs 1 | send Image[62949]  msgs: 1
+[63125] Flag received
+[63126] 10 10 19 18
+Received Request[63126] : next = 0
+received Image ms[63126] gs 2 | send Image msgs: 0
+Go[63126] t Ack for IMG send to 20
+rec[63127] eived Image msgs 2 | send Im[63127] age msgs: 1
+Got Ack for IMG [63127] send to 20
+received Image ms[63177] gs 2 | send Image msgs: 2
+Up[63177] date
+Collection done 0
+[65749] rec: 21->13: 0 until me
+[65801] rec: 18->20: 0 until me
+[65817] rec: 20->19: 0 until me
+[65817] rec: 19->12: 0 until me
+[65866] rec: 12->26: 0 until me
+[65869] rec: 26->12: 0 until me
+[65870] rec: 12->16: 0 until me
+[65904] rec: 16->6: 0 until me
+[65905] rec: 28->6: 0 until me
+[65966] rec: 28->6: 0 until me
+[69092] Flag received
+[69092] 11 11 17 0
+Received Request:[69092]  next = 32
+[69093] Got Ack for FLAG send to 32
+[69142] req Image from: 32; rec from[69143] : 32; source: 29 --- 17 17
+G[69143] ot the whole image from 29 o[69143] ver 32
+forwarded to 20
+[69193] Retransmission IMG to 20
+[69195] Got Ack for IMG send to 20
+[69195] received Image msgs 1 | send[69195]  Image msgs: 1
+[69360] Flag received
+[69361] 11 11 18 17
+Received Request[69361] : next = 32
+[69361] Got Ack for FLAG send to 32
+[69418] req Image from: 32; rec from[69421] : 32; source: 32 --- 18 18
+G[69421] ot the whole image from 32 o[69421] ver 32
+forwarded to 20
+[69422] Got Ack for IMG send to 20
+r[69422] eceived Image msgs 1 | send [69423] Image msgs: 1
+[69644] Flag received
+[69644] 11 11 19 18
+Received Request[69646] : next = 0
+received Image ms[69647] gs 2 | send Image msgs: 0
+[69648] Got Ack for IMG send to 20
+r[69652] eceived Image msgs 2 | send [69653] Image msgs: 1
+Got Ack for IM[69653] G send to 20
+received Image [69654] msgs 2 | send Image msgs: 2
+[69697] Update
+Collection done 0
+[72352] rec: 18->20: 0 until me
+[72372] rec: 19->12: 0 until me
+[72372] rec: 12->26: 0 until me
+[72406] rec: 26->12: 0 until me
+[72414] rec: 12->16: 0 until me
+[72460] rec: 28->6: 0 until me
+[72516] rec: 11->4: 0 until me
+[74972] Flag received
+[74972] 12 12 17 0
+Received Request:[74972]  next = 32
+[74972] Got Ack for FLAG send to 32
+[75033] req Image from: 32; rec from[75037] : 32; source: 29 --- 17 17
+G[75037] ot the whole image from 29 o[75037] ver 32
+forwarded to 20
+[75085] Got Ack for IMG send to 20
+r[75085] eceived Image msgs 1 | send [75085] Image msgs: 1
+[75267] Flag received
+[75267] 12 12 18 17
+Received Request[75267] : next = 32
+[75268] Got Ack for FLAG send to 32
+[75268] req Image from: 32; rec from[75268] : 32; source: 32 --- 18 18
+G[75269] ot the whole image from 32 o[75318] ver 32
+forwarded to 20
+Got A[75318] ck for IMG send to 20
+receiv[75319] ed Image msgs 1 | send Image[75319]  msgs: 1
+[75511] Flag received
+[75511] 12 12 19 18
+Received Request[75511] : next = 0
+received Image ms[75511] gs 1 | send Image msgs: 0
+Go[75511] t Ack for IMG send to 20
+rec[75512] eived Image msgs 1 | send Im[75512] age msgs: 1
+Update
+Collectio[75512] n done 0
+[77749] rec: 18->20: 0 until me
+[77815] rec: 20->19: 0 until me
+[77815] rec: 19->12: 0 until me
+[77815] rec: 12->26: 0 until me
+[77815] rec: 16->6: 0 until me
+[77852] rec: 28->6: 0 until me
+[80391] Flag received
+[80391] 13 13 17 0
+Received Request:[80391]  next = 32
+[80392] Got Ack for FLAG send to 32
+[80442] req Image from: 32; rec from[80442] : 32; source: 29 --- 17 17
+G[80442] ot the whole image from 29 o[80443] ver 32
+forwarded to 20
+Got A[80495] ck for IMG send to 20
+receiv[80496] ed Image msgs 1 | send Image[80496]  msgs: 1
+[80701] Flag received
+[80701] 13 13 18 17
+Received Request[80701] : next = 32
+[80701] Got Ack for FLAG send to 32
+[80702] req Image from: 32; rec from[80702] : 32; source: 32 --- 18 18
+G[80753] ot the whole image from 32 o[80753] ver 32
+forwarded to 20
+Got A[80754] ck for IMG send to 20
+receiv[80754] ed Image msgs 1 | send Image[80754]  msgs: 1
+[80962] Flag received
+[80963] 13 13 19 18
+Received Request[80963] : next = 0
+received Image ms[80963] gs 1 | send Image msgs: 0
+[80963] Retransmission IMG to 20
+[80963] Got Ack for IMG send to 20
+[80964] received Image msgs 1 | send[80964]  Image msgs: 1
+Update
+Collec[80964] tion done 0
+[83032] rec: 18->20: 0 until me
+[83039] rec: 20->19: 0 until me
+[83039] rec: 19->12: 0 until me
+[83039] rec: 12->26: 0 until me
+[83078] rec: 12->16: 0 until me
+[83079] rec: 16->6: 0 until me
+[83127] rec: 28->6: 0 until me
+[83206] rec: 28->6: 0 until me
+[83212] rec: 11->4: 0 until me
