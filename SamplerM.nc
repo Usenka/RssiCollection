@@ -19,6 +19,8 @@ implementation {
 
 	Node* nodeList;	
 	uint8_t* schedule;	//The schedule is saved as an array of ids. The nodes send in the order they are listed in this array
+	SchedulePSCollection schedulePSCollection;
+	uint8_t psPointer = 0;	//contains the index of the next predecessor successor pair in the schedulePSCollection 
 
 	uint8_t attachedNodeList = FALSE;
 	uint8_t attachedSchedule = FALSE;
@@ -28,14 +30,21 @@ implementation {
 	/*This methode evaluates the node i have to send to now. before is the node that send me the message, next is the one now in turn
 	In theory it should not be possible to reach the return 0. But it happen that this methode returns 0 when the round is finished 
 	(when the root received the last message and calls this methode)*/
-	uint8_t getNextInSchedule(uint8_t before, uint8_t next) {	
-		uint8_t i;	
+	uint8_t getNextInSchedule(uint8_t before) {	
+		/*uint8_t i;	
 		for(i = 0; i<NUMBER_OF_NODES*2; i++) {
 			if(schedule[i] == before && schedule[i+1] == next) {
 				return schedule[i+2];
 			}
+		}*/
+		_printf("get next after: %d\n", before);
+		if(schedulePSCollection.preSuc[psPointer].predecessor == before) {
+			uint8_t next = schedulePSCollection.preSuc[psPointer].successor;
+			psPointer++;
+			psPointer = psPointer % schedulePSCollection.size;
+			return next;
 		}
-		return 0;
+		return NUMBER_OF_NODES + 1;
 	}
 
 	void receivedSample(uint8_t id, int8_t rssi) {
@@ -89,18 +98,35 @@ implementation {
 	}
 
 	void sendMessageAccordingToSchedule(uint8_t source) {
-		uint8_t next = getNextInSchedule(source, TOS_NODE_ID);
+		uint8_t next = getNextInSchedule(source);
 
 		_printf("Send To = %d\n", next);
 
-		if(next > 0) {
+		if(next > 0 && next < NUMBER_OF_NODES + 1) {
 			SampleMsg* spkt = (SampleMsg*) (call Packet_.getPayload(&s_msg, sizeof(SampleMsg)));
 			spkt->receiver = next;
 
 
 			post sendSample();
-		} else {
+		} else if (next == 0) {
 			signal Sampler.finishedRound();
+		}
+	}
+
+	void definePredecessorSuccessor() {
+		uint8_t i;
+		schedulePSCollection.size = 0;		
+		for(i = 0; i<NUMBER_OF_NODES*2; i++) {
+			if(schedule[i] == TOS_NODE_ID) {
+				schedulePSCollection.preSuc[schedulePSCollection.size].predecessor = (i == 0) ? 0 : schedule[i-1];
+				schedulePSCollection.preSuc[schedulePSCollection.size].successor = schedule[i+1];
+				printf("SCHEDULE %d: %d -> %d -> %d\n",schedulePSCollection.size, schedulePSCollection.preSuc[schedulePSCollection.size].predecessor, TOS_NODE_ID, 
+					schedulePSCollection.preSuc[schedulePSCollection.size].successor);				
+				schedulePSCollection.size++;
+			}
+
+			if(schedule[i] == 0)
+				break;
 		}
 	}
 
@@ -109,18 +135,20 @@ implementation {
 		attachedNodeList = TRUE;
 	}
 
-	command void Sampler.attacheSchedule(uint8_t* sd) {
+	command void Sampler.attacheSchedule(uint8_t* sd) {		
 		schedule = sd;
+		definePredecessorSuccessor();
 		attachedSchedule = TRUE;
 	}
 
 	command void Sampler.startRound() {
-		SampleMsg* spkt = (SampleMsg*) (call Packet_.getPayload(&s_msg, sizeof(SampleMsg)));
+		sendMessageAccordingToSchedule(0);
+		/*SampleMsg* spkt = (SampleMsg*) (call Packet_.getPayload(&s_msg, sizeof(SampleMsg)));
 		spkt->receiver = schedule[1];
 
 		if(spkt != NULL && !sBusy)
 			if (call SampleSend.send(AM_BROADCAST_ADDR, &s_msg, sizeof(BroadcastMsg)) == SUCCESS)
-				sBusy = TRUE;
+				sBusy = TRUE;*/
 	}
 
 	event message_t* SampleReceive.receive(message_t* msg, void* payload, uint8_t len) {
@@ -157,7 +185,6 @@ implementation {
 		if(err == SUCCESS)
 			sBusy = FALSE;
 
-		//uint8_t next = getNextInSchedule(TOS_NODE_ID, spkt->receiver);
 		_printf("sen: %d->%d: %d until me\n", TOS_NODE_ID, spkt->receiver, hopps);
 		if(hopps != 0) {
 			uint16_t timeToWait = hopps * TIME_MAX_MESSAGE_SENDING;

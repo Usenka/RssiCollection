@@ -49,11 +49,15 @@ module CollectorM {
 				nodeList[i].inRange = FALSE;
 
 			nodeList[i].msg_counter = 0; // reset message counter for all nodes
-			nodeList[i].receivedImage = NUMBER_OF_NODES; //reset recivedImage for all nodes
 		}
 	}
 
 	void collection_update() {
+		uint8_t i;
+		for(i = 0; i < NUMBER_OF_NODES+1; i++) {
+			nodeList[i].receivedImage = NUMBER_OF_NODES; //reset recivedImage for all nodes
+		}
+
 		c_round++;
 		requestID = 0;
 		sendNodes = 0;
@@ -90,7 +94,7 @@ module CollectorM {
 		uint8_t motesLeft = NUMBER_OF_NODES;
 		RadioImageMsg* ripkt = (RadioImageMsg*) (call Packet_.getPayload(&ri_msg_queue[0], sizeof(RadioImageMsg)));
 		numberOfReceivedMsgs = 0;	
-
+	
 		nl_update();
 
 		for(numberOfReceivedMsgs = 0; motesLeft != 0; numberOfReceivedMsgs++) {
@@ -250,7 +254,7 @@ module CollectorM {
 			else if (retransmissions_img >= MAX_RETRANSMISSIONS){
 				_printf("Max rtx dropped IMG.\n");}
 			else {
-				_printf("Received next Request.\n");}
+				_printf("Received next Request. my: %d yours %d\n",requestID ,ripkt->request_id);}
 
 			if(notSendImg == TRUE) {
 				fillImgQueue();	
@@ -274,7 +278,7 @@ module CollectorM {
 				//Finished sending my own image?
 				if(ripkt->motesLeft == 0 && ripkt->from == TOS_NODE_ID) {
 					collection_update();
-
+					_printf("HUIHUI %d\n", c_round);
 					signal Collector.collectionDone(SUCCESS);
 				}
 			}	

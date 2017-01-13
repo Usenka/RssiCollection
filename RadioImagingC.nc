@@ -90,17 +90,17 @@ implementation {
 	}
 
 	event void ScheduleSender.receivedSchedule(uint8_t* schedule) {
-		printf("Schedule Received");
+		printf("Schedule Received\n");
 
 		call Sampler.attacheSchedule(schedule);				
 	}
 
 	event void ScheduleSender.scheduleSpreaded() {
-		_printf("Schedule Spreaded");
+		_printf("Schedule Spreaded\n");
 	}
 
 	event void Sampler.finishedRound() {
-		_printf("finished Round");
+		_printf("finished Round\n");
 		call Collector.startCollection();
 	}
 }

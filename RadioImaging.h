@@ -84,4 +84,14 @@ typedef struct Node {
   int8_t receivedSchedule;
 } Node;
 
+typedef struct PredecessorSuccessor {
+  uint8_t predecessor;
+  uint8_t successor;
+} PredecessorSuccessor;
+
+typedef struct SchedulePSCollection {
+  uint8_t size;
+  PredecessorSuccessor preSuc[10]; 
+} SchedulePSCollection;
+
 #endif

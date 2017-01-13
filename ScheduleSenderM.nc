@@ -178,7 +178,7 @@ module ScheduleSenderM {
 				return;
 			}
 	
-			if(scheduleLeft == 0)
+			if(scheduleLeft == 0 && destination == hopInfo->nextHop)
 				signal ScheduleSender.receivedSchedule(schedule);	
 		}
 	}
@@ -188,7 +188,9 @@ module ScheduleSenderM {
 		if(err == SUCCESS) 
 			pcBusy = FALSE;
 
-		if(spkt->left == 0)
+		if(spkt->left == 0) {
+			signal ScheduleSender.receivedSchedule(schedule);
 			signal ScheduleSender.scheduleSpreaded();
+		}
 	}
 }
