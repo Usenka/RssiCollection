@@ -42,16 +42,18 @@ module CollectorM {
 	void nl_update() {
 		// update neighbor list -> nodes from which messages were received are in rang
 		uint8_t i;	
-		printf("Update\n");		
+		printf("Update_nl\n");		
 
 		for(i = 0; i < NUMBER_OF_NODES+1; i++) {
 			if(nodeList[i].msg_counter == 0)
-			nodeList[i].inRange = FALSE;
+				nodeList[i].inRange = FALSE;
 
 			nodeList[i].msg_counter = 0; // reset message counter for all nodes
 			nodeList[i].receivedImage = NUMBER_OF_NODES; //reset recivedImage for all nodes
 		}
+	}
 
+	void collection_update() {
 		c_round++;
 		requestID = 0;
 		sendNodes = 0;
@@ -88,6 +90,8 @@ module CollectorM {
 		uint8_t motesLeft = NUMBER_OF_NODES;
 		RadioImageMsg* ripkt = (RadioImageMsg*) (call Packet_.getPayload(&ri_msg_queue[0], sizeof(RadioImageMsg)));
 		numberOfReceivedMsgs = 0;	
+
+		nl_update();
 
 		for(numberOfReceivedMsgs = 0; motesLeft != 0; numberOfReceivedMsgs++) {
 			ripkt = (RadioImageMsg*) (call Packet_.getPayload(&ri_msg_queue[numberOfReceivedMsgs], sizeof(RadioImageMsg)));		
@@ -269,7 +273,7 @@ module CollectorM {
 
 				//Finished sending my own image?
 				if(ripkt->motesLeft == 0 && ripkt->from == TOS_NODE_ID) {
-					nl_update();
+					collection_update();
 
 					signal Collector.collectionDone(SUCCESS);
 				}
@@ -368,7 +372,7 @@ module CollectorM {
 
 			if(ripkt->from == ROOT_NODE && ripkt->motesLeft == 0) {
 				_printf("Root send its image\n");
-				nl_update();
+				collection_update();
 
 				signal Collector.collectionDone(SUCCESS);
 			} else {
