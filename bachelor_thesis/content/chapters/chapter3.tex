@@ -1,0 +1,15 @@
+\chapter{Approach}
+
+To eliminate the delay timeslots include to prevent errors a different approach is suggested in this thesis which is based on predefined predecessors for each node. Therefore a node will be able to send a message directly after receiving a message from its predecessor. Since the network is widely spread and not every node hears all the other nodes the challenge is to create a fitting schedule that defines a predecessor for each node. To archive this a first calibration phase that figures out which node is in the range of which is needed. Then the collected information about the network need to be gathered at a control point so that the schedule can be created. When the schedule is created it needs to be spread inside the network so every node knows its predecessor. When every node know the schedule the data sampling can begin. To do so the first node in the schedule can send a message. When all the nodes send its message there will be another data collection to gather the collected information at the control point for further processing (localising). Then the next round can start.
+
+\section{Control Point}
+The control point is a computer with high processing power. It is used to process the informations gathered from the network. This means it will create the schedule...
+\section{Calibration}
+To find out the existing links between nodes the calibration phase is needed. Moreover this phase will establish paths from each node to the sink. On these paths data can be send to gather it at the sink.\nTo do so each node will just start sending messages in no specific pattern. These message include a value that describes the quality of the path that node has to the sink and the next hop of the node which is the next node along the path. When a node receives a message it will add the sending node into a neighbourlist including the data bout its next hop. By including the data of the next hop we make sure that the path is known into both directions. Then it will compare its own path quality with the received one. If the received path quality is higher the path of the node will adjusted. It will set its own next hop the the sending node and set its new path quality accordingly.
+\subsection{Path Quality}
+The path quality is a mixture of the hops a path has and the signal strength between the nodes on that path. The signal strength is divided into an interval. Each interval gets a value. If a node receives a message it will assign the value according to the received signal strength and the defined interval and add this value to the path quality given inside the message. 
+\section{Collection}
+
+\section{Creating the Schedule}
+\section{Spreading the Schedule}
+\section{Sampling}
