@@ -1,4 +1,5 @@
 \select@language {english}
+\select@language {english}
 \contentsline {chapter}{\numberline {1}Introduction}{3}{chapter.1}
 \contentsline {section}{\numberline {1.1}Motivation}{3}{section.1.1}
 \contentsline {section}{\numberline {1.2}Problem definition}{4}{section.1.2}
@@ -11,20 +12,8 @@
 \contentsline {subsection}{\numberline {2.4.1}Motes}{6}{subsection.2.4.1}
 \contentsline {subsection}{\numberline {2.4.2}TinyOs}{6}{subsection.2.4.2}
 \contentsline {chapter}{\numberline {3}Approach}{7}{chapter.3}
-\contentsline {section}{\numberline {3.1}Control Point}{7}{section.3.1}
-\contentsline {section}{\numberline {3.2}Calibration}{7}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Path Quality}{8}{subsection.3.2.1}
-\contentsline {section}{\numberline {3.3}Collection}{8}{section.3.3}
-\contentsline {section}{\numberline {3.4}Creating the Schedule}{8}{section.3.4}
-\contentsline {section}{\numberline {3.5}Spreading the Schedule}{8}{section.3.5}
-\contentsline {section}{\numberline {3.6}Sampling}{8}{section.3.6}
-\contentsline {chapter}{\numberline {4}Implementation}{9}{chapter.4}
-\contentsline {section}{\numberline {4.1}Java Application}{9}{section.4.1}
-\contentsline {section}{\numberline {4.2}Calibration}{9}{section.4.2}
-\contentsline {section}{\numberline {4.3}Collection}{9}{section.4.3}
-\contentsline {section}{\numberline {4.4}Creating the Schedule}{9}{section.4.4}
-\contentsline {section}{\numberline {4.5}Spreading the Schedule}{9}{section.4.5}
-\contentsline {section}{\numberline {4.6}Sampling}{9}{section.4.6}
-\contentsline {chapter}{\numberline {5}Evaluation}{11}{chapter.5}
-\contentsline {chapter}{\numberline {6}Discussion}{13}{chapter.6}
-\contentsline {chapter}{\numberline {7}Acknowledgements}{15}{chapter.7}
+\contentsline {section}{\numberline {3.1}General Structure}{7}{section.3.1}
+\contentsline {section}{\numberline {3.2}Base Station}{8}{section.3.2}
+\contentsline {section}{\numberline {3.3}Calibration}{8}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Path Quality}{9}{subsection.3.3.1}
+\contentsline {section}{\numberline {3.4}Collection}{9}{section.3.4}

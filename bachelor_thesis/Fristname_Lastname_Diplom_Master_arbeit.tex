@@ -48,7 +48,7 @@ bibliography=totoc]{scrbook}
 \usepackage{url}
 
 % needed for a german bibliography-style (s. below)
-%\usepackage{bibgerm}
+\usepackage{bibgerm}
 
 % allows text flowing around figures.
 \usepackage{wrapfig}
@@ -76,11 +76,17 @@ bibliography=totoc]{scrbook}
 \usepackage[absolute]{textpos}
 
 % allows to enumerate different figures with a) b) in the same figure-environment.
-\usepackage{subfigure}
+%\usepackage{subfigure}
 
+\usepackage{subcaption}
+
+\usepackage{listings}
+\lstset{
+	tabsize=2
+}
 % finetune the gaps between figure and text in the subfigure environment (basically close the gap as much as possible)
-\renewcommand{\subfigtopskip}{0pt}
-\renewcommand{\subfigbottomskip}{0pt}
+%\renewcommand{\subfigtopskip}{0pt}
+%\renewcommand{\subfigbottomskip}{0pt}
 
 % some color definitions for the pdf statements below
 \definecolor{mygrey}{rgb}{0.45,0.45,0.45}
