@@ -15,14 +15,17 @@
 \contentsline {section}{\numberline {3.1}General Structure}{7}{section.3.1}
 \contentsline {section}{\numberline {3.2}Base Station}{8}{section.3.2}
 \contentsline {section}{\numberline {3.3}Calibration}{8}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Path Quality}{9}{subsection.3.3.1}
-\contentsline {section}{\numberline {3.4}Collection}{9}{section.3.4}
-\contentsline {section}{\numberline {3.5}Creating the Schedule}{11}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}Rooted Circles}{11}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.3.1}Creating Neighbour Tables}{9}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Creating a Path}{9}{subsection.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.2.1}Finding a Parent}{9}{subsubsection.3.3.2.1}
+\contentsline {subsubsection}{\numberline {3.3.2.2}Finding the Children}{9}{subsubsection.3.3.2.2}
+\contentsline {section}{\numberline {3.4}Collection}{10}{section.3.4}
+\contentsline {section}{\numberline {3.5}Creating the Schedule}{10}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Rooted Circles}{10}{subsection.3.5.1}
 \contentsline {subsection}{\numberline {3.5.2}Creating a Full Schedule}{12}{subsection.3.5.2}
 \contentsline {section}{\numberline {3.6}Spreading the Schedule}{14}{section.3.6}
-\contentsline {section}{\numberline {3.7}Sampling}{14}{section.3.7}
-\contentsline {subsection}{\numberline {3.7.1}Message Drops}{14}{subsection.3.7.1}
+\contentsline {section}{\numberline {3.7}Sampling}{16}{section.3.7}
+\contentsline {subsection}{\numberline {3.7.1}Message Drops}{16}{subsection.3.7.1}
 \contentsline {chapter}{\numberline {4}Implementation}{17}{chapter.4}
 \contentsline {section}{\numberline {4.1}General Structure}{17}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}General Base Station}{17}{subsection.4.1.1}
