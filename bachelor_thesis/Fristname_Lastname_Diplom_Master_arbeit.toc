@@ -17,3 +17,24 @@
 \contentsline {section}{\numberline {3.3}Calibration}{8}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}Path Quality}{9}{subsection.3.3.1}
 \contentsline {section}{\numberline {3.4}Collection}{9}{section.3.4}
+\contentsline {section}{\numberline {3.5}Creating the Schedule}{11}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Rooted Circles}{11}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Creating a Full Schedule}{12}{subsection.3.5.2}
+\contentsline {section}{\numberline {3.6}Spreading the Schedule}{14}{section.3.6}
+\contentsline {section}{\numberline {3.7}Sampling}{14}{section.3.7}
+\contentsline {subsection}{\numberline {3.7.1}Message Drops}{14}{subsection.3.7.1}
+\contentsline {chapter}{\numberline {4}Implementation}{17}{chapter.4}
+\contentsline {section}{\numberline {4.1}General Structure}{17}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}General Base Station}{17}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}General mote Application}{17}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}Base Station}{18}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Receiving and Storing the Data}{18}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Creating the Schedule}{18}{subsection.4.2.2}
+\contentsline {section}{\numberline {4.3}Calibration}{18}{section.4.3}
+\contentsline {section}{\numberline {4.4}Collection}{18}{section.4.4}
+\contentsline {section}{\numberline {4.5}Creating the Schedule}{18}{section.4.5}
+\contentsline {section}{\numberline {4.6}Spreading the Schedule}{18}{section.4.6}
+\contentsline {section}{\numberline {4.7}Sampling}{18}{section.4.7}
+\contentsline {chapter}{\numberline {5}Evaluation}{19}{chapter.5}
+\contentsline {chapter}{\numberline {6}Discussion}{21}{chapter.6}
+\contentsline {chapter}{\numberline {7}Acknowledgements}{23}{chapter.7}

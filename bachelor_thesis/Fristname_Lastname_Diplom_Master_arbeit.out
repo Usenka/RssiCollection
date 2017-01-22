@@ -18,3 +18,21 @@
 \BOOKMARK [1][-]{section.3.5}{3.5 Creating the Schedule}{chapter.3}% 18
 \BOOKMARK [2][-]{subsection.3.5.1}{3.5.1 Rooted Circles}{section.3.5}% 19
 \BOOKMARK [2][-]{subsection.3.5.2}{3.5.2 Creating a Full Schedule}{section.3.5}% 20
+\BOOKMARK [1][-]{section.3.6}{3.6 Spreading the Schedule}{chapter.3}% 21
+\BOOKMARK [1][-]{section.3.7}{3.7 Sampling}{chapter.3}% 22
+\BOOKMARK [2][-]{subsection.3.7.1}{3.7.1 Message Drops}{section.3.7}% 23
+\BOOKMARK [0][-]{chapter.4}{4 Implementation}{}% 24
+\BOOKMARK [1][-]{section.4.1}{4.1 General Structure}{chapter.4}% 25
+\BOOKMARK [2][-]{subsection.4.1.1}{4.1.1 General Base Station}{section.4.1}% 26
+\BOOKMARK [2][-]{subsection.4.1.2}{4.1.2 General mote Application}{section.4.1}% 27
+\BOOKMARK [1][-]{section.4.2}{4.2 Base Station}{chapter.4}% 28
+\BOOKMARK [2][-]{subsection.4.2.1}{4.2.1 Receiving and Storing the Data}{section.4.2}% 29
+\BOOKMARK [2][-]{subsection.4.2.2}{4.2.2 Creating the Schedule}{section.4.2}% 30
+\BOOKMARK [1][-]{section.4.3}{4.3 Calibration}{chapter.4}% 31
+\BOOKMARK [1][-]{section.4.4}{4.4 Collection}{chapter.4}% 32
+\BOOKMARK [1][-]{section.4.5}{4.5 Creating the Schedule}{chapter.4}% 33
+\BOOKMARK [1][-]{section.4.6}{4.6 Spreading the Schedule}{chapter.4}% 34
+\BOOKMARK [1][-]{section.4.7}{4.7 Sampling}{chapter.4}% 35
+\BOOKMARK [0][-]{chapter.5}{5 Evaluation}{}% 36
+\BOOKMARK [0][-]{chapter.6}{6 Discussion}{}% 37
+\BOOKMARK [0][-]{chapter.7}{7 Acknowledgements}{}% 38
