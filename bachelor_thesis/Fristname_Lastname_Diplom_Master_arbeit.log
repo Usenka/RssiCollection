@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=latex 2017.1.17)  22 JAN 2017 16:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.11.18)  23 JAN 2017 11:28
 entering extended mode
 **./Fristname_Lastname_Diplom_Master_arbeit.tex
 (Fristname_Lastname_Diplom_Master_arbeit.tex
@@ -1431,35 +1431,60 @@ es/ScheduleSpreading/Part9.png> <./content/images/ScheduleSpreading/Part10.png>
 
  (content/chapters/chapter4.tex
 chapter 4.
-) [17
+
+<content/images/BaseStation/Klassendiagram.png, id=385, 577.29276pt x 230.97491
+pt>
+File: content/images/BaseStation/Klassendiagram.png Graphic file (type png)
+ <use content/images/BaseStation/Klassendiagram.png>
+Package pdftex.def Info: content/images/BaseStation/Klassendiagram.png used on 
+input line 11.
+(pdftex.def)             Requested size: 404.10217pt x 161.68134pt.
+ [17
 
 
 
 
-] [18]
+ <./content/images/BaseStation/Klassendiagram.png>]
+<content/images/Motes/GeneralStructure.png, id=392, 733.97412pt x 431.30736pt>
+File: content/images/Motes/GeneralStructure.png Graphic file (type png)
+
+<use content/images/Motes/GeneralStructure.png>
+Package pdftex.def Info: content/images/Motes/GeneralStructure.png used on inpu
+t line 20.
+(pdftex.def)             Requested size: 440.38788pt x 258.78639pt.
+
+Overfull \hbox (22.38788pt too wide) in paragraph at lines 20--21
+ [][] 
+ []
+
+)
+Underfull \vbox (badness 1102) has occurred while \output is active []
+
+ [18 <./content/images/Motes/GeneralStructure.png>] [19]
 \openout2 = `content/chapters/chapter5.aux'.
 
  (content/chapters/chapter5.tex
-chapter 5.
-) [19
+[20
 
 
 
 
 ]
+chapter 5.
+) [21]
 \openout2 = `content/chapters/chapter6.aux'.
 
- (content/chapters/chapter6.tex [20
+ (content/chapters/chapter6.tex [22
 
 
 
 
 ]
 chapter 6.
-) [21]
+) [23]
 \openout2 = `content/chapters/chapter7.aux'.
 
- (content/chapters/chapter7.tex [22
+ (content/chapters/chapter7.tex [24
 
 
 
@@ -1468,11 +1493,11 @@ chapter 6.
 chapter 7.
 LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 4.
-) [23]
+) [25]
 No file Fristname_Lastname_Diplom_Master_arbeit.bbl.
 \openout2 = `content/chapters/clause.aux'.
 
-(content/chapters/clause.tex [24
+(content/chapters/clause.tex [26
 
 
 ]
@@ -1495,7 +1520,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--225
 
  []
 
-[25
+[27
 
 
 ]
@@ -1511,7 +1536,7 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 227.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 227.
 Package rerunfilecheck Info: File `Fristname_Lastname_Diplom_Master_arbeit.out'
  has not changed.
-(rerunfilecheck)             Checksum: 13EC164DEF2BA70CBB2C64E1FBE126B1;2649.
+(rerunfilecheck)             Checksum: 341A68CB394E8E7D64189C1B3BB6BA87;2649.
 
 
 LaTeX Warning: There were undefined references.
@@ -1519,10 +1544,10 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 227.
  ) 
 Here is how much of TeX's memory you used:
- 11701 strings out of 493334
- 187970 string characters out of 3139220
- 384832 words of memory out of 3000000
- 14871 multiletter control sequences out of 15000+200000
+ 11719 strings out of 493333
+ 188518 string characters out of 3139193
+ 385086 words of memory out of 3000000
+ 14881 multiletter control sequences out of 15000+200000
  12411 words of font info for 43 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  48i,9n,66p,8852b,1767s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1539,10 +1564,10 @@ rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Program F
 iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss17.pfb><C:/Program Files/MiK
 TeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Program Files/MiKTeX 2.
 9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on Fristname_Lastname_Diplom_Master_arbeit.pdf (29 pages, 712050
+Output written on Fristname_Lastname_Diplom_Master_arbeit.pdf (31 pages, 825417
  bytes).
 PDF statistics:
- 494 PDF objects out of 1000 (max. 8388607)
- 116 named destinations out of 1000 (max. 500000)
- 443 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 509 PDF objects out of 1000 (max. 8388607)
+ 120 named destinations out of 1000 (max. 500000)
+ 453 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -25,7 +25,7 @@
 \BOOKMARK [0][-]{chapter.4}{4 Implementation}{}% 25
 \BOOKMARK [1][-]{section.4.1}{4.1 General Structure}{chapter.4}% 26
 \BOOKMARK [2][-]{subsection.4.1.1}{4.1.1 General Base Station}{section.4.1}% 27
-\BOOKMARK [2][-]{subsection.4.1.2}{4.1.2 General mote Application}{section.4.1}% 28
+\BOOKMARK [2][-]{subsection.4.1.2}{4.1.2 General Mote Application}{section.4.1}% 28
 \BOOKMARK [1][-]{section.4.2}{4.2 Base Station}{chapter.4}% 29
 \BOOKMARK [2][-]{subsection.4.2.1}{4.2.1 Receiving and Storing the Data}{section.4.2}% 30
 \BOOKMARK [2][-]{subsection.4.2.2}{4.2.2 Creating the Schedule}{section.4.2}% 31
