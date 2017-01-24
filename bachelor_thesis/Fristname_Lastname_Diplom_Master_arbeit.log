@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.11.18)  23 JAN 2017 11:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.11.18)  24 JAN 2017 15:30
 entering extended mode
 **./Fristname_Lastname_Diplom_Master_arbeit.tex
 (Fristname_Lastname_Diplom_Master_arbeit.tex
@@ -948,7 +948,7 @@ you should replace it, e.g., by `\normalfont \bfseries '.
 To make it work for now, you can use the already also deprecated class option
 `enabledeprecatedfontcommands'.
 
-<content/images/NES_Logo.pdf, id=159, 1212.91142pt x 269.53499pt>
+<content/images/NES_Logo.pdf, id=155, 1212.91142pt x 269.53499pt>
 File: content/images/NES_Logo.pdf Graphic file (type pdf)
 
 <use content/images/NES_Logo.pdf>
@@ -1162,277 +1162,320 @@ sy/m/n/10.95  
 
  (content/chapters/chapter3.tex
 chapter 3.
+! Undefined control sequence.
+l.3 \TODO
+          Write about what this chapter explains
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Underfull \hbox (badness 1062) in paragraph at lines 8--8
+[][]\OT1/cmr/m/n/10.95 ToDo:[] Com-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--8
+\OT1/cmr/m/n/10.95 plex stuff
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--8
+\OT1/cmr/m/n/10.95 ev-ery node
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--8
+\OT1/cmr/m/n/10.95 hear-ing the
+ []
+
 [7
 
 
 
 
-] <content/images/Architecture.png, id=269, 213.79875pt x 328.22626pt>
+] <content/images/Architecture.png, id=264, 240.80363pt x 381.5856pt>
 File: content/images/Architecture.png Graphic file (type png)
 
 <use content/images/Architecture.png>
-Package pdftex.def Info: content/images/Architecture.png used on input line 13.
+Package pdftex.def Info: content/images/Architecture.png used on input line 18.
 
-(pdftex.def)             Requested size: 149.6581pt x 229.7568pt.
+(pdftex.def)             Requested size: 144.48329pt x 228.95311pt.
 
-<content/images/GeneralAproachM.png, id=270, 232.61906pt x 320.69812pt>
+<content/images/GeneralAproachM.png, id=265, 232.61906pt x 320.69812pt>
 File: content/images/GeneralAproachM.png Graphic file (type png)
 
 <use content/images/GeneralAproachM.png>
 Package pdftex.def Info: content/images/GeneralAproachM.png used on input line 
-22.
+27.
 (pdftex.def)             Requested size: 162.83221pt x 224.48714pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--35
+[][]\OT1/cmr/m/n/10.95 ToDo:[] kill
+ []
+
+
+Underfull \vbox (badness 1558) has occurred while \output is active []
+
  [8 <./content/images/Architecture.png> <./content/images/GeneralAproachM.png>]
 
-<content/images/Collection/Part0.png, id=275, 210.7875pt x 113.67468pt>
+<content/images/Collection/Part0.png, id=270, 210.7875pt x 113.67468pt>
 File: content/images/Collection/Part0.png Graphic file (type png)
 
 <use content/images/Collection/Part0.png>
 Package pdftex.def Info: content/images/Collection/Part0.png used on input line
- 49.
+ 55.
 (pdftex.def)             Requested size: 126.47346pt x 68.20532pt.
 
-<content/images/Collection/Part1.png, id=276, 210.7875pt x 113.67468pt>
+<content/images/Collection/Part1.png, id=271, 210.7875pt x 113.67468pt>
 File: content/images/Collection/Part1.png Graphic file (type png)
 
 <use content/images/Collection/Part1.png>
 Package pdftex.def Info: content/images/Collection/Part1.png used on input line
- 57.
+ 63.
 (pdftex.def)             Requested size: 126.47346pt x 68.20532pt.
 
-<content/images/Collection/Part2.png, id=277, 210.7875pt x 113.67468pt>
+<content/images/Collection/Part2.png, id=272, 210.7875pt x 113.67468pt>
 File: content/images/Collection/Part2.png Graphic file (type png)
 
 <use content/images/Collection/Part2.png>
 Package pdftex.def Info: content/images/Collection/Part2.png used on input line
- 65.
+ 71.
 (pdftex.def)             Requested size: 126.47346pt x 68.20532pt.
 
-<content/images/Collection/Part3.png, id=278, 210.7875pt x 113.67468pt>
+<content/images/Collection/Part3.png, id=273, 210.7875pt x 113.67468pt>
 File: content/images/Collection/Part3.png Graphic file (type png)
 
 <use content/images/Collection/Part3.png>
 Package pdftex.def Info: content/images/Collection/Part3.png used on input line
- 73.
+ 79.
 (pdftex.def)             Requested size: 126.47346pt x 68.20532pt.
 
-<content/images/Collection/Part4.png, id=279, 210.7875pt x 113.67468pt>
+<content/images/Collection/Part4.png, id=274, 210.7875pt x 113.67468pt>
 File: content/images/Collection/Part4.png Graphic file (type png)
 
 <use content/images/Collection/Part4.png>
 Package pdftex.def Info: content/images/Collection/Part4.png used on input line
- 81.
+ 87.
 (pdftex.def)             Requested size: 126.47346pt x 68.20532pt.
 
-<content/images/Collection/Part5.png, id=280, 210.7875pt x 113.67468pt>
+<content/images/Collection/Part5.png, id=275, 210.7875pt x 113.67468pt>
 File: content/images/Collection/Part5.png Graphic file (type png)
 
 <use content/images/Collection/Part5.png>
 Package pdftex.def Info: content/images/Collection/Part5.png used on input line
- 89.
+ 95.
 (pdftex.def)             Requested size: 126.47346pt x 68.20532pt.
 
-<content/images/Collection/Part6.png, id=281, 210.7875pt x 113.67468pt>
+<content/images/Collection/Part6.png, id=276, 210.7875pt x 113.67468pt>
 File: content/images/Collection/Part6.png Graphic file (type png)
 
 <use content/images/Collection/Part6.png>
 Package pdftex.def Info: content/images/Collection/Part6.png used on input line
- 97.
+ 103.
 (pdftex.def)             Requested size: 126.47346pt x 68.20532pt.
 
-<content/images/Collection/Part7.png, id=282, 210.7875pt x 113.67468pt>
+<content/images/Collection/Part7.png, id=277, 210.7875pt x 113.67468pt>
 File: content/images/Collection/Part7.png Graphic file (type png)
 
 <use content/images/Collection/Part7.png>
 Package pdftex.def Info: content/images/Collection/Part7.png used on input line
- 105.
+ 111.
 (pdftex.def)             Requested size: 126.47346pt x 68.20532pt.
 
-<content/images/Collection/Part8.png, id=283, 210.7875pt x 113.67468pt>
+<content/images/Collection/Part8.png, id=278, 210.7875pt x 113.67468pt>
 File: content/images/Collection/Part8.png Graphic file (type png)
 
 <use content/images/Collection/Part8.png>
 Package pdftex.def Info: content/images/Collection/Part8.png used on input line
- 113.
+ 119.
 (pdftex.def)             Requested size: 126.47346pt x 68.20532pt.
 
-Underfull \hbox (badness 1442) in paragraph at lines 114--114
+Underfull \hbox (badness 1442) in paragraph at lines 120--120
 [][][]|\OT1/cmr/m/n/10 All the chil-dren of node 3 are
  []
 
-<content/images/Collection/Part9.png, id=284, 210.7875pt x 113.67468pt>
+<content/images/Collection/Part9.png, id=279, 210.7875pt x 113.67468pt>
 File: content/images/Collection/Part9.png Graphic file (type png)
 
 <use content/images/Collection/Part9.png>
 Package pdftex.def Info: content/images/Collection/Part9.png used on input line
- 121.
+ 127.
 (pdftex.def)             Requested size: 126.47346pt x 68.20532pt.
 
 
-LaTeX Warning: Float too large for page by 18.17664pt on input line 127.
+LaTeX Warning: Float too large for page by 18.17664pt on input line 132.
 
-[9]
 
-Package caption Warning: \label without proper reference on input line 125.
+Package caption Warning: \label without proper reference on input line 51.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `fig:collection' on page 10 undefined on input line 12
-9.
+LaTeX Warning: Reference `fig:coll' on page 9 undefined on input line 134.
 
-<content/images/Schedule/Network.png, id=293, 258.9675pt x 241.65282pt>
+[9] [10 <./content/images/Collection/Part0.png> <./content/images/Collection/Pa
+rt1.png> <./content/images/Collection/Part2.png> <./content/images/Collection/P
+art3.png> <./content/images/Collection/Part4.png> <./content/images/Collection/
+Part5.png> <./content/images/Collection/Part6.png> <./content/images/Collection
+/Part7.png> <./content/images/Collection/Part8.png> <./content/images/Collectio
+n/Part9.png>]
+<content/images/Schedule/Network.png, id=291, 258.9675pt x 241.65282pt>
 File: content/images/Schedule/Network.png Graphic file (type png)
 
 <use content/images/Schedule/Network.png>
 Package pdftex.def Info: content/images/Schedule/Network.png used on input line
- 139.
+ 146.
 (pdftex.def)             Requested size: 155.38168pt x 144.9928pt.
 
-<content/images/Schedule/RootedCircle.png, id=294, 258.9675pt x 241.65282pt>
+<content/images/Schedule/RootedCircle.png, id=292, 258.9675pt x 241.65282pt>
 File: content/images/Schedule/RootedCircle.png Graphic file (type png)
 
 <use content/images/Schedule/RootedCircle.png>
 Package pdftex.def Info: content/images/Schedule/RootedCircle.png used on input
- line 147.
+ line 154.
 (pdftex.def)             Requested size: 155.38168pt x 144.9928pt.
- [10] [11 <./content/images/Collection/Part0.png> <./content/images/Collection/
-Part1.png> <./content/images/Collection/Part2.png> <./content/images/Collection
-/Part3.png> <./content/images/Collection/Part4.png> <./content/images/Collectio
-n/Part5.png> <./content/images/Collection/Part6.png> <./content/images/Collecti
-on/Part7.png> <./content/images/Collection/Part8.png> <./content/images/Collect
-ion/Part9.png>]
-<content/images/Schedule/FullSchedule.png, id=308, 258.9675pt x 241.65282pt>
+ [11]
+<content/images/Schedule/FullSchedule.png, id=301, 258.9675pt x 241.65282pt>
 File: content/images/Schedule/FullSchedule.png Graphic file (type png)
 
 <use content/images/Schedule/FullSchedule.png>
 Package pdftex.def Info: content/images/Schedule/FullSchedule.png used on input
- line 160.
+ line 167.
 (pdftex.def)             Requested size: 155.38168pt x 144.9928pt.
  [12 <./content/images/Schedule/Network.png> <./content/images/Schedule/RootedC
-ircle.png>]
-Overfull \hbox (41.90479pt too wide) in paragraph at lines 175--176
-[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ircle.png> <./content/images/Schedule/FullSchedule.png>]
+Overfull \hbox (55.04492pt too wide) in paragraph at lines 183--184
+[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (28.76465pt too wide) in paragraph at lines 186--187
+Overfull \hbox (28.76465pt too wide) in paragraph at lines 196--197
 [][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[13 <./content/images/Schedule/FullSchedule.png>]
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 191.
+
+Underfull \vbox (badness 1292) has occurred while \output is active []
+
+ [13]
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 201.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
 File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 191.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 201.
 
-Overfull \hbox (2.48438pt too wide) in paragraph at lines 191--192
+Overfull \hbox (2.48438pt too wide) in paragraph at lines 201--202
 [][][][][][][][][][][][][][][][] 
  []
 
 
-<content/images/ScheduleSpreading/Part1.png, id=343, 210.7875pt x 113.67468pt>
+<content/images/ScheduleSpreading/Part1.png, id=340, 210.7875pt x 113.67468pt>
 File: content/images/ScheduleSpreading/Part1.png Graphic file (type png)
 
 <use content/images/ScheduleSpreading/Part1.png>
 Package pdftex.def Info: content/images/ScheduleSpreading/Part1.png used on inp
-ut line 213.
+ut line 225.
 (pdftex.def)             Requested size: 126.47346pt x 68.20532pt.
 
-<content/images/ScheduleSpreading/Part2.png, id=344, 210.7875pt x 113.67468pt>
+<content/images/ScheduleSpreading/Part2.png, id=341, 210.7875pt x 113.67468pt>
 File: content/images/ScheduleSpreading/Part2.png Graphic file (type png)
 
 <use content/images/ScheduleSpreading/Part2.png>
 Package pdftex.def Info: content/images/ScheduleSpreading/Part2.png used on inp
-ut line 221.
+ut line 233.
 (pdftex.def)             Requested size: 126.47346pt x 68.20532pt.
 
-<content/images/ScheduleSpreading/Part3.png, id=345, 210.7875pt x 113.67468pt>
+<content/images/ScheduleSpreading/Part3.png, id=342, 210.7875pt x 113.67468pt>
 File: content/images/ScheduleSpreading/Part3.png Graphic file (type png)
 
 <use content/images/ScheduleSpreading/Part3.png>
 Package pdftex.def Info: content/images/ScheduleSpreading/Part3.png used on inp
-ut line 229.
+ut line 241.
 (pdftex.def)             Requested size: 126.47346pt x 68.20532pt.
 
-<content/images/ScheduleSpreading/Part4.png, id=346, 210.7875pt x 113.67468pt>
+<content/images/ScheduleSpreading/Part4.png, id=343, 210.7875pt x 113.67468pt>
 File: content/images/ScheduleSpreading/Part4.png Graphic file (type png)
 
 <use content/images/ScheduleSpreading/Part4.png>
 Package pdftex.def Info: content/images/ScheduleSpreading/Part4.png used on inp
-ut line 237.
+ut line 249.
 (pdftex.def)             Requested size: 126.47346pt x 68.20532pt.
 
-<content/images/ScheduleSpreading/Part5.png, id=347, 210.7875pt x 113.67468pt>
+<content/images/ScheduleSpreading/Part5.png, id=344, 210.7875pt x 113.67468pt>
 File: content/images/ScheduleSpreading/Part5.png Graphic file (type png)
 
 <use content/images/ScheduleSpreading/Part5.png>
 Package pdftex.def Info: content/images/ScheduleSpreading/Part5.png used on inp
-ut line 245.
+ut line 257.
 (pdftex.def)             Requested size: 126.47346pt x 68.20532pt.
 
-<content/images/ScheduleSpreading/Part6.png, id=348, 210.7875pt x 113.67468pt>
+<content/images/ScheduleSpreading/Part6.png, id=345, 210.7875pt x 113.67468pt>
 File: content/images/ScheduleSpreading/Part6.png Graphic file (type png)
 
 <use content/images/ScheduleSpreading/Part6.png>
 Package pdftex.def Info: content/images/ScheduleSpreading/Part6.png used on inp
-ut line 253.
+ut line 265.
 (pdftex.def)             Requested size: 126.47346pt x 68.20532pt.
 
-<content/images/ScheduleSpreading/Part7.png, id=349, 210.7875pt x 113.67468pt>
+<content/images/ScheduleSpreading/Part7.png, id=346, 210.7875pt x 113.67468pt>
 File: content/images/ScheduleSpreading/Part7.png Graphic file (type png)
 
 <use content/images/ScheduleSpreading/Part7.png>
 Package pdftex.def Info: content/images/ScheduleSpreading/Part7.png used on inp
-ut line 261.
+ut line 273.
 (pdftex.def)             Requested size: 126.47346pt x 68.20532pt.
 
-<content/images/ScheduleSpreading/Part8.png, id=350, 210.7875pt x 113.67468pt>
+<content/images/ScheduleSpreading/Part8.png, id=347, 210.7875pt x 113.67468pt>
 File: content/images/ScheduleSpreading/Part8.png Graphic file (type png)
 
 <use content/images/ScheduleSpreading/Part8.png>
 Package pdftex.def Info: content/images/ScheduleSpreading/Part8.png used on inp
-ut line 269.
+ut line 281.
 (pdftex.def)             Requested size: 126.47346pt x 68.20532pt.
 
-<content/images/ScheduleSpreading/Part9.png, id=351, 210.7875pt x 113.67468pt>
+<content/images/ScheduleSpreading/Part9.png, id=348, 210.7875pt x 113.67468pt>
 File: content/images/ScheduleSpreading/Part9.png Graphic file (type png)
 
 <use content/images/ScheduleSpreading/Part9.png>
 Package pdftex.def Info: content/images/ScheduleSpreading/Part9.png used on inp
-ut line 277.
+ut line 289.
 (pdftex.def)             Requested size: 126.47346pt x 68.20532pt.
 
-<content/images/ScheduleSpreading/Part10.png, id=352, 210.7875pt x 113.67468pt>
+<content/images/ScheduleSpreading/Part10.png, id=349, 210.7875pt x 113.67468pt>
 File: content/images/ScheduleSpreading/Part10.png Graphic file (type png)
 <use content/images/ScheduleSpreading/Part10.png>
 Package pdftex.def Info: content/images/ScheduleSpreading/Part10.png used on in
-put line 285.
+put line 297.
 (pdftex.def)             Requested size: 126.47346pt x 68.20532pt.
 
 
-LaTeX Warning: Float too large for page by 18.17664pt on input line 291.
+LaTeX Warning: Float too large for page by 18.17664pt on input line 303.
 
+[14] [15 <./content/images/ScheduleSpreading/Part1.png> <./content/images/Sched
+uleSpreading/Part2.png> <./content/images/ScheduleSpreading/Part3.png> <./conte
+nt/images/ScheduleSpreading/Part4.png> <./content/images/ScheduleSpreading/Part
+5.png> <./content/images/ScheduleSpreading/Part6.png> <./content/images/Schedul
+eSpreading/Part7.png> <./content/images/ScheduleSpreading/Part8.png> <./content
+/images/ScheduleSpreading/Part9.png> <./content/images/ScheduleSpreading/Part10
+.png>] <content/images/MessageDrop.png, id=377, 498.37392pt x 144.54pt>
+File: content/images/MessageDrop.png Graphic file (type png)
 
-Underfull \vbox (badness 1242) has occurred while \output is active []
+<use content/images/MessageDrop.png>
+Package pdftex.def Info: content/images/MessageDrop.png used on input line 310.
 
- [14]
-[15 <./content/images/ScheduleSpreading/Part1.png> <./content/images/ScheduleSp
-reading/Part2.png> <./content/images/ScheduleSpreading/Part3.png> <./content/im
-ages/ScheduleSpreading/Part4.png> <./content/images/ScheduleSpreading/Part5.png
-> <./content/images/ScheduleSpreading/Part6.png> <./content/images/ScheduleSpre
-ading/Part7.png> <./content/images/ScheduleSpreading/Part8.png> <./content/imag
-es/ScheduleSpreading/Part9.png> <./content/images/ScheduleSpreading/Part10.png>
-]) [16]
+(pdftex.def)             Requested size: 299.02666pt x 86.72466pt.
+) [16 <./content/images/MessageDrop.png>]
 \openout2 = `content/chapters/chapter4.aux'.
 
- (content/chapters/chapter4.tex
+
+(content/chapters/chapter4.tex
 chapter 4.
 
-<content/images/BaseStation/Klassendiagram.png, id=385, 577.29276pt x 230.97491
+<content/images/BaseStation/Klassendiagram.png, id=383, 577.29276pt x 230.97491
 pt>
 File: content/images/BaseStation/Klassendiagram.png Graphic file (type png)
  <use content/images/BaseStation/Klassendiagram.png>
@@ -1445,7 +1488,7 @@ input line 11.
 
 
  <./content/images/BaseStation/Klassendiagram.png>]
-<content/images/Motes/GeneralStructure.png, id=392, 733.97412pt x 431.30736pt>
+<content/images/Motes/GeneralStructure.png, id=390, 733.97412pt x 431.30736pt>
 File: content/images/Motes/GeneralStructure.png Graphic file (type png)
 
 <use content/images/Motes/GeneralStructure.png>
@@ -1457,14 +1500,31 @@ Overfull \hbox (22.38788pt too wide) in paragraph at lines 20--21
  [][] 
  []
 
-)
-Underfull \vbox (badness 1102) has occurred while \output is active []
 
- [18 <./content/images/Motes/GeneralStructure.png>] [19]
+Underfull \hbox (badness 10000) in paragraph at lines 24--24
+\OT1/cmr/m/n/10.95 at-tach statt
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--24
+\OT1/cmr/m/n/10.95 at-tache und
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--24
+\OT1/cmr/m/n/10.95 spread statt
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--24
+\OT1/cmr/m/n/10.95 spreaded,
+ []
+
+[18 <./content/images/Motes/GeneralStructure.png>]) [19]
 \openout2 = `content/chapters/chapter5.aux'.
 
- (content/chapters/chapter5.tex
-[20
+
+(content/chapters/chapter5.tex [20
 
 
 
@@ -1536,7 +1596,7 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 227.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 227.
 Package rerunfilecheck Info: File `Fristname_Lastname_Diplom_Master_arbeit.out'
  has not changed.
-(rerunfilecheck)             Checksum: 341A68CB394E8E7D64189C1B3BB6BA87;2649.
+(rerunfilecheck)             Checksum: 06A38E562BDF6B4610D0B9E3B04AB236;2571.
 
 
 LaTeX Warning: There were undefined references.
@@ -1544,13 +1604,13 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 227.
  ) 
 Here is how much of TeX's memory you used:
- 11719 strings out of 493333
- 188518 string characters out of 3139193
- 385086 words of memory out of 3000000
- 14881 multiletter control sequences out of 15000+200000
+ 11725 strings out of 493333
+ 188668 string characters out of 3139193
+ 384278 words of memory out of 3000000
+ 14885 multiletter control sequences out of 15000+200000
  12411 words of font info for 43 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 48i,9n,66p,8852b,1767s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 48i,9n,66p,8852b,1763s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><C:/P
 rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program F
 iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiK
@@ -1564,10 +1624,10 @@ rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Program F
 iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss17.pfb><C:/Program Files/MiK
 TeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Program Files/MiKTeX 2.
 9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on Fristname_Lastname_Diplom_Master_arbeit.pdf (31 pages, 825417
+Output written on Fristname_Lastname_Diplom_Master_arbeit.pdf (31 pages, 867436
  bytes).
 PDF statistics:
- 509 PDF objects out of 1000 (max. 8388607)
- 120 named destinations out of 1000 (max. 500000)
- 453 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 508 PDF objects out of 1000 (max. 8388607)
+ 121 named destinations out of 1000 (max. 500000)
+ 450 words of extra memory for PDF output out of 10000 (max. 10000000)
 
