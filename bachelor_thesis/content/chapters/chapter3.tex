@@ -1,8 +1,10 @@
 \chapter{Approach}
+\label{chp:apr}
 This chapter explains the general structure and functionality of a system that is supposed to measure the received signal strength of every link in a network.
 \TODO Write about what this chapter explains
 
 \section{General Structure}
+\label{chp:apr_general}
 
 To measure the RSSI of each link all the nodes need to send messages. Since two nodes sending a message at the same time will distort the RSSI measurements we need to make sure that only one node sends a message at a given point in time. One approach to achieve this is the timeslot based method explained in Chapter 2.3. This method however includes an error inside its timeslots, resulting in a small delay between messages.
 To eliminate the delay timeslots bring along a different approach is suggested in this thesis which is based on predefined predecessors for each node. Based on this a node will be able to send a message directly after receiving a message from its predecessor and at the same time making sure that only one node sends at a given point in time.\todo{Complex stuff because of not every node hearing the others}
@@ -32,9 +34,11 @@ Is the schedule spread and all the nodes know when to send their messages, the s
 \end{figure}
 
 \section{Base Station}
+\label{chp:apr_baseStation}
 Since creating the schedule and storing and processing the data need a lot of processing power and storage, a base station is needed that fulfils these requirements. This base station needs to be connected to the sink so it can receive the collected data to process it. It also needs to be able to send data to the sink, so the schedule can be spread inside the network. \todo{kill this section?}
   
 \section{Calibration}
+\label{chp:apr_calibration}
 The calibration has two tasks. It needs to figure out for each node individually which nodes a node has in its range and it needs to create paths to the sink. These paths will then later be used to send data to the sink or spread information inside the network. To achieve these tasks each node will send multiple messages without any specific pattern. \todo{define no pattern}
 
 Each node needs to be able to keep track of the nodes in range. Therefore each node needs to have its own neighbour table. When a node receives a message it can put the node it received the message from inside that neighbour table. All the neighbour tables will later be the basis to create the schedule.
@@ -46,6 +50,7 @@ To find the parents for the nodes each node needs to save one extra information 
 Now, to not only know the direction to the sink but also the direction going away from the sink the nodes need to find their children. Therefore each node will simply include their own parent inside the message it will send. A receiving node will now check if it is the parent of the sending node. If that is the case the receiving node can save the sending node as a child.       
 
 \section{Collection}
+\label{chp:apr_collection}
 
 \begin{figure}[htbp]
 	\label{fig:coll}
@@ -136,6 +141,7 @@ To collect the data from the network, we make use of the created paths and their
 To start the collection the sink sends a request to one of its children. The child receiving that request will check if it has any children himself and if that is the case, it will forward the request to one of them. When the request reaches a node without any children, the node will send its data to its parent which forwards the data to its parent, until the data reaches the sink, which will forward it to the base station. Every node that receives a data message marks the source of that data as done. When the sink sent the received data to the base station, it  sends a new request to one of its children that has not been marked as done. That child again forwards that request to a child that has not been marked as done. If the request reaches a node that has no children or every child has been marked as done it sends its own data. This process will be repeated until the sink does not have any more children left that are not marked as done. Then the sink can send its own data to the base station and finish the collection. All nodes now need to unmark all the other nodes, so another collection is possible.
 
 \section{Creating the Schedule}
+\label{chp:apr_creatingSchedule}
 Creating a schedule is a quite challenging task since we need an algorithm that visits every node in a graph at least once and starts and ends at the same node. The optimal schedule would be a Hamilton-Circle that is a circle inside a graph that visits each node exactly once. To figure out if a Hamilton-Circle exists, there is however only the way to bruteforce all the possible combinations. This is highly inefficient and possibly we do not even get a result at the end. Therefore this thesis suggests a simple method that makes sure every node gets visited at least once and the path starts and ends at the same node. This method however is not able to create an optimal path and could be improved.
 
 \subsection{Rooted Circles}
@@ -168,7 +174,7 @@ The suggested method is based on smaller circles inside the graph. These circles
     \caption{Full schedule for the example network of Figure \ref{fig:network}. The order in which the nodes send their messages would be: 1 2 3 4 2 6 5 6 7 8 9 10 7 1.}
     \label{fig:schedule}
 \end{figure} 
-We now want to fill the whole graph with rooted circles. Therefore we will choose the sink as the first root and create a rooted circle around it. When the circle is done, we will go through all the nodes of the circle and, if possible, create rooted circles around them as well. Then we do the same for all the new circles until every node was suggested as a root once. When creating new circles it is not possible to choose a node already inside another circle to be part of the new circle. In Figure \ref{fig:schedule} the network from Figure \ref{fig:network} is fully covered by rooted circles. The first circle created was the one that has node 1 as a root. Then all the nodes inside that circle where chosen as new roots to create new rooted circles. The first thing one could notice is that the circle with the root 6 only has one other node and does not really form a circle. This happens if the circle is closed directly after the second node following the root is chosen because there are no more neighbours left that also have the root as a neighbour. When running the schedule, this means a message would be sent from node 6 to node 5 and then from node 5 back to node 6. Also note that in theory there is a bigger rooted circle possible with the root 6 when node 4 would be included, but node 2 created its rooted circle first and included node 4 and therefore blocked it for rooted circles created at a later point in time. In Listing 3.1 the pseudocode that represents an algorithm to cover a whole graph with rooted circles is shown.
+We now want to fill the whole graph with rooted circles. Therefore we will choose the sink as the first root and create a rooted circle around it. When the circle is done, we will go through all the nodes of the circle and, if possible, create rooted circles around them as well. Then we do the same for all the new circles until every node was suggested as a root once. When creating new circles it is not possible to choose a node already inside another circle to be part of the new circle. In Figure \ref{fig:schedule} the network from Figure \ref{fig:network} is fully covered by rooted circles. The first circle created was the one that has node 1 as a root. Then all the nodes inside that circle where chosen as new roots to create new rooted circles. The first thing one could notice is that the circle with the root 6 only has one other node and does not really form a circle. This happens if the circle is closed directly after the second node following the root is chosen because there are no more neighbours left that also have the root as a neighbour. When running the schedule, this means a message would be sent from node 6 to node 5 and then from node 5 back to node 6. Also note that in theory there is a bigger rooted circle possible with the root 6 when node 4 would be included, but node 2 created its rooted circle first and included node 4 and therefore blocked it for rooted circles created at a later point in time. Listing 3.1 provides the pseudocode of an algorithm to cover a whole graph with rooted circles.
 
 \lstset{caption={Pseudocode that covers a graph with rooted circles},label={lis:rooted}}
 \begin{lstlisting}
@@ -214,6 +220,7 @@ List<RootedCircle> coverGraphWithRootedCircles(Node firstRoot) {
 \end{lstlisting}
 
 \section{Spreading the Schedule}
+\label{chp:apr_spreadingSchedule}
 To spread the schedule we will again make use of the tree structure of the created path. When the sink received the schedule from the base station it will forward it to its first child. The child will forward it to one of his children and so on. When a node that received the schedule has no more children, it will send the schedule back to its parent. The parent receiving the schedule will now forward the schedule to its next child. If a parent received the schedule back from all its children, it will forward it to its own parent. In Figure \ref{fig:spreading} an example for this process is given. The Figure shows a wireless sensor network represented by the nodes and the paths to the sink created in the calibration phase. Note that the nodes could also have other connections between each other. 
 
 When you look at the example, one can see that already in Figure \ref{fig:spreading7} the schedule is received by all the nodes but still there are messages sent that could seem useless at this point. However at this point in time we do not know if the sink has any more children that did not receive the schedule yet. Therefore the schedule needs to travel all the way back to the sink. Only at the moment the schedule reaches the sink and the sink does not have any more children left that need to receive the schedule, we know for sure that the schedule is fully spread.
@@ -303,8 +310,10 @@ When you look at the example, one can see that already in Figure \ref{fig:spread
 \end{figure}
 
 \section{Sampling}
+\label{chp:apr_sampling}
 When all nodes received the schedule it is possible to sample the received signal strength by sending messages according to it. Therefore the sink will start sending a message. When its successor receives the message it can send its message and so on until the last message was send and the sampled data can be collected. However we need to take into account that one node could appear multiple times inside the schedule, meaning a node could have multiple predecessors and successors. Therefore we need to include the successor of the sending node inside the message so a receiving node can see if he is the correct successor at that moment. 
 \subsection{Message Drops}
+\label{chp:apr_samplingDrops}
 \begin{figure} [htbp]
 	\centering         
     \includegraphics[scale=0.6]{content/images/MessageDrop}

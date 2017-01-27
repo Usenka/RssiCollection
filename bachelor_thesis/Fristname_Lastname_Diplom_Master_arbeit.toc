@@ -24,17 +24,12 @@
 \contentsline {subsection}{\numberline {3.7.1}Message Drops}{16}{subsection.3.7.1}
 \contentsline {chapter}{\numberline {4}Implementation}{17}{chapter.4}
 \contentsline {section}{\numberline {4.1}General Structure}{17}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}General Base Station}{17}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}General Mote Application}{18}{subsection.4.1.2}
-\contentsline {section}{\numberline {4.2}Base Station}{19}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Receiving and Sending messages}{19}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Storing the information}{19}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}Creating the Schedule}{19}{subsection.4.2.3}
-\contentsline {section}{\numberline {4.3}Calibration}{19}{section.4.3}
-\contentsline {section}{\numberline {4.4}Collection}{19}{section.4.4}
-\contentsline {section}{\numberline {4.5}Creating the Schedule}{19}{section.4.5}
-\contentsline {section}{\numberline {4.6}Spreading the Schedule}{19}{section.4.6}
-\contentsline {section}{\numberline {4.7}Sampling}{19}{section.4.7}
-\contentsline {chapter}{\numberline {5}Evaluation}{21}{chapter.5}
-\contentsline {chapter}{\numberline {6}Discussion}{23}{chapter.6}
-\contentsline {chapter}{\numberline {7}Acknowledgements}{25}{chapter.7}
+\contentsline {section}{\numberline {4.2}Receiving and Storing Information at the Base Station}{20}{section.4.2}
+\contentsline {section}{\numberline {4.3}Calibration}{20}{section.4.3}
+\contentsline {section}{\numberline {4.4}Collection}{22}{section.4.4}
+\contentsline {section}{\numberline {4.5}Creating the Schedule}{24}{section.4.5}
+\contentsline {section}{\numberline {4.6}Spreading the Schedule}{24}{section.4.6}
+\contentsline {section}{\numberline {4.7}Sampling}{25}{section.4.7}
+\contentsline {chapter}{\numberline {5}Evaluation}{29}{chapter.5}
+\contentsline {chapter}{\numberline {6}Discussion}{31}{chapter.6}
+\contentsline {chapter}{\numberline {7}Acknowledgements}{33}{chapter.7}

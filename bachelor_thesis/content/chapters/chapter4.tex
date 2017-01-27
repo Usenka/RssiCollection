@@ -1,10 +1,11 @@
 \chapter{Implementation}
+\label{chp:imp}
 
-In this chapter a way to implement a system like the one described in Chapter 3 will be explained by an example based on TinyOS.    
+In this chapter a way to implement a system like the one described in Chapter \ref{chp:apr} will be explained by an example based on TinyOS. First it will give you a general overview of the systems structure. Then the individual parts of the system are explained in more detail.    
 
 \section{General Structure}
-The system is dividable into two main components. The base station, that stores and processes the data, and the motes, that collect the data. Both parts of the system need their own hard- and software to complete their tasks.  
-\subsection{General Base Station}
+\label{chp:imp_general}
+The system is dividable into two main components. The base station, that stores and processes the data, and the nodes, that collect the data. Both parts of the system need their own hard- and software to complete their tasks.  
 
 \begin{figure}[htbp]
 	\centering
@@ -13,24 +14,170 @@ The system is dividable into two main components. The base station, that stores 
     \label{fig:bsKlassen}
 \end{figure}
 
-The base station can be a computer running a Java application connected to the sink via a USB-Cable. In Figure \ref{fig:bsKlassen} you can see the general structure of the Java application with its classes and their basic functionality. First, there is the SinkCommunication class that handles the communication with the sink. It is responsible for receiving and processing messages and to send messages to the sink. Then there is the Node class which stores all the information about one node. It stores the neighbours of the node, the measurements a node made and its predecessors and successors. The last class is the Scheduler that is responsible of creating a schedule based on the data saved in the node classes.  
-\subsection{General Mote Application}
+The base station can be a computer running a Java application connected to the sink via a USB-Cable. In Figure \ref{fig:bsKlassen} you can see the general structure of the Java application with its classes and their basic functionality. First, there is the $SinkCommunication$ class that handles the communication with the sink. It is responsible for receiving and processing messages and to send messages to the sink. Then there is the $Node$ class which stores all the information about one node. It stores the neighbours of the node, the measurements a node made and its predecessors and successors. The last class is the Scheduler that is responsible of creating a schedule based on the data saved in the node classes.  
+
 \begin{figure}[htbp]
 	\centering
     \includegraphics[scale=0.6]{content/images/Motes/GeneralStructure}
    	\caption{The interfaces each module provides. The ControllModule does only use all the other interfaces and does not provide one itself}
     \label{fig:moteStructure}
 \end{figure}
+
 \todo{Grafic: attach statt attache und spread statt spreaded, neighbourlist}
-The application running on the motes has multiple tasks. It needs to be able to calibrate the network, collect data from the network, spread the schedule inside the network and sample the RSSI. Therefore it can be split into multiple modules with fitting interfaces that each handle exactly one task. The suggested structure of the application is shown in Figure \ref{fig:moteStructure}. The ControllModule connects all the other modules and makes sure the informations the other modules provide get delivered correctly to the modules needing the informations.     
-The Calibrator is responsible for the calibration of the network. It needs a command to start the calibration and an event that triggers when the calibration is done and provides the gathered informations. Collecting the data from the network and sending them to the pc is covered by the Collector module. This module needs to know the neighbours and the information about the nodes parent and children. Therefore the interface of the module provides two commands to attach this information to the module. Moreover it needs a event that triggers when the collection is done. To spread the schedule inside the network there is the ScheduleSender module. It also needs the information about the neighbours and the parent and children of the node and has the suitable commands for this. It does not necessary need a command to start the spreading since it can directly react when the node receives a schedule message from the base station. Lastly the module has two events. One that triggers when a node received the schedule and one that triggers when the schedule is spread. The event triggering when the schedule was received provides the received schedule. The schedule spread event will only be triggered at the sink since it is the only node able to detect if the schedule is spread. The last module is the Sampler. It needs the neighbour list and the schedule and has the fitting commands. Moreover it has a command to start one round of the schedule and an event that triggers when this round is finished.  
-\section{Base Station}
-\subsection{Receiving and Sending messages}
-To receive and send messages from the sink it is possible to use the 
-\subsection{Storing the information}
-\subsection{Creating the Schedule}
+As nodes the telosb motes described in Capter x.y can be used. The application running on the nodes can then be written in NESC for TinyOS. Since the application running on the motes has multiple independent tasks it makes to create one module for each task. In Figure \ref{fig:moteStructure} the suggested structure is displayed, containing the modules $Controll$, $Calibrator$, $Sampler$, $ScheduleSender$ and $Collector$" represented by their provided interfaces. 
+
+The $Control$ connects all the other modules and makes sure the informations the other modules provide get delivered correctly to the modules needing that informations. Therefore it does not need an interface to provide functionality.     
+The $Calibrator$ module is responsible for the calibration of the network. It has the $startCalibration$ command to start the calibration and the $calibrationDone$ event that gets signalled when the calibration is done and provides the gathered informations. The $Collector$ module covers the data collection. This module needs to know the neighbours and the information about the nodes parent and children. Therefore the interface of the module provides the two commands $attacheNeighbourList$ and $attachePathInfo$ to attach this information to the module. The $Control$ module can then simply attach the information to the $Collector$ when the $calibrationDone$ event triggers. Moreover the $Collector$ module needs the event $collectionDone$ the signal when the collection is done. To spread the schedule inside the network there the application provides the $ScheduleSender$ module. It also needs the information about the neighbours and the parent and children of the node and therefore has the same commands as the $Collector$ to attach these informations. It does not necessary need a command to start the spreading since it can directly react when the node receives a schedule message from the base station. Lastly the module has two events $receivedSchedule$ and $scheduleSpred$. The module signals the $receivedSchedule$ when the node received the schedule and also provides the schedule. When the schedule is spread the sink signals the $scheduleSpread$ event. The last module is the $Sampler$. It needs the neighbour list and the schedule and therefore has the commands $attcheNodeList$ and $attacheSchedule$ to provide these to the module. Moreover it has the $startRound$ command to start one round of the schedule and the $finishedRound$ event that the module signals when this round is finished. Figure \ref{fig:commandEvents} represents a possible sequence of the commands and events.
+
+\begin{figure}[btp]
+	\centering
+    \includegraphics[scale=0.55]{content/images/Processes/ComandsEvents}
+   	\caption{A possible order of commands and events.}
+    \label{fig:commandEvents}
+\end{figure}
+
+\section{Receiving and Storing Information at the Base Station}
+\label{chp:imp_baseStation}
+To receive and send messages from the sink it is possible to use of the TinyOS Java libraries. These provide the necessary tools to connect the application with the sink via a serial forwarder. To synchronize the message types send by the motes and the Java application TinyOS provides the possibility to generate message classes directly from the NESC message structures. The Java application needs two know different messages. One that contains the information collected by a node and one that contains the information about the schedule. The application know needs to implement message listener for both types of messages so it is able to receive and react to each message individually.
+
+To store information about all the nodes the Java application needs to implement a hash map containing one $Node$ object for every node inside the network with its id as the key. This makes it easy to access the information of each individual $Node$ object when accessing its information. To store the information about a nodes neighbours, the $Node$ class implements a list containing references to $Node$ objects representing the neighbours of the node. To store the RSSI measurements of a node the $Node$ class implements a hash map containing lists. Again the key values of the hash map are node ids. The lists inside the hash map contain all the measurements from the node corresponding to the key. 
+
+Now whenever the Java application receives a message containing measurements of a node it will get the corresponding node object from the hash map containing all the nodes. Then it will update the neighbour list of the node and save the measurements inside the measurement hash map of the node object.
 \section{Calibration}
+\label{chp:imp_calibration}
+To calibrate the the network by using the procedure explained in Chapter \ref{chp:apr_calibration} the Calibration module needs to send messages without a specific pattern. These messages need to contain information about the path quality and the parent of the node. A possible message structure that fulfils these requirements is shown in Listing \ref{lis:callMsg}. 
+
+\lstset{caption={Message structure for the messages, containing information about the parent and the path quality of the sending node},label={lis:callMsg}}
+\begin{lstlisting}
+	nx_struct CallibrationMsg {
+		uint8_t parent,
+		uint8_t path_quality
+	}
+\end{lstlisting}
+
+To make sure that all the node send their messages roughly in the same time interval a way to indicate when the calibration starts is needed. This can be archived by one node starting its calibration phase and the sending of messages. Then when another node receives a $CallibrationMsg$ and hasn't started its calibration it will start its calibration. Another problem is that if all the nodes send their messages directly after another there would be a lot of messages in the network at the same time. To reduce this each node will have a small delay between the messages it will send. To make this even more sufficient each node could have a a different delay between his messages. This delay can be calculated as  
+\[ \Delta p = T + \mbox{ID}^2\ \%\ N\]
+where $T$ is the minimal time between sends, ID is the nodes id, and $N$ the number of nodes in the whole network. Now whenever a node send a message it can start a timer that fires after $\Delta p$ and then send the next message when the timer fires. Whenever a node sends a message it includes its stored parent and path quality.  
+
+To collect data from other nodes each node needs a neighbour list where it can store the nodes in range and the measured values. This neighbour list can be implemented by an array of the $Node$ struct shown in Listing \ref{lis:nodeStr} and the size $N$. The structure can store the last received signal strength, if the node is in range and the parent of the node. The other fields are used for the other phases. Now whenever a node receives a message it will firstly set the $inRange$ field for that node to $true$, store the measured received signal strength in the $last_rssi$ field and set the $parent$ field to the $parent$ field inside the message. 
+ 
+\lstset{caption={Structure to store information about nodes, containing the last RSSI measured, if the stored node is in range, the parent of the stored node, if the node received the data from stored node, if the node received the schedule from the stored node and the messages received from the stored node},label={lis:nodeStr}}
+
+\begin{lstlisting}
+	typedef struct Node {
+  		int8_t last_rssi;
+  		int8_t inRange;
+  		uint8_t parent;
+  		int8_t receivedData;
+  		int8_t receivedSchedule;
+  		uint16_t msg_counter;
+	}
+\end{lstlisting}
+
+The next thing for the node is to evaluate if it should use the sending node as a parent. This is done like explained in Chapter \ref{chp:apr_collection}. However the link quality is not directly presented by the RSSI. Instead the RSSI is mapped to a value where a high RSSI represents a low value and a low RSSI a high value. An example for the mapping of the RSSI to the path quality is given in Table \ref{tab:mappingRSSI}. This mapping is determined by the network and needs do defined for each individually.
+\begin{table}[htbp]
+ \caption{Example mapping of RSSI to a value representing the path quality}
+ \centering
+ \begin{tabular}{c|c}
+  RSSI & Quality\\ \toprule
+  -50 & 1 \\
+  -70 & 2 \\
+  -80 & 7 \\
+  -90 & 14 \\
+ \end{tabular}
+ \label{tab:mappingRSSI}
+\end{table}
+When the link quality is mapped it is added to the $path_quality$ field stored in the message. Than the calculated value is compared to the stored path quality of the sending node. If the calculated value is smaller than the stored path quality the sending node is a more suitable parent and the stored parent and path quality will be adjusted accordingly.   
+
+A node concludes its calibration phase and signals the $callibrationDone$ event after sending a defined number of messages. This number however is also determined by the network and its complexity.  
+
+To make sure the sink does not start to collect data from the network  before every other node finished its calibration it needs to wait after sending all its messages before it can signal the $callibrationDone$ event. The time the sink needs to wait depends on the number of nodes and the calculation of the break between messages.
+ 
 \section{Collection}
+\label{chp:imp_collection}
+Before starting the calibration the Calibration module needs the information collected by the Calibration module. When the neighbour list and path info is attached to the module the sink can start the collection by sending a request message like the one in Listing \ref{lis:reqMsg} to one of its children. To find a child a node can go through its neighbour list and simply check if the $parent$ field in the $Node$ struct is set to the ID of the node. When a node receives a request message it will search for a child of itself and forward it like described in Chapter \ref{chp:apr_collection}.
+
+\lstset{caption={Structures representing a request message},label={lis:reqMsg}}
+\begin{lstlisting}
+	typedef nx_struct RequestMsg {
+		nx_uint8_t id;
+		nx_uint8_t round;
+	}
+\end{lstlisting}
+
+When the request reaches a node without any children it will fill its measurements into the $measurements$ field of a data message like the one represented in Listing \ref{lis:dataMsg}.
+Since it is possible that a node has more measurements than the maximal amount of data fitting into one message we need the field that indicates how much data is left. If a note has more measurements it will directly fill multiple messages and send them one after another to its parent. The receiving node will buffer all the data messages until it received the message where the $dataLeft$ field is set to zero. Then it will forward all the received messages one after another. Whenever a node received the whole dataset of a node it will mark that node as done sending by simply setting the $receivedData$ filed for the node to true. Note that the receiving node does necessary mark the node it directly received the dataset from but the source of the dataset indicated by the $from$ field inside the data messages.
+
+\lstset{caption={Structures to send the data from a node to the sink. The NodeMsg contains the measurements from one neighbour including the id of the neighbour and the measured RSSI. Inside the DataMsg the source of the measurements, the answered request id and how much data is left is stored},label={lis:dataMsg}}
+\begin{lstlisting}
+	typedef nx_struct Measurement {
+		nx_uint8_t id;
+		nx_int8_t rssi;
+	}
+
+	typedef nx_struct DataMsg {
+		nx_uint8_t from;
+		nx_uint8_t request_id;
+		nx_uint8_t dataLeft;
+		Measurement measurements[MAX__MSG__PAYLOAD - 3];
+	}
+\end{lstlisting}
+
+A problem that needs to be addressed are message drops. Without detecting a message drop and resending the message afterwards the collection will simply stop if one message does not get received. To detect a message drop each node receiving a message will directly send an acknowledgement to the sending node. This is required for both the request and the data message and will be done before any processing of the message. Now if the sending node did not get an acknowledgement for a message will resend that message. Since not only the actual message can drop but also the acknowledgement, it can happen that a message gets retransmitted one or multiple times although the message was already received and processed at the receiving node. The processing of the same message multiple times however can create chaotic behaviour resulting in the system to stop working and/or messages still being send after the collection is already finished and distorting the RSSI measurements. 
+
+To prevent this each request gets an ID from the sink in ascending order and the round of the collection. Whenever a node send its data it will increase its saved round by one and set the saved request id to zero. When a node receives a request it will check if the round of the request is equals the saved round. If not it will throw away the request. If yes it will check if the id of the request is larger than its saved last request id. Is that the case it will save the received request id and process the request, otherwise it will throw it away. To catch already received data messages we include the request id the data was requested with inside the data message. When a node receives a data message it can then check if the data is corresponding to the request the node send. If that is the case it will also check if the $dataLeft$ field in the message is smaller than than the one in the data message previously received. If that is not the case the data inside that message were already received and the message gets thrown away. 
+
 \section{Creating the Schedule}
+The creation o the schedule will happen at the base station when it received the data about the connections between nodes. The method presented in Listing \ref{lis:rooted} could be directly translated into the fitting Java code. To do so another class for the rooted circle needs to be added to the general structure of the application. When implementing the method it is important to take into account that links are not always bidirectional meaning when a node 1 is in the neighbour list of another node 2 this only means that node 2 can receive data from node 1, not that node 1 also receives messages from node 2. This means when we chose a node from a neighbour list this node can never be a successor but only a predecessor of a node. This results in the schedule being created backwards.
+
+Moreover it is a good idea to not simply pick a random node as a predecessor from the neighbour list of a node, but the one with the highest measured RSSI. This will reduce message drops while running the schedule, resulting in less time needed for one round.  
+
+To bring the schedule into a form that is readable for all the nodes an array can be created that contains all the node IDs in the order they send messages. For the example in Figure \ref{fig:schedule} the array could look like this: 
+\[ Short[]\ schedule = \{1, 2, 3, 4, 2, 6, 5, 6, 7, 8, 9, 10, 7, 1\}\]     
 \section{Spreading the Schedule}
+Before the spreading of the schedule can start the $ScheduleSender$ module needs the information collected in the Calibration. If the informations are attached to the module the spreading of the schedule automatically when the base station sends a schedule message like the one in  Listing \ref{lis:scheduleMsg} to the sink. The message the schedule array created by the base station, then the information about how much of the schedule is left and an ID to detect already received messages. When the sink receives the schedule message it will forward it like described in Chapter \ref{chp:apr_spreadingSchedule}.
+
+\lstset{caption={Schedule message structure},label={lis:scheduleMsg}}
+\begin{lstlisting}
+	typedef nx_struct ScheduleMsg {
+		nx_uint8_t msgid;	
+		nx_uint8_t dataLeft;
+		nx_uint8_t schedule[MAX__MSG__PAYLOAD-2];
+	}
+\end{lstlisting}
+
+Whenever a node receives a message it will first check if it already received that part of the schedule on the basis of the $dataLeft$ field. If it did not receive that schedule part jet it will copy it to the right place in its own schedule array. Then it marks the node it got the message from and forwards it like described in Chapter \ref{chp:apr_spreadingSchedule}. Lastly it checks if the $dataLeft$ field inside the just forwarded schedule message is equals to zero. If that is the case the module will signal the $receivedSchedule$ event and provide the full schedule array to the $Control$ module.
+To make it possible to receive multiple schedule parts it is important that whenever a node sends the schedule to its parent, it needs to unmark all its marked nodes, so if necessary it can later send the next schedule part to them.
+
+If the schedule message reaches the sink and the sink does not have any more unmarked children it will forward the schedule to the base station and unmark all its marked nodes. This way the base station knows ether that the schedule is spread or that it can send the next schedule part that then will be spread the same way as the first one. If the sink send the last part of the schedule to the base station the sink will signal the $scheduleSpread$ event to let the $Control$ module know that every node knows the schedule and the sampling can be started. 
+
+Again we need to make sure that no messages get lost, so in this phase as well each message is directly replied by an acknowledgement message. If the sending node did not get the acknowledgement it will resend its message. To check if a message was already received we have the $msgid$ field in the message. Whenever a node forwards the schedule it will increase this field and save the value. Then when a node receives a message it will check if the $msgid$ is larger as the saved one. If that is the case it is a new message and needs to be processed. Otherwise the message gets thrown away. 
 \section{Sampling}
+When the schedule is spread and the sample module knows about the schedule and the neighbour list, the sampling can start. The sink will start by sending a  message like the on shown in Listing \ref{lis:sampleMsg} in Broadcast. The $receiver$ field will be set to the node id of the successor of the sink. Then all the nodes receiving the message will measure the received signal strength and save it inside their neighbour lists. Then each node that received the message will compare their own id with the id saved in the $receiver$ field of the message. If they are equal the node will evaluate the fitting successor, save it inside a new message and then also send it in broadcast. When the sink receives a message and does not have another successor it will signal the $finishedRound$ event.
+
+To evaluate the fitting successor the approach coming in mind would be to just go through the schedule array and searching for the sending node followed by the searching nodes id. The successor then would be the node after that. This however is inefficient and unnecessarily stretches the timeslot to catch message drops. Therefore it is suggested to evaluate all the predecessors and successors of a node before the sampling starts by going through the whole schedule once and save them in a structure like the one shown in Listing \ref{lis:scheduleSaving} in the order of appearance. Additionally each node will store the index of the next predecessor successor pair. Then when a node is the successor it can simply check if the predecessor at the saved index is correct and if yes send the new message storing corresponding saved successor and calculate the next index as
+\[ I+1 = (I + 1)\%\mbox{numberOfPS}\]      
+It can happen that the predecessor at the saved index is corresponding to the sending node. This can happen when a message drops and the node gets skipped.
+In that case we have to go to all the predecessor successor pairs to find the right successor and adjust the saved index accordingly. However this is still much more efficient than going through the whole schedule.
+
+\lstset{caption={Sample message structure},label={lis:sampleMsg}}
+\begin{lstlisting}
+	typedef nx_struct SampleMsg {
+		nx_uint8_t receiver;
+	}
+\end{lstlisting} 
+
+\lstset{caption={Structures to save the successor and predecessors},label={lis:scheduleSaving}}
+\begin{lstlisting}
+	typedef struct PredecessorSuccessor {
+		uint8_t predecessor;
+		uint8_t successor;
+	}
+
+	typedef struct SchedulePSCollection {
+		uint8_t numberOfPS;
+		PredecessorSuccessor preSuc[MAX_PREDECESSORS_SUCCESSORS]; 
+	}
+\end{lstlisting}
+
+To catch the message drops like explained in Chapter \ref{chp:apr_samplingDrops} every time a node receives a message and is not the successor it needs to run through the schedule array and and calculate how many nodes send between the sending node and the receiving node and calculate the time it needs for the schedule to reach the node. Then the node will start a timer that fires after exactly that time. Moreover the node needs to save the successor in case of the drop. The timer will be reset to the new time whenever the node receives a message. When the timer fires the node will simply send a message with the $receiver$ set as the saved successor. Since a node can appear multiple times inside the schedule it also needs to calculate the time to its next send directly after it send a message. If it does appear again in the schedule it will start the timer.  
