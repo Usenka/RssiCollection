@@ -18,15 +18,28 @@ Stuff to take care of because of constrains
 \section{Radio Tomographic Imaging}
 Radio Tomographic Imaging(RTI) is a method to localize people inside an area covered by a WSN. To do so the WSN monitors the received signal strength(RSS) of each link inside the network by letting each node send messages over radio in broadcast. Whenever a person stays or moves inside the monitored area it affects RSS of some or all links. The changes can then be processed and a position of the person can be estimated. This makes it possible to localise a person without it having to carry any device \cite{RtiMulti}.
 \section{Multi-Spin}
-When monitoring the RSS of each link inside a WSN it is important to take into account that not only changes inside the environment can effect the RSS. Also multiple messages send at the same time will interfere with each other and distort the measured change of the RSS. To counteract the Multi-Spin protocol provides a method to synchronize the nodes in a way that only one node sends a message at a given point in time. 
-To do this time is divided into $slots$ and $cycles$ where a $cycle$ is the time all the nodes need to send one message each. Then a $cycle$ is divided by the number of nodes inside the network resulting in one $slot$ for each node. Now each node will send in one of these slots. The order in which the nodes send is defined by their ID \cite{RtiMulti}.
+When monitoring the RSS of each link inside a WSN it is important to take into account that not only changes inside the environment can effect the RSS. Also multiple messages send at the same time will interfere with each other and distort the measured change of the RSS. To counteract this a methode to schedule the messages in a way that only one node sends at a given point in time is needed. The literature suggest the Multi-Spin spin algorithm that defines for each node a point in time when it should send its message.
+
+In Multi-Spin time is divided into $slots$ and $cycles$ where a $cycle$ is the time all the nodes need to send one message each. Then a $cycle$ is divided by the number of nodes inside the network resulting in one $slot$ for each node, shown in Figure \ref{fig:multi}. Now each node will send in one of these slots. The order in which the nodes send is defined by their ID. To make this possible the nodes need to somehow synchronize at the beginning. Therefore each node will send messages. When the first message is received the nodes will synchronize themselves with that message and start sending in the order of their IDs. Whenever a node receives a message it can calculate the time until the next $cycle$, so the nodes stay synchronized all the time.  \cite{RtiMulti}
 
 \begin{figure}[htbp]
 	\centering
     \includegraphics[scale=0.8]{content/images/Multispin}
-   	\caption{Message sending with multi-spin}
-    \label{fig:testbed}
+   	\caption{Time is  \cite{RtiMulti}}
+    \label{fig:multi}
 \end{figure}
+
+For the collection of the RSS measurements a extra node that overhears all the messages is connected to a PC. The nodes will include their ID and the last RSS measurements inside their messages. The extra node now receives the messages from all the other nodes and forward them to the PC.  \cite{RtiMulti}
+
+This methode is realy fast, efficient and stable. However it only works under the assumption that all the nodes can hear each other. When not all the nodes hear each other the synchronization would not be that accurate making it necessary to resynchronize for each circle. Moreover the data collection does not work at all since there is no node that is able to hear all the other nodes and therefore collect the information by simply listening to the send messages.
+Therefore a different method is needed for a widely spread multi hop network.
+
+%should be explained in more detail
+%very short time because highly optimized without a real time os benethe it
+%not possible inside a multi hop enviroment
+%every round needs a time sinchronization
+%data collection not possible like that
+%very cool but not sufficient in a multi hop enviroment
  
 \section{Testbed}
 The Testbed is a WSN located on the third floor of the SA building at the University of Duisburg-Essen. It is set up as a tool for researches on WSNs in an indoor environment. It covers half of the building including a large main corridor, two laboratories, two smaller corridors leading to three offices each, seven smaller storage rooms and one server room. The arrangement of the rooms is laid out in Figure \ref{fig:testbed}. All in all the area covers $531m^2$. All the rooms are in daily use by the people working in the offices and the laboratories keeping the area under constant change.
@@ -41,7 +54,7 @@ The Testbed is a WSN located on the third floor of the SA building at the Univer
 To monitor the area 32 nodes are distributed over the rooms like shown in Figure \ref{fig:testbed}. The nodes are only placed inside the offices and laboratories and are not always placed at the same hight. To make programming of the devices easy all the devices are connected to Raspberry Pies via USB. A script then makes it possible to copy the source code to all the Raspberry Pies where the code is compiled and then send to each node individual. The connection to the Raspberry Pies makes it also possible to collect information directly from each node individually over serial forwarder running on the Raspberry Pies.
 
 \subsection{TelosB Mote}
-The sensor nodes used for the Testbed are Crossbow's TelosB Motes TPR2420. The TPR2420 is a open source platform for researchers developed by the University of California, Berkley. It provides a 8 MHz Texas Instrument MSP430 low power microcontroller with 10kB RAM that is programmable via a USB connector. For communication it includes a IEEE 802.15.4 compliant radio frequency transceiver with an embedded antenna. This makes transmissions in a frequency band from 2.4 to 24835 GHz possible. Moreover the TPR2420 has a light sensor, a Infra-Red sensor, a humidity sensor and a temperature sensor installed making it possible to monitor the environment. Last it has three led lights installed that can be used for visual output of the mote. The USB connector that can be used to program the microcontroller can also be used to exchange data with and to power the TPR2420. If it is not connected via USB it can also be powered by two AA batteries. \citep{telosb}
+The sensor nodes used for the Testbed are Crossbow's TelosB Motes TPR2420. The TPR2420 is a open source platform for researchers developed by the University of California, Berkley. It provides a 8 MHz Texas Instrument MSP430 low power microcontroller with 10kB RAM that is programmable via a USB connector. For communication it includes a IEEE 802.15.4 compliant radio frequency transceiver with an embedded antenna. This makes transmissions in a frequency band from 2.4 to 24835 GHz possible. Moreover the TPR2420 has a light sensor, a Infra-Red sensor, a humidity sensor and a temperature sensor installed making it possible to monitor the environment. Last it has three led lights installed that can be used for visual output of the mote. The USB connector that can be used to program the microcontroller can also be used to exchange data with and to power the TPR2420. If it is not connected via USB it can also be powered by two AA batteries. \cite{telosb}
 
 \begin{figure}[htbp]
 	\centering
