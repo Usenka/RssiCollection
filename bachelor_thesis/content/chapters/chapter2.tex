@@ -10,13 +10,46 @@ The general structure is the following:
 \end{itemize}
 
 \section{Wireless Sensor Networks}
-	A wireless sensor networks are a collection of low-cost, low-power and multifunctional sensor nodes that are placed inside a to be monitored area   
+A wireless sensor networks are a collection of small, low-cost, low-power and multifunctional sensor nodes.
+Able to communicate with each other. 
+Placed to monitore an area of intrest.
+Constrains.
+Stuff to take care of because of constrains
 \section{Radio Tomographic Imaging}
-\section{Timeslots}
+Radio Tomographic Imaging(RTI) is a method to localize people inside an area covered by a WSN. To do so the WSN monitors the received signal strength(RSS) of each link inside the network by letting each node send messages over radio in broadcast. Whenever a person stays or moves inside the monitored area it affects RSS of some or all links. The changes can then be processed and a position of the person can be estimated. This makes it possible to localise a person without it having to carry any device \cite{RtiMulti}.
+\section{Multi-Spin}
+When monitoring the RSS of each link inside a WSN it is important to take into account that not only changes inside the environment can effect the RSS. Also multiple messages send at the same time will interfere with each other and distort the measured change of the RSS. To counteract the Multi-Spin protocol provides a method to synchronize the nodes in a way that only one node sends a message at a given point in time. 
+To do this time is divided into $slots$ and $cycles$ where a $cycle$ is the time all the nodes need to send one message each. Then a $cycle$ is divided by the number of nodes inside the network resulting in one $slot$ for each node. Now each node will send in one of these slots. The order in which the nodes send is defined by their ID \cite{RtiMulti}.
+
+\begin{figure}[htbp]
+	\centering
+    \includegraphics[scale=0.8]{content/images/Multispin}
+   	\caption{Message sending with multi-spin}
+    \label{fig:testbed}
+\end{figure}
+ 
 \section{Testbed}
-The testbed is a wireless sensor network set up in the third floor of the SA building at the University Duisburg Essen. It covers on half of the whole floor containing a main corridor, two laboratories, two side corridors leading to three offices each, an elevator, seven smaller storage rooms and one server room. All in all the area is 531m^2.\n
-To monitor the floor there are 32 nodes placed at the positions shown in figure (random number). This means the density of nodes is very low resulting in a widely spread multi-hop network. 
-\subsection{Motes}
+The Testbed is a WSN located on the third floor of the SA building at the University of Duisburg-Essen. It is set up as a tool for researches on WSNs in an indoor environment. It covers half of the building including a large main corridor, two laboratories, two smaller corridors leading to three offices each, seven smaller storage rooms and one server room. The arrangement of the rooms is laid out in Figure \ref{fig:testbed}. All in all the area covers $531m^2$. All the rooms are in daily use by the people working in the offices and the laboratories keeping the area under constant change.
+
+\begin{figure}[htbp]
+	\centering
+    \includegraphics[scale=0.75]{content/images/Testbed}
+   	\caption{Floor plan of the area where the Testbed is located. The position of the nodes is shown by the numbered antennas.}
+    \label{fig:testbed}
+\end{figure}
+
+To monitor the area 32 nodes are distributed over the rooms like shown in Figure \ref{fig:testbed}. The nodes are only placed inside the offices and laboratories and are not always placed at the same hight. To make programming of the devices easy all the devices are connected to Raspberry Pies via USB. A script then makes it possible to copy the source code to all the Raspberry Pies where the code is compiled and then send to each node individual. The connection to the Raspberry Pies makes it also possible to collect information directly from each node individually over serial forwarder running on the Raspberry Pies.
+
+\subsection{TelosB Mote}
+The sensor nodes used for the Testbed are Crossbow's TelosB Motes TPR2420. The TPR2420 is a open source platform for researchers developed by the University of California, Berkley. It provides a 8 MHz Texas Instrument MSP430 low power microcontroller with 10kB RAM that is programmable via a USB connector. For communication it includes a IEEE 802.15.4 compliant radio frequency transceiver with an embedded antenna. This makes transmissions in a frequency band from 2.4 to 24835 GHz possible. Moreover the TPR2420 has a light sensor, a Infra-Red sensor, a humidity sensor and a temperature sensor installed making it possible to monitor the environment. Last it has three led lights installed that can be used for visual output of the mote. The USB connector that can be used to program the microcontroller can also be used to exchange data with and to power the TPR2420. If it is not connected via USB it can also be powered by two AA batteries. \citep{telosb}
+
+\begin{figure}[htbp]
+	\centering
+    \includegraphics[scale=0.7]{content/images/Mote1}
+   	\caption{The structure of the TPR2420 and the included components \cite{telosb}}
+    \label{fig:telosb}
+\end{figure}
+ 
 \subsection{TinyOs}
 
 

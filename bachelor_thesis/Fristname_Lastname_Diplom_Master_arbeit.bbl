@@ -1,0 +1,21 @@
+\begin{thebibliography}{MAdR02}
+
+\bibitem[lev]{levensthein65:_binar}
+{\em TelosB Mote Platform Datasheet}.
+
+\bibitem[MAdR02]{Middleton2002}
+{\sc Middleton, S.~E.}, {\sc H.~Alani} \btxandlong{}\ {\sc D.~C. de~Roure}:
+  {\em Exploiting Synergy between Ontologies and Recommender Systems}.
+\newblock \Btxinlong{}\ {\em Proceedings of the Semantic Web Workshop at the
+  WWW Conference}, Honolulu, HI, 2002.
+
+\bibitem[MBP]{RtiMulti}
+{\sc Maurizio~Bocca, Ossi~Kaltiokallio} \btxandlong{}\ {\sc Neal Patwari}: {\em
+  Radio Tomographic Imaging for Ambient Assisted Living}.
+
+\bibitem[Sal89]{salton89}
+{\sc Salton, Gerard}: {\em Automatic text processing --- the transformation,
+  analysis, and retrieval of information by computer}.
+\newblock Addison-Wesley series in computer science. 1989.
+
+\end{thebibliography}

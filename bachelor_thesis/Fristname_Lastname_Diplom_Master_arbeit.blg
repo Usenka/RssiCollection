@@ -1,0 +1,28 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: Fristname_Lastname_Diplom_Master_arbeit.aux
+A level-1 auxiliary file: content/chapters/titlePage.aux
+A level-1 auxiliary file: content/chapters/abstract.aux
+A level-1 auxiliary file: content/chapters/chapter1.aux
+A level-1 auxiliary file: content/chapters/chapter2.aux
+A level-1 auxiliary file: content/chapters/chapter3.aux
+A level-1 auxiliary file: content/chapters/chapter4.aux
+A level-1 auxiliary file: content/chapters/chapter5.aux
+A level-1 auxiliary file: content/chapters/chapter6.aux
+A level-1 auxiliary file: content/chapters/chapter7.aux
+The style file: geralpha.bst
+A level-1 auxiliary file: content/chapters/clause.aux
+Database file #1: content/references/references.bib
+Warning--I didn't find a database entry for "Ikeda1997"
+Warning--to sort, need author or key in levensthein65:_binar
+Name 1 in "Maurizio Bocca, Ossi Kaltiokallio, and Neal Patwari" has a comma at the end for entry RtiMulti
+while executing---line 1296 of file geralpha.bst
+Name 1 in "Maurizio Bocca, Ossi Kaltiokallio, and Neal Patwari" has a comma at the end for entry RtiMulti
+while executing---line 1296 of file geralpha.bst
+Warning--empty author in levensthein65:_binar
+Warning--empty journal in levensthein65:_binar
+Warning--empty year in levensthein65:_binar
+Name 1 in "Maurizio Bocca, Ossi Kaltiokallio, and Neal Patwari" has a comma at the end for entry RtiMulti
+while executing---line 1361 of file geralpha.bst
+Warning--empty journal in RtiMulti
+Warning--empty year in RtiMulti
+Warning--empty publisher in salton89
+(There were 3 error messages)
