@@ -29,7 +29,9 @@ implementation {
 	
 	components new TimerMilliC() as BroadcastTimer;
 	components new TimerMilliC() as BreakTimerA;
-	components new TimerMilliC() as DropTimer;
+	components new AlarmMilli32C() as DropTimer;
+
+	components LedsC;
 
 	#ifdef REAL 
 		components PrintfC;
@@ -72,6 +74,7 @@ implementation {
 	SamplerM.AMPacket -> BroadcastSender;
 	SamplerM.DropTimer -> DropTimer;
 	SamplerM.Rssi -> CC2420ActiveMessageC.CC2420Packet;
+	SamplerM.Leds -> LedsC;
 
 	/*PCSend*/
 	components SerialActiveMessageC as AM;

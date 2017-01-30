@@ -9,23 +9,24 @@ module SamplerM {
 	uses interface AMSend as SampleSend;
 	uses interface AMPacket;
 	uses interface Packet as Packet_;
-	uses interface Timer<TMilli> as DropTimer;
+	uses interface Alarm<TMilli, uint32_t> as DropTimer;
 	uses interface CC2420Packet as Rssi;
+	uses interface Leds;
 	//uses interface Leds;
 }
 implementation {
-	message_t s_msg;
-	bool sBusy = FALSE;
+	norace message_t s_msg;
+	norace bool sBusy = FALSE;
 
 	Node* nodeList;	
 	uint8_t* schedule;	//The schedule is saved as an array of ids. The nodes send in the order they are listed in this array
-	SchedulePSCollection schedulePSCollection;
-	uint8_t psPointer = 0;	//contains the index of the next predecessor successor pair in the schedulePSCollection 
+	norace SchedulePSCollection schedulePSCollection;
+	norace uint8_t psPointer = 0;	//contains the index of the next predecessor successor pair in the schedulePSCollection 
 
 	uint8_t attachedNodeList = FALSE;
 	uint8_t attachedSchedule = FALSE;
 
-	uint8_t sourceInCaseOfDrop = 0;
+	norace uint8_t sourceInCaseOfDrop = 0;
 	
 	/*This methode evaluates the node i have to send to now. before is the node that send me the message, next is the one now in turn
 	In theory it should not be possible to reach the return 0. But it happen that this methode returns 0 when the round is finished 
@@ -37,12 +38,21 @@ implementation {
 				return schedule[i+2];
 			}
 		}*/
-		_printf("get next after: %d\n", before);
+		//_printf("get next after: %d\n", before);
 		if(schedulePSCollection.preSuc[psPointer].predecessor == before) {
 			uint8_t next = schedulePSCollection.preSuc[psPointer].successor;
 			psPointer++;
 			psPointer = psPointer % schedulePSCollection.size;
 			return next;
+		} else {
+			uint8_t i;
+			for(i = 0; i<schedulePSCollection.size; i++) {
+				if(schedulePSCollection.preSuc[i].predecessor == before) {
+					uint8_t next = schedulePSCollection.preSuc[i].successor;
+					psPointer = (i + 1) % schedulePSCollection.size;
+					return next;
+				}	
+			}
 		}
 		return NUMBER_OF_NODES + 1;
 	}
@@ -99,8 +109,9 @@ implementation {
 
 	void sendMessageAccordingToSchedule(uint8_t source) {
 		uint8_t next = getNextInSchedule(source);
-
-		_printf("Send To = %d\n", next);
+		
+		call Leds.led0On();
+		//_printf("Send To = %d\n", next);
 
 		if(next > 0 && next < NUMBER_OF_NODES + 1) {
 			SampleMsg* spkt = (SampleMsg*) (call Packet_.getPayload(&s_msg, sizeof(SampleMsg)));
@@ -109,9 +120,22 @@ implementation {
 
 			post sendSample();
 		} else if (next == 0) {
+			call Leds.led0Off();
 			signal Sampler.finishedRound();
+		} else {
+			call Leds.led1On();
+			//_printf("Some shit happened... next = %d", next);
 		}
 	}
+
+	/*void post_sendMessageAccordingToSchedule(uint8_t source) {
+		
+		if(isEvaluating == FALSE) {
+			isEvaluating  = TRUE;
+			previousNode = source;
+			post sendMessageAccordingToSchedule();
+		}
+	}*/
 
 	void definePredecessorSuccessor() {
 		uint8_t i;
@@ -170,7 +194,7 @@ implementation {
 			if(hopps != 0) {
 				uint16_t timeToWait = hopps * TIME_MAX_MESSAGE_SENDING;
 				_printf("Time to wait: %d\n", timeToWait);
-				call DropTimer.startOneShot(timeToWait);
+				call DropTimer.start(timeToWait);
 			}
 		
 		}
@@ -182,6 +206,8 @@ implementation {
 		SampleMsg* spkt = (SampleMsg*) (call Packet_.getPayload(msg, sizeof(SampleMsg)));
 		uint8_t hopps = getNodeCountUntilMe(TOS_NODE_ID, spkt->receiver);
 		
+		call Leds.led0Off();
+
 		if(err == SUCCESS)
 			sBusy = FALSE;
 
@@ -189,12 +215,11 @@ implementation {
 		if(hopps != 0) {
 			uint16_t timeToWait = hopps * TIME_MAX_MESSAGE_SENDING;
 			_printf("Time to wait: %d\n", timeToWait);
-			call DropTimer.startOneShot(timeToWait);
+			call DropTimer.start(timeToWait);
 		}
 	}
 
-	event void DropTimer.fired() {
-		_printf("DropTimer Fired...\n");
+	async event void DropTimer.fired() {
 		sendMessageAccordingToSchedule(sourceInCaseOfDrop);
 	}
 }
