@@ -10,11 +10,19 @@ The general structure is the following:
 \end{itemize}
 
 \section{Wireless Sensor Networks}
-A wireless sensor networks are a collection of small, low-cost, low-power and multifunctional sensor nodes.
-Able to communicate with each other. 
-Placed to monitore an area of intrest.
-Constrains.
-Stuff to take care of because of constrains
+-A wireless sensor networks are a collection of small, low-cost, low-power and multifunctional sensor nodes.
+-Able to communicate with each other. 
+-Placed to monitore an area of intrest.
+-Constrains.	
+-Multi hop network not multi hop networks
+-Stuff to take care of because of constrains
+
+TinyOS: An Operating System for Sensor Networks:
+-Consists of potentialy thousands of nodes
+-small, flexible, lowcost nodes that interact with their environment
+-applications ranging from environmental and habitat monitoring [11, 51], seismic analysis of structures [10], and object localization and tracking [68].
+
+
 \section{Radio Tomographic Imaging}
 Radio Tomographic Imaging(RTI) is a method to localize people inside an area covered by a WSN. To do so the WSN monitors the received signal strength(RSS) of each link inside the network by letting each node send messages over radio in broadcast. Whenever a person stays or moves inside the monitored area it affects RSS of some or all links. The changes can then be processed and a position of the person can be estimated. This makes it possible to localise a person without it having to carry any device \cite{RtiMulti}.
 \section{Multi-Spin}
@@ -64,7 +72,31 @@ The sensor nodes used for the Testbed are Crossbow's TelosB Motes TPR2420. The T
 \end{figure}
  
 \subsection{TinyOs}
+TinyOS is an operating system for embedded systems, designed to manage the limited resources and power and to provide reactive concurrency and flexibility. It is widely used by multiple research groups ans companies world wide to support their applications.
 
+The main tasks of TinyOS is to schedule tasks and events to provide safe concurrent operations. However it also provides a large amount of reusable system components, like timers, sender or receiver, that provide a huge variety of functionalities. When compiling a application only the TinyOS components that are used are included into the application creating an application-specific OS.
 
+To provide functionality each component can have three different types of computational abstractions. First commands, then events than tasks.
 
+flexible, application-specivic operation system for wireless sensor networks
+supports complex yet safe concurrent operations
+for sensor network research;
+Over one hundred groups worldwide use it, including several companies within their products
+and research topics
+core OS is 400 bytes
 
+Four broad requirements motivate the design of TinyOS:
+Limited resources
+Reactive Concurrency
+Flexibility
+Low Power
+
+TinyOS supports an event-driven concurrency model based on split-phase interfaces, asynchronous events, and deferred computation called tasks. TinyOS is implemented in the NesC language.
+
+TinyOS is not an OS in the traditional sense; it is a programming framework for embedded systems and set of components that enable building an application-specific OS into each application
+
+TinyOS program is a graph of components, each of which is an independent computational entity that exposes one or more interfaces. Components have three computational abstractions: commands, events, and tasks. Commands and events are mechanisms for intercomponent communication, while tasks are used to express intra-component concurrency.
+
+The standard TinyOS task scheduler uses a non-preemptive, FIFO scheduling policy
+
+TinyOS itself simply consists of a set of reusable system components along with a task scheduler.
