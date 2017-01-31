@@ -310,15 +310,33 @@ When you look at the example, one can see that already in Figure \ref{fig:spread
 \end{figure}
 
 \section{Sampling}
-\label{chp:apr_sampling}
-When all nodes received the schedule it is possible to sample the received signal strength by sending messages according to it. Therefore the sink will start sending a message. When its successor receives the message it can send its message and so on until the last message was send and the sampled data can be collected. However we need to take into account that one node could appear multiple times inside the schedule, meaning a node could have multiple predecessors and successors. Therefore we need to include the successor of the sending node inside the message so a receiving node can see if he is the correct successor at that moment. 
-\subsection{Message Drops}
-\label{chp:apr_samplingDrops}
-\begin{figure} [htbp]
-	\centering         
-    \includegraphics[scale=0.6]{content/images/MessageDrop}
-    \caption{Representation of a schedule. Node 3 sends a message. Node 4 drops the message but node 6 and 5 receive it so that they can calculate the time when they should send}
-    \label{fig:msgDrop}
-\end{figure}
-A problem of the proposed method are message drops. If a successor does not receive the message of its predecessor the whole system would stop. Here a similar technique a timeslots based system uses comes in handy. For this method every node needs to know the whole schedule and not only its own predecessors and successors. Then whenever a node receives a message it can look up how many nodes need to send between the node that just send and itself. Than the amount of sending nodes is multiplied by the maximal time a node needs to send a message. The result is the time after the node can send its own message, without receiving a message from its predecessor. Again we need to take into account that a node can appear multiple times in the schedule. Therefore after a node send a message it needs to calculate the maximal time until it will send the next message.
+When the schedule is spread and the sample module knows about the schedule and the neighbour list, the sampling can start. To do so the sink will send a  message like the on shown in Listing \ref{lis:sampleMsg} in Broadcast. The $receiver$ field will be set to the node id of the successor of the sink. Then all the nodes receiving the message will measure the received signal strength and save it inside their neighbour lists. After that each node that received the message will check if it is the successor by comparing its ID with the $receiver$ field inside the message. If a node recognizes itself as the successor of the sending node the node will evaluate the fitting successor, save it inside a new message and then also send it in broadcast. When the sink receives a message and does not have another successor it will signal the $finishedRound$ event.
 
+\lstset{caption={Sample message structure},label={lis:sampleMsg}}
+\begin{lstlisting}
+	typedef nx_struct SampleMsg {
+		nx_uint8_t receiver;
+	}
+\end{lstlisting} 
+
+To evaluate the fitting successor the first approach coming to mind would be to just go through the schedule array and searching for the sending node followed by the searching nodes id. The successor then would be the node after that. This however is inefficient and unnecessarily stretches the timeslot to catch message drops. Therefore it is suggested to evaluate all the predecessors and successors of a node before the sampling starts by going through the whole schedule once and save them in a structure like the one shown in Listing \ref{lis:scheduleSaving} in the order of appearance. Additionally each node will store the index of the next predecessor successor pair that should appear. Then when a node is the successor it can simply check if the predecessor at the saved index is correct and if that is the case include the corresponding saved successor inside its message. After that the node can calculate the next index as
+\[ I+1 = (I + 1)\%\mbox{numberOfPS}\]  
+where $I$ is the current index and $numberOfPS$ the amount of predecessor successor pairs the node has stored. It can appear that the predecessor at the saved index is not corresponding to the sending node. This happens when a message drops and the node gets skipped.
+In that case we have to go to all the predecessor successor pairs to find the right successor and adjust the saved index accordingly. However this is still much more efficient than going through the whole schedule.
+
+\lstset{caption={Structures to save the successor and predecessors},label={lis:scheduleSaving}}
+\begin{lstlisting}
+	typedef struct PredecessorSuccessor {
+		uint8_t predecessor;
+		uint8_t successor;
+	}
+
+	typedef struct SchedulePSCollection {
+		uint8_t numberOfPS;
+		PredecessorSuccessor preSuc[MAX_PREDECESSORS_SUCCESSORS]; 
+	}
+\end{lstlisting}
+
+To catch the message drops like explained in Chapter \ref{chp:apr_samplingDrops} whenever a node receives a message and is not the successor it needs to run through the schedule array and and calculate how many nodes send between the sending node and itself. Then the node has to calculate the time it takes for the schedule to reach the node. After that the node will start a timer that fires after exactly that time. Moreover the node needs to save the successor in case of the drop. The timer will be reset to the new time whenever the node receives a message. When the timer fires the node will simply send a message with the $receiver$ set as the saved successor.
+
+ Since a node can appear multiple times inside the schedule it also needs to calculate the time to its next send directly after it send a message. If it does appear again in the schedule it will start the timer.  
