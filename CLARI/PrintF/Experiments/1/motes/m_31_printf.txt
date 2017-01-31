@@ -1,0 +1,224 @@
+[2831] rec: 20->19: 0 until me
+[3074] rec: 19->12: 0 until me
+[3075] rec: 16->6: 0 until me
+[3084] rec: 28->6: 0 until me
+[3275] rec: 11->4: 0 until me
+[8534] Flag received
+[8534] 1 1 25 0
+Received Request: n[8534] ext = 0
+received Image msgs [8535] 1 | send Image msgs: 0
+[8537] Got Ack for IMG send to 28
+r[8538] eceived Image msgs 1 | send [8539] Image msgs: 1
+Update
+Collect[8541] ion done 0
+[9619] rec: 15->23: 3 until me
+[9636] Time to wait: 60
+[9637] rec: 15->29: 1 until me
+[9637] Time to wait: 20
+[9684] DropTimer Fired...
+[9685] Send To = 15
+[9685] sen: 31->15: 0 until me
+[9686] rec: 15->10: 0 until me
+[9721] rec: 27->30: 0 until me
+[9726] rec: 30->25: 0 until me
+[9995] rec: 20->19: 0 until me
+[10125] rec: 19->12: 0 until me
+[10125] rec: 20->19: 0 until me
+[10126] rec: 19->12: 0 until me
+[10126] rec: 16->6: 0 until me
+[10126] rec: 28->6: 0 until me
+[14716] Flag received
+[14716] 2 2 25 0
+Received Request: n[14716] ext = 0
+received Image msgs [14716] 1 | send Image msgs: 0
+Got A[14716] ck for IMG send to 28
+receiv[14717] ed Image msgs 1 | send Image[14717]  msgs: 1
+Update
+Collection d[14717] one 0
+[16089] rec: 20->19: 0 until me
+[16256] rec: 19->12: 0 until me
+[16256] rec: 16->6: 0 until me
+[16257] rec: 28->6: 0 until me
+[16257] rec: 11->4: 0 until me
+[20780] Flag received
+[20781] 3 3 25 0
+Received Request: n[20781] ext = 0
+received Image msgs [20781] 1 | send Image msgs: 0
+[20781] Got Ack for IMG send to 28
+r[20781] eceived Image msgs 1 | send [20781] Image msgs: 1
+Update
+Collect[20782] ion done 0
+[21754] rec: 15->23: 3 until me
+[21763] Time to wait: 60
+[21763] rec: 15->29: 1 until me
+[21763] Time to wait: 20
+[21848] DropTimer Fired...
+[21849] Send To = 15
+[21849] sen: 31->15: 0 until me
+[21849] rec: 15->10: 0 until me
+[21860] rec: 27->30: 0 until me
+[21876] rec: 30->25: 0 until me
+[22119] rec: 20->19: 0 until me
+[22132] rec: 19->12: 0 until me
+[22168] rec: 16->6: 0 until me
+[22232] rec: 28->6: 0 until me
+[22269] rec: 11->4: 0 until me
+[26932] Flag received
+[26933] 4 4 25 0
+Received Request: n[26933] ext = 0
+received Image msgs [26933] 1 | send Image msgs: 0
+Got A[26933] ck for IMG send to 28
+receiv[26934] ed Image msgs 1 | send Image[26935]  msgs: 1
+Update
+Collection d[26936] one 0
+[28271] rec: 20->19: 0 until me
+[28273] rec: 19->12: 0 until me
+[28369] rec: 16->6: 0 until me
+[28441] rec: 28->6: 0 until me
+[28442] rec: 11->4: 0 until me
+[33062] Flag received
+[33062] 5 5 25 0
+Received Request: n[33062] ext = 0
+received Image msgs [33063] 1 | send Image msgs: 0
+Got A[33063] ck for IMG send to 28
+receiv[33063] ed Image msgs 1 | send Image[33063]  msgs: 1
+Update
+Collection d[33063] one 0
+[34073] rec: 15->23: 3 until me
+[34081] Time to wait: 60
+[34081] rec: 15->29: 1 until me
+[34082] Time to wait: 20
+[34082] DropTimer Fired...
+[34082] Send To = 15
+[34082] sen: 31->15: 0 until me
+[34082] rec: 15->10: 0 until me
+[34124] rec: 27->30: 0 until me
+[34142] rec: 30->25: 0 until me
+[34449] rec: 20->19: 0 until me
+[34580] rec: 19->12: 0 until me
+[34580] rec: 16->6: 0 until me
+[34582] rec: 28->6: 0 until me
+[34582] rec: 11->4: 0 until me
+[39321] Flag received
+[39322] 6 6 25 0
+Received Request: n[39322] ext = 0
+received Image msgs [39322] 1 | send Image msgs: 0
+Got A[39322] ck for IMG send to 28
+receiv[39322] ed Image msgs 1 | send Image[39323]  msgs: 1
+Update
+Collection d[39323] one 0
+[40264] rec: 15->23: 3 until me
+[40380] Time to wait: 60
+[40380] rec: 15->29: 1 until me
+[40380] Time to wait: 20
+[40381] Send To = 15
+[40381] sen: 31->15: 0 until me
+[40381] rec: 15->10: 0 until me
+[40382] rec: 27->30: 0 until me
+[40382] rec: 30->25: 0 until me
+[40428] rec: 22->24: 0 until me
+[40733] rec: 20->19: 0 until me
+[40733] rec: 19->12: 0 until me
+[40733] rec: 20->19: 0 until me
+[40734] rec: 19->12: 0 until me
+[40734] rec: 16->6: 0 until me
+[40734] rec: 28->6: 0 until me
+[45797] Flag received
+[45797] 7 7 25 0
+Received Request: n[45797] ext = 0
+received Image msgs [45797] 1 | send Image msgs: 0
+[45798] Got Ack for IMG send to 28
+r[45798] eceived Image msgs 1 | send [45798] Image msgs: 1
+Update
+Collect[45798] ion done 0
+[47188] rec: 20->19: 0 until me
+[47201] rec: 19->12: 0 until me
+[47222] rec: 16->6: 0 until me
+[47275] rec: 28->6: 0 until me
+[47324] rec: 11->4: 0 until me
+[52429] Flag received
+[52429] 8 8 25 0
+Received Request: n[52430] ext = 0
+received Image msgs [52431] 1 | send Image msgs: 0
+Got A[52431] ck for IMG send to 28
+receiv[52432] ed Image msgs 1 | send Image[52432]  msgs: 1
+Update
+Collection d[52433] one 0
+[53768] rec: 20->19: 0 until me
+[53776] rec: 19->12: 0 until me
+[53821] rec: 28->6: 0 until me
+[53921] rec: 11->4: 0 until me
+[57951] Flag received
+[57951] 9 9 25 0
+Received Request: n[57951] ext = 0
+received Image msgs [57951] 1 | send Image msgs: 0
+Got A[57951] ck for IMG send to 28
+receiv[57952] ed Image msgs 1 | send Image[57952]  msgs: 1
+Update
+Collection d[57952] one 0
+[58846] rec: 15->23: 3 until me
+[59119] Time to wait: 60
+[59119] rec: 15->29: 1 until me
+[59119] Time to wait: 20
+[59119] DropTimer Fired...
+[59120] Send To = 15
+[59120] sen: 31->15: 0 until me
+[59168] rec: 15->10: 0 until me
+[59174] rec: 27->30: 0 until me
+[59174] rec: 30->25: 0 until me
+[59175] rec: 20->19: 0 until me
+[59181] rec: 19->12: 0 until me
+[59336] rec: 19->12: 0 until me
+[59336] rec: 16->6: 0 until me
+[59336] rec: 28->6: 0 until me
+[59336] rec: 11->4: 0 until me
+[64469] Flag received
+[64469] 10 10 25 0
+Received Request:[64469]  next = 0
+received Image msg[64469] s 1 | send Image msgs: 0
+Got[64470]  Ack for IMG send to 28
+rece[64470] ived Image msgs 1 | send Ima[64470] ge msgs: 1
+Update
+Collection[64470]  done 0
+[65861] rec: 20->19: 0 until me
+[65868] rec: 19->12: 0 until me
+[65886] rec: 16->6: 0 until me
+[65886] rec: 28->6: 0 until me
+[65937] rec: 28->6: 0 until me
+[70986] Flag received
+[70987] 11 11 25 0
+Received Request:[70987]  next = 0
+received Image msg[70987] s 1 | send Image msgs: 0
+[70988] Got Ack for IMG send to 28
+r[70989] eceived Image msgs 1 | send [70989] Image msgs: 1
+Update
+Collect[70994] ion done 0
+[72382] rec: 19->12: 0 until me
+[72448] rec: 28->6: 0 until me
+[72493] rec: 11->4: 0 until me
+[76536] Flag received
+[76536] 12 12 25 0
+Received Request:[76536]  next = 0
+received Image msg[76536] s 1 | send Image msgs: 0
+Got[76536]  Ack for IMG send to 28
+rece[76537] ived Image msgs 1 | send Ima[76537] ge msgs: 1
+Update
+Collection[76537]  done 0
+[77790] rec: 20->19: 0 until me
+[77825] rec: 16->6: 0 until me
+[77838] rec: 28->6: 0 until me
+[77885] rec: 11->4: 0 until me
+[81869] Flag received
+[81869] 13 13 25 0
+Received Request:[81870]  next = 0
+received Image msg[81870] s 1 | send Image msgs: 0
+Got[81870]  Ack for IMG send to 28
+rece[81870] ived Image msgs 1 | send Ima[81871] ge msgs: 1
+Update
+Collection[81871]  done 0
+[83036] rec: 20->19: 0 until me
+[83038] rec: 19->12: 0 until me
+[83085] rec: 16->6: 0 until me
+[83086] rec: 28->6: 0 until me
+[83136] rec: 28->6: 0 until me
+[83206] rec: 11->4: 0 until me

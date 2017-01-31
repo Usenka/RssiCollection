@@ -1,0 +1,12 @@
+#include <Timer.h>
+#include "RadioImaging.h"
+#include "printf.h"
+
+module CalibrationC {
+  uses interface Timer<TMilli> as BroadcastTimer;
+}
+implementation {
+  event void BroadcastTimer.fired() {
+	
+  }
+}

@@ -1,0 +1,431 @@
+ 
+
+
+
+
+installApplicationOnHost(){
+ application=$1
+ host=$2
+ 
+}
+
+
+
+
+
+
+installAllCurrentDebug(){
+ binary=$1
+ copyToAllRemoteHosts $binary
+ for ipAddress in ${piToNodeMappingFiles[@]}
+ do
+  ssh $ipAddress "tos-bsl --telosb -c /dev/ttyUSB1 -r -e -I -p $binary"
+ done
+}
+
+debug(){
+  remoteHost=$1
+ ssh "$usr"\@"$remoteHost" 'motelist'
+}
+
+# TODO not yet tested
+getMoteListOfRemoteHost()
+{
+
+set -f              # turn off globbing
+IFS='
+'                   # split at newlines only
+  remoteHost=$1
+  motelist=($(ssh "$usr"\@"$remoteHost" 'motelist'))
+unset IFS
+set +f
+  
+#   moteIds=($(echo ${motelist[@]} | grep -o '[[:digit:]]*') )
+#   moteHwAddresses=( $(motelist -c | grep -o "^[[:alnum:]]*," | grep -o "[[:alnum:]]*") )
+  
+}
+
+# TODO not yet tested
+getMoteListOfAllRemoteHosts(){
+allMotelist=()
+allMoteIds=()
+allMoteHwAddresses=()
+for ipOfRemoteHost in ${pieList[@]}
+do 
+  echo $ipOfRemoteHost
+  getMoteListOfRemoteHost $ipOfRemoteHost
+  allMotelist=${allMotelist[@]}" "${motelist[@]}
+  allMoteIds=${allMoteIds[@]}" "${moteIds[@]}
+  allMoteHwAddresses=${allMoteHwAddresses[@]}" "${moteHwAddresses[@]}
+done
+
+# TODO change to C version of the serial forwarder
+startSerialForwarder(){
+  if [ "0" == $# ]
+  then
+   port=${moteIds[0]}
+  else
+     port=$1
+  fi
+  java net.tinyos.tools.Listen -comm serial@/dev/ttyUSB$port:telos
+}
+
+PLANET-refreshMoteList(){
+  if [ "$1" == "--help" ]
+  then
+    echo
+    echo "PARAMS: NONE"
+    echo
+    echo "Refresh the internal list for adressing of nodes. this function should usually never called seperatly but it may help if some nodes were not recognized properly"
+  else
+    motelist=( $(motelist | grep -o "${PLANET_USB_Path_Serial}[[:digit:]]*") )
+    moteIds=( $(echo ${motelist[@]} | grep -o '[[:digit:]]*') )
+    moteHwAddresses=( $(motelist -c | grep -o "^[[:alnum:]]*," | grep -o "[[:alnum:]]*") )
+  fi
+}
+}
+PLANET-killallSerialForwarder(){
+  serialFIds=($(ps -A --context | grep serial@ | grep -v "grep" | grep -o "^[[:space:]]*[[:digit:]]*"))
+  for id in ${serialFIds[@]}
+  do
+    kill $id
+  done
+}
+
+
+
+
+
+
+
+PLANET-createAddAppDescription(){
+  local fileName=$1
+  local Id=$2
+  local app=$3
+#  local force=$4
+  if [ ! -f $fileName ]
+  then
+    echo "File: $fileName does not exist. Will create a new one"
+    echo "$Id $app" > $fileName
+  else
+    if [ $(cat $fileName | grep -c $"^$Id ") -ge 1 ]
+    then
+      echo "ID already exist"
+    else
+      echo "$Id $app" >> $fileName
+      cat $fileName | sort -n > $fileName.tmp
+      mv $fileName.tmp $fileName
+    fi
+  fi
+}
+
+
+
+PLANET-installSingleHardware(){
+  local name=$1
+  local application=$2
+  local portNumber=$3
+  local amID
+  local hwAddress
+  local found="false"
+  PLANET-refreshMoteList
+  for (( i=0; i < ${#moteIds[@]}; i++ ))
+  do
+    if [ "${moteIds[i]}" == "$portNumber" ]
+    then
+      found="true"
+      hwAddress=${moteHwAddresses[i]}
+      break
+    fi
+  done
+  if [ "false" == "$found" ]
+  then
+    echo "ERROR: Mote with address $2 not found"
+    return 1
+  fi
+  if [ ! -f $name ]
+  then
+    echo "ERROR: harware list description not found"
+    return 1
+  fi
+  amID=$(cat $name | grep $hwAddress | grep -o "^[[:digit:]]*")
+  PLANET-install $application $amID $portNumber
+}
+
+PLANET-installSingleHardwareAM(){
+  local application=$1
+  local experimentFile=$(pwd)/$2
+  local amID=$3
+  shift
+  (
+    PLANET-gotoApplicationPath $application
+    if [ "$?" == "0" ]
+    then
+      PLANET-installSingleHardwareCurrentAM $experimentFile $amID
+    else
+      echo "Path not found"
+      return 1
+    fi
+  )
+  return 0
+}
+
+
+PLANET-installAllHardwareCurrent(){
+  name=$1
+  local exMoteList
+  local experimentList=$name
+  PLANET-compile
+  if [ ! -f $experimentList ]
+  then
+    echo "ERROR: File not found"
+  else
+    PLANET-refreshMoteList
+    local moteReferences=$( motelist -c | grep -o '^[[:alnum:]]*,' | grep -o '[[:alnum:]]*')
+    for entry in ${moteReferences[@]}
+    do
+      local moteInfo=$(cat $experimentList | grep "$entry ")
+      if [ "$moteInfo" != "" ]
+      then
+	local moteInfo=($moteInfo)
+	local moteId=${moteInfo[0]}
+	local motePort=$(motelist | grep ${moteInfo[1]} | grep -o "${PLANET_USB_Path_Serial}[[:digit:]]*" | grep -o "[[:digit:]]*" )
+	echo "ID: "$moteId" Port: "$motePort
+	(
+	  PLANET-installCurrent $moteId $motePort
+	)
+      fi
+    done
+  fi
+  
+}
+
+PLANET-installAllHardware(){
+  name=$1
+  application=$2
+  local exMoteList
+  local experimentList=$name
+  
+  if [ ! -f $experimentList ]
+  then
+    echo "ERROR: File not found"
+  else
+    PLANET-refreshMoteList
+    local moteReferences=$( motelist -c | grep -o '^[[:alnum:]]*,' | grep -o '[[:alnum:]]*')
+    for entry in ${moteReferences[@]}
+    do
+      local moteInfo=$(cat $experimentList | grep $entry)
+      if [ "$moteInfo" != "" ]
+      then
+	local moteInfo=($moteInfo)
+	local moteId=${moteInfo[0]}
+	local motePort=$(motelist | grep ${moteInfo[1]} | grep -o "${PLANET_USB_Path_Serial}[[:digit:]]*" | grep -o "[[:digit:]]*" )
+	echo "ID: "$moteId" Port: "$motePort
+	(
+	PLANET-gotoApplicationPath $application
+	if [ "0" == "$?" ]
+	then
+	  PLANET-compile
+	  PLANET-installCurrent $moteId $motePort
+	fi
+	)
+      fi
+    done
+  fi
+  
+}
+
+
+PLANET-installSingleHardwareCurrentAM(){
+  local experimentFile=$1
+  local amID=$2
+  local portNumber
+  local hwAddress
+  hwAddress=$(cat $experimentFile | grep "^$amID" | grep -o "[[:alnum:]]*[[:space:]]*$" | grep -o "[[:alnum:]]*")
+  if [ "$hwAddress" != "" ]
+  then
+    echo "Mote with AM-address: $amID found in file: $experimentFile as $hwAddress"
+    PLANET-refreshMoteList
+    for ((i = 0; i < ${#moteHwAddresses[@]}; i++))
+    do
+      if [ "$hwAddress" == "${moteHwAddresses[i]}" ]
+      then
+	local found="true"
+	portNumber=${moteIds[i]}
+	break
+      fi
+    done
+    if [ "$found" != "true" ]
+    then
+      echo "Mote with hw-address: $hwAddress not connected"
+      return 1
+    fi
+    PLANET-compile
+    PLANET-installCurrent $amID $portNumber
+  else
+    echo "Mote with AM-address: $amID not found in file: $experimentFile"
+    return 2
+  fi
+  
+}
+
+
+PLANET-installAllHardwareApplication(){
+  local hwDef=$1
+  local applicationDef=$2
+  PLANET-refreshMoteList
+  for ((i = 0; i < ${#moteHwAddresses[@]}; i++))
+  do
+    mote=${moteHwAddresses[i]}
+    echo "Detected mote: $mote"
+    moteID=""
+    moteID=$(cat $hwDef | grep $mote | grep -o "^[[:digit:]]*")
+    echo "found id: $moteID"
+    if [ "$moteID" != "" ]
+    then
+      moteApp=""
+      moteApp=$(cat $applicationDef | grep "^$moteID " | grep "^[[:digit:]]*[[:space:]]*" | sed "s|^[[:digit:]]*[[:space:]]*||g")
+      if [ "$moteApp" == "" ]
+      then
+	moteApp=$(cat $applicationDef | grep "^default" | grep "^default[[:space:]]*" | sed "s|^default[[:space:]]*||g")
+      fi
+      if [ "$moteApp" == "" ]
+      then
+	echo "WARNING no application found (no default app set)"
+      else
+	echo "Found application: $moteApp"
+	moteport=${moteIds[i]}
+	PLANET-install $moteApp $moteID $moteport
+      fi
+    else
+      echo "Skipping $mote (not found in hw list)"
+    fi
+  done
+}
+
+PLANET-createAddHardwareList(){
+  name=$1
+  local exMoteList
+  local experimentList=$name
+  local experimentTempList=$name.tmp
+  
+  
+  PLANET-refreshMoteList
+
+  if [ -f $experimentList ]
+  then
+    echo "WARNING hardware-list name already exist."
+    echo "will append nodes to this file"
+    awk '{print $2}' $experimentList > $experimentTempList
+    mv $experimentTempList $experimentList
+    eval motelist -c | grep -o '^[[:alnum:]]*,' |  grep -o '^[[:alnum:]]*' > $experimentTempList
+    cat $experimentTempList $experimentList | sort -m | sort -u -o $experimentList
+    rm $experimentTempList
+  else
+    eval motelist -c | grep -o '^[[:alnum:]]*,' |  grep -o '^[[:alnum:]]*' > $experimentList
+  fi
+  awk '{print NR, $1}' $experimentList > $experimentTempList
+  mv $experimentTempList $experimentList
+  echo "Number of nodes associated with this hardware list $experimentList: " $(cat $experimentList | wc -l)
+}
+
+
+PLANET-installCurrent(){
+  # TODO check Windows support
+  local portnumber=$2
+  PLANET-refreshMoteList
+  local found=false
+  for element in ${moteIds[@]}
+  do
+    if [ $portnumber == $element ]
+    then
+      found=true
+      break
+    fi
+  done
+  if [ ${found^^} == "FALSE" ]
+  then
+    echo "WARNING There is not mote attached to port: $portnumber"
+    echo "will skip this mote..."
+    return 1
+  fi
+   echo "Installing $(basename $(pwd)) on mote-address $PLANET_USB_Path$portnumber with AM-address: $1 ..."
+   make telosb reinstall,$1 bsl,$PLANET_USB_Path$portnumber 2>$log >$log
+   if [ 0 != $? ]
+   then
+    echo "ERROR: could not install program $(basename $(pwd)) on mote-address $PLANET_USB_Path$portnumber with AM-address: $1"
+    echo "Start second attempt..."
+    make telosb reinstall,$1 bsl,$PLANET_USB_Path$portnumber 2>$log >$log
+    if [ 0 != $? ]
+    then
+      echo "ERROR: installation failed (again)!"
+      return 1
+    else
+     echo "Installation was successfull"
+     return 0
+    fi
+   else
+     echo "Installation was successfull"
+     return 0
+   fi 
+}
+
+
+
+PLANET-internInstallSingleNode(){
+  PLANET-refreshMoteList
+  default_port=${moteIds[0]}
+  PLANET-compile
+  if [ "0" == "$#" ]
+  then 
+    PLANET-installCurrent 1 $default_port
+  else 
+    if [ "1" == "$#" ]
+    then 
+      PLANET-installCurrent $1 $default_port
+    else
+      if [ "2" == "$#" ]
+      then
+	PLANET-installCurrent $1 $2
+      fi
+    fi
+  fi
+}
+
+
+installAllCurrent(){
+  if [ "--help" == "$1" ]
+  then
+    echo "USAGE: "
+    echo
+    echo "Optional param: start AM-Id"
+  fi
+  PLANET-refreshMoteList
+  if [ "0" == "$#" ]
+  then
+    startId=1
+  else
+    startId=$1
+  fi
+  PLANET-compile
+  for mote in ${moteIds[@]}
+  do
+    PLANET-installCurrent $startId $mote
+    ((startId++))
+  done
+}
+
+
+
+internGetMoteAmAddressByHW(){
+  local filename=$1
+  local hwaddress=$2
+  local amID
+  if [ $# -ge 2 ]
+    then
+      amID=$(cat $filename | grep $hwaddress | grep -o "^[[:digit:]]*" )
+    else
+      amID=""
+  fi
+  echo $amID
+}

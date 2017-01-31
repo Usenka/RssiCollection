@@ -1,0 +1,54 @@
+import net.tinyos.message.*;
+import net.tinyos.packet.*;
+import net.tinyos.util.*;
+import java.util.*;
+
+class RssiReceive implements MessageListener {
+	MoteIF moteIF;	
+	
+	//HashMap<Integer, Node> nodes;
+	
+	public RssiReceive(MoteIF moteIF) {
+		this.moteIF = moteIF;
+		this.moteIF.registerListener(new RadioImageMsg(), this);
+		System.out.println("READY!!! :)");
+	}
+
+	public void messageReceived(int to, Message message) {
+		RadioImageMsg radioImageMsg = (RadioImageMsg) message;
+		System.out.println("\n\nImage received from " + radioImageMsg.get_from() + "; Data Left: " + radioImageMsg.get_motesLeft);
+
+		/*short[] from = nodeArrayMsg.get_nodes_from();
+		short[] id = nodeArrayMsg.get_nodes_id();
+		byte[] rssi = nodeArrayMsg.get_nodes_rssi();*/
+
+		
+	}
+
+	public static void main(String[] args) {
+		String source = null;
+
+		if (args.length == 2) {
+			if (!args[0].equals("-comm")) {
+				System.exit(1);
+			}
+			source = args[1];
+		}
+		else if (args.length != 0) {
+			System.exit(1);
+		}
+
+		PhoenixSource phoenix;
+
+		if (source == null) {
+			phoenix = BuildSource.makePhoenix(PrintStreamMessenger.err);
+		}
+		else {
+			phoenix = BuildSource.makePhoenix(source, PrintStreamMessenger.err);
+		}
+
+		MoteIF mif = new MoteIF(phoenix);
+
+		new RssiReceive(mif);
+	}
+}

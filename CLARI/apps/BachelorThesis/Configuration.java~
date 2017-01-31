@@ -1,0 +1,10 @@
+public class Configuration {
+	static final int NUMBER_OF_NODES = 32;
+	static Phase PHASE = Phase.CALIBRATION;
+	static final int MAX_NODES_PER_MESSAGE = (28-2)/2;
+	static final short ROOT_NODE = 1;
+
+	public enum Phase {
+		CALIBRATION, SAMPLING
+	}
+}

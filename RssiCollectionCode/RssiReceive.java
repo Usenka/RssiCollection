@@ -30,6 +30,7 @@ class RssiReceive{
 					} catch(Exception e) {}				
 				} else {
 					printEvent("Schedule spreded!");
+					scheduleSpread = true;
 					moteIF.deregisterListener(new ScheduleMsg(), scheduleListener);
 				}
 			}};
@@ -41,91 +42,138 @@ class RssiReceive{
 	boolean scheduleCreated = false;
 	boolean sendSchedule = false;
 	boolean scheduleStarted = false;
+	boolean scheduleSpread = false;
+	boolean sampling = false;
 
 	int scheduleMsgIndex = 0;
 
 	/*TODO reciving the schedule message to know when to send the next one and to know when she schedule is received by every node.*/
 
-	public RssiReceive(MoteIF moteIF) {		
+	public RssiReceive(MoteIF moteIF, boolean controll) {		
 
 		this.moteIF = moteIF;
 					
 		printEvent("Ready");
-
-		while(true) {
-			try {
-				BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-				String command = br.readLine();
-
-				if(Configuration.COMMAND_STARTCALIBRATION.equals(command)) {					
-					initializeNodes();
-					this.moteIF.registerListener(new RadioImageMsg(), radioImageListener);							
-					CommandMsg msg = new CommandMsg();
-					msg.set__command((short) 0);
-					moteIF.send(MoteIF.TOS_BCAST_ADDR, msg);
-					printEvent("Calibration started!");
-				}
-				/*else if(command.toUpperCase().startsWith(Configuration.COMMAND_LOADCALIBRATIONDATA)) {
-					initializeNodes();
-					nodes = readConnectionsFromFile(command.split(" ")[2], Configuration.NUMBER_OF_NODES);
-					recivedCalibrationData = true;				
-					/*TODO THIS STUFF
-				}*/
-				else if(Configuration.COMMAND_CREATESCHEDULE.equals(command)) {
-					if(!recivedCalibrationData) {
-						System.out.println("ERROR - No calibration data collected");
-						continue;	
-					}
-					printEvent("Creating Schedule!");
-					Scheduler s = new Scheduler(nodes);
-					s.createSchedule();
-					String scheduleString = s.createScheduleString();
-					System.out.println("Schedule: " + scheduleString + " - Schedule has " + scheduleString.split(" ").length + "hops");
+		
+		if (!controll) {
+			boolean startedCalibration = false;
+			boolean startedSpreading = false;
+			while(!sampling) {
+				if(!recivedCalibrationData && !startedCalibration) {
+					startCalibration();
+					startedCalibration = true;
+				} else if(recivedCalibrationData && !scheduleCreated) {
+					createSchedule();
 					scheduleCreated = true;
-					printEvent("Schedule created!");
+				} else if(scheduleCreated && !startedSpreading) {
+					spreadSchedule();
+					startedSpreading = true;
+				} else if(scheduleSpread && !sampling) {
+					startSampling();
+					sampling = true;
 				}
-				else if(Configuration.COMMAND_SENDSCHEDULE.equals(command)) {
-					if(!scheduleCreated) {
-						System.out.println("ERROR - No schedule created");
-						continue;	
+			}		
+		} else {
+			while(true) {
+				try {
+					BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+					String command = br.readLine();
+
+					if(Configuration.COMMAND_STARTCALIBRATION.equals(command)) {					
+						startCalibration();
 					}
-					this.moteIF.registerListener(new ScheduleMsg(), scheduleListener);
-					Short[] schedule = new Scheduler(nodes).createScheduleArray();
-					try {	
-						printEvent("Sending schedule!");
-						sendSchedule(schedule, 0);	
-					} catch (Exception e) {}			
-				}
-				else if(Configuration.COMMAND_STARTSCHEDULE.equals(command)) {
-					CommandMsg msg = new CommandMsg();
-					this.moteIF.registerListener(new RadioImageMsg(), radioImageListener);
-					Configuration.PHASE = Configuration.Phase.SAMPLING;
-					msg.set__command((short) 1);
-					moteIF.send(MoteIF.TOS_BCAST_ADDR, msg);
-					printEvent("Schedule started!");
-				}
-				else if(Configuration.COMMAND_STOPSCHEDULE.equals(command)) {
-					System.out.println("RssiReceice is confused... it hurt itself...");
-					System.exit(-1);
-					/*TODO THIS STUFF*/
-				}
-				else if(Configuration.COMMAND_HELP.equals(command)) {
-					System.out.println("\n--------------------------------Possible Commands------------------------------------");
-					System.out.println("|                                                                                   |");
-					System.out.println("| " + Configuration.COMMAND_STARTCALIBRATION + " - Collect data about the connections between Notes        |");
-					//System.out.println("|  " + Configuration.COMMAND_LOADCALIBRATIONDATA + " <File> - Load data about connections between Notes |");
-					System.out.println("| " + Configuration.COMMAND_CREATESCHEDULE + " - Create a schedule                                          |");
-					System.out.println("| " + Configuration.COMMAND_SENDSCHEDULE + " - Send the schedule to the notes                               |");
-					System.out.println("| " + Configuration.COMMAND_STARTSCHEDULE + " - Start the schedule                                         |");
-					System.out.println("| " + Configuration.COMMAND_STOPSCHEDULE + " - Stop the schedule                                          |");
-					System.out.println("|                                                                                   |");
-					System.out.println("-------------------------------------------------------------------------------------\n");
-				} else {
-					System.out.println("RssiReceice is confused... it does nothing... 'HELP' could solve the confusion");	
-				}
-			} catch (Exception e) {System.out.println(e);}
+					/*else if(command.toUpperCase().startsWith(Configuration.COMMAND_LOADCALIBRATIONDATA)) {
+						initializeNodes();
+						nodes = readConnectionsFromFile(command.split(" ")[2], Configuration.NUMBER_OF_NODES);
+						recivedCalibrationData = true;				
+						/*TODO THIS STUFF
+					}*/
+					else if(Configuration.COMMAND_CREATESCHEDULE.equals(command)) {
+						if(!recivedCalibrationData) {
+							System.out.println("ERROR - No calibration data collected");
+							continue;	
+						}
+						createSchedule();
+					}
+					else if(Configuration.COMMAND_SENDSCHEDULE.equals(command)) {
+						if(!scheduleCreated) {
+							System.out.println("ERROR - No schedule created");
+							continue;	
+						}
+						spreadSchedule();			
+					}
+					else if(Configuration.COMMAND_STARTSCHEDULE.equals(command)) {
+						if(!scheduleSpread) {
+							System.out.println("ERROR - Schedule not spread");
+							continue;	
+						}
+						startSampling();
+					}
+					else if(Configuration.COMMAND_STOPSCHEDULE.equals(command)) {
+						System.out.println("RssiReceice is confused... it hurt itself...");
+						System.exit(-1);
+						/*TODO THIS STUFF*/
+					}
+					else if(Configuration.COMMAND_HELP.equals(command)) {
+						System.out.println("\n--------------------------------Possible Commands------------------------------------");
+						System.out.println("|                                                                                   |");
+						System.out.println("| " + Configuration.COMMAND_STARTCALIBRATION + " - Collect data about the connections between Notes        |");
+						//System.out.println("|  " + Configuration.COMMAND_LOADCALIBRATIONDATA + " <File> - Load data about connections between Notes |");
+						System.out.println("| " + Configuration.COMMAND_CREATESCHEDULE + " - Create a schedule                                          |");
+						System.out.println("| " + Configuration.COMMAND_SENDSCHEDULE + " - Send the schedule to the notes                               |");
+						System.out.println("| " + Configuration.COMMAND_STARTSCHEDULE + " - Start the schedule                                         |");
+						System.out.println("| " + Configuration.COMMAND_STOPSCHEDULE + " - Stop the schedule                                          |");
+						System.out.println("|                                                                                   |");
+						System.out.println("-------------------------------------------------------------------------------------\n");
+					} else {
+						System.out.println("RssiReceice is confused... it does nothing... 'HELP' could solve the confusion");	
+					}
+				} catch (Exception e) {System.out.println(e);}
+			}
 		}
 	}
+
+	private void startCalibration(){
+		initializeNodes();
+		this.moteIF.registerListener(new RadioImageMsg(), radioImageListener);							
+		CommandMsg msg = new CommandMsg();
+		msg.set__command((short) 0);
+		try {	
+			moteIF.send(MoteIF.TOS_BCAST_ADDR, msg);
+		} catch (Exception e) {}
+		printEvent("Calibration started!");
+	}
+
+	private void createSchedule(){
+		printEvent("Creating Schedule!");
+		Scheduler s = new Scheduler(nodes);
+		s.createSchedule();
+		String scheduleString = s.createScheduleString();
+		System.out.println("Schedule: " + scheduleString + " - Schedule has " + scheduleString.split(" ").length + "hops");
+		scheduleCreated = true;
+		printEvent("Schedule created!");
+	}
+
+	private void spreadSchedule() {
+		this.moteIF.registerListener(new ScheduleMsg(), scheduleListener);
+		Short[] schedule = new Scheduler(nodes).createScheduleArray();
+		try {	
+			printEvent("Sending schedule!");
+			sendSchedule(schedule, 0);	
+		} catch (Exception e) {}
+	}
+
+	private void startSampling() {
+		CommandMsg msg = new CommandMsg();
+		this.moteIF.registerListener(new RadioImageMsg(), radioImageListener);
+		Configuration.PHASE = Configuration.Phase.SAMPLING;
+		msg.set__command((short) 1);
+		try {
+			moteIF.send(MoteIF.TOS_BCAST_ADDR, msg);
+		} catch (Exception e) {}
+		printEvent("Schedule started!");
+	}
+
 
 	private void processData(Node node, short[] dataIDs, byte[] dataRSSIs) {
 		node.resetInRange();		
@@ -247,12 +295,18 @@ class RssiReceive{
 	public static void main(String[] args) {
 		String source = null;
 
-		if (args.length == 2) {
+		boolean controll = false;
+
+		if (args.length == 2 || args.length == 3) {
 			if (!args[0].equals("-comm")) {
 				System.out.println("arg[0] should be -comm");
 				System.exit(1);
 			}
 			source = args[1];
+			if(args.length == 3) {
+				if(args[2].toUpperCase().equals("-C"))
+					controll = true;	
+			}
 		}
 		else if (args.length != 0) {
 			System.out.println("2 arguments are required");
@@ -270,6 +324,6 @@ class RssiReceive{
 
 		MoteIF mif = new MoteIF(phoenix);
 
-		new RssiReceive(mif);
+		new RssiReceive(mif, controll);
 	}
 }

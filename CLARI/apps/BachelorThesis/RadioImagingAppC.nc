@@ -1,0 +1,78 @@
+#include <Timer.h>
+#include "RadioImaging.h"
+#define NEW_PRINTF_SEMANTICS
+
+configuration RadioImagingAppC {
+}
+implementation {
+  components RadioImagingC as App;
+  components CalibratorC as Calibrator;
+  components SamplerC as Sampler;
+  components MainC;
+  components CC2420ActiveMessageC;
+  components new AMReceiverC(AM_RADIOIMAGE) as RadioImageReceiver;
+  components new AMSenderC(AM_RADIOIMAGE) as RadioImageSender;
+  components new AMReceiverC(AM_BROADCAST) as BroadcastReceiver;
+  components new AMSenderC(AM_BROADCAST) as BroadcastSender;
+  components new AMReceiverC(AM_SCHEDULE) as ScheduleReceiver;
+  components new AMSenderC(AM_SCHEDULE) as ScheduleSender;
+  components new AMReceiverC(AM_FLAG) as FlagReceiver;
+  components new AMSenderC(AM_FLAG) as FlagSender;
+  components new TimerMilliC() as BroadcastTimer;
+  components new TimerMilliC() as BreakTimerA;
+  components new TimerMilliC() as DropTimer;
+#ifdef REAL 
+  components PrintfC;
+#else
+  components SerialPrintfC;
+#endif
+  components SerialStartC;
+
+  App.Boot -> MainC;
+  App.AMControl -> CC2420ActiveMessageC;
+  App.RadioImageReceive -> RadioImageReceiver;
+  App.RadioImageSend -> RadioImageSender;
+  App.BroadcastSend -> BroadcastSender;
+  App.BroadcastReceive -> BroadcastReceiver;
+  App.FlagSend -> FlagSender;
+  App.FlagReceive -> FlagReceiver;
+  App.ScheduleSend -> ScheduleSender;
+  App.Packet_ -> RadioImageSender;
+  App.AMPacket -> RadioImageSender;
+  App.BroadcastTimer -> BroadcastTimer;
+  App.Rssi -> CC2420ActiveMessageC.CC2420Packet;
+#ifdef PACKET_LINK
+  App.PacketLink-> CC2420ActiveMessageC;
+#else
+  App.PacketAck -> CC2420ActiveMessageC;
+  Calibrator.PacketAck -> CC2420ActiveMessageC;
+#endif
+  
+  Calibrator.BroadcastTimer -> BroadcastTimer;
+  Calibrator.BreakTimer -> BreakTimerA;
+  Calibrator.ScheduleReceive -> ScheduleReceiver;
+  Calibrator.ScheduleSend -> ScheduleSender;
+  Calibrator.FlagSend -> FlagSender;
+  Calibrator.Packet_ -> RadioImageSender;
+  Calibrator.AMPacket -> RadioImageSender;
+  Calibrator.BroadcastSend -> BroadcastSender;
+  Sampler.BroadcastReceive -> App.SamplerBroadcastReceive;
+  Sampler.BroadcastSend -> BroadcastSender;
+  Sampler.AMPacket -> BroadcastSender;
+  Sampler.Packet_ -> BroadcastSender; 
+  Sampler.FlagSend -> FlagSender; 
+  Sampler.DropTimer -> DropTimer;
+
+   /*PCSend*/
+  components SerialActiveMessageC as AM;
+  components new SerialAMSenderC(AM_RADIOIMAGEMSG) as pcRadioSend;
+  components new SerialAMSenderC(AM_SCHEDULEMSG) as pcScheduleSend;
+  components new SerialAMReceiverC(AM_SCHEDULEMSG) as pcScheduleReceive;
+  components new SerialAMReceiverC(AM_COMMANDMSG) as pcCommandReceive;
+  App.SerialControl -> AM;
+  App.PCSend -> pcRadioSend;
+  App.CommandReceive -> pcCommandReceive;  
+  App.PCPacket -> AM;
+  Calibrator.PCScheduleSend -> pcScheduleSend;
+  Calibrator.PCScheduleReceive -> pcScheduleReceive;
+}

@@ -1,0 +1,1179 @@
+#!/bin/bash
+
+thisuser=`id -u`
+scriptdir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd)"
+# This is required to make midnight commanders editor highlight syntax correctly: "
+
+CLARI_isCLARISim=0
+
+if [ "$CLARICONFIG" != "" ]
+then
+	source "$CLARICONFIG"
+else
+	source config.sh
+fi
+
+trap 'kill $(jobs -p)' EXIT
+
+__CLARI_gotoApplicationPath(){
+  local path=""
+  for item in ${TinyOSCustomApps[@]}
+  do
+    if [ -d $item/$1 ]
+    then
+      path=$item/$1
+      break
+    fi
+  done
+	
+  if [ "" == "$path" ]
+  then
+    for item in ${tinyOSAppSubPaths[@]}
+    do
+      if [ -d $TinyOSAppPath/$item/$1 ]
+      then
+				path=$TinyOSAppPath/$item/$1
+				break
+      fi
+    done
+  fi
+	
+  if [ "" == "$path" ]
+  then
+    if [ -d $ConfigPath/tinyosApps/$1 ]
+    then
+      path=$ConfigPath/tinyosApps/$1
+    fi
+  fi
+
+  if [ "" != "$path" ]
+  then
+    cd $path
+    return 0
+  fi
+  if [ -d "$1" ]
+  then
+  	cd "$1"
+  	return 0
+  fi
+  return 1
+}
+
+
+CLARI_copyToRemoteHost(){
+  if [ "2" != "$#" ]
+  then
+    echo "CLARI_copyToRemoteHostFailure"
+    echo "requires 2 arguments (filename, remoteIp)"
+  fi
+  fileName=$1
+  remoteIp=$2
+  echo "scp -r $fileName "$usr"\@"$remoteIp":temp"
+  scp -r $fileName "$usr"\@"$remoteIp":temp 2>&1 >> "$log"
+  if [ $? -eq 0 ]
+  then
+  	echo "SUCCESS: Copying of $fileName to remote host $remoteIP completed." | tee -a "$log"
+  	return 0
+  else
+  	echo "ERROR:   Copying of $fileName to remote host $remoteIP failed." | tee -a "$log" 1>&2
+  	return 1
+  fi
+}
+
+copyToAllRemoteHosts(){
+  filename=$1
+  echo "STEP:    Start copying application $filename to all hosts.." | tee -a "$log"
+  ret=0
+  pids=""
+  for ipOfRemoteHost in ${pieList[@]}
+  do
+#    echo "         Copying $filename to $ipOfRemoteHost"
+    CLARI_copyToRemoteHost $filename $ipOfRemoteHost &
+    pids+="$! "
+  done
+  for p in $pids
+  do
+  	if [ "$p" != "" ]
+  	then
+	  	if ! wait $p
+	  	then
+	  		ret=1
+	  	fi
+	  fi
+  done
+  if [ $ret -eq 0 ]
+  then
+  	echo "======== Succeeded copying $filename to all hosts." | tee -a "$log"
+  else
+  	echo "======== FAILED COPYING $filename TO ALL HOSTS." | tee -a "$log" 1>&2
+  fi
+  return $ret
+}
+
+CLARI_executeCommandOnAllHosts(){
+  command="$1"
+	
+	pids=""
+  i=0
+  for ipOfRemoteHost in ${pieList[@]}
+  do
+    echo "         Executing command $command on host $ipOfRemoteHost.." | tee -a "$log"
+    echo "$ipOfRemoteHost" > "/tmp/$thisuser.command.output.log.$i"
+#debug "pi@" before "ipOfRemotePis"
+    ssh pi@$ipOfRemoteHost "$command 2>&1" 2>&1 >> "/tmp/$thisuser.command.output.log.$i" 2>&1 & >> "/tmp/$thisuser.command.output.log.$i"
+    pids+="$! "
+    ((i++))
+  done
+	
+#	echo "Pid-List: $pids."
+	i=0
+  ret=0
+  for p in $pids
+  do
+  #	echo "Waiting for process $p.."
+  	if [ "$p" != "" ]; then
+  	ipOfRemoteHost=`cat "/tmp/$thisuser.command.output.log.$i" | head -n 1`
+	  	if ! wait $p
+	  	then
+				echo "ERROR:   Command $command failed on host $ipOfRemoteHost" | tee -a "$log" >&2
+				echo -n "Command output was: " | tee -a "$log" >&2
+				cat "/tmp/$thisuser.command.output.log.$i" | tail -n+2 | tee -a "$log" >&2
+				echo ""
+				ret=1
+	  	else
+				echo "OK:      Command $command executed on host $ipOfRemoteHost" | tee -a "$log"
+				echo -n "Command output was: " | tee -a "$log"
+				cat "/tmp/$thisuser.command.output.log.$i" | tail -n+2 | tee -a "$log"
+				echo ""
+	  	fi
+  	fi
+#  	echo "Done."
+		rm "/tmp/$thisuser.command.output.log.$i"
+  	((i++))
+	done
+	return $ret
+}
+
+CLARI_experiment_jan() {
+	#CLARI_restartApp
+	
+	i=1
+	amount=1
+
+	while [ $i -le $amount ]
+	do
+		#restart application
+		CLARI_restartApp
+
+		#startprintfListening
+		bash ./PrintF/run.sh &
+		printRecID=$!
+
+		#start RSSIReceive
+  		java -jar RssiReceive.jar -comm network@localhost:60001 &
+		rssiRecID=$!
+
+		#sleep and stuff
+		sleep 1h
+
+		#kill java applications
+		kill $rssiRecID
+		kill $printRecID
+
+		#save outputs
+		mkdir ./PrintF/Experiments/$i
+		mkdir ./PrintF/Experiments/$i/motes
+		mv ./PrintF/log/*.txt ./PrintF/Experiments/$i
+		mv ./PrintF/log/motes/*.txt ./PrintF/Experiments/$i/motes
+
+  		let "i=$i+1"
+	done
+	
+	
+	# mv ./PrintF/log/*.txt ./PrintF
+}
+
+CLARI_jan() {
+	echo "INFO:    Stopping all local serial forwarders.." | tee -a "$log"
+	CLARI_killallLocalSerialForwardersPlease
+
+	nullApp="testbedConfigurations/Null.conf"
+	janApp="testbedConfigurations/jan.conf"
+
+	echo "INFO:    Install Null.conf..." | tee -a "$log"
+	CLARI_installApplicationOnAllRemoteHosts $nullApp
+	echo "INFO:    Install jan.conf..." | tee -a "$log"
+	CLARI_installApplicationOnAllRemoteHosts $janApp
+
+	CLARI_startAllRemoteSerialForwarders
+	CLARI_startAllLocalSerialForwarderJava
+}
+
+CLARI_restartApp() {
+	CLARI_killallRemoteSerialForwardersPlease
+
+	CLARI_resetAllMotes
+
+	CLARI_startAllRemoteSerialForwarders
+	CLARI_startAllLocalSerialForwarderJava
+}
+
+CLARI_destructionOfTheUniverse() {
+	echo "INFO:    Stopping all local serial forwarders.." | tee -a "$log"
+	CLARI_killallLocalSerialForwardersPlease
+
+	nullApp="testbedConfigurations/Null.conf"
+	
+	echo "INFO:    Install Null.conf..." | tee -a "$log"
+	CLARI_installApplicationOnAllRemoteHosts $nullApp
+}
+
+CLARI_installApplicationOnAllRemoteHosts(){
+	if [ "$#" != "1" ]
+	then
+	    echo "Please specify configuration file." >&2
+	    return 1
+	fi
+	
+	echo "INFO:    Stopping all serial forwarders.." | tee -a "$log"
+	CLARI_killallRemoteSerialForwardersPlease	
+
+	echo "INFO:    Serial forwarders stopped.."
+	
+	echo "INFO:    Getting a global list of motes.."
+	CLARI_performGlobalMotelist > /dev/null
+	
+	
+	megaApp=""
+	idToApplicationFile=$1
+	applications=($(cat $1 | awk '{print $2}' ))
+	echo "Apps=$applications.."
+	amIds=($(cat $1 | awk '{print $1}' ))
+	echo "amIds=$amIds"
+	megaApp=$(cat $idToApplicationFile | grep \* | awk '{print $2}')
+	
+	sorted_unique_ids=$(echo "${applications[@]}" | tr ' ' '\n' | sort -u | tr '\n' ' ')
+	
+	for application in ${sorted_unique_ids[@]}
+	do
+		echo "Going to app path.."
+		__CLARI_gotoApplicationPath $application
+		if [ $? -eq 0 ] 
+		then
+#			echo "copying application $application to all remoteHosts"
+			#TODO copy application just on the pies that require it
+			appname=`basename $application`
+			
+			copyToAllRemoteHosts ../$appname
+			if [ $? -eq 0 ]
+			then
+				CLARI_executeCommandOnAllHosts "source tinyos-installation/tinyos.env; cd temp/$appname; make telosb"
+				if [ $? -ne 0 ]
+				then
+					echo "FAIL:    Application $application could not be compiled on all hosts. Aborting.."
+					return 1
+				fi
+			else
+				echo "FAIL:    Application $application could not be copied to all hosts. Aborting.." | tee -a "$log" 1>&2
+				cd - > /dev/null
+				return 1
+			fi
+		else 
+			echo "FAIL:    Application $application not found. Aborting.."
+			return 1
+		fi
+		cd - > /dev/null
+	done 
+	
+	echo "         Installing applications to motes.." | tee -a "$log"
+  pids=""
+  for ipOfRemoteHost in ${pieList[@]}
+  do
+		__CLARI_installOnHost $ipOfRemoteHost &
+		pids+="$! "
+  done
+  
+  ret=0
+  for p in $pids
+  do
+  	if [ "$p" != "" ]
+  	then
+	  	if ! wait $p
+	  	then
+	  		echo "FAIL:    Application could not be installed completely." | tee -a "$log" 1>&2
+	  		ret=1
+	  	fi
+	  fi
+  done
+	if [ $ret -eq 0 ]
+	then
+		echo "SUCCESS: All applications have been installed on the motes." | tee -a "$log"
+	fi
+}
+
+__CLARI_installOnHost(){
+  ipOfRemoteHost2=$1
+  
+#  connectedMoteHwAddresses=($(ssh $ipOfRemoteHost2 "motelist -c" | awk -F "," '{print $1}'))
+#  connectedMotePorts=($(ssh $ipOfRemoteHost2 "motelist -c" | awk -F "," '{print $2}'))
+#    connectedMoteHwAddresses=($(cat /tmp/$thisuser.motelist.total | awk -F " " '{print $2}'))
+#    connectedMotePorts=($(cat /tmp/$thisuser.motelist.total | awk -F " " '{print $3}'))
+    connectedMoteHwAddresses=($(cat /tmp/$thisuser.motelist.total | grep "$ipOfRemoteHost" | awk -F " " '{print $2}'))
+    connectedMotePorts=($(cat /tmp/$thisuser.motelist.total | grep "$ipOfRemoteHost" | awk -F " " '{print $3}'))
+  length=${#connectedMoteHwAddresses[@]}
+  length1=$(($length -1))
+  
+  for i in `seq 0 $length1`
+  do 
+#    echo "index $i"
+#    echo "         Checking for node: ${connectedMoteHwAddresses[$i]} on port ${connectedMotePorts[$i]}"
+    id=$(cat $managedMotesFiles | grep "${connectedMoteHwAddresses[$i]}" | grep -o " [[:digit:]]*"  | grep -o "[[:digit:]]*" | head -n 1)
+#    echo "OK:      Id found: $id"
+    application=$(cat $idToApplicationFile | grep "^$id " | awk '{print $2}')
+    
+    if [ "$application" == "" ]
+    then
+    	if [ "" != "$megaApp" ]
+    	then
+	    	echo "INFO:    No specific application found. Using $megaApp on mote $id." | tee -a "$log"
+				application=$megaApp
+			else
+	    	echo "INFO:    No application to be used on mote $id" | tee -a "$log"
+			fi
+    else
+			echo "OK:      Application found for mote $id: $application" | tee -a "$log"
+    fi
+	
+	# If application is a normal file (path) we keep only the name of the last directory (we have copied it to the pi under that name)
+	if [ -d "$application" ]
+	then
+		application=`basename "$application"`
+	fi
+	
+	ret=0
+    if [ "$application" != "" ]
+    then
+#debug "pi@" before "ipOfRemotePis"
+      ssh pi@$ipOfRemoteHost2 "source tinyos-installation/tinyos.env; cd temp/$application; make telosb reinstall.$id bsl,${connectedMotePorts[$i]} 2>&1" 2>&1 >> "/tmp/$thisuser.installMote.$id"
+      
+      if [ $? -eq 0 ]
+      then
+				echo "SUCCESS: Installed $application with id $id on $ipOfRemoteHost2 with address ${connectedMoteHwAddresses[$i]} and ${connectedMotePorts[$i]} SUCCESSFULLY." | tee -a "$log"
+      else
+				echo "ERROR:   Installing $application with id $id on $ipOfRemoteHost2 with address ${connectedMoteHwAddresses[$i]} and ${connectedMotePorts[$i]} FAILED." | tee -a "$log"
+				echo "Command output:" | tee -a "$log"
+				cat "/tmp/$thisuser.installMote.$id" | tee -a "$log"
+				ret=1
+      fi
+      rm "/tmp/$thisuser.installMote.$id"
+		fi
+  done
+  
+  return $ret
+}
+
+
+CLARI_startAllLocalSerialForwarderJava(){
+	
+	# Kill all local serial forwarders (kill screen..)
+	CLARI_killallLocalSerialForwardersPlease
+	
+	# Get a list of global motes
+	CLARI_performGlobalMotelist > /dev/null
+	
+	for ipOfRemoteHost in ${pieList[@]}
+	do 
+#    connectedMoteHwAddresses=($(ssh $ipOfRemoteHost "motelist -c" | awk -F "," '{print $1}'))
+#    connectedMotePorts=($(ssh $ipOfRemoteHost "motelist -c" | awk -F "," '{print $2}'))
+#    connectedMoteHwAddresses=($(cat /tmp/$thisuser.motelist.total | awk -F " " '{print $2}'))
+#    connectedMotePorts=($(cat /tmp/$thisuser.motelist.total | awk -F " " '{print $3}'))
+    connectedMoteHwAddresses=($(cat /tmp/$thisuser.motelist.total | grep "$ipOfRemoteHost" | awk -F " " '{print $2}'))
+    connectedMotePorts=($(cat /tmp/$thisuser.motelist.total | grep "$ipOfRemoteHost" | awk -F " " '{print $3}'))
+    length=${#connectedMoteHwAddresses[@]}
+    length1=$(($length -1))
+    for i in `seq 0 $length1`
+    do 
+#			ttyPort=${connectedMotePorts[$i]}
+#			
+#			echo "index $i"
+#			echo "checking for node: ${connectedMoteHwAddresses[$i]} on port $ttyPort"
+# 			id=$(cat $managedMotesFiles | grep "${connectedMoteHwAddresses[$i]}" | grep -o " [[:digit:]]*" | grep -o "[[:digit:]]*" | head -n 1)
+                        id=$(cat $managedMotesFiles | grep "${connectedMoteHwAddresses[$i]}" | grep -o " [[:digit:]]*" | grep -o "[[:digit:]]*" | head -n 1)
+
+			
+			echo "id found: $id"
+		          port=9000
+	
+      ((port+=id))
+      echo "Starting SF to $id on $ipOfRemoteHost:$ttyPort using $port, local port $port."
+			
+			screen -dmS "localmotesf-$id" java -cp $pathToTinyOSJar net.tinyos.sf.SerialForwarder -comm sf@$ipOfRemoteHost:$port -no-gui -port $port
+		done
+	done
+}
+
+
+
+CLARI_startAllRemoteSerialForwarders(){
+	
+	# Stop all remote sf first:
+	CLARI_killallRemoteSerialForwardersPlease >> /dev/null 2>&1
+	
+	# Get a list of all motes:
+	CLARI_performGlobalMotelist > /dev/null
+	
+	pids=""
+	nr=0
+	for ipOfRemoteHost in ${pieList[@]}
+	do 
+#    connectedMoteHwAddresses=($(cat /tmp/$thisuser.motelist.total | awk -F " " '{print $2}'))
+#    connectedMotePorts=($(cat /tmp/$thisuser.motelist.total | awk -F " " '{print $3}'))
+    connectedMoteHwAddresses=($(cat /tmp/$thisuser.motelist.total | grep "$ipOfRemoteHost" | awk -F " " '{print $2}'))
+    connectedMotePorts=($(cat /tmp/$thisuser.motelist.total | grep "$ipOfRemoteHost" | awk -F " " '{print $3}'))
+    length=${#connectedMoteHwAddresses[@]}
+    length1=$(($length -1))
+    for i in `seq 0 $length1`
+    do 
+			ttyPort=${connectedMotePorts[$i]}
+#      echo "         Checking for node: ${connectedMoteHwAddresses[$i]} on port $ttyPort"
+      id=$(cat $managedMotesFiles | grep "${connectedMoteHwAddresses[$i]}" | grep -o " [[:digit:]]*" | grep -o "[[:digit:]]*" | head -n 1)
+
+#      echo "id found: $id"
+      if [ "$id" != "" ]
+      then
+          port=9000
+	  ((port+=id))
+        
+          echo "         Starting SF $id on $ipOfRemoteHost:$ttyPort using $port.."
+          echo "SF $id on $ipOfRemoteHost:$ttyPort using $port." > "/tmp/$thisuser.sfstartlog.tmp.$nr"
+#			echo ssh pi@$ipOfRemoteHost /usr/bin/screen -dmS motesf$id /home/pi/tinyos-installation/tinyos-main/tools/tinyos/c/sf/sf $port $ttyPort 115200
+    			ssh pi@$ipOfRemoteHost "/usr/bin/screen -dmS motesf$id /home/pi/tinyos-installation/tinyos-main/tools/tinyos/c/sf/sf $port $ttyPort 115200" & >> "/tmp/$thisuser.sfstartlog.tmp.$nr" 2>&1
+    			pids+="$! "
+    			((nr++))
+    		fi
+    		done
+    	done
+    	
+    	echo -n "" > "/tmp/$thisuser.clari.output"
+	ret=0
+	nr=0
+	for p in $pids
+	do
+		if [ "$p" != "" ]
+		then
+			if ! wait $p
+			then
+				echo "ERROR:   Problem starting serial forwarder. Output:" 1>&2 >> "/tmp/$thisuser.clari.output"
+				echo -n "Starting " 1>&2 >> "/tmp/$thisuser.clari.output"
+				cat "/tmp/$thisuser.sfstartlog.tmp.$nr" 1>&2 >> "/tmp/$thisuser.clari.output"
+				ret=1
+			else
+				echo -n "SUCCESS: Started serial forwarder on " >> "/tmp/$thisuser.clari.output"
+				cat "/tmp/$thisuser.sfstartlog.tmp.$nr" | head -n 1 >> "/tmp/$thisuser.clari.output"
+			fi
+			rm "/tmp/$thisuser.sfstartlog.tmp.$nr"
+			((nr++))
+		fi
+	done
+	
+	cat "/tmp/$thisuser.clari.output"
+	rm -f "/tmp/$thisuser.clari.output"
+	
+	return $ret
+}
+
+CLARI_killallJavaSerialForwarder(){
+ CLARI_executeCommandOnAllHosts "killall java"
+ CLARI_executeCommandOnAllHosts "screen -wipe"
+}
+
+CLARI_killallRemoteSerialForwardersPlease(){ 
+	# This will kill all C serial forwarders on the PIs. Screen exits and quits sessions automatically when they exit.
+	CLARI_executeCommandOnAllHosts "/usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print \$1}' | xargs kill || true" >> /dev/null 2>&1
+}
+
+CLARI_killallLocalSerialForwardersPlease() {
+	# List all screen sessions, grep the ones that contain "mote-", get the process IDs and run kill on them.
+	screen -ls | grep "localmotesf" | cut -d. -f1 | awk '{print $1}' | xargs kill
+}
+
+
+
+
+
+CLARI_getAllRemoteSerialForwarderStatus(){
+	
+	# Update list of global motes:
+	CLARI_performGlobalMotelist
+	
+	
+	pids=""
+	nr=0
+	for ipOfRemoteHost in ${pieList[@]}
+	do 
+    connectedMoteHwAddresses=($(cat /tmp/$thisuser.motelist.total | grep "$ipOfRemoteHost" | awk -F " " '{print $2}'))
+    connectedMotePorts=($(cat /tmp/$thisuser.motelist.total | grep "$ipOfRemoteHost" | awk -F " " '{print $3}'))
+    length=${#connectedMoteHwAddresses[@]}
+    length1=$(($length -1))
+    for i in `seq 0 $length1`
+    do 
+			ttyPort=${connectedMotePorts[$i]}
+#      echo "         Checking for node: ${connectedMoteHwAddresses[$i]} on port $ttyPort"
+      id=$(cat $managedMotesFiles | grep "${connectedMoteHwAddresses[$i]}" | grep -o " [[:digit:]]*" | grep -o "[[:digit:]]*" | head -n 1)
+
+#      echo "id found: $id"
+      
+      if [ "$id" != "" ]
+      then
+          port=9000
+	  ((port+=id))
+	    		
+          echo "SF $id on $ipOfRemoteHost:$ttyPort using $port." > "/tmp/$thisuser.sfchecklog.tmp.$nr"
+    			ssh pi@$ipOfRemoteHost "/usr/bin/screen -ls | grep motesf$id || true" >> "/tmp/$thisuser.sfchecklog.tmp.$nr" &
+    			pids+="$! "
+    			((nr++))
+    		    fi
+		done
+	done
+	
+	echo -n "" > "/tmp/$thisuser.clari.output"
+	ret=0
+	nr=0
+	for p in $pids
+	do
+		if [ "$p" != "" ]
+		then
+			if wait $p
+			then
+				res=$(cat "/tmp/$thisuser.sfchecklog.tmp.$nr" | tail -n+2)
+				if [ "$res" != "" ]
+				then
+					echo -n "RUNNING: SF is running on " >> "/tmp/$thisuser.clari.output"
+				else
+					echo -n "STOPPED: SF is NOT running on " >> "/tmp/$thisuser.clari.output"
+				fi
+			else
+				echo -n "FAIL:    Could not check for SF on " >> "/tmp/$thisuser.clari.output"
+				ret=1
+			fi
+			h=$(cat "/tmp/$thisuser.sfchecklog.tmp.$nr" | head -n 1)
+			echo "$h" >> "/tmp/$thisuser.clari.output"
+			rm "/tmp/$thisuser.sfchecklog.tmp.$nr"
+			((nr++))
+		fi
+	done
+	
+	cat "/tmp/$thisuser.clari.output"
+	rm -f "/tmp/$thisuser.clari.output"
+	
+	return $ret
+}
+
+CLARI_performGlobalMotelist() {
+    pids=""
+    res=0
+    i=0
+    for ipOfRemoteHost in ${pieList[@]}
+    do
+		ssh pi@$ipOfRemoteHost "motelist -c | awk -F "," '{print \"$ipOfRemoteHost \"\$1\" \"\$2}'" >> "/tmp/$thisuser.motelist.$i" &
+		pids+="$! "
+		((i++))
+    done
+    echo -n "" > /tmp/$thisuser.motelist.total
+    i=0
+    for p in $pids
+    do
+		if wait $p
+		then
+		    cat "/tmp/$thisuser.motelist.$i" >> "/tmp/$thisuser.motelist.total"
+		else
+		    res=1
+		fi
+		rm -f "/tmp/$thisuser.motelist.$i"
+		((i++))
+    done
+    echo ""
+    echo "Global motelist:"
+    cat /tmp/$thisuser.motelist.total
+#    motelist=$(cat /tmp/$thisuser.motelist.total)
+
+    return $res
+
+}
+
+CLARI_getPIList() {
+    pids=""
+    res=0
+    i=0
+    for ipOfRemoteHost in ${pieList[@]}
+    do
+	echo -n "$ipOfRemoteHost " > "/tmp/$thisuser.pilist.$i"
+	ssh pi@$ipOfRemoteHost "/sbin/ifconfig | /bin/grep eth0 | /bin/grep HWaddr | /usr/bin/cut -d ' ' -f 11" >> "/tmp/$thisuser.pilist.$i" &
+	pids+="$! "
+	((i++))
+    done
+    
+    echo -n "" > "/tmp/$thisuser.pilist.total"
+    i=0
+    for p in $pids
+    do
+	if wait $p
+	then
+	    cat "/tmp/$thisuser.pilist.$i" >> "/tmp/$thisuser.pilist.total"
+	else
+	    res=1
+	fi
+	rm -f "/tmp/$thisuser.pilist.$i"
+	((i++))
+    done
+    echo ""
+    echo "Global pi list:"
+    cat /tmp/$thisuser.pilist.total
+
+    return $res
+
+}
+
+
+
+CLARI_resetAllMotes() {
+    CLARI_killallRemoteSerialForwardersPlease
+    
+    echo "Resetting all motes.."
+    CLARI_performGlobalMotelist
+    
+    ret=0
+    pids=""
+    nr=0
+    for ipOfRemoteHost in ${pieList[@]}
+    do
+        connectedMoteHwAddresses=($(cat /tmp/$thisuser.motelist.total | grep "$ipOfRemoteHost" | awk -F " " '{print $2}'))
+        connectedMotePorts=($(cat /tmp/$thisuser.motelist.total | grep "$ipOfRemoteHost" | awk -F " " '{print $3}'))
+        length=${#connectedMoteHwAddresses[@]}
+        length1=$(($length -1))
+        for i in `seq 0 $length1`
+        do 
+			ttyPort=${connectedMotePorts[$i]}
+#      echo "         Checking for node: ${connectedMoteHwAddresses[$i]} on port $ttyPort"
+          id=$(cat $managedMotesFiles | grep "${connectedMoteHwAddresses[$i]}" | grep -o " [[:digit:]]*" | grep -o "[[:digit:]]*" | head -n 1)
+
+#      echo "id found: $id"
+          if [ "$id" != "" ]
+          then
+              echo "         Resetting mote $id on $ipOfRemoteHost:$ttyPort.."
+              echo "$id on $ipOfRemoteHost:$ttyPort." > "/tmp/$thisuser.moteresetlog.tmp.$nr"
+    			echo "Executing /usr/local/bin/tos-bsl --telosb -c $ttyPort -r"
+    			ssh pi@$ipOfRemoteHost "/usr/local/bin/tos-bsl --telosb -c $ttyPort -r" >> "/tmp/$thisuser.moteresetlog.tmp.$nr" 2>&1 &
+    			pids+="$! "
+    			((nr++))
+    		fi
+    	done
+    done
+    	
+	
+	ret=0
+	nr=0
+	for p in $pids
+	do
+		if [ "$p" != "" ]
+		then
+			moteid=$(cat "/tmp/$thisuser.moteresetlog.tmp.$nr" | head -n 1)
+			if ! wait $p
+			then
+				echo "ERROR:   Problem resetting mote id $moteid. Output: " 1>&2 >> "/tmp/$thisuser.clari.output"
+				cat "/tmp/$thisuser.moteresetlog.tmp.$nr" | tail -n+2 1>&2 >> "/tmp/$thisuser.clari.output"
+				ret=1
+			else
+				echo "SUCCESS: Reset mote id $moteid" >> "/tmp/$thisuser.clari.output"
+			fi
+			rm "/tmp/$thisuser.moteresetlog.tmp.$nr"
+			((nr++))
+		fi
+	done
+	
+	cat "/tmp/$thisuser.clari.output"
+	rm -f "/tmp/$thisuser.clari.output"
+	echo ""
+	if [ $ret -eq 0 ]
+	then
+	    echo "OK:      All motes reset successfully."
+	else
+	    echo "FAIL:    Problems resetting motes."
+	fi
+	
+	
+	return $ret
+	
+    
+}
+
+CLARI_resetAllPIs() {
+    echo "Resetting all PIs.."
+    
+    ret=0
+    pids=""
+    nr=0
+    for ipOfRemoteHost in ${pieList[@]}
+    do
+	echo "$ipOfRemoteHost" > "/tmp/$thisuser.piresetlog.tmp.$nr"
+    	ssh pi@$ipOfRemoteHost "/usr/bin/sudo /sbin/shutdown -r now" >> "/tmp/$thisuser.piresetlog.tmp.$nr" 2>&1 &
+    	pids+="$! "
+    	((nr++))
+    done
+    	
+	
+	ret=0
+	nr=0
+	for p in $pids
+	do
+		if [ "$p" != "" ]
+		then
+			piip=$(cat "/tmp/$thisuser.piresetlog.tmp.$nr" | head -n 1)
+			if ! wait $p
+			then
+				echo "ERROR:   Problem resetting PI @ $piid. Output: " 1>&2 >> "/tmp/$thisuser.clari.output"
+				cat "/tmp/$thisuser.piresetlog.tmp.$nr" | tail -n+2 1>&2 >> "/tmp/$thisuser.clari.output"
+				ret=1
+			else
+				echo "SUCCESS: Reset PI @ $piip" >> "/tmp/$thisuser.clari.output"
+			fi
+			rm "/tmp/$thisuser.piresetlog.tmp.$nr"
+			((nr++))
+		fi
+	done
+	
+	cat "/tmp/$thisuser.clari.output"
+	rm -f "/tmp/$thisuser.clari.output"
+	echo ""
+	if [ $ret -eq 0 ]
+	then
+	    echo "OK:      All PIs reset successfully."
+	    echo "NOTICE:  It may take up to two minutes for all PIs to be up and running again."
+	else
+	    echo "FAIL:    Problems resetting PIs."
+	    echo "NOTICE:  Some PIs might take up to two minutes to be up and running again."
+	fi
+	
+	
+	return $ret
+	
+    
+}
+
+CLARI_checkForeignPrograms() {
+    echo "Checking for foreign programs running on PIs.."
+    
+    ret=0
+    pids=""
+    nr=0
+    for ipOfRemoteHost in ${pieList[@]}
+    do
+	echo "$ipOfRemoteHost" > "/tmp/$thisuser.piforeignlog.tmp.$nr"
+    	__CLARI_checkForForeignProgramsOnPI $ipOfRemoteHost >> "/tmp/$thisuser.piforeignlog.tmp.$nr" 2>&1 &
+    	pids+="$! "
+    	((nr++))
+    done
+    	
+	
+	ret=0
+	nr=0
+	for p in $pids
+	do
+		if [ "$p" != "" ]
+		then
+			piip=$(cat "/tmp/$thisuser.piforeignlog.tmp.$nr" | head -n 1)
+			if ! wait $p
+			then
+				echo "ERROR:   Problem getting foreign programs of PI @ $piid. Output: " >> "/tmp/$thisuser.clari.output"
+				cat "/tmp/$thisuser.piresetlog.tmp.$nr" | tail -n+2 >> "/tmp/$thisuser.clari.output"
+				ret=1
+			else
+			    info=$(cat "/tmp/$thisuser.piforeignlog.tmp.$nr" | tail -n+2)
+			    if [ "$info" == "" ]
+			    then
+				echo "OK:      $piip is in clear condition." >> "/tmp/$thisuser.clari.output"
+			    else
+				echo "FAIL:    $piip does not seem to be in clear condition." >> "/tmp/$thisuser.clari.output"
+				echo "$info"
+				ret=1
+			    fi
+			fi
+			rm "/tmp/$thisuser.piforeignlog.tmp.$nr"
+			((nr++))
+		fi
+	done
+	
+	cat "/tmp/$thisuser.clari.output"
+	rm -f "/tmp/$thisuser.clari.output"
+	echo ""
+	if [ $ret -eq 0 ]
+	then
+	    echo "OK:      All PIs are in clear condition."
+	else
+	    echo "FAIL:    Not all PIs are in clear condition/condition could not be checked."
+	fi
+	
+	
+	return $ret
+	
+    
+}
+
+
+
+__CLARI_checkForForeignProgramsOnPI() {
+    ipOfRemoteHost=$1
+    res=0
+# PRODUCTION:
+    ports=`ssh pi@$ipOfRemoteHost "/usr/bin/sudo /bin/netstat -eap"`
+# TESTING:
+#    ports=`ssh pi@$ipOfRemoteHost "/usr/bin/sudo cat /tmp/$thisuser.netstat.tmp"`
+
+    if [ $? -eq 0 ]
+    then
+        ports=`echo "$ports" | awk '$1 == "tcp" {print $0}' | awk '$7 == "pi" {print $0}'`
+        if [ "$ports" != "" ]
+        then
+    	echo "INFO:    PI user has programs with open ports running on $ipOfRemoteHost. List of programs:"
+    	echo "$ports" | awk '{print "         " $0}'
+        fi
+    else
+	echo "PROBLEM: PI $ipOfRemoteHost could ne be checked for strange opened ports."
+	res=1
+    fi
+    prg=`ssh pi@$ipOfRemoteHost "/bin/ps aux"`
+    if [ $? -eq 0 ]
+    then
+        prg=`echo "$prg" | awk '$1 == "pi" {print $0}' | grep -v "sshd: pi@notty" | grep -v "bash -c ps aux | grep pi" | grep -v "ps aux" | grep -v "grep pi"`
+        if [ "$prg" != "" ]
+        then
+	    echo "INFO:    PI user has strange processes running on $ipOfRemoteHost. List of processes:"
+    	    echo "$prg" | awk '{print "         " $0}'
+        fi
+    else
+	echo "PROBLEM: PI $ipOfRemoteHost could not be checked for strange running processes."
+	res=1
+    fi
+}
+
+CLARI_getNewLock() {
+	infostr=$1
+	CLARI_hasLock >> /dev/null
+	lockstat=$?
+	if [ $lockstat -eq 1 ]
+	then
+		# Problem checking status.
+		echo "There was a problem checking testbed lock status." 1>&2
+		return 1
+	fi
+	if [ $lockstat -eq 0 ]
+	then
+		# Lock ist bereits da und von uns. Wir muessen nichts tun. Alles ist gut.
+		echo "Testbed is already locked for this user. Refreshing timestamp on lock (system timestamp)."
+		ssh pi@$lockkeeper "/usr/bin/touch /home/pi/.clari_lock"
+		return 0
+	else
+		if [ $lockstat -eq 3 ]
+		then
+			echo "Trying to get lock on testbed.."
+			hostname=`hostname`
+			username=`whoami`
+			datetime=`date`
+			lockstr="LOCK for $thisuser/$username on $hostname time $datetime PID $$"
+			echo "$lockstr" > ./.clari_lock
+#Todo: Race-Condition in next line:
+			ssh pi@$lockkeeper "/bin/bash -c \"! test -e /home/pi/clari_lock && echo \\\"$lockstr\\\" > /home/pi/.clari_lock\""
+			if [ $? -eq 0 ]
+			then
+				echo "Testbed was locked successfully: $lockstr"
+				ssh pi@$lockkeeper "/bin/echo \"$infostr\" >> \"/home/pi/.clari_lock\""
+				return 0
+			else
+				echo "Testbed could not be locked."
+				rm "./.clari_lock"
+				return 1
+			fi
+		else
+			echo "Testbed is locked by someone else."
+			return 1
+		fi
+	fi
+}
+
+CLARI_isLocked() {
+	ex=`ssh pi@$lockkeeper "/bin/bash -c \"test -e /home/pi/.clari_lock || echo FREE\""`
+	if [ $? -eq 0 ]
+	then
+		if [ "$ex" == "FREE" ]
+		then
+			echo "Testbed is available."
+			return 0
+		else
+			echo "Testbed is locked."
+			return 1
+		fi
+	else
+		echo "Lock status could not be checked."
+		return 1
+	fi
+}
+
+# Check testbed locking state: 0=We have a lock, 1=Lock could not be checked, 2=Somebody else has locked the testbed, 3=Nobody has locked the testbed.
+CLARI_hasLock() {
+	CLARI_isLocked >> /dev/null
+	if [ $? -eq 0 ]
+	then
+		# Testbed FREE, file does not exist
+		lockfor="nolock"
+	else
+		lockfor=`ssh pi@$lockkeeper "/bin/cat /home/pi/.clari_lock | head -n 1 2>/dev/null || echo \"nolock\""` >> /dev/null
+	fi
+	if [ $? -eq 0 ]
+	then
+#		echo "LOCKFOR=$lockfor"
+		if [ "$lockfor" == "nolock" ]
+		then
+		    echo "Testbed is not locked at all."
+		    return 3
+		else
+			locallock=`cat ./.clari_lock 2>&1`
+			if [ "$lockfor" == "$locallock" ]
+			then
+				echo "We have a lock on the testbed."
+				return 0
+			else
+				echo "Testbed is locked by somebody else:"
+				echo "$lockfor" | head -n 1
+				return 2
+			fi
+		fi
+	else
+		echo "Could not check testbed locking status."
+		return 1
+	fi
+}
+
+CLARI_releaseLock() {
+    CLARI_hasLock >> /dev/null
+    lockstat=$?
+    if [ $lockstat -eq 0 ]
+    then
+	ssh pi@$lockkeeper "/bin/rm /home/pi/.clari_lock"
+	if [ $? -eq 0 ]
+	then
+	    rm ./.clari_lock
+	    echo "Lock has been released."
+	else
+	    echo "Lock release incomplete. Please delete .clari_lock manually."
+	fi
+    else
+	if [ $lockstat -eq 3 ]
+	then
+	    echo "Testbed was not locked by anybody."
+	    return 0
+	else
+	    echo "Lock could not be released."
+	    return 1
+	fi
+    fi
+}
+
+CLARI_releaseAllLocks() {
+    if [ "$1" != "yes" ]
+    then
+	CLARI_releaseLock >> /dev/null
+	if [ $? -ne 0 ]
+	then
+		echo "WARNING: This is a dangerous feature which might break running experiments. Please consult the user who placed the lock in order to make sure you DO NOT break an ongoing experiment."
+		echo "         If you really want to release all locks forcefully please run >> CLARI_releaseAllLocks yes <<."
+		return 1
+	fi
+	echo "Testbed is not locked."
+	return 0
+    fi
+    stat=`ssh pi@$lockkeeper "/bin/rm /home/pi/.clari_lock || echo "NOLOCK" >> /dev/null`
+    if [ $? -eq 0 ]
+    then
+	if [ "$stat" == "NOLOCK" ]
+	then
+	    echo "Testbed was not locked before."
+	else
+	    echo "Testbed locks were successfully removed."
+	fi
+	return 0
+    else
+	echo "Error releasing testbed locks."
+	return 1
+    fi
+}
+
+CLARI_lockRequestAccess() {
+    CLARI_hasLock
+    lstat=$?
+    if [ $lstat -ne 0 ]
+    then
+	CLARI_getNewLock
+	lstat=$?
+    fi
+    if [ $lstat -eq 0 ]
+    then
+	return 0
+    else
+	return 1
+    fi
+}
+
+CLARI_validateManagedMotes() {
+	res=0
+	CLARI_performGlobalMotelist >> /dev/null 2>&1
+	oldloc=`pwd`
+	if [ $? -eq 0 ]
+	then
+		echo "Checking if all motes are present.."
+#		grep "" managedMotes/* | awk -F "/" '{print $2}' | awk '{print $1}' | awk -F ":" '{print $1 " " $2}' | while read -r piip moteid
+			
+		_CLARI_getManagedMotes | awk -F "/" '{print $2}' | awk '{print $1}' | awk -F ":" '{print $1 " " $2}' | while read -r piip moteid
+		do
+		    # Check if hardware id is present in motelist (correct IP)
+		    found1=`cat /tmp/$thisuser.motelist.total | grep "$piip $moteid"`
+		    if [ "$found1" == "" ]
+		    then
+			found2=`cat /tmp/$thisuser.motelist.total | grep "$moteid"`
+			if [ "$found2" == "" ]
+			then
+			    echo "PROBLEM: Mote $moteid is not connected (should be connected to PI @ $piip)."
+			    res=1
+			else
+			    connpi=`echo "$found2" | awk '{print $1}'`
+			    echo "PROBLEM: Mote $moteid is connected to the wrong PI (is connected at $connpi, should be connected @ $piip)."
+			    res=1
+			fi
+		    fi
+		done
+		
+		# Check the other way around (do we have motes on the PIs we are not using?) - this might be good to figure out if they can interfere with experiments..
+		cat "/tmp/$thisuser.motelist.total" | awk '{print $1 " " $2}' | while read -r piip moteid
+		do
+		    found1=`cat $managedMotes/$piip | grep "$moteid"`
+		    if [ "$found1" == "" ]
+		    then
+			echo "PROBLEM: Mote $moteid is present at PI @ $piip but not listed in its ID file in the managedMotes directory."
+			res=1
+		    fi
+		done
+	else
+		echo "Could not check if all motes are available. Global motelist failed."
+		echo "WARNING: Testbed is still locked for us! Perform CLARI_releaseLock to unlock."
+		return 1
+	fi
+	
+	cd "$oldloc"
+	
+	if [ $res -eq 0 ]
+	then
+	    echo "No problems were detected."
+	else
+	    echo "Problems were detected."
+	fi
+	
+	return $res
+}
+
+CLARI_startExperiments() {
+    # Request testbed access
+    CLARI_lockRequestAccess
+    lstat=$?
+    if [ $lstat -eq 0 ]
+    then
+	echo "Testbed lock has been successfully acquired. Testbed is LOCKED for us."
+	CLARI_validateManagedMotes
+	if [ $? -eq 0 ]
+	then
+	    echo "All good."
+	else
+	    echo "Problems detected."
+	fi
+    else
+	echo "Could not acquire testbed lock. Aborting."
+	return 1
+    fi
+}
+
+CLARI_stopExperiments() {
+    # Request testbed access
+    CLARI_lockRequestAccess
+    lstat=$?
+    if [ $lstat -eq 0 ]
+    then
+	CLARI_killallRemoteSerialForwardersPlease
+	# Lock raus:
+	CLARI_releaseLock
+    fi
+}
+
+_CLARI_getManagedMotes() {
+olddir=`pwd`
+	# We need to be in the right directory (required because grep changes the path information otherwise)
+	cd "$managedMotes/.." >/dev/null
+	mm=`basename $managedMotes`
+    
+   grep "" $mm/* 
+   cd "$olddir" >/dev/null
+}
+    
+    
+CLARI_getIPFromID() {
+    if [ "$#" != "1" ]
+    then
+		echo "Please specify ID of node as parameter"
+		return 1
+    fi
+    
+    
+
+    
+    id="$1"
+    ip=$(_CLARI_getManagedMotes | awk -v id=${id} '$2 == id {print $1}' | awk -F "/" '{print $2}' | awk -F ":" '{print $1}' | head -n 1)
+    
+    
+    if [ "$ip" == "" ]
+    then
+		echo "IP not found."
+		return 2
+    else
+        echo "$ip"
+        return 0
+    fi
+}
+
+CLARI_getPortFromID() {
+    port=$((9000 + $1))
+    echo "$port"
+    return 0
+}
+
+CLARI_getIDList() {
+	cat $managedMotesFiles | awk '{print $2}' | tr -dc "[:alnum:] \n" | while read -r moteid
+	do
+		echo -n "$moteid "
+	done
+	echo ""
+	return 0
+}
+
+
+CLARI_performGlobalMotelistEx() {
+	CLARI_performGlobalMotelist > /dev/null
+	
+	cat /tmp/$thisuser.motelist.total | while read -r ip hwid port
+	do
+		id=$(cat $managedMotesFiles | grep "$hwid" | grep -o " [[:digit:]]*" | grep -o "[[:digit:]]*" | head -n 1)
+		echo "$ip $hwid $port $id"
+	done
+	return 0
+}
+
+
+
+
+

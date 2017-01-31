@@ -1,0 +1,3635 @@
+[2364] sen: 1->14: 40 until me
+[2365] Time to wait: 800
+[2813] rec: 3->9: 22 until me
+[3076] Time to wait: 440
+[3077] rec: 9->8: 21 until me
+[3077] Time to wait: 420
+[3077] rec: 8->7: 20 until me
+Time [3078] to wait: 400
+[3078] rec: 7->21: 19 until me
+Time[3078]  to wait: 380
+[3091] rec: 7->5: 16 until me
+[3278] Time to wait: 320
+[3312] rec: 5->6: 15 until me
+[3312] Time to wait: 300
+[3312] rec: 6->18: 14 until me
+[3312] Time to wait: 280
+[3313] rec: 6->28: 6 until me
+[3313] Time to wait: 120
+[3313] rec: 6->4: 4 until me
+[3314] Time to wait: 80
+[3314] rec: 4->11: 3 until me
+Time [3314] to wait: 60
+[3315] rec: 4->2: 1 until me
+[3315] Time to wait: 20
+[3315] Send To = 0
+finished Round2
+[3321] Got Ack for FLAG send to 2
+[3321] req Image from: 2; rec from:[3322]  2; source: 2 --- 1 1
+Got th[3323] e whole image from 2 over 2
+[3330] img from 0 send to pc
+Finish[3331] ed sending Msg to pc
+Finishe[3331] d sending Img to pc
+Request [3331] to you 3
+Got Ack for FLAG se[3331] nd to 3
+req Image from: 3; r[3336] ec from: 3; source: 3 --- 2 [3337] 2
+Got the whole image from 3[3338]  over 3
+img from 0 send to p[3338] c
+Finished sending Msg to pc[3339] 
+Finished sending Img to pc
+[3339] Request to you 4
+Got Ack for[3339]  FLAG send to 4
+req Image fr[3339] om: 4; rec from: 4; source: [3340] 4 --- 3 3
+[3340] req Image from: 4; rec from:[3340]  4; source: 4 --- 3 3
+Got th[3340] e whole image from 4 over 4
+[3341] img from 0 send to pc
+Finish[3344] ed sending Msg to pc
+Finishe[3344] d sending Msg to pc
+Finished[3344]  sending Img to pc
+Request t[3345] o you 5
+Got Ack for FLAG sen[3345] d to 5
+req Image from: 5; re[3345] c from: 5; source: 5 --- 4 4[3345] 
+[3346] req Image from: 5; rec from:[3346]  5; source: 5 --- 4 4
+Got th[3347] e whole image from 5 over 5
+[3348] img from 0 send to pc
+Finish[3348] ed sending Msg to pc
+Finishe[3349] d sending Msg to pc
+Finished[3349]  sending Img to pc
+Request t[3349] o you 6
+Got Ack for FLAG sen[3357] d to 6
+[3378] req Image from: 6; rec from:[3378]  6; source: 17 --- 5 5
+[3379] req Image from: 6; rec from:[3379]  6; source: 17 --- 5 5
+Got t[3381] he whole image from 17 over [3382] 6
+img from 0 send to pc
+Fini[3382] shed sending Msg to pc
+Finis[3433] hed sending Msg to pc
+Finish[3434] ed sending Img to pc
+Request[3435]  to you 6
+Got Ack for FLAG s[3436] end to 6
+[3482] req Image from: 6; rec from:[3487]  6; source: 9 --- 6 6
+[3487] req Image from: 6; rec from:[3532]  6; source: 9 --- 6 6
+Got th[3532] e whole image from 9 over 6
+[3532] img from 0 send to pc
+Finish[3533] ed sending Msg to pc
+Finishe[3533] d sending Msg to pc
+Finished[3533]  sending Img to pc
+Request t[3533] o you 6
+Got Ack for FLAG sen[3534] d to 6
+[3784] req Image from: 6; rec from:[3784]  6; source: 12 --- 7 7
+[3785] req Image from: 6; rec from:[3785]  6; source: 12 --- 7 7
+Got t[3788] he whole image from 12 over [3789] 6
+img from 0 send to pc
+Fini[3831] shed sending Msg to pc
+Finis[3832] hed sending Msg to pc
+Finish[3834] ed sending Img to pc
+Request[3834]  to you 6
+Got Ack for FLAG s[3835] end to 6
+[4000] req Image from: 6; rec from:[4001]  6; source: 16 --- 8 8
+[4001] req Image from: 6; rec from:[4001]  6; source: 16 --- 8 8
+Got t[4001] he whole image from 16 over [4001] 6
+img from 0 send to pc
+Fini[4002] shed sending Msg to pc
+Finis[4052] hed sending Msg to pc
+Finish[4052] ed sending Img to pc
+Request[4052]  to you 6
+Got Ack for FLAG s[4053] end to 6
+[4334] req Image from: 6; rec from:[4360]  6; source: 18 --- 9 9
+[4362] req Image from: 6; rec from:[4363]  6; source: 18 --- 9 9
+Got t[4363] he whole image from 18 over [4363] 6
+img from 0 send to pc
+Fini[4363] shed sending Msg to pc
+Finis[4383] hed sending Msg to pc
+Finish[4384] ed sending Img to pc
+Request[4384]  to you 6
+Got Ack for FLAG s[4384] end to 6
+[4673] req Image from: 6; rec from:[4674]  6; source: 22 --- 10 10
+[4674] req Image from: 6; rec from:[4674]  6; source: 22 --- 10 10
+Got[4674]  the whole image from 22 ove[4674] r 6
+img from 0 send to pc
+Fi[4723] nished sending Msg to pc
+Fin[4723] ished sending Msg to pc
+Fini[4723] shed sending Img to pc
+Reque[4723] st to you 6
+Got Ack for FLAG[4724]  send to 6
+[4988] req Image from: 6; rec from:[4989]  6; source: 23 --- 11 11
+[4990] req Image from: 6; rec from:[4995]  6; source: 23 --- 11 11
+Got[4997]  the whole image from 23 ove[4998] r 6
+img from 0 send to pc
+Fi[5025] nished sending Msg to pc
+Fin[5025] ished sending Msg to pc
+Fini[5026] shed sending Img to pc
+Reque[5026] st to you 6
+Got Ack for FLAG[5026]  send to 6
+[5237] req Image from: 6; rec from:[5237]  6; source: 19 --- 12 12
+[5237] req Image from: 6; rec from:[5237]  6; source: 19 --- 12 12
+Got[5237]  the whole image from 19 ove[5238] r 6
+img from 0 send to pc
+Fi[5238] nished sending Msg to pc
+Fin[5286] ished sending Msg to pc
+Fini[5286] shed sending Img to pc
+Reque[5287] st to you 6
+Got Ack for FLAG[5288]  send to 6
+[5598] req Image from: 6; rec from:[5598]  6; source: 21 --- 13 13
+[5599] req Image from: 6; rec from:[5599]  6; source: 21 --- 13 13
+Got[5599]  the whole image from 21 ove[5599] r 6
+img from 0 send to pc
+Fi[5599] nished sending Msg to pc
+Fin[5600] ished sending Msg to pc
+Fini[5649] shed sending Img to pc
+Reque[5649] st to you 6
+Retransmission F[5650] LAG to 6
+Got Ack for FLAG se[5650] nd to 6
+[5899] req Image from: 6; rec from:[5899]  6; source: 24 --- 14 14
+[5899] req Image from: 6; rec from:[5899]  6; source: 24 --- 14 14
+Got[5899]  the whole image from 24 ove[5900] r 6
+img from 0 send to pc
+Fi[5902] nished sending Msg to pc
+Fin[5952] ished sending Msg to pc
+Fini[5953] shed sending Img to pc
+Reque[5954] st to you 6
+Got Ack for FLAG[5954]  send to 6
+[6134] req Image from: 6; rec from:[6138]  6; source: 25 --- 15 15
+Got[6138]  the whole image from 25 ove[6139] r 6
+img from 0 send to pc
+Fi[6139] nished sending Msg to pc
+Fin[6139] ished sending Img to pc
+Requ[6145] est to you 6
+Got Ack for FLA[6174] G send to 6
+[6312] req Image from: 6; rec from:[6312]  6; source: 26 --- 16 16
+Got[6312]  the whole image from 26 ove[6312] r 6
+img from 0 send to pc
+Fi[6313] nished sending Msg to pc
+Fin[6313] ished sending Img to pc
+Requ[6313] est to you 6
+Got Ack for FLA[6313] G send to 6
+[6588] req Image from: 6; rec from:[6588]  6; source: 29 --- 17 17
+Got[6589]  the whole image from 29 ove[6589] r 6
+img from 0 send to pc
+Fi[6589] nished sending Msg to pc
+Fin[6589] ished sending Img to pc
+Requ[6598] est to you 6
+Got Ack for FLA[6599] G send to 6
+[6844] req Image from: 6; rec from:[6844]  6; source: 32 --- 18 18
+Got[6844]  the whole image from 32 ove[6845] r 6
+img from 0 send to pc
+Fi[6845] nished sending Msg to pc
+Fin[6845] ished sending Img to pc
+Requ[6845] est to you 6
+Got Ack for FLA[6845] G send to 6
+[7142] req Image from: 6; rec from:[7143]  6; source: 30 --- 19 19
+[7143] req Image from: 6; rec from:[7143]  6; source: 30 --- 19 19
+Got[7143]  the whole image from 30 ove[7144] r 6
+img from 0 send to pc
+Fi[7145] nished sending Msg to pc
+Fin[7185] ished sending Msg to pc
+Fini[7185] shed sending Img to pc
+Reque[7185] st to you 6
+Got Ack for FLAG[7185]  send to 6
+[7352] req Image from: 6; rec from:[7356]  6; source: 20 --- 20 20
+[7357] req Image from: 6; rec from:[7367]  6; source: 20 --- 20 20
+Got[7367]  the whole image from 20 ove[7367] r 6
+img from 0 send to pc
+Fi[7374] nished sending Msg to pc
+Fin[7399] ished sending Msg to pc
+Fini[7401] shed sending Img to pc
+Reque[7402] st to you 6
+Got Ack for FLAG[7404]  send to 6
+[7539] req Image from: 6; rec from:[7539]  6; source: 13 --- 21 21
+[7539] req Image from: 6; rec from:[7540]  6; source: 13 --- 21 21
+Got[7540]  the whole image from 13 ove[7540] r 6
+img from 0 send to pc
+Fi[7540] nished sending Msg to pc
+Fin[7540] ished sending Msg to pc
+Fini[7591] shed sending Img to pc
+Reque[7592] st to you 6
+Retransmission F[7593] LAG to 6
+Got Ack for FLAG se[7596] nd to 6
+[7815] req Image from: 6; rec from:[7815]  6; source: 11 --- 22 22
+[7816] req Image from: 6; rec from:[7816]  6; source: 11 --- 22 22
+Got[7818]  the whole image from 11 ove[7868] r 6
+img from 0 send to pc
+Fi[7868] nished sending Msg to pc
+Fin[7868] ished sending Msg to pc
+Fini[7873] shed sending Img to pc
+Reque[7878] st to you 6
+Got Ack for FLAG[7879]  send to 6
+[8034] req Image from: 6; rec from:[8034]  6; source: 14 --- 23 23
+[8034] req Image from: 6; rec from:[8036]  6; source: 14 --- 23 23
+[8044] req Image from: 6; rec from:[8046]  6; source: 14 --- 23 23
+Got[8101]  the whole image from 14 ove[8102] r 6
+img from 0 send to pc
+Fi[8103] nished sending Msg to pc
+Fin[8103] ished sending Msg to pc
+Fini[8103] shed sending Msg to pc
+Finis[8103] hed sending Img to pc
+Reques[8103] t to you 6
+Got Ack for FLAG [8104] send to 6
+[8409] req Image from: 6; rec from:[8410]  6; source: 27 --- 24 24
+[8410] req Image from: 6; rec from:[8410]  6; source: 27 --- 24 24
+Got[8410]  the whole image from 27 ove[8410] r 6
+img from 0 send to pc
+Fi[8411] nished sending Msg to pc
+Fin[8462] ished sending Msg to pc
+Fini[8462] shed sending Img to pc
+Reque[8463] st to you 6
+Got Ack for FLAG[8463]  send to 6
+[8633] req Image from: 6; rec from:[8633]  6; source: 31 --- 25 25
+Got[8633]  the whole image from 31 ove[8634] r 6
+img from 0 send to pc
+Fi[8634] nished sending Msg to pc
+Fin[8634] ished sending Img to pc
+Requ[8637] est to you 6
+Got Ack for FLA[8637] G send to 6
+[8879] req Image from: 6; rec from:[8879]  6; source: 28 --- 26 26
+[8879] req Image from: 6; rec from:[8880]  6; source: 28 --- 26 26
+Got[8880]  the whole image from 28 ove[8880] r 6
+img from 0 send to pc
+Fi[8930] nished sending Msg to pc
+Fin[8930] ished sending Msg to pc
+Fini[8930] shed sending Img to pc
+Reque[8930] st to you 6
+Got Ack for FLAG[8931]  send to 6
+[9057] req Image from: 6; rec from:[9058]  6; source: 15 --- 27 27
+[9059] req Image from: 6; rec from:[9060]  6; source: 15 --- 27 27
+Got[9062]  the whole image from 15 ove[9064] r 6
+img from 0 send to pc
+Fi[9065] nished sending Msg to pc
+Fin[9106] ished sending Msg to pc
+Fini[9106] shed sending Img to pc
+Reque[9106] st to you 6
+Got Ack for FLAG[9106]  send to 6
+[9156] req Image from: 6; rec from:[9156]  6; source: 10 --- 28 28
+[9215] req Image from: 6; rec from:[9217]  6; source: 10 --- 28 28
+Got[9217]  the whole image from 10 ove[9218] r 6
+img from 0 send to pc
+Fi[9220] nished sending Msg to pc
+Fin[9220] ished sending Msg to pc
+Fini[9261] shed sending Img to pc
+Reque[9261] st to you 6
+Got Ack for FLAG[9261]  send to 6
+[9262] req Image from: 6; rec from:[9262]  6; source: 6 --- 29 29
+[9262] req Image from: 6; rec from:[9265]  6; source: 6 --- 29 29
+Got [9312] the whole image from 6 over [9312] 6
+img from 0 send to pc
+Fini[9312] shed sending Msg to pc
+Finis[9312] hed sending Msg to pc
+Finish[9312] ed sending Img to pc
+Request[9313]  to you 7
+Got Ack for FLAG s[9313] end to 7
+[9313] req Image from: 7; rec from:[9369]  7; source: 7 --- 30 30
+[9369] req Image from: 7; rec from:[9371]  7; source: 7 --- 30 30
+Got [9401] the whole image from 7 over [9403] 7
+img from 0 send to pc
+Fini[9404] shed sending Msg to pc
+Finis[9415] hed sending Msg to pc
+Finish[9415] ed sending Img to pc
+Request[9416]  to you 8
+Got Ack for FLAG s[9418] end to 8
+[9418] req Image from: 8; rec from:[9418]  8; source: 8 --- 31 31
+[9418] req Image from: 8; rec from:[9468]  8; source: 8 --- 31 31
+Got [9468] the whole image from 8 over [9468] 8
+img from 0 send to pc
+Fini[9468] shed sending Msg to pc
+Finis[9469] hed sending Msg to pc
+Finish[9469] ed sending Img to pc
+Finishe[9469] d sending Msg to pc
+Finished[9536]  sending Msg to pc
+Finished [9536] sending Img to pc
+HuHu
+Root [9536] send its image
+Update
+Collec[9537] tion done 1
+Next Round!
+sen:[9537]  1->14: 40 until me
+Time to [9537] wait: 800
+[9565] rec: 15->23: 35 until me
+[9566] Time to wait: 700
+[9639] rec: 15->29: 33 until me
+[9639] Time to wait: 660
+[9721] rec: 15->10: 30 until me
+[9739] Time to wait: 600
+[9743] rec: 10->27: 29 until me
+[9743] Time to wait: 580
+[9847] rec: 3->9: 22 until me
+[10037] Time to wait: 440
+[10037] rec: 9->8: 21 until me
+[10037] Time to wait: 420
+[10038] rec: 8->7: 20 until me
+[10054] Time to wait: 400
+[10120] rec: 7->21: 19 until me
+Time[10120]  to wait: 380
+[10120] rec: 7->5: 16 until me
+[10121] Time to wait: 320
+[10121] rec: 5->6: 15 until me
+Time [10121] to wait: 300
+rec: 6->18: 14 [10121] until me
+Time to wait: 280
+[10122] rec: 6->28: 6 until me
+[10152] Time to wait: 120
+[10311] rec: 6->4: 4 until me
+[10311] Time to wait: 80
+[10312] rec: 4->11: 3 until me
+[10327] Time to wait: 60
+[10327] rec: 4->2: 1 until me
+[10327] Time to wait: 20
+[10327] Send To = 0
+finished Round2
+[10327] Got Ack for FLAG send to 2
+[10339] req Image from: 2; rec from:[10445]  2; source: 2 --- 1 1
+Got th[10445] e whole image from 2 over 2
+[10445] img from 0 send to pc
+Finish[10445] ed sending Msg to pc
+Finishe[10446] d sending Img to pc
+Request [10446] to you 3
+Got Ack for FLAG se[10446] nd to 3
+[10446] req Image from: 3; rec from:[10446]  3; source: 3 --- 2 2
+Got th[10446] e whole image from 3 over 3
+[10446] img from 0 send to pc
+Finish[10447] ed sending Msg to pc
+Finishe[10447] d sending Img to pc
+Request [10480] to you 4
+Got Ack for FLAG se[10495] nd to 4
+req Image from: 4; r[10496] ec from: 4; source: 4 --- 3 [10496] 3
+Got the whole image from 4[10496]  over 4
+img from 0 send to p[10496] c
+Finished sending Msg to pc[10496] 
+Finished sending Img to pc
+[10497] Request to you 5
+Got Ack for[10497]  FLAG send to 5
+req Image fr[10497] om: 5; rec from: 5; source: [10497] 5 --- 4 4
+Got the whole imag[10497] e from 5 over 5
+img from 0 s[10497] end to pc
+Finished sending M[10499] sg to pc
+Finished sending Im[10499] g to pc
+Request to you 6
+Got[10499]  Ack for FLAG send to 6
+[10500] req Image from: 6; rec from:[10500]  6; source: 17 --- 5 5
+Got t[10500] he whole image from 17 over [10500] 6
+img from 0 send to pc
+Fini[10501] shed sending Msg to pc
+Finis[10501] hed sending Img to pc
+Reques[10501] t to you 6
+Got Ack for FLAG [10502] send to 6
+[10528] req Image from: 6; rec from:[10528]  6; source: 9 --- 6 6
+Got th[10528] e whole image from 9 over 6
+[10529] img from 0 send to pc
+Finish[10531] ed sending Msg to pc
+Finishe[10532] d sending Img to pc
+Request [10577] to you 6
+Retransmission FLAG[10578]  to 6
+Got Ack for FLAG send [10578] to 6
+[10767] req Image from: 6; rec from:[10768]  6; source: 12 --- 7 7
+[10768] req Image from: 6; rec from:[10768]  6; source: 12 --- 7 7
+Got t[10768] he whole image from 12 over [10768] 6
+img from 0 send to pc
+Fini[10769] shed sending Msg to pc
+Finis[10817] hed sending Msg to pc
+Finish[10817] ed sending Img to pc
+Request[10817]  to you 6
+Got Ack for FLAG s[10818] end to 6
+[10999] req Image from: 6; rec from:[11000]  6; source: 16 --- 8 8
+[11000] req Image from: 6; rec from:[11001]  6; source: 16 --- 8 8
+Got t[11001] he whole image from 16 over [11001] 6
+img from 0 send to pc
+Fini[11007] shed sending Msg to pc
+Finis[11041] hed sending Msg to pc
+Finish[11041] ed sending Img to pc
+Request[11041]  to you 6
+Got Ack for FLAG s[11041] end to 6
+[11259] req Image from: 6; rec from:[11260]  6; source: 18 --- 9 9
+Got t[11268] he whole image from 18 over [11269] 6
+img from 0 send to pc
+Fini[11279] shed sending Msg to pc
+Finis[11280] hed sending Img to pc
+Reques[11282] t to you 6
+Retransmission FL[11283] AG to 6
+Got Ack for FLAG sen[11289] d to 6
+[11455] req Image from: 6; rec from:[11455]  6; source: 22 --- 10 10
+Got[11455]  the whole image from 22 ove[11456] r 6
+img from 0 send to pc
+Fi[11456] nished sending Msg to pc
+Fin[11458] ished sending Img to pc
+Requ[11458] est to you 6
+Got Ack for FLA[11458] G send to 6
+[11654] req Image from: 6; rec from:[11654]  6; source: 23 --- 11 11
+Got[11654]  the whole image from 23 ove[11654] r 6
+img from 0 send to pc
+Fi[11654] nished sending Msg to pc
+Fin[11654] ished sending Img to pc
+Requ[11655] est to you 6
+Got Ack for FLA[11655] G send to 6
+[11896] req Image from: 6; rec from:[11896]  6; source: 19 --- 12 12
+[11896] req Image from: 6; rec from:[11897]  6; source: 19 --- 12 12
+Got[11897]  the whole image from 19 ove[11897] r 6
+img from 0 send to pc
+Fi[11897] nished sending Msg to pc
+Fin[11945] ished sending Msg to pc
+Fini[11945] shed sending Img to pc
+Reque[11945] st to you 6
+Got Ack for FLAG[11945]  send to 6
+[12194] req Image from: 6; rec from:[12195]  6; source: 21 --- 13 13
+[12196] req Image from: 6; rec from:[12197]  6; source: 21 --- 13 13
+Got[12198]  the whole image from 21 ove[12198] r 6
+img from 0 send to pc
+Fi[12199] nished sending Msg to pc
+Fin[12244] ished sending Msg to pc
+Fini[12245] shed sending Img to pc
+Reque[12245] st to you 6
+Got Ack for FLAG[12245]  send to 6
+[12400] req Image from: 6; rec from:[12401]  6; source: 24 --- 14 14
+Got[12401]  the whole image from 24 ove[12401] r 6
+img from 0 send to pc
+Fi[12402] nished sending Msg to pc
+Fin[12403] ished sending Img to pc
+Requ[12403] est to you 6
+Got Ack for FLA[12404] G send to 6
+[12605] req Image from: 6; rec from:[12605]  6; source: 25 --- 15 15
+Got[12605]  the whole image from 25 ove[12605] r 6
+img from 0 send to pc
+Fi[12606] nished sending Msg to pc
+Fin[12606] ished sending Img to pc
+Requ[12606] est to you 6
+Got Ack for FLA[12606] G send to 6
+[12822] req Image from: 6; rec from:[12823]  6; source: 26 --- 16 16
+Got[12823]  the whole image from 26 ove[12824] r 6
+img from 0 send to pc
+Fi[12824] nished sending Msg to pc
+Fin[12825] ished sending Img to pc
+Requ[12825] est to you 6
+Got Ack for FLA[12828] G send to 6
+[13092] req Image from: 6; rec from:[13093]  6; source: 29 --- 17 17
+Got[13093]  the whole image from 29 ove[13093] r 6
+img from 0 send to pc
+Fi[13093] nished sending Msg to pc
+Fin[13094] ished sending Img to pc
+Requ[13133] est to you 6
+Got Ack for FLA[13142] G send to 6
+[13328] req Image from: 6; rec from:[13328]  6; source: 32 --- 18 18
+Got[13329]  the whole image from 32 ove[13329] r 6
+img from 0 send to pc
+Fi[13329] nished sending Msg to pc
+Fin[13330] ished sending Img to pc
+Requ[13333] est to you 6
+Got Ack for FLA[13334] G send to 6
+[13539] req Image from: 6; rec from:[13540]  6; source: 30 --- 19 19
+Got[13540]  the whole image from 30 ove[13540] r 6
+img from 0 send to pc
+Fi[13540] nished sending Msg to pc
+Fin[13541] ished sending Img to pc
+Requ[13541] est to you 6
+req Image from:[13541]  6; rec from: 6; source: 30 [13541] --- 19 20
+Got Ack for FLAG s[13594] end to 6
+[13810] req Image from: 6; rec from:[13810]  6; source: 20 --- 20 20
+[13810] req Image from: 6; rec from:[13810]  6; source: 20 --- 20 20
+Got[13810]  the whole image from 20 ove[13811] r 6
+img from 0 send to pc
+Fi[13861] nished sending Msg to pc
+Fin[13863] ished sending Msg to pc
+Fini[13863] shed sending Img to pc
+Reque[13864] st to you 6
+Got Ack for FLAG[13864]  send to 6
+[14013] req Image from: 6; rec from:[14013]  6; source: 13 --- 21 21
+[14014] req Image from: 6; rec from:[14014]  6; source: 13 --- 21 21
+Got[14014]  the whole image from 13 ove[14015] r 6
+img from 0 send to pc
+Fi[14015] nished sending Msg to pc
+Fin[14063] ished sending Msg to pc
+Fini[14064] shed sending Img to pc
+Reque[14067] st to you 6
+Got Ack for FLAG[14067]  send to 6
+[14199] req Image from: 6; rec from:[14199]  6; source: 11 --- 22 22
+Got[14200]  the whole image from 11 ove[14200] r 6
+img from 0 send to pc
+Fi[14200] nished sending Msg to pc
+Fin[14200] ished sending Img to pc
+Requ[14200] est to you 6
+Got Ack for FLA[14201] G send to 6
+[14403] req Image from: 6; rec from:[14404]  6; source: 14 --- 23 23
+[14404] req Image from: 6; rec from:[14405]  6; source: 14 --- 23 23
+Got[14405]  the whole image from 14 ove[14406] r 6
+img from 0 send to pc
+Fi[14449] nished sending Msg to pc
+Fin[14449] ished sending Msg to pc
+Fini[14449] shed sending Img to pc
+Reque[14449] st to you 6
+Got Ack for FLAG[14449]  send to 6
+[14633] req Image from: 6; rec from:[14634]  6; source: 27 --- 24 24
+Got[14634]  the whole image from 27 ove[14634] r 6
+img from 0 send to pc
+Fi[14634] nished sending Msg to pc
+Fin[14634] ished sending Img to pc
+Requ[14634] est to you 6
+Got Ack for FLA[14635] G send to 6
+[14833] req Image from: 6; rec from:[14833]  6; source: 31 --- 25 25
+Got[14833]  the whole image from 31 ove[14834] r 6
+img from 0 send to pc
+Fi[14834] nished sending Msg to pc
+Fin[14838] ished sending Img to pc
+Requ[14838] est to you 6
+Got Ack for FLA[14839] G send to 6
+[15025] req Image from: 6; rec from:[15026]  6; source: 28 --- 26 26
+Got[15026]  the whole image from 28 ove[15028] r 6
+img from 0 send to pc
+Fi[15029] nished sending Msg to pc
+Fin[15029] ished sending Img to pc
+Requ[15030] est to you 6
+Got Ack for FLA[15030] G send to 6
+[15209] req Image from: 6; rec from:[15209]  6; source: 15 --- 27 27
+[15210] req Image from: 6; rec from:[15210]  6; source: 15 --- 27 27
+Got[15210]  the whole image from 15 ove[15210] r 6
+img from 0 send to pc
+Fi[15210] nished sending Msg to pc
+Fin[15210] ished sending Msg to pc
+Fini[15260] shed sending Img to pc
+Reque[15260] st to you 6
+Got Ack for FLAG[15261]  send to 6
+[15314] req Image from: 6; rec from:[15314]  6; source: 10 --- 28 28
+[15314] req Image from: 6; rec from:[15314]  6; source: 10 --- 28 28
+Got[15361]  the whole image from 10 ove[15362] r 6
+img from 0 send to pc
+Fi[15362] nished sending Msg to pc
+Fin[15362] ished sending Msg to pc
+Fini[15362] shed sending Img to pc
+Reque[15362] st to you 6
+Got Ack for FLAG[15365]  send to 6
+req Image from: 6[15413] ; rec from: 6; source: 6 ---[15414]  29 29
+Got the whole image f[15414] rom 6 over 6
+img from 0 send[15416]  to pc
+Finished sending Msg [15416] to pc
+Finished sending Img t[15416] o pc
+Request to you 7
+Got Ac[15416] k for FLAG send to 7
+req Ima[15417] ge from: 7; rec from: 7; sou[15464] rce: 7 --- 30 30
+req Image f[15465] rom: 7; rec from: 7; source:[15465]  7 --- 30 30
+Got the whole i[15466] mage from 7 over 7
+img from [15466] 0 send to pc
+Finished sendin[15466] g Msg to pc
+Finished sending[15466]  Msg to pc
+Finished sending [15467] Img to pc
+Request to you 8
+G[15518] ot Ack for FLAG send to 8
+re[15520] q Image from: 8; rec from: 8[15529] ; source: 8 --- 31 31
+req Im[15530] age from: 8; rec from: 8; so[15532] urce: 8 --- 31 31
+Got the wh[15566] ole image from 8 over 8
+img [15567] from 0 send to pc
+Finished s[15567] ending Msg to pc
+Finished se[15567] nding Msg to pc
+Finished sen[15567] ding Img to pc
+Finished send[15568] ing Msg to pc
+Finished sendi[15568] ng Img to pc
+HuHu
+Root send [15588] its image
+Update
+Collection [15591] done 1
+Next Round!
+sen: 1-[16008] rec: 3->9: 22 until me
+[16056] Time to wait: 440
+[16090] rec: 9->8: 21 until me
+[16091] Time to wait: 420
+[16091] rec: 8->7: 20 until me
+[16091] Time to wait: 400
+[16106] rec: 7->21: 19 until me
+[16113] Time to wait: 380
+[16113] rec: 7->5: 16 until me
+[16238] Time to wait: 320
+[16258] rec: 5->6: 15 until me
+[16258] Time to wait: 300
+[16258] rec: 6->18: 14 until me
+[16259] Time to wait: 280
+[16259] rec: 6->28: 6 until me
+[16269] Time to wait: 120
+[16305] rec: 6->4: 4 until me
+[16306] Time to wait: 80
+[16306] rec: 4->11: 3 until me
+[16324] Time to wait: 60
+[16325] rec: 4->2: 1 until me
+[16325] Time to wait: 20
+[16325] Send To = 0
+[16325] finished Round2
+[16326] Got Ack for FLAG send to 2
+[16326] req Image from: 2; rec from:[16326]  2; source: 2 --- 1 1
+Got th[16326] e whole image from 2 over 2
+[16326] img from 0 send to pc
+Finish[16327] ed sending Msg to pc
+Finishe[16327] d sending Img to pc
+Request [16327] to you 3
+Got Ack for FLAG se[16327] nd to 3
+[16327] req Image from: 3; rec from:[16328]  3; source: 3 --- 2 2
+Got th[16328] e whole image from 3 over 3
+[16328] img from 0 send to pc
+Finish[16328] ed sending Msg to pc
+Finishe[16374] d sending Img to pc
+Request [16374] to you 4
+Got Ack for FLAG se[16374] nd to 4
+req Image from: 4; r[16386] ec from: 4; source: 4 --- 3 [16386] 3
+Got the whole image from 4[16386]  over 4
+img from 0 send to p[16389] c
+Finished sending Msg to pc[16389] 
+Finished sending Img to pc
+[16430] Request to you 5
+Retransmiss[16431] ion FLAG to 5
+Got Ack for FL[16431] AG send to 5
+req Image from:[16431]  5; rec from: 5; source: 5 -[16431] -- 4 4
+Got the whole image f[16432] rom 5 over 5
+img from 0 send[16432]  to pc
+Finished sending Msg [16481] to pc
+Finished sending Img t[16481] o pc
+Request to you 6
+Got Ac[16482] k for FLAG send to 6
+[16533] req Image from: 6; rec from:[16534]  6; source: 17 --- 5 5
+Got t[16534] he whole image from 17 over [16585] 6
+img from 0 send to pc
+Fini[16585] shed sending Msg to pc
+Finis[16585] hed sending Img to pc
+Reques[16586] t to you 6
+Got Ack for FLAG [16586] send to 6
+[16634] req Image from: 6; rec from:[16638]  6; source: 9 --- 6 6
+Got th[16638] e whole image from 9 over 6
+[16638] img from 0 send to pc
+Finish[16638] ed sending Msg to pc
+Finishe[16638] d sending Img to pc
+Request [16639] to you 6
+Got Ack for FLAG se[16639] nd to 6
+[16869] req Image from: 6; rec from:[16869]  6; source: 12 --- 7 7
+[16869] req Image from: 6; rec from:[16870]  6; source: 12 --- 7 7
+Got t[16870] he whole image from 12 over [16923] 6
+img from 0 send to pc
+Fini[16923] shed sending Msg to pc
+Finis[16923] hed sending Msg to pc
+Finish[16925] ed sending Img to pc
+Request[16925]  to you 6
+Got Ack for FLAG s[16925] end to 6
+[17104] req Image from: 6; rec from:[17104]  6; source: 16 --- 8 8
+[17105] req Image from: 6; rec from:[17156]  6; source: 16 --- 8 8
+Got t[17156] he whole image from 16 over [17156] 6
+img from 0 send to pc
+Fini[17156] shed sending Msg to pc
+Finis[17156] hed sending Msg to pc
+Finish[17157] ed sending Img to pc
+Request[17157]  to you 6
+Got Ack for FLAG s[17157] end to 6
+[17411] req Image from: 6; rec from:[17412]  6; source: 18 --- 9 9
+[17412] req Image from: 6; rec from:[17413]  6; source: 18 --- 9 9
+Got t[17413] he whole image from 18 over [17417] 6
+img from 0 send to pc
+Fini[17423] shed sending Msg to pc
+Finis[17462] hed sending Msg to pc
+Finish[17463] ed sending Img to pc
+Request[17463]  to you 6
+Got Ack for FLAG s[17463] end to 6
+[17630] req Image from: 6; rec from:[17631]  6; source: 22 --- 10 10
+Got[17631]  the whole image from 22 ove[17631] r 6
+img from 0 send to pc
+Fi[17631] nished sending Msg to pc
+Fin[17632] ished sending Img to pc
+Requ[17632] est to you 6
+Got Ack for FLA[17632] G send to 6
+[17823] req Image from: 6; rec from:[17824]  6; source: 23 --- 11 11
+Got[17824]  the whole image from 23 ove[17824] r 6
+img from 0 send to pc
+Fi[17824] nished sending Msg to pc
+Fin[17825] ished sending Img to pc
+Requ[17825] est to you 6
+Got Ack for FLA[17825] G send to 6
+[18085] req Image from: 6; rec from:[18085]  6; source: 19 --- 12 12
+[18085] req Image from: 6; rec from:[18086]  6; source: 19 --- 12 12
+Got[18086]  the whole image from 19 ove[18086] r 6
+img from 0 send to pc
+Fi[18086] nished sending Msg to pc
+Fin[18135] ished sending Msg to pc
+Fini[18136] shed sending Img to pc
+Reque[18136] st to you 6
+Got Ack for FLAG[18137]  send to 6
+[18399] req Image from: 6; rec from:[18399]  6; source: 21 --- 13 13
+[18399] req Image from: 6; rec from:[18399]  6; source: 21 --- 13 13
+Got[18399]  the whole image from 21 ove[18399] r 6
+img from 0 send to pc
+Fi[18400] nished sending Msg to pc
+Fin[18448] ished sending Msg to pc
+Fini[18448] shed sending Img to pc
+Reque[18449] st to you 6
+Got Ack for FLAG[18449]  send to 6
+[18629] req Image from: 6; rec from:[18629]  6; source: 24 --- 14 14
+Got[18629]  the whole image from 24 ove[18629] r 6
+img from 0 send to pc
+Fi[18630] nished sending Msg to pc
+Fin[18630] ished sending Img to pc
+Requ[18630] est to you 6
+Got Ack for FLA[18630] G send to 6
+[18836] req Image from: 6; rec from:[18836]  6; source: 25 --- 15 15
+Got[18837]  the whole image from 25 ove[18837] r 6
+img from 0 send to pc
+Fi[18837] nished sending Msg to pc
+Fin[18837] ished sending Img to pc
+Requ[18837] est to you 6
+Got Ack for FLA[18837] G send to 6
+[19022] req Image from: 6; rec from:[19023]  6; source: 26 --- 16 16
+Got[19023]  the whole image from 26 ove[19023] r 6
+img from 0 send to pc
+Fi[19023] nished sending Msg to pc
+Fin[19023] ished sending Img to pc
+Requ[19023] est to you 6
+Got Ack for FLA[19024] G send to 6
+[19290] req Image from: 6; rec from:[19294]  6; source: 29 --- 17 17
+Got[19329]  the whole image from 29 ove[19337] r 6
+img from 0 send to pc
+Fi[19337] nished sending Msg to pc
+Fin[19337] ished sending Img to pc
+Requ[19337] est to you 6
+Got Ack for FLA[19338] G send to 6
+[19530] req Image from: 6; rec from:[19532]  6; source: 32 --- 18 18
+Got[19533]  the whole image from 32 ove[19534] r 6
+img from 0 send to pc
+Fi[19534] nished sending Msg to pc
+Fin[19550] ished sending Img to pc
+Requ[19551] est to you 6
+Got Ack for FLA[19564] G send to 6
+[19757] req Image from: 6; rec from:[19768]  6; source: 30 --- 19 19
+Got[19769]  the whole image from 30 ove[19769] r 6
+img from 0 send to pc
+Fi[19769] nished sending Msg to pc
+Fin[19769] ished sending Img to pc
+Requ[19770] est to you 6
+Got Ack for FLA[19774] G send to 6
+[19967] req Image from: 6; rec from:[19967]  6; source: 20 --- 20 20
+[19967] req Image from: 6; rec from:[19967]  6; source: 20 --- 20 20
+Got[19967]  the whole image from 20 ove[19968] r 6
+img from 0 send to pc
+Fi[19968] nished sending Msg to pc
+Fin[20021] ished sending Msg to pc
+Fini[20022] shed sending Img to pc
+Reque[20022] st to you 6
+Retransmission F[20022] LAG to 6
+[20022] Got Ack for FLAG send to 6
+[20159] req Image from: 6; rec from:[20159]  6; source: 13 --- 21 21
+Got[20159]  the whole image from 13 ove[20160] r 6
+img from 0 send to pc
+Fi[20160] nished sending Msg to pc
+Fin[20165] ished sending Img to pc
+Requ[20169] est to you 6
+Got Ack for FLA[20169] G send to 6
+[20327] req Image from: 6; rec from:[20327]  6; source: 11 --- 22 22
+Got[20328]  the whole image from 11 ove[20330] r 6
+img from 0 send to pc
+Fi[20332] nished sending Msg to pc
+Fin[20332] ished sending Img to pc
+Requ[20333] est to you 6
+Got Ack for FLA[20338] G send to 6
+[20464] req Image from: 6; rec from:[20465]  6; source: 14 --- 23 23
+[20465] req Image from: 6; rec from:[20465]  6; source: 14 --- 23 23
+Got[20465]  the whole image from 14 ove[20466] r 6
+img from 0 send to pc
+Fi[20466] nished sending Msg to pc
+Fin[20512] ished sending Msg to pc
+Fini[20512] shed sending Img to pc
+Reque[20512] st to you 6
+Got Ack for FLAG[20512]  send to 6
+[20695] req Image from: 6; rec from:[20696]  6; source: 27 --- 24 24
+Got[20697]  the whole image from 27 ove[20697] r 6
+img from 0 send to pc
+Fi[20697] nished sending Msg to pc
+Fin[20698] ished sending Img to pc
+Requ[20699] est to you 6
+Got Ack for FLA[20699] G send to 6
+[20915] req Image from: 6; rec from:[20918]  6; source: 31 --- 25 25
+Got[20919]  the whole image from 31 ove[20919] r 6
+img from 0 send to pc
+Fi[20935] nished sending Msg to pc
+Fin[20935] ished sending Img to pc
+Requ[20939] est to you 6
+Got Ack for FLA[20939] G send to 6
+[21090] req Image from: 6; rec from:[21090]  6; source: 28 --- 26 26
+Got[21090]  the whole image from 28 ove[21091] r 6
+img from 0 send to pc
+Fi[21091] nished sending Msg to pc
+Fin[21091] ished sending Img to pc
+Requ[21091] est to you 6
+Got Ack for FLA[21091] G send to 6
+[21238] req Image from: 6; rec from:[21238]  6; source: 15 --- 27 27
+[21239] req Image from: 6; rec from:[21239]  6; source: 15 --- 27 27
+Got[21239]  the whole image from 15 ove[21239] r 6
+img from 0 send to pc
+Fi[21289] nished sending Msg to pc
+Fin[21289] ished sending Msg to pc
+Fini[21289] shed sending Img to pc
+Reque[21289] st to you 6
+Got Ack for FLAG[21290]  send to 6
+[21339] req Image from: 6; rec from:[21390]  6; source: 10 --- 28 28
+[21391] req Image from: 6; rec from:[21391]  6; source: 10 --- 28 28
+Got[21391]  the whole image from 10 ove[21391] r 6
+img from 0 send to pc
+Fi[21391] nished sending Msg to pc
+Fin[21392] ished sending Msg to pc
+Fini[21443] shed sending Img to pc
+Reque[21444] st to you 6
+Got Ack for FLAG[21445]  send to 6
+req Image from: 6[21445] ; rec from: 6; source: 6 ---[21445]  29 29
+Got the whole image f[21445] rom 6 over 6
+img from 0 send[21446]  to pc
+Finished sending Msg [21446] to pc
+Finished sending Img t[21503] o pc
+Request to you 7
+Got Ac[21503] k for FLAG send to 7
+[21503] req Image from: 7; rec from:[21503]  7; source: 7 --- 30 30
+[21504] req Image from: 7; rec from:[21504]  7; source: 7 --- 30 30
+Got [21546] the whole image from 7 over [21547] 7
+img from 0 send to pc
+Fini[21547] shed sending Msg to pc
+Finis[21547] hed sending Msg to pc
+Finish[21547] ed sending Img to pc
+Request[21547]  to you 8
+Retransmission FLA[21547] G to 8
+Got Ack for FLAG send[21548]  to 8
+[21548] req Image from: 8; rec from:[21548]  8; source: 8 --- 31 31
+[21599] req Image from: 8; rec from:[21599]  8; source: 8 --- 31 31
+Got [21599] the whole image from 8 over [21599] 8
+img from 0 send to pc
+Fini[21651] shed sending Msg to pc
+Finis[21651] hed sending Msg to pc
+Finish[21651] ed sending Img to pc
+Finishe[21652] d sending Msg to pc
+Finished[21689]  sending Img to pc
+HuHu
+Root[21689]  send its image
+Update
+Colle[21689] ction done 1
+Next Round!
+sen[21689] : 1->14: 40 until me
+Time to[21690]  wait: 800
+[21701] rec: 15->23: 35 until me
+[21702] Time to wait: 700
+[21765] rec: 15->29: 33 until me
+[21767] Time to wait: 660
+[21901] rec: 15->10: 30 until me
+[21923] Time to wait: 600
+[21934] rec: 10->27: 29 until me
+Tim[21935] e to wait: 580
+[21935] rec: 10->3: 23 until me
+[21935] Time to wait: 460
+[21935] rec: 3->9: 22 until me
+[21968] Time to wait: 440
+[21974] rec: 9->8: 21 until me
+Time [21983] to wait: 420
+[21986] rec: 8->7: 20 until me
+Time [21986] to wait: 400
+[21986] rec: 7->21: 19 until me
+Time[21986]  to wait: 380
+[22015] rec: 7->5: 16 until me
+[22015] Time to wait: 320
+[22073] rec: 5->6: 15 until me
+[22088] Time to wait: 300
+[22088] rec: 6->18: 14 until me
+Time[22088]  to wait: 280
+[22213] rec: 6->28: 6 until me
+[22312] Time to wait: 120
+[22312] rec: 6->4: 4 until me
+[22312] Time to wait: 80
+[22313] rec: 4->11: 3 until me
+[22313] Time to wait: 60
+[22313] rec: 4->2: 1 until me
+[22313] Time to wait: 20
+[22313] Send To = 0
+finished Round2
+[22313] Got Ack for FLAG send to 2
+[22314] req Image from: 2; rec from:[22314]  2; source: 2 --- 1 1
+Got th[22314] e whole image from 2 over 2
+[22314] img from 0 send to pc
+Finish[22314] ed sending Msg to pc
+Finishe[22358] d sending Img to pc
+Request [22358] to you 3
+Got Ack for FLAG se[22358] nd to 3
+[22358] req Image from: 3; rec from:[22359]  3; source: 3 --- 2 2
+Got th[22359] e whole image from 3 over 3
+[22359] img from 0 send to pc
+Finish[22359] ed sending Msg to pc
+Finishe[22406] d sending Img to pc
+Request [22406] to you 4
+Got Ack for FLAG se[22406] nd to 4
+req Image from: 4; r[22407] ec from: 4; source: 4 --- 3 [22407] 3
+Got the whole image from 4[22407]  over 4
+img from 0 send to p[22407] c
+Finished sending Msg to pc[22459] 
+Finished sending Img to pc
+[22459] Request to you 5
+Got Ack for[22460]  FLAG send to 5
+req Image fr[22460] om: 5; rec from: 5; source: [22460] 5 --- 4 4
+Got the whole imag[22461] e from 5 over 5
+img from 0 s[22461] end to pc
+Finished sending M[22461] sg to pc
+Finished sending Im[22522] g to pc
+Request to you 6
+Got[22523]  Ack for FLAG send to 6
+[22561] req Image from: 6; rec from:[22561]  6; source: 17 --- 5 5
+Got t[22561] he whole image from 17 over [22562] 6
+img from 0 send to pc
+Fini[22562] shed sending Msg to pc
+Finis[22562] hed sending Img to pc
+Reques[22567] t to you 6
+Got Ack for FLAG [22567] send to 6
+[22612] req Image from: 6; rec from:[22663]  6; source: 9 --- 6 6
+Got th[22663] e whole image from 9 over 6
+[22664] img from 0 send to pc
+Finish[22664] ed sending Msg to pc
+Finishe[22664] d sending Img to pc
+Request [22664] to you 6
+Got Ack for FLAG se[22664] nd to 6
+[22824] req Image from: 6; rec from:[22824]  6; source: 12 --- 7 7
+Got t[22825] he whole image from 12 over [22825] 6
+img from 0 send to pc
+Fini[22825] shed sending Msg to pc
+Finis[22825] hed sending Img to pc
+Reques[22826] t to you 6
+Got Ack for FLAG [22826] send to 6
+[23077] req Image from: 6; rec from:[23082]  6; source: 16 --- 8 8
+[23108] req Image from: 6; rec from:[23108]  6; source: 16 --- 8 8
+Got t[23108] he whole image from 16 over [23109] 6
+img from 0 send to pc
+Fini[23109] shed sending Msg to pc
+Finis[23109] hed sending Msg to pc
+Finish[23109] ed sending Img to pc
+Request[23109]  to you 6
+Got Ack for FLAG s[23110] end to 6
+[23336] req Image from: 6; rec from:[23337]  6; source: 18 --- 9 9
+[23337] req Image from: 6; rec from:[23338]  6; source: 18 --- 9 9
+Got t[23338] he whole image from 18 over [23339] 6
+img from 0 send to pc
+Fini[23385] shed sending Msg to pc
+Finis[23392] hed sending Msg to pc
+Finish[23393] ed sending Img to pc
+Request[23393]  to you 6
+Got Ack for FLAG s[23398] end to 6
+[23650] req Image from: 6; rec from:[23651]  6; source: 22 --- 10 10
+[23654] req Image from: 6; rec from:[23655]  6; source: 22 --- 10 10
+Got[23655]  the whole image from 22 ove[23655] r 6
+img from 0 send to pc
+Fi[23656] nished sending Msg to pc
+Fin[23696] ished sending Msg to pc
+Fini[23697] shed sending Img to pc
+Reque[23697] st to you 6
+Got Ack for FLAG[23698]  send to 6
+[23874] req Image from: 6; rec from:[23875]  6; source: 23 --- 11 11
+Got[23875]  the whole image from 23 ove[23875] r 6
+img from 0 send to pc
+Fi[23875] nished sending Msg to pc
+Fin[23875] ished sending Img to pc
+Requ[23875] est to you 6
+Got Ack for FLA[23876] G send to 6
+[24106] req Image from: 6; rec from:[24107]  6; source: 19 --- 12 12
+[24107] req Image from: 6; rec from:[24107]  6; source: 19 --- 12 12
+Got[24107]  the whole image from 19 ove[24158] r 6
+img from 0 send to pc
+Fi[24158] nished sending Msg to pc
+Fin[24158] ished sending Msg to pc
+Fini[24158] shed sending Img to pc
+Reque[24161] st to you 6
+Got Ack for FLAG[24161]  send to 6
+[24439] req Image from: 6; rec from:[24439]  6; source: 21 --- 13 13
+[24440] req Image from: 6; rec from:[24440]  6; source: 21 --- 13 13
+Got[24443]  the whole image from 21 ove[24444] r 6
+img from 0 send to pc
+Fi[24444] nished sending Msg to pc
+Fin[24491] ished sending Msg to pc
+Fini[24491] shed sending Img to pc
+Reque[24492] st to you 6
+Got Ack for FLAG[24493]  send to 6
+[24662] req Image from: 6; rec from:[24662]  6; source: 24 --- 14 14
+Got[24662]  the whole image from 24 ove[24663] r 6
+img from 0 send to pc
+Fi[24663] nished sending Msg to pc
+Fin[24663] ished sending Img to pc
+Requ[24663] est to you 6
+Got Ack for FLA[24664] G send to 6
+[24881] req Image from: 6; rec from:[24881]  6; source: 25 --- 15 15
+Got[24881]  the whole image from 25 ove[24882] r 6
+img from 0 send to pc
+Fi[24892] nished sending Msg to pc
+Fin[24893] ished sending Img to pc
+Requ[24894] est to you 6
+Got Ack for FLA[24894] G send to 6
+[25058] req Image from: 6; rec from:[25058]  6; source: 26 --- 16 16
+Got[25059]  the whole image from 26 ove[25059] r 6
+img from 0 send to pc
+Fi[25059] nished sending Msg to pc
+Fin[25060] ished sending Img to pc
+Requ[25060] est to you 6
+Got Ack for FLA[25061] G send to 6
+[25314] req Image from: 6; rec from:[25314]  6; source: 29 --- 17 17
+Got[25314]  the whole image from 29 ove[25315] r 6
+img from 0 send to pc
+Fi[25315] nished sending Msg to pc
+Fin[25315] ished sending Img to pc
+Requ[25315] est to you 6
+Got Ack for FLA[25316] G send to 6
+[25592] req Image from: 6; rec from:[25603]  6; source: 32 --- 18 18
+Got[25614]  the whole image from 32 ove[25614] r 6
+img from 0 send to pc
+Fi[25614] nished sending Msg to pc
+Fin[25614] ished sending Img to pc
+Requ[25614] est to you 6
+Got Ack for FLA[25614] G send to 6
+[25773] req Image from: 6; rec from:[25773]  6; source: 30 --- 19 19
+Got[25773]  the whole image from 30 ove[25773] r 6
+img from 0 send to pc
+Fi[25773] nished sending Msg to pc
+Fin[25774] ished sending Img to pc
+Requ[25774] est to you 6
+Got Ack for FLA[25774] G send to 6
+[26008] req Image from: 6; rec from:[26008]  6; source: 20 --- 20 20
+[26008] req Image from: 6; rec from:[26009]  6; source: 20 --- 20 20
+Got[26009]  the whole image from 20 ove[26059] r 6
+img from 0 send to pc
+Fi[26059] nished sending Msg to pc
+Fin[26059] ished sending Msg to pc
+Fini[26059] shed sending Img to pc
+Reque[26060] st to you 6
+Got Ack for FLAG[26060]  send to 6
+[26235] req Image from: 6; rec from:[26235]  6; source: 13 --- 21 21
+[26236] req Image from: 6; rec from:[26236]  6; source: 13 --- 21 21
+Got[26237]  the whole image from 13 ove[26237] r 6
+img from 0 send to pc
+Fi[26237] nished sending Msg to pc
+Fin[26287] ished sending Msg to pc
+Fini[26288] shed sending Img to pc
+Reque[26288] st to you 6
+Got Ack for FLAG[26288]  send to 6
+[26441] req Image from: 6; rec from:[26441]  6; source: 11 --- 22 22
+Got[26441]  the whole image from 11 ove[26441] r 6
+img from 0 send to pc
+Fi[26442] nished sending Msg to pc
+Fin[26442] ished sending Img to pc
+Requ[26442] est to you 6
+Got Ack for FLA[26442] G send to 6
+[26590] req Image from: 6; rec from:[26590]  6; source: 14 --- 23 23
+[26591] req Image from: 6; rec from:[26591]  6; source: 14 --- 23 23
+Got[26591]  the whole image from 14 ove[26593] r 6
+img from 0 send to pc
+Fi[26593] nished sending Msg to pc
+Fin[26642] ished sending Msg to pc
+Fini[26644] shed sending Img to pc
+Reque[26644] st to you 6
+Got Ack for FLAG[26644]  send to 6
+[26831] req Image from: 6; rec from:[26832]  6; source: 27 --- 24 24
+Got[26832]  the whole image from 27 ove[26832] r 6
+img from 0 send to pc
+Fi[26832] nished sending Msg to pc
+Fin[26832] ished sending Img to pc
+Requ[26833] est to you 6
+Got Ack for FLA[26833] G send to 6
+[27051] req Image from: 6; rec from:[27051]  6; source: 31 --- 25 25
+Got[27051]  the whole image from 31 ove[27052] r 6
+img from 0 send to pc
+Fi[27052] nished sending Msg to pc
+Fin[27052] ished sending Img to pc
+Requ[27055] est to you 6
+Got Ack for FLA[27057] G send to 6
+[27193] req Image from: 6; rec from:[27193]  6; source: 28 --- 26 26
+Got[27193]  the whole image from 28 ove[27193] r 6
+img from 0 send to pc
+Fi[27193] nished sending Msg to pc
+Fin[27194] ished sending Img to pc
+Requ[27194] est to you 6
+Got Ack for FLA[27194] G send to 6
+[27341] req Image from: 6; rec from:[27341]  6; source: 15 --- 27 27
+[27342] req Image from: 6; rec from:[27342]  6; source: 15 --- 27 27
+Got[27342]  the whole image from 15 ove[27342] r 6
+img from 0 send to pc
+Fi[27342] nished sending Msg to pc
+Fin[27392] ished sending Msg to pc
+Fini[27393] shed sending Img to pc
+Reque[27393] st to you 6
+Got Ack for FLAG[27393]  send to 6
+[27443] req Image from: 6; rec from:[27443]  6; source: 10 --- 28 28
+[27496] req Image from: 6; rec from:[27496]  6; source: 10 --- 28 28
+Got[27497]  the whole image from 10 ove[27497] r 6
+img from 0 send to pc
+Fi[27497] nished sending Msg to pc
+Fin[27497] ished sending Msg to pc
+Fini[27497] shed sending Img to pc
+Reque[27497] st to you 6
+Got Ack for FLAG[27498]  send to 6
+[27558] req Image from: 6; rec from:[27559]  6; source: 6 --- 29 29
+Got [27559] the whole image from 6 over [27559] 6
+img from 0 send to pc
+Fini[27559] shed sending Msg to pc
+Finis[27559] hed sending Img to pc
+Reques[27559] t to you 7
+Got Ack for FLAG [27598] send to 7
+[27599] req Image from: 7; rec from:[27599]  7; source: 7 --- 30 30
+[27599] req Image from: 7; rec from:[27599]  7; source: 7 --- 30 30
+Got [27599] the whole image from 7 over [27599] 7
+img from 0 send to pc
+Fini[27650] shed sending Msg to pc
+Finis[27650] hed sending Msg to pc
+Finish[27651] ed sending Img to pc
+Request[27651]  to you 8
+Retransmission FLA[27652] G to 8
+[27652] Got Ack for FLAG send to 8
+[27652] req Image from: 8; rec from:[27701]  8; source: 8 --- 31 31
+[27701] req Image from: 8; rec from:[27701]  8; source: 8 --- 31 31
+Got [27702] the whole image from 8 over [27702] 8
+img from 0 send to pc
+Fini[27753] shed sending Msg to pc
+Finis[27753] hed sending Msg to pc
+Finish[27754] ed sending Img to pc
+Finishe[27754] d sending Msg to pc
+Finished[27754]  sending Img to pc
+HuHu
+Root[27754]  send its image
+Update
+Colle[27754] ction done 1
+Next Round!
+sen[27754] : 1->14: 40 until me
+Time to[27755]  wait: 800
+[28193] rec: 3->9: 22 until me
+[28194] Time to wait: 440
+[28194] rec: 9->8: 21 until me
+Time [28194] to wait: 420
+[28194] rec: 8->7: 20 until me
+[28195] Time to wait: 400
+[28195] rec: 7->21: 19 until me
+[28195] Time to wait: 380
+[28196] rec: 7->5: 16 until me
+[28196] Time to wait: 320
+[28196] rec: 5->6: 15 until me
+[28213] Time to wait: 300
+[28213] rec: 6->18: 14 until me
+[28213] Time to wait: 280
+[28369] rec: 6->28: 6 until me
+[28417] Time to wait: 120
+[28417] rec: 6->4: 4 until me
+[28417] Time to wait: 80
+[28417] rec: 4->11: 3 until me
+[28417] Time to wait: 60
+[28417] rec: 4->2: 1 until me
+[28418] Time to wait: 20
+[28455] Send To = 0
+[28459] finished Round2
+[28460] Got Ack for FLAG send to 2
+[28460] req Image from: 2; rec from:[28460]  2; source: 2 --- 1 1
+Got th[28506] e whole image from 2 over 2
+[28506] img from 0 send to pc
+Finish[28506] ed sending Msg to pc
+Finishe[28506] d sending Img to pc
+Request [28506] to you 3
+Got Ack for FLAG se[28507] nd to 3
+[28507] req Image from: 3; rec from:[28507]  3; source: 3 --- 2 2
+Got th[28555] e whole image from 3 over 3
+[28556] img from 0 send to pc
+Finish[28557] ed sending Msg to pc
+Finishe[28557] d sending Img to pc
+Request [28559] to you 4
+Got Ack for FLAG se[28561] nd to 4
+[28562] req Image from: 4; rec from:[28563]  4; source: 4 --- 3 3
+Got th[28605] e whole image from 4 over 4
+[28605] img from 0 send to pc
+Finish[28610] ed sending Msg to pc
+Finishe[28610] d sending Img to pc
+Request [28611] to you 5
+Got Ack for FLAG se[28611] nd to 5
+req Image from: 5; r[28611] ec from: 5; source: 5 --- 4 [28671] 4
+Got the whole image from 5[28672]  over 5
+img from 0 send to p[28672] c
+Finished sending Msg to pc[28672] 
+Finished sending Img to pc
+[28673] Request to you 6
+Got Ack for[28673]  FLAG send to 6
+[28707] req Image from: 6; rec from:[28707]  6; source: 17 --- 5 5
+Got t[28759] he whole image from 17 over [28760] 6
+img from 0 send to pc
+Fini[28760] shed sending Msg to pc
+Finis[28760] hed sending Img to pc
+Reques[28760] t to you 6
+Got Ack for FLAG [28760] send to 6
+[28812] req Image from: 6; rec from:[28862]  6; source: 9 --- 6 6
+Got th[28866] e whole image from 9 over 6
+[28867] img from 0 send to pc
+Finish[28867] ed sending Msg to pc
+Finishe[28867] d sending Img to pc
+Request [28867] to you 6
+Got Ack for FLAG se[28868] nd to 6
+[29003] req Image from: 6; rec from:[29004]  6; source: 12 --- 7 7
+Got t[29004] he whole image from 12 over [29004] 6
+img from 0 send to pc
+Fini[29004] shed sending Msg to pc
+Finis[29004] hed sending Img to pc
+Reques[29004] t to you 6
+Got Ack for FLAG [29005] send to 6
+[29252] req Image from: 6; rec from:[29253]  6; source: 16 --- 8 8
+[29254] req Image from: 6; rec from:[29255]  6; source: 16 --- 8 8
+Got t[29256] he whole image from 16 over [29257] 6
+img from 0 send to pc
+Fini[29258] shed sending Msg to pc
+Finis[29262] hed sending Msg to pc
+Finish[29292] ed sending Img to pc
+Request[29292]  to you 6
+Got Ack for FLAG s[29293] end to 6
+[29470] req Image from: 6; rec from:[29470]  6; source: 18 --- 9 9
+Got t[29471] he whole image from 18 over [29471] 6
+img from 0 send to pc
+Fini[29471] shed sending Msg to pc
+Finis[29471] hed sending Img to pc
+Reques[29471] t to you 6
+Got Ack for FLAG [29472] send to 6
+[29777] req Image from: 6; rec from:[29778]  6; source: 22 --- 10 10
+[29778] req Image from: 6; rec from:[29779]  6; source: 22 --- 10 10
+Got[29780]  the whole image from 22 ove[29780] r 6
+img from 0 send to pc
+Fi[29781] nished sending Msg to pc
+Fin[29820] ished sending Msg to pc
+Fini[29820] shed sending Img to pc
+Reque[29821] st to you 6
+Retransmission F[29821] LAG to 6
+Got Ack for FLAG se[29821] nd to 6
+[30028] req Image from: 6; rec from:[30028]  6; source: 23 --- 11 11
+Got[30028]  the whole image from 23 ove[30029] r 6
+img from 0 send to pc
+Fi[30029] nished sending Msg to pc
+Fin[30029] ished sending Img to pc
+Requ[30029] est to you 6
+Got Ack for FLA[30029] G send to 6
+[30239] req Image from: 6; rec from:[30240]  6; source: 19 --- 12 12
+[30240] req Image from: 6; rec from:[30240]  6; source: 19 --- 12 12
+Got[30240]  the whole image from 19 ove[30240] r 6
+img from 0 send to pc
+Fi[30289] nished sending Msg to pc
+Fin[30290] ished sending Msg to pc
+Fini[30290] shed sending Img to pc
+Reque[30290] st to you 6
+Got Ack for FLAG[30290]  send to 6
+[30534] req Image from: 6; rec from:[30535]  6; source: 21 --- 13 13
+[30537] req Image from: 6; rec from:[30541]  6; source: 21 --- 13 13
+Got[30541]  the whole image from 21 ove[30542] r 6
+img from 0 send to pc
+Fi[30542] nished sending Msg to pc
+Fin[30582] ished sending Msg to pc
+Fini[30583] shed sending Img to pc
+Reque[30583] st to you 6
+Got Ack for FLAG[30583]  send to 6
+[30793] req Image from: 6; rec from:[30793]  6; source: 24 --- 14 14
+Got[30793]  the whole image from 24 ove[30793] r 6
+img from 0 send to pc
+Fi[30793] nished sending Msg to pc
+Fin[30794] ished sending Img to pc
+Requ[30794] est to you 6
+Got Ack for FLA[30794] G send to 6
+[31005] req Image from: 6; rec from:[31005]  6; source: 25 --- 15 15
+Got[31005]  the whole image from 25 ove[31006] r 6
+img from 0 send to pc
+Fi[31006] nished sending Msg to pc
+Fin[31006] ished sending Img to pc
+Requ[31006] est to you 6
+Got Ack for FLA[31006] G send to 6
+[31215] req Image from: 6; rec from:[31215]  6; source: 26 --- 16 16
+Got[31215]  the whole image from 26 ove[31215] r 6
+img from 0 send to pc
+Fi[31216] nished sending Msg to pc
+Fin[31216] ished sending Img to pc
+Requ[31216] est to you 6
+Got Ack for FLA[31216] G send to 6
+[31514] req Image from: 6; rec from:[31514]  6; source: 29 --- 17 17
+Got[31514]  the whole image from 29 ove[31514] r 6
+img from 0 send to pc
+Fi[31517] nished sending Msg to pc
+Fin[31518] ished sending Img to pc
+Requ[31519] est to you 6
+Got Ack for FLA[31519] G send to 6
+[31749] req Image from: 6; rec from:[31751]  6; source: 32 --- 18 18
+Got[31757]  the whole image from 32 ove[31758] r 6
+img from 0 send to pc
+Fi[31759] nished sending Msg to pc
+Fin[31759] ished sending Img to pc
+Requ[31772] est to you 6
+Got Ack for FLA[31772] G send to 6
+[31915] req Image from: 6; rec from:[31915]  6; source: 30 --- 19 19
+Got[31915]  the whole image from 30 ove[31915] r 6
+img from 0 send to pc
+Fi[31916] nished sending Msg to pc
+Fin[31916] ished sending Img to pc
+Requ[31916] est to you 6
+Got Ack for FLA[31916] G send to 6
+[32167] req Image from: 6; rec from:[32167]  6; source: 20 --- 20 20
+[32167] req Image from: 6; rec from:[32168]  6; source: 20 --- 20 20
+Got[32168]  the whole image from 20 ove[32168] r 6
+img from 0 send to pc
+Fi[32168] nished sending Msg to pc
+Fin[32218] ished sending Msg to pc
+Fini[32219] shed sending Img to pc
+Reque[32219] st to you 6
+Retransmission F[32219] LAG to 6
+Got Ack for FLAG se[32219] nd to 6
+[32374] req Image from: 6; rec from:[32374]  6; source: 13 --- 21 21
+[32374] req Image from: 6; rec from:[32374]  6; source: 13 --- 21 21
+Got[32374]  the whole image from 13 ove[32374] r 6
+img from 0 send to pc
+Fi[32423] nished sending Msg to pc
+req[32423]  Image from: 6; rec from: 6;[32423]  source: 13 --- 21 21
+allrea[32423] dyReceived!
+Finished sending[32423]  Msg to pc
+Finished sending [32424] Img to pc
+Request to you 6
+G[32424] ot Ack for FLAG send to 6
+[32565] req Image from: 6; rec from:[32566]  6; source: 11 --- 22 22
+Got[32566]  the whole image from 11 ove[32568] r 6
+img from 0 send to pc
+Fi[32569] nished sending Msg to pc
+Fin[32569] ished sending Img to pc
+Requ[32570] est to you 6
+Got Ack for FLA[32570] G send to 6
+[32723] req Image from: 6; rec from:[32723]  6; source: 14 --- 23 23
+[32723] req Image from: 6; rec from:[32724]  6; source: 14 --- 23 23
+Got[32724]  the whole image from 14 ove[32724] r 6
+img from 0 send to pc
+Fi[32724] nished sending Msg to pc
+Fin[32774] ished sending Msg to pc
+Fini[32775] shed sending Img to pc
+Reque[32775] st to you 6
+Got Ack for FLAG[32776]  send to 6
+[32944] req Image from: 6; rec from:[32945]  6; source: 27 --- 24 24
+Got[32945]  the whole image from 27 ove[32945] r 6
+img from 0 send to pc
+Fi[32945] nished sending Msg to pc
+Fin[32945] ished sending Img to pc
+Requ[32945] est to you 6
+Got Ack for FLA[32946] G send to 6
+[33186] req Image from: 6; rec from:[33205]  6; source: 31 --- 25 25
+Got[33206]  the whole image from 31 ove[33206] r 6
+img from 0 send to pc
+Fi[33206] nished sending Msg to pc
+Fin[33206] ished sending Img to pc
+Requ[33206] est to you 6
+Got Ack for FLA[33206] G send to 6
+[33356] req Image from: 6; rec from:[33356]  6; source: 28 --- 26 26
+Got[33357]  the whole image from 28 ove[33357] r 6
+img from 0 send to pc
+Fi[33357] nished sending Msg to pc
+Fin[33357] ished sending Img to pc
+Requ[33357] est to you 6
+Got Ack for FLA[33357] G send to 6
+[33509] req Image from: 6; rec from:[33509]  6; source: 15 --- 27 27
+[33509] req Image from: 6; rec from:[33514]  6; source: 15 --- 27 27
+Got[33515]  the whole image from 15 ove[33515] r 6
+img from 0 send to pc
+Fi[33564] nished sending Msg to pc
+Fin[33564] ished sending Msg to pc
+Fini[33564] shed sending Img to pc
+Reque[33564] st to you 6
+Got Ack for FLAG[33564]  send to 6
+[33614] req Image from: 6; rec from:[33615]  6; source: 10 --- 28 28
+[33615] req Image from: 6; rec from:[33615]  6; source: 10 --- 28 28
+Got[33615]  the whole image from 10 ove[33667] r 6
+img from 0 send to pc
+Fi[33667] nished sending Msg to pc
+Fin[33668] ished sending Msg to pc
+Fini[33668] shed sending Img to pc
+Reque[33668] st to you 6
+Got Ack for FLAG[33669]  send to 6
+req Image from: 6[33669] ; rec from: 6; source: 6 ---[33669]  29 29
+Got the whole image f[33717] rom 6 over 6
+img from 0 send[33718]  to pc
+Finished sending Msg [33718] to pc
+Finished sending Img t[33718] o pc
+Request to you 7
+Got Ac[33718] k for FLAG send to 7
+req Ima[33718] ge from: 7; rec from: 7; sou[33719] rce: 7 --- 30 30
+[33770] req Image from: 7; rec from:[33771]  7; source: 7 --- 30 30
+Got [33771] the whole image from 7 over [33771] 7
+img from 0 send to pc
+Fini[33771] shed sending Msg to pc
+Finis[33771] hed sending Msg to pc
+Finish[33772] ed sending Img to pc
+Request[33826]  to you 8
+Got Ack for FLAG s[33827] end to 8
+[33827] req Image from: 8; rec from:[33827]  8; source: 8 --- 31 31
+[33827] req Image from: 8; rec from:[33828]  8; source: 8 --- 31 31
+Got [33871] the whole image from 8 over [33872] 8
+img from 0 send to pc
+Fini[33872] shed sending Msg to pc
+Finis[33872] hed sending Msg to pc
+Finish[33872] ed sending Img to pc
+Finishe[33872] d sending Msg to pc
+Finished[33872]  sending Img to pc
+HuHu
+Root[33873]  send its image
+Update
+Colle[33922] ction done 1
+Next Round!
+sen[33923] : 1->14: 40 until me
+Time to[33924]  wait: 800
+[33974] rec: 15->23: 35 until me
+[33974] Time to wait: 700
+[34124] rec: 15->29: 33 until me
+[34143] Time to wait: 660
+[34143] rec: 15->10: 30 until me
+[34143] Time to wait: 600
+[34143] rec: 10->27: 29 until me
+[34143] Time to wait: 580
+[34222] rec: 3->9: 22 until me
+[34237] Time to wait: 440
+[34237] rec: 9->8: 21 until me
+[34237] Time to wait: 420
+[34237] rec: 8->7: 20 until me
+[34237] Time to wait: 400
+[34238] rec: 7->21: 19 until me
+[34238] Time to wait: 380
+[34272] rec: 7->5: 16 until me
+[34325] Time to wait: 320
+[34379] rec: 5->6: 15 until me
+[34379] Time to wait: 300
+[34380] rec: 6->18: 14 until me
+[34384] Time to wait: 280
+[34541] rec: 6->28: 6 until me
+[34614] Time to wait: 120
+[34614] rec: 6->4: 4 until me
+[34615] Time to wait: 80
+[34615] rec: 4->11: 3 until me
+[34615] Time to wait: 60
+[34615] rec: 4->2: 1 until me
+[34615] Time to wait: 20
+[34616] Send To = 0
+finished Round2
+[34616] Got Ack for FLAG send to 2
+[34616] req Image from: 2; rec from:[34660]  2; source: 2 --- 1 1
+Got th[34668] e whole image from 2 over 2
+[34679] img from 0 send to pc
+Finish[34679] ed sending Msg to pc
+Finishe[34679] d sending Img to pc
+Request [34680] to you 3
+Got Ack for FLAG se[34680] nd to 3
+req Image from: 3; r[34685] ec from: 3; source: 3 --- 2 [34685] 2
+Got the whole image from 3[34686]  over 3
+img from 0 send to p[34703] c
+Finished sending Msg to pc[34703] 
+Finished sending Img to pc
+[34703] Request to you 4
+Got Ack for[34704]  FLAG send to 4
+req Image fr[34704] om: 4; rec from: 4; source: [34704] 4 --- 3 3
+Got the whole imag[34712] e from 4 over 4
+img from 0 s[34712] end to pc
+Finished sending M[34758] sg to pc
+Finished sending Im[34758] g to pc
+Request to you 5
+Got[34759]  Ack for FLAG send to 5
+[34759] req Image from: 5; rec from:[34759]  5; source: 5 --- 4 4
+Got th[34760] e whole image from 5 over 5
+[34761] img from 0 send to pc
+Finish[34803] ed sending Msg to pc
+Finishe[34804] d sending Img to pc
+Request [34804] to you 6
+Got Ack for FLAG se[34804] nd to 6
+[34856] req Image from: 6; rec from:[34858]  6; source: 17 --- 5 5
+Got t[34907] he whole image from 17 over [34907] 6
+img from 0 send to pc
+Fini[34907] shed sending Msg to pc
+Finis[34907] hed sending Img to pc
+Reques[34909] t to you 6
+Got Ack for FLAG [34909] send to 6
+[34958] req Image from: 6; rec from:[34958]  6; source: 9 --- 6 6
+Got th[34958] e whole image from 9 over 6
+[35009] img from 0 send to pc
+Finish[35013] ed sending Msg to pc
+Finishe[35013] d sending Img to pc
+Request [35013] to you 6
+Got Ack for FLAG se[35014] nd to 6
+[35161] req Image from: 6; rec from:[35162]  6; source: 12 --- 7 7
+Got t[35164] he whole image from 12 over [35164] 6
+img from 0 send to pc
+Fini[35165] shed sending Msg to pc
+Finis[35165] hed sending Img to pc
+Reques[35165] t to you 6
+Got Ack for FLAG [35165] send to 6
+[35353] req Image from: 6; rec from:[35354]  6; source: 16 --- 8 8
+[35354] req Image from: 6; rec from:[35355]  6; source: 16 --- 8 8
+Got t[35355] he whole image from 16 over [35355] 6
+img from 0 send to pc
+Fini[35355] shed sending Msg to pc
+Finis[35404] hed sending Msg to pc
+Finish[35407] ed sending Img to pc
+Request[35407]  to you 6
+Got Ack for FLAG s[35408] end to 6
+[35672] req Image from: 6; rec from:[35672]  6; source: 18 --- 9 9
+[35672] req Image from: 6; rec from:[35672]  6; source: 18 --- 9 9
+Got t[35673] he whole image from 18 over [35673] 6
+img from 0 send to pc
+Fini[35673] shed sending Msg to pc
+Finis[35722] hed sending Msg to pc
+Finish[35723] ed sending Img to pc
+Request[35723]  to you 6
+Got Ack for FLAG s[35723] end to 6
+[35969] req Image from: 6; rec from:[35969]  6; source: 22 --- 10 10
+[35969] req Image from: 6; rec from:[35970]  6; source: 22 --- 10 10
+Got[35970]  the whole image from 22 ove[35970] r 6
+img from 0 send to pc
+Fi[35970] nished sending Msg to pc
+Fin[36021] ished sending Msg to pc
+Fini[36021] shed sending Img to pc
+Reque[36021] st to you 6
+Got Ack for FLAG[36022]  send to 6
+[36258] req Image from: 6; rec from:[36259]  6; source: 23 --- 11 11
+[36260] req Image from: 6; rec from:[36260]  6; source: 23 --- 11 11
+Got[36261]  the whole image from 23 ove[36261] r 6
+img from 0 send to pc
+Fi[36262] nished sending Msg to pc
+Fin[36308] ished sending Msg to pc
+Fini[36309] shed sending Img to pc
+Reque[36309] st to you 6
+Got Ack for FLAG[36309]  send to 6
+[36513] req Image from: 6; rec from:[36513]  6; source: 19 --- 12 12
+[36514] req Image from: 6; rec from:[36514]  6; source: 19 --- 12 12
+Got[36514]  the whole image from 19 ove[36514] r 6
+img from 0 send to pc
+Fi[36520] nished sending Msg to pc
+Fin[36571] ished sending Msg to pc
+Fini[36571] shed sending Img to pc
+Reque[36571] st to you 6
+Got Ack for FLAG[36571]  send to 6
+[36782] req Image from: 6; rec from:[36783]  6; source: 21 --- 13 13
+[36783] req Image from: 6; rec from:[36783]  6; source: 21 --- 13 13
+Got[36783]  the whole image from 21 ove[36784] r 6
+img from 0 send to pc
+Fi[36835] nished sending Msg to pc
+Fin[36836] ished sending Msg to pc
+Fini[36836] shed sending Img to pc
+Reque[36837] st to you 6
+Got Ack for FLAG[36837]  send to 6
+[37100] req Image from: 6; rec from:[37101]  6; source: 24 --- 14 14
+[37101] req Image from: 6; rec from:[37101]  6; source: 24 --- 14 14
+Got[37101]  the whole image from 24 ove[37101] r 6
+img from 0 send to pc
+Fi[37101] nished sending Msg to pc
+Fin[37151] ished sending Msg to pc
+Fini[37152] shed sending Img to pc
+Reque[37152] st to you 6
+Got Ack for FLAG[37153]  send to 6
+[37329] req Image from: 6; rec from:[37331]  6; source: 25 --- 15 15
+Got[37351]  the whole image from 25 ove[37351] r 6
+img from 0 send to pc
+Fi[37355] nished sending Msg to pc
+Fin[37356] ished sending Img to pc
+Requ[37356] est to you 6
+Got Ack for FLA[37356] G send to 6
+[37604] req Image from: 6; rec from:[37608]  6; source: 26 --- 16 16
+Got[37608]  the whole image from 26 ove[37611] r 6
+img from 0 send to pc
+Fi[37611] nished sending Msg to pc
+Fin[37624] ished sending Img to pc
+Requ[37624] est to you 6
+Got Ack for FLA[37624] G send to 6
+[37837] req Image from: 6; rec from:[37838]  6; source: 29 --- 17 17
+Got[37838]  the whole image from 29 ove[37838] r 6
+img from 0 send to pc
+Fi[37839] nished sending Msg to pc
+Fin[37839] ished sending Img to pc
+Requ[37840] est to you 6
+Retransmission [37840] FLAG to 6
+Got Ack for FLAG s[37840] end to 6
+[38086] req Image from: 6; rec from:[38086]  6; source: 32 --- 18 18
+Got[38087]  the whole image from 32 ove[38087] r 6
+img from 0 send to pc
+Fi[38087] nished sending Msg to pc
+Fin[38087] ished sending Img to pc
+Requ[38087] est to you 6
+Got Ack for FLA[38087] G send to 6
+[38295] req Image from: 6; rec from:[38295]  6; source: 30 --- 19 19
+Got[38295]  the whole image from 30 ove[38295] r 6
+img from 0 send to pc
+Fi[38296] nished sending Msg to pc
+Fin[38296] ished sending Img to pc
+Requ[38297] est to you 6
+Got Ack for FLA[38297] G send to 6
+[38491] req Image from: 6; rec from:[38491]  6; source: 20 --- 20 20
+[38491] req Image from: 6; rec from:[38491]  6; source: 20 --- 20 20
+Got[38491]  the whole image from 20 ove[38492] r 6
+img from 0 send to pc
+Fi[38492] nished sending Msg to pc
+Fin[38541] ished sending Msg to pc
+Fini[38541] shed sending Img to pc
+Reque[38541] st to you 6
+Got Ack for FLAG[38541]  send to 6
+[38650] req Image from: 6; rec from:[38650]  6; source: 13 --- 21 21
+Got[38651]  the whole image from 13 ove[38651] r 6
+img from 0 send to pc
+Fi[38651] nished sending Msg to pc
+Fin[38651] ished sending Img to pc
+Requ[38652] est to you 6
+Got Ack for FLA[38653] G send to 6
+[38837] req Image from: 6; rec from:[38838]  6; source: 11 --- 22 22
+Got[38838]  the whole image from 11 ove[38838] r 6
+img from 0 send to pc
+Fi[38838] nished sending Msg to pc
+Fin[38838] ished sending Img to pc
+Requ[38839] est to you 6
+Got Ack for FLA[38839] G send to 6
+[39001] req Image from: 6; rec from:[39002]  6; source: 14 --- 23 23
+[39002] req Image from: 6; rec from:[39002]  6; source: 14 --- 23 23
+Got[39002]  the whole image from 14 ove[39002] r 6
+img from 0 send to pc
+Fi[39052] nished sending Msg to pc
+Fin[39052] ished sending Msg to pc
+Fini[39053] shed sending Img to pc
+Reque[39053] st to you 6
+Got Ack for FLAG[39054]  send to 6
+[39252] req Image from: 6; rec from:[39253]  6; source: 27 --- 24 24
+Got[39253]  the whole image from 27 ove[39253] r 6
+img from 0 send to pc
+Fi[39253] nished sending Msg to pc
+Fin[39253] ished sending Img to pc
+Requ[39253] est to you 6
+Got Ack for FLA[39254] G send to 6
+[39423] req Image from: 6; rec from:[39424]  6; source: 31 --- 25 25
+Got[39424]  the whole image from 31 ove[39424] r 6
+img from 0 send to pc
+Fi[39425] nished sending Msg to pc
+Fin[39425] ished sending Img to pc
+Requ[39425] est to you 6
+Got Ack for FLA[39426] G send to 6
+[39594] req Image from: 6; rec from:[39595]  6; source: 28 --- 26 26
+Got[39595]  the whole image from 28 ove[39595] r 6
+img from 0 send to pc
+Fi[39596] nished sending Msg to pc
+Fin[39596] ished sending Img to pc
+Requ[39597] est to you 6
+Got Ack for FLA[39597] G send to 6
+[39753] req Image from: 6; rec from:[39754]  6; source: 15 --- 27 27
+[39755] req Image from: 6; rec from:[39755]  6; source: 15 --- 27 27
+Got[39756]  the whole image from 15 ove[39757] r 6
+img from 0 send to pc
+Fi[39803] nished sending Msg to pc
+Fin[39803] ished sending Msg to pc
+Fini[39803] shed sending Img to pc
+Reque[39803] st to you 6
+Got Ack for FLAG[39804]  send to 6
+[39853] req Image from: 6; rec from:[39853]  6; source: 10 --- 28 28
+[39910] req Image from: 6; rec from:[39911]  6; source: 10 --- 28 28
+Got[39912]  the whole image from 10 ove[39913] r 6
+img from 0 send to pc
+Fi[39914] nished sending Msg to pc
+Fin[39914] ished sending Msg to pc
+Fini[39914] shed sending Img to pc
+Reque[39915] st to you 6
+Got Ack for FLAG[39960]  send to 6
+req Image from: 6[39961] ; rec from: 6; source: 6 ---[39961]  29 29
+Got the whole image f[39961] rom 6 over 6
+img from 0 send[39961]  to pc
+Finished sending Msg [39961] to pc
+Finished sending Img t[39961] o pc
+Request to you 7
+Got Ac[39962] k for FLAG send to 7
+[40017] req Image from: 7; rec from:[40017]  7; source: 7 --- 30 30
+[40017] req Image from: 7; rec from:[40017]  7; source: 7 --- 30 30
+Got [40017] the whole image from 7 over [40018] 7
+img from 0 send to pc
+Fini[40068] shed sending Msg to pc
+Finis[40068] hed sending Msg to pc
+Finish[40069] ed sending Img to pc
+Request[40069]  to you 8
+Got Ack for FLAG s[40069] end to 8
+req Image from: 8; [40069] rec from: 8; source: 8 --- 3[40069] 1 31
+req Image from: 8; rec [40069] from: 8; source: 8 --- 31 31[40117] 
+Got the whole image from 8 [40117] over 8
+img from 0 send to pc[40117] 
+Finished sending Msg to pc
+[40117] Finished sending Msg to pc
+F[40117] inished sending Img to pc
+Fi[40117] nished sending Msg to pc
+Fin[40118] ished sending Img to pc
+HuHu[40118] 
+Root send its image
+Update
+[40167] Collection done 1
+Next Round[40167] !
+sen: 1->14: 40 until me
+Ti[40167] me to wait: 800
+[40218] rec: 15->23: 35 until me
+[40218] Time to wait: 700
+[40351] rec: 15->29: 33 until me
+[40534] Time to wait: 660
+[40705] rec: 15->10: 30 until me
+[40705] Time to wait: 600
+[40706] rec: 10->27: 29 until me
+Tim[40706] e to wait: 580
+[40706] rec: 3->9: 22 until me
+[40706] Time to wait: 440
+[40706] rec: 9->8: 21 until me
+[40706] Time to wait: 420
+[40707] rec: 8->7: 20 until me
+[40707] Time to wait: 400
+[40707] rec: 7->21: 19 until me
+Time[40707]  to wait: 380
+[40707] rec: 7->5: 16 until me
+[40707] Time to wait: 320
+[40713] rec: 5->6: 15 until me
+[40764] Time to wait: 300
+[40764] rec: 6->18: 14 until me
+[40764] Time to wait: 280
+[40764] rec: 6->28: 6 until me
+[40764] Time to wait: 120
+[40765] rec: 6->4: 4 until me
+[40765] Time to wait: 80
+[40780] rec: 4->11: 3 until me
+Time [40806] to wait: 60
+[40806] rec: 4->2: 1 until me
+[40807] Time to wait: 20
+[40831] Send To = 0
+[40832] finished Round2
+[40833] Got Ack for FLAG send to 2
+[40833] req Image from: 2; rec from:[40833]  2; source: 2 --- 1 1
+Got th[40883] e whole image from 2 over 2
+[40883] img from 0 send to pc
+Finish[40883] ed sending Msg to pc
+Finishe[40892] d sending Img to pc
+Request [40893] to you 3
+Got Ack for FLAG se[40893] nd to 3
+[40893] req Image from: 3; rec from:[40893]  3; source: 3 --- 2 2
+Got th[40893] e whole image from 3 over 3
+[40930] img from 0 send to pc
+Finish[40930] ed sending Msg to pc
+Finishe[40930] d sending Img to pc
+Request [40931] to you 4
+Got Ack for FLAG se[40931] nd to 4
+[40931] req Image from: 4; rec from:[40931]  4; source: 4 --- 3 3
+Got th[40981] e whole image from 4 over 4
+[40981] img from 0 send to pc
+Finish[40982] ed sending Msg to pc
+Finishe[40982] d sending Img to pc
+Request [40982] to you 5
+Got Ack for FLAG se[40982] nd to 5
+req Image from: 5; r[40982] ec from: 5; source: 5 --- 4 [40982] 4
+Got the whole image from 5[41032]  over 5
+img from 0 send to p[41032] c
+Finished sending Msg to pc[41032] 
+Finished sending Img to pc
+[41033] Request to you 6
+Got Ack for[41033]  FLAG send to 6
+[41139] req Image from: 6; rec from:[41140]  6; source: 17 --- 5 5
+Got t[41140] he whole image from 17 over [41140] 6
+img from 0 send to pc
+Fini[41140] shed sending Msg to pc
+Finis[41140] hed sending Img to pc
+Reques[41140] t to you 6
+Got Ack for FLAG [41141] send to 6
+[41241] req Image from: 6; rec from:[41242]  6; source: 9 --- 6 6
+Got th[41242] e whole image from 9 over 6
+[41242] img from 0 send to pc
+Finish[41242] ed sending Msg to pc
+Finishe[41242] d sending Img to pc
+Request [41243] to you 6
+Got Ack for FLAG se[41243] nd to 6
+[41434] req Image from: 6; rec from:[41434]  6; source: 12 --- 7 7
+[41434] req Image from: 6; rec from:[41435]  6; source: 12 --- 7 7
+allre[41435] adyReceived!
+[41435] req Image from: 6; rec from:[41487]  6; source: 12 --- 7 7
+Got t[41487] he whole image from 12 over [41487] 6
+img from 0 send to pc
+Fini[41487] shed sending Msg to pc
+Finis[41488] hed sending Msg to pc
+Finish[41488] ed sending Img to pc
+Request[41489]  to you 6
+Got Ack for FLAG s[41489] end to 6
+[41725] req Image from: 6; rec from:[41726]  6; source: 16 --- 8 8
+[41726] req Image from: 6; rec from:[41726]  6; source: 16 --- 8 8
+Got t[41726] he whole image from 16 over [41726] 6
+img from 0 send to pc
+Fini[41727] shed sending Msg to pc
+Finis[41776] hed sending Msg to pc
+Finish[41776] ed sending Img to pc
+Request[41776]  to you 6
+Got Ack for FLAG s[41777] end to 6
+[42026] req Image from: 6; rec from:[42026]  6; source: 18 --- 9 9
+[42027] req Image from: 6; rec from:[42027]  6; source: 18 --- 9 9
+Got t[42027] he whole image from 18 over [42027] 6
+img from 0 send to pc
+Fini[42028] shed sending Msg to pc
+Finis[42077] hed sending Msg to pc
+Finish[42079] ed sending Img to pc
+Request[42082]  to you 6
+Got Ack for FLAG s[42082] end to 6
+[42334] req Image from: 6; rec from:[42334]  6; source: 22 --- 10 10
+[42335] req Image from: 6; rec from:[42336]  6; source: 22 --- 10 10
+Got[42369]  the whole image from 22 ove[42370] r 6
+img from 0 send to pc
+Fi[42370] nished sending Msg to pc
+Fin[42370] ished sending Msg to pc
+Fini[42370] shed sending Img to pc
+Reque[42371] st to you 6
+Got Ack for FLAG[42371]  send to 6
+[42599] req Image from: 6; rec from:[42599]  6; source: 23 --- 11 11
+[42599] req Image from: 6; rec from:[42599]  6; source: 23 --- 11 11
+Got[42600]  the whole image from 23 ove[42600] r 6
+img from 0 send to pc
+Fi[42652] nished sending Msg to pc
+Fin[42652] ished sending Msg to pc
+Fini[42652] shed sending Img to pc
+Reque[42652] st to you 6
+Got Ack for FLAG[42653]  send to 6
+[42873] req Image from: 6; rec from:[42874]  6; source: 19 --- 12 12
+[42874] req Image from: 6; rec from:[42874]  6; source: 19 --- 12 12
+Got[42874]  the whole image from 19 ove[42875] r 6
+img from 0 send to pc
+Fi[42875] nished sending Msg to pc
+Fin[42924] ished sending Msg to pc
+Fini[42925] shed sending Img to pc
+Reque[42925] st to you 6
+Got Ack for FLAG[42925]  send to 6
+[43178] req Image from: 6; rec from:[43179]  6; source: 21 --- 13 13
+[43179] req Image from: 6; rec from:[43179]  6; source: 21 --- 13 13
+Got[43179]  the whole image from 21 ove[43179] r 6
+img from 0 send to pc
+Fi[43180] nished sending Msg to pc
+Fin[43229] ished sending Msg to pc
+Fini[43230] shed sending Img to pc
+Reque[43230] st to you 6
+Got Ack for FLAG[43230]  send to 6
+[43480] req Image from: 6; rec from:[43480]  6; source: 24 --- 14 14
+[43480] req Image from: 6; rec from:[43480]  6; source: 24 --- 14 14
+Got[43481]  the whole image from 24 ove[43481] r 6
+img from 0 send to pc
+Fi[43481] nished sending Msg to pc
+Fin[43533] ished sending Msg to pc
+Fini[43533] shed sending Img to pc
+Reque[43534] st to you 6
+Got Ack for FLAG[43534]  send to 6
+[43729] req Image from: 6; rec from:[43729]  6; source: 25 --- 15 15
+Got[43729]  the whole image from 25 ove[43729] r 6
+img from 0 send to pc
+Fi[43730] nished sending Msg to pc
+Fin[43730] ished sending Img to pc
+Requ[43732] est to you 6
+Got Ack for FLA[43732] G send to 6
+[43930] req Image from: 6; rec from:[43931]  6; source: 26 --- 16 16
+Got[43931]  the whole image from 26 ove[43931] r 6
+img from 0 send to pc
+Fi[43932] nished sending Msg to pc
+Fin[43932] ished sending Img to pc
+Requ[43932] est to you 6
+Got Ack for FLA[43933] G send to 6
+[44226] req Image from: 6; rec from:[44227]  6; source: 29 --- 17 17
+Got[44232]  the whole image from 29 ove[44232] r 6
+img from 0 send to pc
+Fi[44232] nished sending Msg to pc
+Fin[44233] ished sending Img to pc
+Requ[44233] est to you 6
+Got Ack for FLA[44233] G send to 6
+[44460] req Image from: 6; rec from:[44461]  6; source: 32 --- 18 18
+Got[44462]  the whole image from 32 ove[44462] r 6
+img from 0 send to pc
+Fi[44463] nished sending Msg to pc
+Fin[44464] ished sending Img to pc
+Requ[44464] est to you 6
+Got Ack for FLA[44466] G send to 6
+[44716] req Image from: 6; rec from:[44716]  6; source: 30 --- 19 19
+[44716] req Image from: 6; rec from:[44717]  6; source: 30 --- 19 19
+Got[44717]  the whole image from 30 ove[44717] r 6
+img from 0 send to pc
+Fi[44768] nished sending Msg to pc
+Fin[44769] ished sending Msg to pc
+Fini[44769] shed sending Img to pc
+Reque[44769] st to you 6
+Got Ack for FLAG[44769]  send to 6
+[44973] req Image from: 6; rec from:[44974]  6; source: 20 --- 20 20
+[44974] req Image from: 6; rec from:[44974]  6; source: 20 --- 20 20
+Got[44975]  the whole image from 20 ove[44975] r 6
+img from 0 send to pc
+Fi[44975] nished sending Msg to pc
+Fin[45023] ished sending Msg to pc
+Fini[45024] shed sending Img to pc
+Reque[45024] st to you 6
+Got Ack for FLAG[45025]  send to 6
+[45158] req Image from: 6; rec from:[45159]  6; source: 13 --- 21 21
+[45159] req Image from: 6; rec from:[45160]  6; source: 13 --- 21 21
+Got[45160]  the whole image from 13 ove[45161] r 6
+img from 0 send to pc
+Fi[45161] nished sending Msg to pc
+Fin[45204] ished sending Msg to pc
+Fini[45208] shed sending Img to pc
+Reque[45208] st to you 6
+Got Ack for FLAG[45208]  send to 6
+[45340] req Image from: 6; rec from:[45340]  6; source: 11 --- 22 22
+Got[45340]  the whole image from 11 ove[45340] r 6
+img from 0 send to pc
+Fi[45341] nished sending Msg to pc
+Fin[45341] ished sending Img to pc
+Requ[45341] est to you 6
+Got Ack for FLA[45342] G send to 6
+[45486] req Image from: 6; rec from:[45486]  6; source: 14 --- 23 23
+[45486] req Image from: 6; rec from:[45487]  6; source: 14 --- 23 23
+Got[45487]  the whole image from 14 ove[45487] r 6
+img from 0 send to pc
+Fi[45487] nished sending Msg to pc
+Fin[45536] ished sending Msg to pc
+Fini[45537] shed sending Img to pc
+Reque[45537] st to you 6
+Got Ack for FLAG[45537]  send to 6
+[45699] req Image from: 6; rec from:[45700]  6; source: 27 --- 24 24
+Got[45700]  the whole image from 27 ove[45701] r 6
+img from 0 send to pc
+Fi[45708] nished sending Msg to pc
+Fin[45708] ished sending Img to pc
+Requ[45710] est to you 6
+Got Ack for FLA[45710] G send to 6
+[45911] req Image from: 6; rec from:[45911]  6; source: 31 --- 25 25
+Got[45911]  the whole image from 31 ove[45912] r 6
+img from 0 send to pc
+Fi[45912] nished sending Msg to pc
+Fin[45912] ished sending Img to pc
+Requ[45912] est to you 6
+Got Ack for FLA[45913] G send to 6
+[46085] req Image from: 6; rec from:[46085]  6; source: 28 --- 26 26
+Got[46085]  the whole image from 28 ove[46086] r 6
+img from 0 send to pc
+Fi[46087] nished sending Msg to pc
+Fin[46087] ished sending Img to pc
+Requ[46088] est to you 6
+Got Ack for FLA[46088] G send to 6
+[46220] req Image from: 6; rec from:[46221]  6; source: 15 --- 27 27
+[46221] req Image from: 6; rec from:[46222]  6; source: 15 --- 27 27
+Got[46222]  the whole image from 15 ove[46225] r 6
+img from 0 send to pc
+Fi[46226] nished sending Msg to pc
+Fin[46270] ished sending Msg to pc
+Fini[46270] shed sending Img to pc
+Reque[46270] st to you 6
+Got Ack for FLAG[46270]  send to 6
+[46319] req Image from: 6; rec from:[46319]  6; source: 10 --- 28 28
+[46371] req Image from: 6; rec from:[46371]  6; source: 10 --- 28 28
+Got[46371]  the whole image from 10 ove[46372] r 6
+img from 0 send to pc
+Fi[46372] nished sending Msg to pc
+Fin[46372] ished sending Msg to pc
+Fini[46424] shed sending Img to pc
+Reque[46425] st to you 6
+Got Ack for FLAG[46425]  send to 6
+[46425] req Image from: 6; rec from:[46425]  6; source: 6 --- 29 29
+Got [46425] the whole image from 6 over [46426] 6
+img from 0 send to pc
+Fini[46477] shed sending Msg to pc
+Finis[46477] hed sending Img to pc
+Reques[46477] t to you 7
+Got Ack for FLAG [46478] send to 7
+[46478] req Image from: 7; rec from:[46478]  7; source: 7 --- 30 30
+[46478] req Image from: 7; rec from:[46526]  7; source: 7 --- 30 30
+Got [46526] the whole image from 7 over [46527] 7
+img from 0 send to pc
+Fini[46527] shed sending Msg to pc
+Finis[46535] hed sending Msg to pc
+Finish[46535] ed sending Img to pc
+Request[46535]  to you 8
+Got Ack for FLAG s[46535] end to 8
+req Image from: 8; [46536] rec from: 8; source: 8 --- 3[46553] 1 31
+[46577] req Image from: 8; rec from:[46578]  8; source: 8 --- 31 31
+allr[46578] eadyReceived!
+[46578] req Image from: 8; rec from:[46578]  8; source: 8 --- 31 31
+Got [46578] the whole image from 8 over [46628] 8
+img from 0 send to pc
+Fini[46629] shed sending Msg to pc
+Finis[46630] hed sending Msg to pc
+Finish[46631] ed sending Img to pc
+Finishe[46631] d sending Msg to pc
+Finished[46631]  sending Img to pc
+HuHu
+Root[46631]  send its image
+Update
+Colle[46631] ction done 1
+Next Round!
+sen[46631] : 1->14: 40 until me
+Time to[46677]  wait: 800
+[47035] rec: 3->9: 22 until me
+[47035] Time to wait: 440
+[47035] rec: 9->8: 21 until me
+Time [47036] to wait: 420
+[47036] rec: 8->7: 20 until me
+[47036] Time to wait: 400
+[47036] rec: 7->21: 19 until me
+Time[47036]  to wait: 380
+[47090] rec: 7->5: 16 until me
+[47126] Time to wait: 320
+[47126] rec: 5->6: 15 until me
+Time [47126] to wait: 300
+rec: 7->5: 16 u[47128] ntil me
+Time to wait: 320
+re[47129] c: 6->18: 14 until me
+Time t[47129] o wait: 280
+rec: 5->6: 15 un[47129] til me
+Time to wait: 300
+rec[47129] : 6->18: 14 until me
+Time to[47129]  wait: 280
+[47290] rec: 6->28: 6 until me
+[47294] Time to wait: 120
+[47294] rec: 6->4: 4 until me
+[47294] Time to wait: 80
+[47296] rec: 4->11: 3 until me
+[47340] Time to wait: 60
+[47342] rec: 4->2: 1 until me
+[47343] Time to wait: 20
+[47343] Send To = 0
+finished Round2
+[47387] Got Ack for FLAG send to 2
+[47389] req Image from: 2; rec from:[47389]  2; source: 2 --- 1 1
+Got th[47389] e whole image from 2 over 2
+[47389] img from 0 send to pc
+Finish[47389] ed sending Msg to pc
+Finishe[47443] d sending Img to pc
+Request [47447] to you 3
+Got Ack for FLAG se[47447] nd to 3
+[47447] req Image from: 3; rec from:[47448]  3; source: 3 --- 2 2
+Got th[47448] e whole image from 3 over 3
+[47449] img from 0 send to pc
+Finish[47449] ed sending Msg to pc
+Finishe[47493] d sending Img to pc
+Request [47494] to you 4
+Got Ack for FLAG se[47494] nd to 4
+req Image from: 4; r[47494] ec from: 4; source: 4 --- 3 [47494] 3
+Got the whole image from 4[47494]  over 4
+img from 0 send to p[47540] c
+Finished sending Msg to pc[47540] 
+Finished sending Img to pc
+[47540] Request to you 5
+Got Ack for[47540]  FLAG send to 5
+req Image fr[47540] om: 5; rec from: 5; source: [47541] 5 --- 4 4
+Got the whole imag[47541] e from 5 over 5
+img from 0 s[47541] end to pc
+Finished sending M[47541] sg to pc
+Finished sending Im[47541] g to pc
+Request to you 6
+Got[47600]  Ack for FLAG send to 6
+[47642] req Image from: 6; rec from:[47642]  6; source: 17 --- 5 5
+Got t[47642] he whole image from 17 over [47643] 6
+img from 0 send to pc
+Fini[47643] shed sending Msg to pc
+Finis[47643] hed sending Img to pc
+Reques[47648] t to you 6
+Got Ack for FLAG [47648] send to 6
+[47694] req Image from: 6; rec from:[47694]  6; source: 9 --- 6 6
+Got th[47745] e whole image from 9 over 6
+[47745] img from 0 send to pc
+Finish[47745] ed sending Msg to pc
+Finishe[47745] d sending Img to pc
+Request [47745] to you 6
+Got Ack for FLAG se[47745] nd to 6
+[47948] req Image from: 6; rec from:[47948]  6; source: 12 --- 7 7
+[47948] req Image from: 6; rec from:[47948]  6; source: 12 --- 7 7
+Got t[47948] he whole image from 12 over [47949] 6
+img from 0 send to pc
+Fini[47949] shed sending Msg to pc
+Finis[47998] hed sending Msg to pc
+Finish[47999] ed sending Img to pc
+Request[47999]  to you 6
+Got Ack for FLAG s[47999] end to 6
+[48187] req Image from: 6; rec from:[48187]  6; source: 16 --- 8 8
+[48187] req Image from: 6; rec from:[48188]  6; source: 16 --- 8 8
+Got t[48188] he whole image from 16 over [48188] 6
+img from 0 send to pc
+Fini[48239] shed sending Msg to pc
+Finis[48239] hed sending Msg to pc
+Finish[48240] ed sending Img to pc
+Request[48240]  to you 6
+Got Ack for FLAG s[48240] end to 6
+[48532] req Image from: 6; rec from:[48546]  6; source: 18 --- 9 9
+[48546] req Image from: 6; rec from:[48546]  6; source: 18 --- 9 9
+Got t[48546] he whole image from 18 over [48546] 6
+img from 0 send to pc
+Fini[48565] shed sending Msg to pc
+Finis[48566] hed sending Msg to pc
+Finish[48566] ed sending Img to pc
+Request[48566]  to you 6
+Got Ack for FLAG s[48566] end to 6
+[48873] req Image from: 6; rec from:[48873]  6; source: 22 --- 10 10
+[48873] req Image from: 6; rec from:[48874]  6; source: 22 --- 10 10
+Got[48874]  the whole image from 22 ove[48874] r 6
+img from 0 send to pc
+Fi[48874] nished sending Msg to pc
+Fin[48922] ished sending Msg to pc
+Fini[48923] shed sending Img to pc
+Reque[48923] st to you 6
+Got Ack for FLAG[48923]  send to 6
+[49159] req Image from: 6; rec from:[49159]  6; source: 23 --- 11 11
+[49160] req Image from: 6; rec from:[49160]  6; source: 23 --- 11 11
+Got[49160]  the whole image from 23 ove[49160] r 6
+img from 0 send to pc
+Fi[49211] nished sending Msg to pc
+Fin[49211] ished sending Msg to pc
+Fini[49211] shed sending Img to pc
+Reque[49212] st to you 6
+Got Ack for FLAG[49214]  send to 6
+[49397] req Image from: 6; rec from:[49398]  6; source: 19 --- 12 12
+[49398] req Image from: 6; rec from:[49399]  6; source: 19 --- 12 12
+Got[49399]  the whole image from 19 ove[49400] r 6
+img from 0 send to pc
+Fi[49400] nished sending Msg to pc
+Fin[49444] ished sending Msg to pc
+Fini[49445] shed sending Img to pc
+Reque[49445] st to you 6
+Got Ack for FLAG[49445]  send to 6
+[49682] req Image from: 6; rec from:[49683]  6; source: 21 --- 13 13
+[49684] req Image from: 6; rec from:[49684]  6; source: 21 --- 13 13
+Got[49685]  the whole image from 21 ove[49685] r 6
+img from 0 send to pc
+Fi[49686] nished sending Msg to pc
+Fin[49730] ished sending Msg to pc
+Fini[49730] shed sending Img to pc
+Reque[49731] st to you 6
+Got Ack for FLAG[49731]  send to 6
+[50007] req Image from: 6; rec from:[50008]  6; source: 24 --- 14 14
+[50008] req Image from: 6; rec from:[50008]  6; source: 24 --- 14 14
+Got[50008]  the whole image from 24 ove[50009] r 6
+img from 0 send to pc
+Fi[50059] nished sending Msg to pc
+Fin[50059] ished sending Msg to pc
+Fini[50059] shed sending Img to pc
+Reque[50059] st to you 6
+Got Ack for FLAG[50060]  send to 6
+[50235] req Image from: 6; rec from:[50236]  6; source: 25 --- 15 15
+Got[50236]  the whole image from 25 ove[50236] r 6
+img from 0 send to pc
+Fi[50236] nished sending Msg to pc
+Fin[50236] ished sending Img to pc
+Requ[50237] est to you 6
+Got Ack for FLA[50237] G send to 6
+[50435] req Image from: 6; rec from:[50437]  6; source: 26 --- 16 16
+Got[50437]  the whole image from 26 ove[50437] r 6
+img from 0 send to pc
+Fi[50438] nished sending Msg to pc
+Fin[50438] ished sending Img to pc
+Requ[50438] est to you 6
+Got Ack for FLA[50438] G send to 6
+[50744] req Image from: 6; rec from:[50767]  6; source: 29 --- 17 17
+Got[50768]  the whole image from 29 ove[50768] r 6
+img from 0 send to pc
+Fi[50768] nished sending Msg to pc
+Fin[50768] ished sending Img to pc
+Requ[50768] est to you 6
+Got Ack for FLA[50769] G send to 6
+[50974] req Image from: 6; rec from:[50974]  6; source: 32 --- 18 18
+Got[50976]  the whole image from 32 ove[50976] r 6
+img from 0 send to pc
+Fi[50976] nished sending Msg to pc
+Fin[50976] ished sending Img to pc
+Requ[50977] est to you 6
+Got Ack for FLA[50977] G send to 6
+[51285] req Image from: 6; rec from:[51285]  6; source: 30 --- 19 19
+[51285] req Image from: 6; rec from:[51285]  6; source: 30 --- 19 19
+Got[51285]  the whole image from 30 ove[51286] r 6
+img from 0 send to pc
+Fi[51338] nished sending Msg to pc
+Fin[51338] ished sending Msg to pc
+Fini[51338] shed sending Img to pc
+Reque[51339] st to you 6
+Got Ack for FLAG[51339]  send to 6
+[51526] req Image from: 6; rec from:[51526]  6; source: 20 --- 20 20
+[51526] req Image from: 6; rec from:[51526]  6; source: 20 --- 20 20
+Got[51527]  the whole image from 20 ove[51527] r 6
+img from 0 send to pc
+Fi[51527] nished sending Msg to pc
+Fin[51577] ished sending Msg to pc
+Fini[51585] shed sending Img to pc
+Reque[51585] st to you 6
+Got Ack for FLAG[51585]  send to 6
+[51695] req Image from: 6; rec from:[51696]  6; source: 13 --- 21 21
+[51696] req Image from: 6; rec from:[51697]  6; source: 13 --- 21 21
+Got[51697]  the whole image from 13 ove[51697] r 6
+img from 0 send to pc
+Fi[51698] nished sending Msg to pc
+Fin[51743] ished sending Msg to pc
+Fini[51743] shed sending Img to pc
+Reque[51743] st to you 6
+Got Ack for FLAG[51743]  send to 6
+[51907] req Image from: 6; rec from:[51908]  6; source: 11 --- 22 22
+Got[51908]  the whole image from 11 ove[51908] r 6
+img from 0 send to pc
+Fi[51909] nished sending Msg to pc
+Fin[51909] ished sending Img to pc
+Requ[51909] est to you 6
+Got Ack for FLA[51910] G send to 6
+[52101] req Image from: 6; rec from:[52101]  6; source: 14 --- 23 23
+[52101] req Image from: 6; rec from:[52101]  6; source: 14 --- 23 23
+Got[52102]  the whole image from 14 ove[52102] r 6
+img from 0 send to pc
+Fi[52152] nished sending Msg to pc
+Fin[52153] ished sending Msg to pc
+Fini[52153] shed sending Img to pc
+Reque[52153] st to you 6
+Got Ack for FLAG[52153]  send to 6
+[52325] req Image from: 6; rec from:[52325]  6; source: 27 --- 24 24
+Got[52325]  the whole image from 27 ove[52325] r 6
+img from 0 send to pc
+Fi[52325] nished sending Msg to pc
+Fin[52325] ished sending Img to pc
+Requ[52326] est to you 6
+Got Ack for FLA[52326] G send to 6
+[52540] req Image from: 6; rec from:[52541]  6; source: 31 --- 25 25
+Got[52541]  the whole image from 31 ove[52541] r 6
+img from 0 send to pc
+Fi[52542] nished sending Msg to pc
+Fin[52542] ished sending Img to pc
+Requ[52542] est to you 6
+Got Ack for FLA[52542] G send to 6
+[52684] req Image from: 6; rec from:[52685]  6; source: 28 --- 26 26
+Got[52685]  the whole image from 28 ove[52685] r 6
+img from 0 send to pc
+Fi[52685] nished sending Msg to pc
+Fin[52685] ished sending Img to pc
+Requ[52686] est to you 6
+Got Ack for FLA[52686] G send to 6
+[52847] req Image from: 6; rec from:[52848]  6; source: 15 --- 27 27
+[52848] req Image from: 6; rec from:[52848]  6; source: 15 --- 27 27
+Got[52848]  the whole image from 15 ove[52848] r 6
+img from 0 send to pc
+Fi[52898] nished sending Msg to pc
+Fin[52898] ished sending Msg to pc
+Fini[52899] shed sending Img to pc
+Reque[52899] st to you 6
+Got Ack for FLAG[52899]  send to 6
+[52947] req Image from: 6; rec from:[52948]  6; source: 10 --- 28 28
+[52948] req Image from: 6; rec from:[53001]  6; source: 10 --- 28 28
+Got[53002]  the whole image from 10 ove[53002] r 6
+img from 0 send to pc
+Fi[53002] nished sending Msg to pc
+Fin[53003] ished sending Msg to pc
+Fini[53003] shed sending Img to pc
+Reque[53003] st to you 6
+Got Ack for FLAG[53050]  send to 6
+[53051] req Image from: 6; rec from:[53051]  6; source: 6 --- 29 29
+Got [53051] the whole image from 6 over [53051] 6
+img from 0 send to pc
+Fini[53051] shed sending Msg to pc
+Finis[53051] hed sending Img to pc
+Reques[53052] t to you 7
+Retransmission FL[53104] AG to 7
+Got Ack for FLAG sen[53105] d to 7
+req Image from: 7; re[53105] c from: 7; source: 7 --- 30 [53105] 30
+req Image from: 7; rec fr[53105] om: 7; source: 7 --- 30 30
+G[53105] ot the whole image from 7 ov[53153] er 7
+img from 0 send to pc
+F[53153] inished sending Msg to pc
+Fi[53154] nished sending Msg to pc
+Fin[53154] ished sending Img to pc
+Requ[53154] est to you 8
+Got Ack for FLA[53154] G send to 8
+req Image from: [53154] 8; rec from: 8; source: 8 --[53154] - 31 31
+[53208] req Image from: 8; rec from:[53208]  8; source: 8 --- 31 31
+allr[53208] eadyReceived!
+[53209] req Image from: 8; rec from:[53209]  8; source: 8 --- 31 31
+Got [53209] the whole image from 8 over [53257] 8
+img from 0 send to pc
+Fini[53257] shed sending Msg to pc
+Finis[53257] hed sending Msg to pc
+Finish[53257] ed sending Img to pc
+Finishe[53258] d sending Msg to pc
+Finished[53258]  sending Img to pc
+HuHu
+Root[53261]  send its image
+Update
+Colle[53261] ction done 1
+Next Round!
+sen[53262] : 1->14: 40 until me
+Time to[53262]  wait: 800
+[53679] rec: 3->9: 22 until me
+[53710] Time to wait: 440
+[53747] rec: 9->8: 21 until me
+[53747] Time to wait: 420
+[53748] rec: 8->7: 20 until me
+Time [53748] to wait: 400
+rec: 7->21: 19 [53748] until me
+Time to wait: 380
+[53748] rec: 5->6: 15 until me
+[53748] Time to wait: 300
+[53748] rec: 6->18: 14 until me
+[53749] Time to wait: 280
+[53898] rec: 6->28: 6 until me
+[53905] Time to wait: 120
+[53905] rec: 6->4: 4 until me
+[53905] Time to wait: 80
+[53905] rec: 4->11: 3 until me
+Time [53905] to wait: 60
+[53949] rec: 4->2: 1 until me
+[53952] Time to wait: 20
+[53952] Send To = 0
+finished Round2
+[53952] Got Ack for FLAG send to 2
+[53998] req Image from: 2; rec from:[53998]  2; source: 2 --- 1 1
+Got th[53999] e whole image from 2 over 2
+[53999] img from 0 send to pc
+Finish[53999] ed sending Msg to pc
+Finishe[53999] d sending Img to pc
+Request [54040] to you 3
+Got Ack for FLAG se[54040] nd to 3
+[54040] req Image from: 3; rec from:[54040]  3; source: 3 --- 2 2
+Got th[54041] e whole image from 3 over 3
+[54041] img from 0 send to pc
+Finish[54041] ed sending Msg to pc
+Finishe[54041] d sending Img to pc
+Request [54090] to you 4
+Got Ack for FLAG se[54098] nd to 4
+req Image from: 4; r[54098] ec from: 4; source: 4 --- 3 [54098] 3
+Got the whole image from 4[54100]  over 4
+img from 0 send to p[54102] c
+Finished sending Msg to pc[54103] 
+Finished sending Img to pc
+[54103] Request to you 5
+Got Ack for[54138]  FLAG send to 5
+[54138] req Image from: 5; rec from:[54138]  5; source: 5 --- 4 4
+Got th[54139] e whole image from 5 over 5
+[54139] img from 0 send to pc
+Finish[54139] ed sending Msg to pc
+Finishe[54140] d sending Img to pc
+Request [54188] to you 6
+Got Ack for FLAG se[54188] nd to 6
+[54238] req Image from: 6; rec from:[54289]  6; source: 17 --- 5 5
+Got t[54290] he whole image from 17 over [54290] 6
+img from 0 send to pc
+Fini[54290] shed sending Msg to pc
+Finis[54290] hed sending Img to pc
+Reques[54290] t to you 6
+Got Ack for FLAG [54291] send to 6
+[54343] req Image from: 6; rec from:[54343]  6; source: 9 --- 6 6
+Got th[54343] e whole image from 9 over 6
+[54392] img from 0 send to pc
+Finish[54392] ed sending Msg to pc
+Finishe[54392] d sending Img to pc
+Request [54392] to you 6
+Got Ack for FLAG se[54393] nd to 6
+[54516] req Image from: 6; rec from:[54516]  6; source: 12 --- 7 7
+Got t[54516] he whole image from 12 over [54517] 6
+img from 0 send to pc
+Fini[54517] shed sending Msg to pc
+Finis[54517] hed sending Img to pc
+Reques[54517] t to you 6
+Got Ack for FLAG [54517] send to 6
+[54662] req Image from: 6; rec from:[54663]  6; source: 16 --- 8 8
+Got t[54663] he whole image from 16 over [54663] 6
+img from 0 send to pc
+Fini[54663] shed sending Msg to pc
+Finis[54663] hed sending Img to pc
+Reques[54664] t to you 6
+Got Ack for FLAG [54664] send to 6
+[54874] req Image from: 6; rec from:[54874]  6; source: 18 --- 9 9
+Got t[54874] he whole image from 18 over [54875] 6
+img from 0 send to pc
+Fini[54875] shed sending Msg to pc
+Finis[54875] hed sending Img to pc
+Reques[54875] t to you 6
+Got Ack for FLAG [54875] send to 6
+[55078] req Image from: 6; rec from:[55081]  6; source: 22 --- 10 10
+Got[55081]  the whole image from 22 ove[55081] r 6
+img from 0 send to pc
+Fi[55082] nished sending Msg to pc
+Fin[55082] ished sending Img to pc
+Requ[55082] est to you 6
+Got Ack for FLA[55082] G send to 6
+[55293] req Image from: 6; rec from:[55293]  6; source: 23 --- 11 11
+Got[55293]  the whole image from 23 ove[55294] r 6
+img from 0 send to pc
+Fi[55294] nished sending Msg to pc
+Fin[55294] ished sending Img to pc
+Requ[55294] est to you 6
+Got Ack for FLA[55294] G send to 6
+[55448] req Image from: 6; rec from:[55448]  6; source: 19 --- 12 12
+Got[55448]  the whole image from 19 ove[55449] r 6
+img from 0 send to pc
+Fi[55449] nished sending Msg to pc
+Fin[55449] ished sending Img to pc
+Requ[55449] est to you 6
+Got Ack for FLA[55449] G send to 6
+[55667] req Image from: 6; rec from:[55668]  6; source: 21 --- 13 13
+Got[55669]  the whole image from 21 ove[55669] r 6
+img from 0 send to pc
+Fi[55670] nished sending Msg to pc
+Fin[55670] ished sending Img to pc
+Requ[55671] est to you 6
+Got Ack for FLA[55671] G send to 6
+[55881] req Image from: 6; rec from:[55882]  6; source: 24 --- 14 14
+Got[55883]  the whole image from 24 ove[55883] r 6
+img from 0 send to pc
+Fi[55884] nished sending Msg to pc
+Fin[55884] ished sending Img to pc
+Requ[55885] est to you 6
+Got Ack for FLA[55886] G send to 6
+[56075] req Image from: 6; rec from:[56075]  6; source: 25 --- 15 15
+Got[56075]  the whole image from 25 ove[56075] r 6
+img from 0 send to pc
+Fi[56076] nished sending Msg to pc
+Fin[56076] ished sending Img to pc
+Requ[56076] est to you 6
+Got Ack for FLA[56076] G send to 6
+[56269] req Image from: 6; rec from:[56269]  6; source: 26 --- 16 16
+Got[56270]  the whole image from 26 ove[56270] r 6
+img from 0 send to pc
+Fi[56270] nished sending Msg to pc
+Fin[56270] ished sending Img to pc
+Requ[56270] est to you 6
+Got Ack for FLA[56271] G send to 6
+[56556] req Image from: 6; rec from:[56557]  6; source: 29 --- 17 17
+Got[56557]  the whole image from 29 ove[56557] r 6
+img from 0 send to pc
+Fi[56557] nished sending Msg to pc
+Fin[56557] ished sending Img to pc
+Requ[56559] est to you 6
+Got Ack for FLA[56560] G send to 6
+[56798] req Image from: 6; rec from:[56813]  6; source: 32 --- 18 18
+Got[56813]  the whole image from 32 ove[56814] r 6
+img from 0 send to pc
+Fi[56814] nished sending Msg to pc
+Fin[56815] ished sending Img to pc
+Requ[56824] est to you 6
+Got Ack for FLA[56824] G send to 6
+[56992] req Image from: 6; rec from:[56993]  6; source: 30 --- 19 19
+Got[56993]  the whole image from 30 ove[56993] r 6
+img from 0 send to pc
+Fi[56993] nished sending Msg to pc
+Fin[56993] ished sending Img to pc
+Requ[56994] est to you 6
+Got Ack for FLA[56994] G send to 6
+[57168] req Image from: 6; rec from:[57169]  6; source: 20 --- 20 20
+Got[57169]  the whole image from 20 ove[57178] r 6
+img from 0 send to pc
+Fi[57183] nished sending Msg to pc
+Fin[57184] ished sending Img to pc
+Requ[57184] est to you 6
+Got Ack for FLA[57196] G send to 6
+[57306] req Image from: 6; rec from:[57307]  6; source: 13 --- 21 21
+Got[57307]  the whole image from 13 ove[57308] r 6
+img from 0 send to pc
+Fi[57308] nished sending Msg to pc
+Fin[57309] ished sending Img to pc
+Requ[57309] est to you 6
+Got Ack for FLA[57310] G send to 6
+[57516] req Image from: 6; rec from:[57516]  6; source: 11 --- 22 22
+Got[57517]  the whole image from 11 ove[57517] r 6
+img from 0 send to pc
+Fi[57518] nished sending Msg to pc
+Fin[57518] ished sending Img to pc
+Requ[57519] est to you 6
+Got Ack for FLA[57519] G send to 6
+[57638] req Image from: 6; rec from:[57638]  6; source: 14 --- 23 23
+Got[57639]  the whole image from 14 ove[57639] r 6
+img from 0 send to pc
+Fi[57639] nished sending Msg to pc
+Fin[57639] ished sending Img to pc
+Requ[57640] est to you 6
+Got Ack for FLA[57640] G send to 6
+[57869] req Image from: 6; rec from:[57870]  6; source: 27 --- 24 24
+Got[57870]  the whole image from 27 ove[57870] r 6
+img from 0 send to pc
+Fi[57870] nished sending Msg to pc
+Fin[57870] ished sending Img to pc
+Requ[57871] est to you 6
+Got Ack for FLA[57871] G send to 6
+[58054] req Image from: 6; rec from:[58054]  6; source: 31 --- 25 25
+Got[58055]  the whole image from 31 ove[58055] r 6
+img from 0 send to pc
+Fi[58055] nished sending Msg to pc
+Fin[58055] ished sending Img to pc
+Requ[58055] est to you 6
+Got Ack for FLA[58055] G send to 6
+[58237] req Image from: 6; rec from:[58238]  6; source: 28 --- 26 26
+Got[58241]  the whole image from 28 ove[58244] r 6
+img from 0 send to pc
+Fi[58244] nished sending Msg to pc
+Fin[58244] ished sending Img to pc
+Requ[58245] est to you 6
+Got Ack for FLA[58245] G send to 6
+[58382] req Image from: 6; rec from:[58383]  6; source: 15 --- 27 27
+[58383] req Image from: 6; rec from:[58383]  6; source: 15 --- 27 27
+Got[58384]  the whole image from 15 ove[58385] r 6
+img from 0 send to pc
+Fi[58385] nished sending Msg to pc
+Fin[58431] ished sending Msg to pc
+Fini[58431] shed sending Img to pc
+Reque[58431] st to you 6
+Got Ack for FLAG[58432]  send to 6
+[58482] req Image from: 6; rec from:[58482]  6; source: 10 --- 28 28
+Got[58482]  the whole image from 10 ove[58483] r 6
+img from 0 send to pc
+Fi[58483] nished sending Msg to pc
+Fin[58483] ished sending Img to pc
+Requ[58483] est to you 6
+Got Ack for FLA[58535] G send to 6
+[58536] req Image from: 6; rec from:[58536]  6; source: 6 --- 29 29
+Got [58536] the whole image from 6 over [58536] 6
+img from 0 send to pc
+Fini[58536] shed sending Msg to pc
+Finis[58592] hed sending Img to pc
+Reques[58592] t to you 7
+Got Ack for FLAG [58593] send to 7
+req Image from: 7;[58593]  rec from: 7; source: 7 --- [58593] 30 30
+req Image from: 7; rec[58601]  from: 7; source: 7 --- 30 3[58601] 0
+Got the whole image from 7[58637]  over 7
+img from 0 send to p[58637] c
+Finished sending Msg to pc[58637] 
+Finished sending Msg to pc
+[58637] Finished sending Img to pc
+R[58638] equest to you 8
+Got Ack for [58638] FLAG send to 8
+req Image fro[58638] m: 8; rec from: 8; source: 8[58638]  --- 31 31
+[58688] req Image from: 8; rec from:[58689]  8; source: 8 --- 31 31
+Got [58689] the whole image from 8 over [58689] 8
+img from 0 send to pc
+Fini[58689] shed sending Msg to pc
+Finis[58690] hed sending Msg to pc
+Finish[58690] ed sending Img to pc
+Finishe[58740] d sending Msg to pc
+Finished[58740]  sending Img to pc
+HuHu
+Root[58740]  send its image
+Update
+Colle[58740] ction done 1
+Next Round!
+sen[58740] : 1->14: 40 until me
+Time [58792] rec: 15->23: 35 until me
+[58792] Time to wait: 700
+[58792] rec: 15->29: 33 until me
+[58792] Time to wait: 660
+[59065] rec: 10->27: 29 until me
+[59219] Time to wait: 580
+[59219] rec: 3->9: 22 until me
+[59219] Time to wait: 440
+[59219] rec: 9->8: 21 until me
+Time [59219] to wait: 420
+[59220] rec: 8->7: 20 until me
+Time [59220] to wait: 400
+[59220] rec: 7->5: 16 until me
+[59220] Time to wait: 320
+[59224] rec: 5->6: 15 until me
+Time [59316] to wait: 300
+[59316] rec: 6->18: 14 until me
+Time[59317]  to wait: 280
+[59317] rec: 6->28: 6 until me
+[59317] Time to wait: 120
+[59317] rec: 6->4: 4 until me
+[59317] Time to wait: 80
+[59318] rec: 4->11: 3 until me
+[59318] Time to wait: 60
+[59318] rec: 4->2: 1 until me
+[59318] Time to wait: 20
+[59318] Send To = 0
+[59353] finished Round2
+[59360] Got Ack for FLAG send to 2
+[59361] req Image from: 2; rec from:[59361]  2; source: 2 --- 1 1
+Got th[59361] e whole image from 2 over 2
+[59402] img from 0 send to pc
+Finish[59403] ed sending Msg to pc
+Finishe[59403] d sending Img to pc
+Request [59403] to you 3
+Got Ack for FLAG se[59403] nd to 3
+req Image from: 3; r[59405] ec from: 3; source: 3 --- 2 [59405] 2
+Got the whole image from 3[59452]  over 3
+img from 0 send to p[59452] c
+Finished sending Msg to pc[59453] 
+Finished sending Img to pc
+[59453] Request to you 4
+Got Ack for[59453]  FLAG send to 4
+req Image fr[59453] om: 4; rec from: 4; source: [59453] 4 --- 3 3
+Got the whole imag[59453] e from 4 over 4
+img from 0 s[59512] end to pc
+Finished sending M[59513] sg to pc
+Finished sending Im[59513] g to pc
+Request to you 5
+Got[59513]  Ack for FLAG send to 5
+req [59513] Image from: 5; rec from: 5; [59513] source: 5 --- 4 4
+Got the wh[59514] ole image from 5 over 5
+img [59555] from 0 send to pc
+Finished s[59555] ending Msg to pc
+Finished se[59556] nding Img to pc
+Request to y[59556] ou 6
+Got Ack for FLAG send t[59556] o 6
+[59605] req Image from: 6; rec from:[59605]  6; source: 17 --- 5 5
+Got t[59605] he whole image from 17 over [59605] 6
+img from 0 send to pc
+Fini[59656] shed sending Msg to pc
+Finis[59657] hed sending Img to pc
+Reques[59657] t to you 6
+Got Ack for FLAG [59657] send to 6
+[59706] req Image from: 6; rec from:[59707]  6; source: 9 --- 6 6
+Got th[59707] e whole image from 9 over 6
+[59707] img from 0 send to pc
+Finish[59707] ed sending Msg to pc
+Finishe[59758] d sending Img to pc
+Request [59760] to you 6
+Got Ack for FLAG se[59761] nd to 6
+[59956] req Image from: 6; rec from:[59957]  6; source: 12 --- 7 7
+[59957] req Image from: 6; rec from:[59957]  6; source: 12 --- 7 7
+Got t[59958] he whole image from 12 over [59958] 6
+img from 0 send to pc
+Fini[60007] shed sending Msg to pc
+Finis[60007] hed sending Msg to pc
+Finish[60008] ed sending Img to pc
+Request[60008]  to you 6
+Got Ack for FLAG s[60008] end to 6
+[60208] req Image from: 6; rec from:[60208]  6; source: 16 --- 8 8
+[60208] req Image from: 6; rec from:[60208]  6; source: 16 --- 8 8
+Got t[60209] he whole image from 16 over [60209] 6
+img from 0 send to pc
+Fini[60209] shed sending Msg to pc
+Finis[60260] hed sending Msg to pc
+Finish[60260] ed sending Img to pc
+Request[60261]  to you 6
+Got Ack for FLAG s[60261] end to 6
+[60553] req Image from: 6; rec from:[60553]  6; source: 18 --- 9 9
+[60554] req Image from: 6; rec from:[60554]  6; source: 18 --- 9 9
+Got t[60554] he whole image from 18 over [60555] 6
+img from 0 send to pc
+Fini[60555] shed sending Msg to pc
+Finis[60573] hed sending Msg to pc
+Finish[60574] ed sending Img to pc
+Request[60574]  to you 6
+Got Ack for FLAG s[60574] end to 6
+[60851] req Image from: 6; rec from:[60851]  6; source: 22 --- 10 10
+[60851] req Image from: 6; rec from:[60852]  6; source: 22 --- 10 10
+Got[60852]  the whole image from 22 ove[60852] r 6
+img from 0 send to pc
+Fi[60852] nished sending Msg to pc
+Fin[60905] ished sending Msg to pc
+Fini[60906] shed sending Img to pc
+Reque[60906] st to you 6
+Got Ack for FLAG[60906]  send to 6
+[61180] req Image from: 6; rec from:[61181]  6; source: 23 --- 11 11
+[61182] req Image from: 6; rec from:[61182]  6; source: 23 --- 11 11
+Got[61183]  the whole image from 23 ove[61184] r 6
+img from 0 send to pc
+Fi[61185] nished sending Msg to pc
+Fin[61229] ished sending Msg to pc
+Fini[61229] shed sending Img to pc
+Reque[61229] st to you 6
+Got Ack for FLAG[61230]  send to 6
+[61456] req Image from: 6; rec from:[61457]  6; source: 19 --- 12 12
+[61457] req Image from: 6; rec from:[61458]  6; source: 19 --- 12 12
+Got[61458]  the whole image from 19 ove[61458] r 6
+img from 0 send to pc
+Fi[61506] nished sending Msg to pc
+Fin[61507] ished sending Msg to pc
+Fini[61507] shed sending Img to pc
+Reque[61507] st to you 6
+Got Ack for FLAG[61507]  send to 6
+[61736] req Image from: 6; rec from:[61737]  6; source: 21 --- 13 13
+[61737] req Image from: 6; rec from:[61737]  6; source: 21 --- 13 13
+Got[61737]  the whole image from 21 ove[61737] r 6
+img from 0 send to pc
+Fi[61738] nished sending Msg to pc
+Fin[61788] ished sending Msg to pc
+Fini[61788] shed sending Img to pc
+Reque[61788] st to you 6
+Retransmission F[61788] LAG to 6
+Got Ack for FLAG se[61788] nd to 6
+[62039] req Image from: 6; rec from:[62039]  6; source: 24 --- 14 14
+[62039] req Image from: 6; rec from:[62039]  6; source: 24 --- 14 14
+Got[62039]  the whole image from 24 ove[62040] r 6
+img from 0 send to pc
+Fi[62040] nished sending Msg to pc
+Fin[62090] ished sending Msg to pc
+Fini[62090] shed sending Img to pc
+Reque[62091] st to you 6
+Got Ack for FLAG[62091]  send to 6
+[62283] req Image from: 6; rec from:[62284]  6; source: 25 --- 15 15
+Got[62284]  the whole image from 25 ove[62284] r 6
+img from 0 send to pc
+Fi[62284] nished sending Msg to pc
+Fin[62284] ished sending Img to pc
+Requ[62285] est to you 6
+Got Ack for FLA[62285] G send to 6
+[62494] req Image from: 6; rec from:[62495]  6; source: 26 --- 16 16
+Got[62495]  the whole image from 26 ove[62495] r 6
+img from 0 send to pc
+Fi[62495] nished sending Msg to pc
+Fin[62495] ished sending Img to pc
+Requ[62495] est to you 6
+Got Ack for FLA[62496] G send to 6
+[62784] req Image from: 6; rec from:[62784]  6; source: 29 --- 17 17
+Got[62785]  the whole image from 29 ove[62785] r 6
+img from 0 send to pc
+Fi[62786] nished sending Msg to pc
+Fin[62786] ished sending Img to pc
+Requ[62786] est to you 6
+Got Ack for FLA[62790] G send to 6
+[63025] req Image from: 6; rec from:[63025]  6; source: 32 --- 18 18
+Got[63025]  the whole image from 32 ove[63025] r 6
+img from 0 send to pc
+Fi[63025] nished sending Msg to pc
+Fin[63026] ished sending Img to pc
+Requ[63026] est to you 6
+Got Ack for FLA[63026] G send to 6
+[63290] req Image from: 6; rec from:[63291]  6; source: 30 --- 19 19
+[63291] req Image from: 6; rec from:[63292]  6; source: 30 --- 19 19
+Got[63292]  the whole image from 30 ove[63293] r 6
+img from 0 send to pc
+Fi[63293] nished sending Msg to pc
+Fin[63340] ished sending Msg to pc
+Fini[63340] shed sending Img to pc
+Reque[63341] st to you 6
+Got Ack for FLAG[63341]  send to 6
+[63497] req Image from: 6; rec from:[63497]  6; source: 20 --- 20 20
+[63497] req Image from: 6; rec from:[63497]  6; source: 20 --- 20 20
+Got[63497]  the whole image from 20 ove[63498] r 6
+img from 0 send to pc
+Fi[63549] nished sending Msg to pc
+Fin[63549] ished sending Msg to pc
+Fini[63549] shed sending Img to pc
+Reque[63550] st to you 6
+Got Ack for FLAG[63550]  send to 6
+[63727] req Image from: 6; rec from:[63733]  6; source: 13 --- 21 21
+[63733] req Image from: 6; rec from:[63734]  6; source: 13 --- 21 21
+Got[63746]  the whole image from 13 ove[63747] r 6
+img from 0 send to pc
+Fi[63747] nished sending Msg to pc
+Fin[63768] ished sending Msg to pc
+Fini[63769] shed sending Img to pc
+Reque[63769] st to you 6
+Got Ack for FLAG[63769]  send to 6
+[63938] req Image from: 6; rec from:[63938]  6; source: 11 --- 22 22
+Got[63938]  the whole image from 11 ove[63939] r 6
+img from 0 send to pc
+Fi[63939] nished sending Msg to pc
+Fin[63939] ished sending Img to pc
+Requ[63940] est to you 6
+Got Ack for FLA[63940] G send to 6
+[64143] req Image from: 6; rec from:[64147]  6; source: 14 --- 23 23
+[64147] req Image from: 6; rec from:[64147]  6; source: 14 --- 23 23
+Got[64147]  the whole image from 14 ove[64149] r 6
+img from 0 send to pc
+Fi[64150] nished sending Msg to pc
+Fin[64150] ished sending Msg to pc
+Fini[64193] shed sending Img to pc
+Reque[64194] st to you 6
+Got Ack for FLAG[64194]  send to 6
+[64389] req Image from: 6; rec from:[64393]  6; source: 27 --- 24 24
+Got[64393]  the whole image from 27 ove[64394] r 6
+img from 0 send to pc
+Fi[64394] nished sending Msg to pc
+Fin[64395] ished sending Img to pc
+Requ[64396] est to you 6
+Got Ack for FLA[64397] G send to 6
+[64580] req Image from: 6; rec from:[64581]  6; source: 31 --- 25 25
+Got[64581]  the whole image from 31 ove[64581] r 6
+img from 0 send to pc
+Fi[64582] nished sending Msg to pc
+Fin[64582] ished sending Img to pc
+Requ[64582] est to you 6
+Got Ack for FLA[64583] G send to 6
+[64757] req Image from: 6; rec from:[64757]  6; source: 28 --- 26 26
+Got[64757]  the whole image from 28 ove[64758] r 6
+img from 0 send to pc
+Fi[64761] nished sending Msg to pc
+Fin[64762] ished sending Img to pc
+Requ[64762] est to you 6
+Got Ack for FLA[64762] G send to 6
+[64925] req Image from: 6; rec from:[64925]  6; source: 15 --- 27 27
+[64926] req Image from: 6; rec from:[64926]  6; source: 15 --- 27 27
+Got[64926]  the whole image from 15 ove[64926] r 6
+img from 0 send to pc
+Fi[64926] nished sending Msg to pc
+Fin[64977] ished sending Msg to pc
+Fini[64978] shed sending Img to pc
+Reque[64978] st to you 6
+Got Ack for FLAG[64978]  send to 6
+[65026] req Image from: 6; rec from:[65027]  6; source: 10 --- 28 28
+[65079] req Image from: 6; rec from:[65079]  6; source: 10 --- 28 28
+Got[65079]  the whole image from 10 ove[65079] r 6
+img from 0 send to pc
+Fi[65079] nished sending Msg to pc
+Fin[65080] ished sending Msg to pc
+Fini[65080] shed sending Img to pc
+Reque[65080] st to you 6
+Got Ack for FLAG[65129]  send to 6
+[65129] req Image from: 6; rec from:[65129]  6; source: 6 --- 29 29
+Got [65129] the whole image from 6 over [65130] 6
+img from 0 send to pc
+Fini[65130] shed sending Msg to pc
+Finis[65181] hed sending Img to pc
+Reques[65182] t to you 7
+Retransmission FL[65182] AG to 7
+Got Ack for FLAG sen[65182] d to 7
+req Image from: 7; re[65182] c from: 7; source: 7 --- 30 [65182] 30
+[65182] req Image from: 7; rec from:[65231]  7; source: 7 --- 30 30
+Got [65231] the whole image from 7 over [65231] 7
+img from 0 send to pc
+Fini[65231] shed sending Msg to pc
+Finis[65231] hed sending Msg to pc
+Finish[65232] ed sending Img to pc
+Request[65232]  to you 8
+Got Ack for FLAG s[65232] end to 8
+req Image from: 8; [65282] rec from: 8; source: 8 --- 3[65282] 1 31
+req Image from: 8; rec [65282] from: 8; source: 8 --- 31 31[65283] 
+Got the whole image from 8 [65283] over 8
+img from 0 send to pc[65283] 
+Finished sending Msg to pc
+[65337] Finished sending Msg to pc
+F[65337] inished sending Img to pc
+Fi[65337] nished sending Msg to pc
+Fin[65338] ished sending Img to pc
+HuHu[65338] 
+Root send its image
+Update
+[65338] Collection done 1
+Next Rou[65724] rec: 3->9: 22 until me
+[65731] Time to wait: 440
+[65731] rec: 8->7: 20 until me
+[65731] Time to wait: 400
+[65731] rec: 7->21: 19 until me
+Time[65731]  to wait: 380
+[65732] rec: 7->5: 16 until me
+[65758] Time to wait: 320
+[65776] rec: 5->6: 15 until me
+[65780] Time to wait: 300
+[65780] rec: 6->18: 14 until me
+[65780] Time to wait: 280
+[65965] rec: 6->28: 6 until me
+[65971] Time to wait: 120
+[65971] rec: 6->4: 4 until me
+[65972] Time to wait: 80
+[65972] rec: 4->11: 3 until me
+[65972] Time to wait: 60
+[66004] rec: 4->2: 1 until me
+[66013] Time to wait: 20
+[66014] Send To = 0
+finished Round2
+[66014] Got Ack for FLAG send to 2
+[66053] req Image from: 2; rec from:[66054]  2; source: 2 --- 1 1
+Got th[66054] e whole image from 2 over 2
+[66054] img from 0 send to pc
+Finish[66054] ed sending Msg to pc
+Finishe[66098] d sending Img to pc
+Request [66098] to you 3
+Got Ack for FLAG se[66099] nd to 3
+[66099] req Image from: 3; rec from:[66099]  3; source: 3 --- 2 2
+Got th[66099] e whole image from 3 over 3
+[66149] img from 0 send to pc
+Finish[66150] ed sending Msg to pc
+Finishe[66150] d sending Img to pc
+Request [66150] to you 4
+Got Ack for FLAG se[66150] nd to 4
+req Image from: 4; r[66150] ec from: 4; source: 4 --- 3 [66151] 3
+Got the whole image from 4[66151]  over 4
+img from 0 send to p[66200] c
+Finished sending Msg to pc[66200] 
+Finished sending Img to pc
+[66200] Request to you 5
+Got Ack for[66200]  FLAG send to 5
+req Image fr[66200] om: 5; rec from: 5; source: [66200] 5 --- 4 4
+Got the whole imag[66201] e from 5 over 5
+img from 0 s[66201] end to pc
+Finished sending M[66251] sg to pc
+Finished sending Im[66252] g to pc
+Request to you 6
+Got[66252]  Ack for FLAG send to 6
+[66303] req Image from: 6; rec from:[66354]  6; source: 17 --- 5 5
+Got t[66354] he whole image from 17 over [66354] 6
+img from 0 send to pc
+Fini[66354] shed sending Msg to pc
+Finis[66354] hed sending Img to pc
+Reques[66355] t to you 6
+Got Ack for FLAG [66355] send to 6
+[66406] req Image from: 6; rec from:[66456]  6; source: 9 --- 6 6
+Got th[66456] e whole image from 9 over 6
+[66456] img from 0 send to pc
+Finish[66457] ed sending Msg to pc
+Finishe[66457] d sending Img to pc
+Request [66457] to you 6
+Got Ack for FLAG se[66457] nd to 6
+[66672] req Image from: 6; rec from:[66674]  6; source: 12 --- 7 7
+[66674] req Image from: 6; rec from:[66674]  6; source: 12 --- 7 7
+Got t[66674] he whole image from 12 over [66675] 6
+img from 0 send to pc
+Fini[66675] shed sending Msg to pc
+Finis[66718] hed sending Msg to pc
+Finish[66718] ed sending Img to pc
+Request[66718]  to you 6
+Got Ack for FLAG s[66718] end to 6
+[66912] req Image from: 6; rec from:[66912]  6; source: 16 --- 8 8
+[66913] req Image from: 6; rec from:[66913]  6; source: 16 --- 8 8
+Got t[66914] he whole image from 16 over [66915] 6
+img from 0 send to pc
+Fini[66962] shed sending Msg to pc
+Finis[66962] hed sending Msg to pc
+Finish[66962] ed sending Img to pc
+Request[66963]  to you 6
+Got Ack for FLAG s[66963] end to 6
+[67215] req Image from: 6; rec from:[67218]  6; source: 18 --- 9 9
+[67219] req Image from: 6; rec from:[67235]  6; source: 18 --- 9 9
+Got t[67238] he whole image from 18 over [67239] 6
+img from 0 send to pc
+Fini[67240] shed sending Msg to pc
+Finis[67254] hed sending Msg to pc
+Finish[67254] ed sending Img to pc
+Request[67255]  to you 6
+Got Ack for FLAG s[67255] end to 6
+[67510] req Image from: 6; rec from:[67511]  6; source: 22 --- 10 10
+[67511] req Image from: 6; rec from:[67511]  6; source: 22 --- 10 10
+Got[67511]  the whole image from 22 ove[67511] r 6
+img from 0 send to pc
+Fi[67511] nished sending Msg to pc
+Fin[67562] ished sending Msg to pc
+Fini[67563] shed sending Img to pc
+Reque[67563] st to you 6
+Got Ack for FLAG[67564]  send to 6
+[67785] req Image from: 6; rec from:[67786]  6; source: 23 --- 11 11
+[67786] req Image from: 6; rec from:[67786]  6; source: 23 --- 11 11
+Got[67787]  the whole image from 23 ove[67787] r 6
+img from 0 send to pc
+Fi[67789] nished sending Msg to pc
+Fin[67790] ished sending Msg to pc
+Fini[67829] shed sending Img to pc
+Reque[67830] st to you 6
+Got Ack for FLAG[67830]  send to 6
+[68001] req Image from: 6; rec from:[68001]  6; source: 19 --- 12 12
+[68002] req Image from: 6; rec from:[68002]  6; source: 19 --- 12 12
+Got[68002]  the whole image from 19 ove[68002] r 6
+img from 0 send to pc
+Fi[68002] nished sending Msg to pc
+Fin[68053] ished sending Msg to pc
+Fini[68053] shed sending Img to pc
+Reque[68056] st to you 6
+Got Ack for FLAG[68057]  send to 6
+[68309] req Image from: 6; rec from:[68311]  6; source: 21 --- 13 13
+[68312] req Image from: 6; rec from:[68331]  6; source: 21 --- 13 13
+Got[68331]  the whole image from 21 ove[68331] r 6
+img from 0 send to pc
+Fi[68351] nished sending Msg to pc
+Fin[68352] ished sending Msg to pc
+Fini[68353] shed sending Img to pc
+Reque[68353] st to you 6
+Got Ack for FLAG[68353]  send to 6
+[68597] req Image from: 6; rec from:[68597]  6; source: 24 --- 14 14
+[68597] req Image from: 6; rec from:[68598]  6; source: 24 --- 14 14
+Got[68598]  the whole image from 24 ove[68598] r 6
+img from 0 send to pc
+Fi[68598] nished sending Msg to pc
+Fin[68650] ished sending Msg to pc
+Fini[68650] shed sending Img to pc
+Reque[68650] st to you 6
+Got Ack for FLAG[68650]  send to 6
+[68806] req Image from: 6; rec from:[68806]  6; source: 25 --- 15 15
+Got[68806]  the whole image from 25 ove[68806] r 6
+img from 0 send to pc
+Fi[68807] nished sending Msg to pc
+Fin[68807] ished sending Img to pc
+Requ[68807] est to you 6
+Got Ack for FLA[68807] G send to 6
+[69008] req Image from: 6; rec from:[69008]  6; source: 26 --- 16 16
+Got[69009]  the whole image from 26 ove[69009] r 6
+img from 0 send to pc
+Fi[69009] nished sending Msg to pc
+Fin[69009] ished sending Img to pc
+Requ[69010] est to you 6
+Got Ack for FLA[69010] G send to 6
+[69270] req Image from: 6; rec from:[69270]  6; source: 29 --- 17 17
+Got[69270]  the whole image from 29 ove[69270] r 6
+img from 0 send to pc
+Fi[69270] nished sending Msg to pc
+Fin[69271] ished sending Img to pc
+Requ[69271] est to you 6
+Got Ack for FLA[69271] G send to 6
+[69523] req Image from: 6; rec from:[69523]  6; source: 32 --- 18 18
+Got[69523]  the whole image from 32 ove[69523] r 6
+img from 0 send to pc
+Fi[69524] nished sending Msg to pc
+Fin[69524] ished sending Img to pc
+Requ[69524] est to you 6
+Got Ack for FLA[69524] G send to 6
+[69843] req Image from: 6; rec from:[69843]  6; source: 30 --- 19 19
+[69843] req Image from: 6; rec from:[69843]  6; source: 30 --- 19 19
+Got[69844]  the whole image from 30 ove[69844] r 6
+img from 0 send to pc
+Fi[69844] nished sending Msg to pc
+Fin[69894] ished sending Msg to pc
+Fini[69894] shed sending Img to pc
+Reque[69895] st to you 6
+Got Ack for FLAG[69895]  send to 6
+[70090] req Image from: 6; rec from:[70092]  6; source: 20 --- 20 20
+[70092] req Image from: 6; rec from:[70092]  6; source: 20 --- 20 20
+all[70093] readyReceived!
+[70093] req Image from: 6; rec from:[70144]  6; source: 20 --- 20 20
+Got[70144]  the whole image from 20 ove[70144] r 6
+img from 0 send to pc
+Fi[70144] nished sending Msg to pc
+Fin[70144] ished sending Msg to pc
+Fini[70145] shed sending Img to pc
+Reque[70145] st to you 6
+Got Ack for FLAG[70145]  send to 6
+[70312] req Image from: 6; rec from:[70312]  6; source: 13 --- 21 21
+[70313] req Image from: 6; rec from:[70313]  6; source: 13 --- 21 21
+Got[70313]  the whole image from 13 ove[70361] r 6
+img from 0 send to pc
+Fi[70361] nished sending Msg to pc
+Fin[70362] ished sending Msg to pc
+Fini[70362] shed sending Img to pc
+Reque[70362] st to you 6
+Got Ack for FLAG[70362]  send to 6
+[70510] req Image from: 6; rec from:[70510]  6; source: 11 --- 22 22
+Got[70510]  the whole image from 11 ove[70510] r 6
+img from 0 send to pc
+Fi[70511] nished sending Msg to pc
+Fin[70511] ished sending Img to pc
+Requ[70511] est to you 6
+Got Ack for FLA[70511] G send to 6
+[70650] req Image from: 6; rec from:[70651]  6; source: 14 --- 23 23
+[70651] req Image from: 6; rec from:[70651]  6; source: 14 --- 23 23
+Got[70651]  the whole image from 14 ove[70651] r 6
+img from 0 send to pc
+Fi[70651] nished sending Msg to pc
+Fin[70702] ished sending Msg to pc
+Fini[70702] shed sending Img to pc
+Reque[70702] st to you 6
+Got Ack for FLAG[70702]  send to 6
+[70882] req Image from: 6; rec from:[70882]  6; source: 27 --- 24 24
+Got[70882]  the whole image from 27 ove[70883] r 6
+img from 0 send to pc
+Fi[70883] nished sending Msg to pc
+Fin[70883] ished sending Img to pc
+Requ[70885] est to you 6
+Got Ack for FLA[70885] G send to 6
+[71081] req Image from: 6; rec from:[71081]  6; source: 31 --- 25 25
+Got[71081]  the whole image from 31 ove[71081] r 6
+img from 0 send to pc
+Fi[71081] nished sending Msg to pc
+Fin[71082] ished sending Img to pc
+Requ[71082] est to you 6
+Got Ack for FLA[71082] G send to 6
+[71240] req Image from: 6; rec from:[71241]  6; source: 28 --- 26 26
+Got[71242]  the whole image from 28 ove[71242] r 6
+img from 0 send to pc
+Fi[71243] nished sending Msg to pc
+Fin[71243] ished sending Img to pc
+Requ[71244] est to you 6
+Got Ack for FLA[71244] G send to 6
+[71408] req Image from: 6; rec from:[71408]  6; source: 15 --- 27 27
+[71409] req Image from: 6; rec from:[71409]  6; source: 15 --- 27 27
+Got[71409]  the whole image from 15 ove[71409] r 6
+img from 0 send to pc
+Fi[71409] nished sending Msg to pc
+Fin[71455] ished sending Msg to pc
+Fini[71456] shed sending Img to pc
+Reque[71456] st to you 6
+Got Ack for FLAG[71456]  send to 6
+[71507] req Image from: 6; rec from:[71508]  6; source: 10 --- 28 28
+Got[71508]  the whole image from 10 ove[71508] r 6
+img from 0 send to pc
+Fi[71508] nished sending Msg to pc
+Fin[71509] ished sending Img to pc
+Requ[71509] est to you 6
+Got Ack for FLA[71562] G send to 6
+[71562] req Image from: 6; rec from:[71562]  6; source: 6 --- 29 29
+Got [71563] the whole image from 6 over [71563] 6
+img from 0 send to pc
+Fini[71563] shed sending Msg to pc
+Finis[71563] hed sending Img to pc
+Reques[71563] t to you 7
+Got Ack for FLAG [71610] send to 7
+[71610] req Image from: 7; rec from:[71610]  7; source: 7 --- 30 30
+[71611] req Image from: 7; rec from:[71611]  7; source: 7 --- 30 30
+Got [71661] the whole image from 7 over [71661] 7
+img from 0 send to pc
+Fini[71661] shed sending Msg to pc
+Finis[71661] hed sending Msg to pc
+Finish[71662] ed sending Img to pc
+Request[71662]  to you 8
+Retransmission FLA[71662] G to 8
+Got Ack for FLAG send[71662]  to 8
+[71772] req Image from: 8; rec from:[71772]  8; source: 8 --- 31 31
+[71822] req Image from: 8; rec from:[71823]  8; source: 8 --- 31 31
+Got [71823] the whole image from 8 over [71823] 8
+img from 0 send to pc
+Fini[71823] shed sending Msg to pc
+Finis[71823] hed sending Msg to pc
+Finish[71878] ed sending Img to pc
+Finishe[71878] d sending Msg to pc
+Finished[71878]  sending Img to pc
+HuHu
+Root[71878]  send its image
+Update
+Colle[71879] ction done 1
+Next Round!
+sen[71879] : 1->14: 40 until me
+Time to[71879]  wait: 800
+[72364] rec: 3->9: 22 until me
+[72411] Time to wait: 440
+[72411] rec: 9->8: 21 until me
+Time [72411] to wait: 420
+rec: 8->7: 20 u[72411] ntil me
+Time to wait: 400
+[72411] rec: 7->21: 19 until me
+Time[72425]  to wait: 380
+[72427] rec: 7->5: 16 until me
+[72427] Time to wait: 320
+[72428] rec: 5->6: 15 until me
+[72428] Time to wait: 300
+[72428] rec: 6->18: 14 until me
+[72429] Time to wait: 280
+[72469] rec: 6->28: 6 until me
+[72469] Time to wait: 120
+[72470] rec: 6->4: 4 until me
+[72470] Time to wait: 80
+[72470] rec: 4->11: 3 until me
+Time [72470] to wait: 60
+[72519] rec: 4->2: 1 until me
+[72519] Time to wait: 20
+[72519] Send To = 0
+finished Round2
+[72520] Got Ack for FLAG send to 2
+[72559] req Image from: 2; rec from:[72560]  2; source: 2 --- 1 1
+Got th[72560] e whole image from 2 over 2
+[72560] img from 0 send to pc
+Finish[72561] ed sending Msg to pc
+Finishe[72562] d sending Img to pc
+Request [72563] to you 3
+Got Ack for FLAG se[72614] nd to 3
+[72614] req Image from: 3; rec from:[72614]  3; source: 3 --- 2 2
+Got th[72614] e whole image from 3 over 3
+[72614] img from 0 send to pc
+Finish[72614] ed sending Msg to pc
+Finishe[72615] d sending Img to pc
+Request [72662] to you 4
+Got Ack for FLAG se[72662] nd to 4
+req Image from: 4; r[72662] ec from: 4; source: 4 --- 3 [72662] 3
+Got the whole image from 4[72663]  over 4
+img from 0 send to p[72663] c
+Finished sending Msg to pc[72664] 
+Finished sending Img to pc
+[72712] Request to you 5
+Got Ack for[72713]  FLAG send to 5
+req Image fr[72713] om: 5; rec from: 5; source: [72713] 5 --- 4 4
+Got the whole imag[72713] e from 5 over 5
+img from 0 s[72713] end to pc
+Finished sending M[72714] sg to pc
+Finished sending Im[72714] g to pc
+Request to you 6
+Got[72714]  Ack for FLAG send to 6
+[72844] req Image from: 6; rec from:[72845]  6; source: 17 --- 5 5
+Got t[72845] he whole image from 17 over [72845] 6
+img from 0 send to pc
+Fini[72845] shed sending Msg to pc
+Finis[72845] hed sending Img to pc
+Reques[72845] t to you 6
+Got Ack for FLAG [72846] send to 6
+[72893] req Image from: 6; rec from:[72893]  6; source: 9 --- 6 6
+Got th[72893] e whole image from 9 over 6
+[72893] img from 0 send to pc
+Finish[72943] ed sending Msg to pc
+Finishe[72944] d sending Img to pc
+Request [72944] to you 6
+Got Ack for FLAG se[72944] nd to 6
+[73076] req Image from: 6; rec from:[73076]  6; source: 12 --- 7 7
+Got t[73077] he whole image from 12 over [73077] 6
+img from 0 send to pc
+Fini[73077] shed sending Msg to pc
+Finis[73077] hed sending Img to pc
+Reques[73077] t to you 6
+Got Ack for FLAG [73077] send to 6
+[73240] req Image from: 6; rec from:[73241]  6; source: 16 --- 8 8
+Got t[73242] he whole image from 16 over [73242] 6
+img from 0 send to pc
+Fini[73242] shed sending Msg to pc
+Finis[73242] hed sending Img to pc
+Reques[73242] t to you 6
+Got Ack for FLAG [73243] send to 6
+[73447] req Image from: 6; rec from:[73447]  6; source: 18 --- 9 9
+Got t[73448] he whole image from 18 over [73448] 6
+img from 0 send to pc
+Fini[73448] shed sending Msg to pc
+Finis[73448] hed sending Img to pc
+Reques[73448] t to you 6
+Got Ack for FLAG [73449] send to 6
+[73660] req Image from: 6; rec from:[73661]  6; source: 22 --- 10 10
+Got[73676]  the whole image from 22 ove[73676] r 6
+img from 0 send to pc
+Fi[73676] nished sending Msg to pc
+Fin[73676] ished sending Img to pc
+Requ[73676] est to you 6
+Got Ack for FLA[73677] G send to 6
+[73845] req Image from: 6; rec from:[73845]  6; source: 23 --- 11 11
+Got[73845]  the whole image from 23 ove[73845] r 6
+img from 0 send to pc
+Fi[73845] nished sending Msg to pc
+Fin[73846] ished sending Img to pc
+Requ[73848] est to you 6
+Got Ack for FLA[73848] G send to 6
+[74009] req Image from: 6; rec from:[74009]  6; source: 19 --- 12 12
+Got[74009]  the whole image from 19 ove[74009] r 6
+img from 0 send to pc
+Fi[74010] nished sending Msg to pc
+Fin[74010] ished sending Img to pc
+Requ[74010] est to you 6
+Got Ack for FLA[74010] G send to 6
+[74220] req Image from: 6; rec from:[74221]  6; source: 21 --- 13 13
+Got[74221]  the whole image from 21 ove[74221] r 6
+img from 0 send to pc
+Fi[74221] nished sending Msg to pc
+Fin[74221] ished sending Img to pc
+Requ[74222] est to you 6
+Got Ack for FLA[74222] G send to 6
+[74429] req Image from: 6; rec from:[74430]  6; source: 24 --- 14 14
+Got[74430]  the whole image from 24 ove[74430] r 6
+img from 0 send to pc
+Fi[74431] nished sending Msg to pc
+Fin[74435] ished sending Img to pc
+Requ[74435] est to you 6
+Got Ack for FLA[74435] G send to 6
+[74677] req Image from: 6; rec from:[74691]  6; source: 25 --- 15 15
+Got[74692]  the whole image from 25 ove[74692] r 6
+img from 0 send to pc
+Fi[74692] nished sending Msg to pc
+Fin[74693] ished sending Img to pc
+Requ[74693] est to you 6
+Got Ack for FLA[74693] G send to 6
+[74857] req Image from: 6; rec from:[74859]  6; source: 26 --- 16 16
+Got[74859]  the whole image from 26 ove[74860] r 6
+img from 0 send to pc
+Fi[74860] nished sending Msg to pc
+Fin[74861] ished sending Img to pc
+Requ[74861] est to you 6
+Got Ack for FLA[74871] G send to 6
+[75169] req Image from: 6; rec from:[75169]  6; source: 29 --- 17 17
+Got[75170]  the whole image from 29 ove[75170] r 6
+img from 0 send to pc
+Fi[75170] nished sending Msg to pc
+Fin[75171] ished sending Img to pc
+Requ[75171] est to you 6
+Got Ack for FLA[75171] G send to 6
+[75417] req Image from: 6; rec from:[75417]  6; source: 32 --- 18 18
+Got[75418]  the whole image from 32 ove[75418] r 6
+img from 0 send to pc
+Fi[75418] nished sending Msg to pc
+Fin[75419] ished sending Img to pc
+Requ[75419] est to you 6
+Got Ack for FLA[75420] G send to 6
+[75615] req Image from: 6; rec from:[75615]  6; source: 30 --- 19 19
+Got[75616]  the whole image from 30 ove[75616] r 6
+img from 0 send to pc
+Fi[75617] nished sending Msg to pc
+Fin[75617] ished sending Img to pc
+Requ[75618] est to you 6
+Got Ack for FLA[75618] G send to 6
+[75790] req Image from: 6; rec from:[75790]  6; source: 20 --- 20 20
+Got[75792]  the whole image from 20 ove[75792] r 6
+img from 0 send to pc
+Fi[75792] nished sending Msg to pc
+Fin[75792] ished sending Img to pc
+Requ[75793] est to you 6
+Got Ack for FLA[75793] G send to 6
+[75919] req Image from: 6; rec from:[75920]  6; source: 13 --- 21 21
+Got[75920]  the whole image from 13 ove[75920] r 6
+img from 0 send to pc
+Fi[75920] nished sending Msg to pc
+Fin[75920] ished sending Img to pc
+Requ[75921] est to you 6
+Got Ack for FLA[75921] G send to 6
+[76086] req Image from: 6; rec from:[76087]  6; source: 11 --- 22 22
+Got[76087]  the whole image from 11 ove[76087] r 6
+img from 0 send to pc
+Fi[76088] nished sending Msg to pc
+Fin[76088] ished sending Img to pc
+Requ[76088] est to you 6
+Got Ack for FLA[76088] G send to 6
+[76237] req Image from: 6; rec from:[76237]  6; source: 14 --- 23 23
+Got[76237]  the whole image from 14 ove[76237] r 6
+img from 0 send to pc
+Fi[76237] nished sending Msg to pc
+Fin[76238] ished sending Img to pc
+Requ[76238] est to you 6
+Got Ack for FLA[76238] G send to 6
+[76439] req Image from: 6; rec from:[76440]  6; source: 27 --- 24 24
+Got[76440]  the whole image from 27 ove[76440] r 6
+img from 0 send to pc
+Fi[76440] nished sending Msg to pc
+Fin[76440] ished sending Img to pc
+Requ[76440] est to you 6
+Got Ack for FLA[76441] G send to 6
+[76663] req Image from: 6; rec from:[76663]  6; source: 31 --- 25 25
+Got[76663]  the whole image from 31 ove[76663] r 6
+img from 0 send to pc
+Fi[76663] nished sending Msg to pc
+Fin[76664] ished sending Img to pc
+Requ[76664] est to you 6
+Got Ack for FLA[76665] G send to 6
+[76810] req Image from: 6; rec from:[76810]  6; source: 28 --- 26 26
+Got[76810]  the whole image from 28 ove[76810] r 6
+img from 0 send to pc
+Fi[76810] nished sending Msg to pc
+Fin[76811] ished sending Img to pc
+Requ[76814] est to you 6
+Got Ack for FLA[76814] G send to 6
+[76949] req Image from: 6; rec from:[76950]  6; source: 15 --- 27 27
+Got[76950]  the whole image from 15 ove[76950] r 6
+img from 0 send to pc
+Fi[76950] nished sending Msg to pc
+Fin[76950] ished sending Img to pc
+Requ[76951] est to you 6
+Got Ack for FLA[76951] G send to 6
+[77004] req Image from: 6; rec from:[77005]  6; source: 10 --- 28 28
+Got[77052]  the whole image from 10 ove[77052] r 6
+img from 0 send to pc
+Fi[77053] nished sending Msg to pc
+Fin[77053] ished sending Img to pc
+Requ[77053] est to you 6
+Got Ack for FLA[77053] G send to 6
+req Image from: [77053] 6; rec from: 6; source: 6 --[77106] - 29 29
+Got the whole image [77107] from 6 over 6
+img from 0 sen[77108] d to pc
+Finished sending Msg[77108]  to pc
+Finished sending Img [77108] to pc
+Request to you 7
+Got A[77109] ck for FLAG send to 7
+[77109] req Image from: 7; rec from:[77109]  7; source: 7 --- 30 30
+Got [77161] the whole image from 7 over [77161] 7
+img from 0 send to pc
+Fini[77162] shed sending Msg to pc
+Finis[77162] hed sending Img to pc
+Reques[77162] t to you 8
+Got Ack for FLAG [77162] send to 8
+[77162] req Image from: 8; rec from:[77162]  8; source: 8 --- 31 31
+[77163] req Image from: 8; rec from:[77212]  8; source: 8 --- 31 31
+Got [77212] the whole image from 8 over [77212] 8
+img from 0 send to pc
+Fini[77213] shed sending Msg to pc
+Finis[77213] hed sending Msg to pc
+Finish[77213] ed sending Img to pc
+Finishe[77213] d sending Msg to pc
+Finished[77263]  sending Img to pc
+HuHu
+Root[77263]  send its image
+Update
+Colle[77263] ction done 1
+Next Round!
+sen[77266] : 1->14: 40 until me
+Time to[77266]  wait: 800
+[77649] rec: 3->9: 22 until me
+[77791] Time to wait: 440
+[77791] rec: 9->8: 21 until me
+Time [77792] to wait: 420
+rec: 8->7: 20 u[77792] ntil me
+Time to wait: 400
+[77792] rec: 7->21: 19 until me
+Time[77792]  to wait: 380
+[77792] rec: 7->5: 16 until me
+[77796] Time to wait: 320
+[77822] rec: 5->6: 15 until me
+Time [77822] to wait: 300
+[77822] rec: 6->18: 14 until me
+[77822] Time to wait: 280
+[77854] rec: 6->28: 6 until me
+[77854] Time to wait: 120
+[77855] rec: 6->4: 4 until me
+[77855] Time to wait: 80
+[77855] rec: 4->11: 3 until me
+Time [77901] to wait: 60
+[77905] rec: 4->2: 1 until me
+[77905] Time to wait: 20
+[77905] Send To = 0
+finished Round2
+[77951] Got Ack for FLAG send to 2
+[77951] req Image from: 2; rec from:[77952]  2; source: 2 --- 1 1
+Got th[77952] e whole image from 2 over 2
+[78001] img from 0 send to pc
+Finish[78001] ed sending Msg to pc
+Finishe[78001] d sending Img to pc
+Request [78001] to you 3
+Got Ack for FLAG se[78001] nd to 3
+[78001] req Image from: 3; rec from:[78002]  3; source: 3 --- 2 2
+Got th[78003] e whole image from 3 over 3
+[78051] img from 0 send to pc
+Finish[78052] ed sending Msg to pc
+Finishe[78052] d sending Img to pc
+Request [78053] to you 4
+Got Ack for FLAG se[78053] nd to 4
+[78055] req Image from: 4; rec from:[78055]  4; source: 4 --- 3 3
+Got th[78102] e whole image from 4 over 4
+[78103] img from 0 send to pc
+Finish[78103] ed sending Msg to pc
+Finishe[78103] d sending Img to pc
+Request [78103] to you 5
+Got Ack for FLAG se[78103] nd to 5
+[78103] req Image from: 5; rec from:[78104]  5; source: 5 --- 4 4
+Got th[78153] e whole image from 5 over 5
+[78153] img from 0 send to pc
+Finish[78154] ed sending Msg to pc
+Finishe[78154] d sending Img to pc
+Request [78154] to you 6
+Got Ack for FLAG se[78154] nd to 6
+[78279] req Image from: 6; rec from:[78280]  6; source: 17 --- 5 5
+Got t[78280] he whole image from 17 over [78280] 6
+img from 0 send to pc
+Fini[78280] shed sending Msg to pc
+Finis[78280] hed sending Img to pc
+Reques[78280] t to you 6
+Got Ack for FLAG [78281] send to 6
+[78330] req Image from: 6; rec from:[78330]  6; source: 9 --- 6 6
+Got th[78381] e whole image from 9 over 6
+[78382] img from 0 send to pc
+Finish[78382] ed sending Msg to pc
+Finishe[78382] d sending Img to pc
+Request [78382] to you 6
+Got Ack for FLAG se[78382] nd to 6
+[78535] req Image from: 6; rec from:[78535]  6; source: 12 --- 7 7
+Got t[78535] he whole image from 12 over [78535] 6
+img from 0 send to pc
+Fini[78536] shed sending Msg to pc
+Finis[78536] hed sending Img to pc
+Reques[78536] t to you 6
+Got Ack for FLAG [78536] send to 6
+[78717] req Image from: 6; rec from:[78718]  6; source: 16 --- 8 8
+Got t[78718] he whole image from 16 over [78718] 6
+img from 0 send to pc
+Fini[78719] shed sending Msg to pc
+Finis[78719] hed sending Img to pc
+Reques[78719] t to you 6
+Got Ack for FLAG [78719] send to 6
+[78916] req Image from: 6; rec from:[78916]  6; source: 18 --- 9 9
+Got t[78917] he whole image from 18 over [78917] 6
+img from 0 send to pc
+Fini[78917] shed sending Msg to pc
+Finis[78917] hed sending Img to pc
+Reques[78917] t to you 6
+Got Ack for FLAG [78917] send to 6
+[79107] req Image from: 6; rec from:[79108]  6; source: 22 --- 10 10
+Got[79114]  the whole image from 22 ove[79114] r 6
+img from 0 send to pc
+Fi[79115] nished sending Msg to pc
+Fin[79115] ished sending Img to pc
+Requ[79126] est to you 6
+Got Ack for FLA[79126] G send to 6
+[79335] req Image from: 6; rec from:[79335]  6; source: 23 --- 11 11
+Got[79335]  the whole image from 23 ove[79336] r 6
+img from 0 send to pc
+Fi[79336] nished sending Msg to pc
+Fin[79336] ished sending Img to pc
+Requ[79338] est to you 6
+Got Ack for FLA[79338] G send to 6
+[79485] req Image from: 6; rec from:[79485]  6; source: 19 --- 12 12
+Got[79486]  the whole image from 19 ove[79486] r 6
+img from 0 send to pc
+Fi[79486] nished sending Msg to pc
+Fin[79486] ished sending Img to pc
+Requ[79486] est to you 6
+Got Ack for FLA[79486] G send to 6
+[79689] req Image from: 6; rec from:[79689]  6; source: 21 --- 13 13
+Got[79691]  the whole image from 21 ove[79691] r 6
+img from 0 send to pc
+Fi[79692] nished sending Msg to pc
+Fin[79692] ished sending Img to pc
+Requ[79693] est to you 6
+Got Ack for FLA[79693] G send to 6
+[79875] req Image from: 6; rec from:[79876]  6; source: 24 --- 14 14
+Got[79876]  the whole image from 24 ove[79877] r 6
+img from 0 send to pc
+Fi[79880] nished sending Msg to pc
+Fin[79881] ished sending Img to pc
+Requ[79881] est to you 6
+Got Ack for FLA[79881] G send to 6
+[80082] req Image from: 6; rec from:[80082]  6; source: 25 --- 15 15
+Got[80083]  the whole image from 25 ove[80083] r 6
+img from 0 send to pc
+Fi[80083] nished sending Msg to pc
+Fin[80083] ished sending Img to pc
+Requ[80083] est to you 6
+Got Ack for FLA[80083] G send to 6
+[80286] req Image from: 6; rec from:[80287]  6; source: 26 --- 16 16
+Got[80287]  the whole image from 26 ove[80288] r 6
+img from 0 send to pc
+Fi[80289] nished sending Msg to pc
+Fin[80292] ished sending Img to pc
+Requ[80292] est to you 6
+Got Ack for FLA[80293] G send to 6
+[80584] req Image from: 6; rec from:[80584]  6; source: 29 --- 17 17
+Got[80584]  the whole image from 29 ove[80584] r 6
+img from 0 send to pc
+Fi[80585] nished sending Msg to pc
+Fin[80585] ished sending Img to pc
+Requ[80585] est to you 6
+Got Ack for FLA[80585] G send to 6
+[80862] req Image from: 6; rec from:[80864]  6; source: 32 --- 18 18
+Got[80865]  the whole image from 32 ove[80866] r 6
+img from 0 send to pc
+Fi[80866] nished sending Msg to pc
+Fin[80866] ished sending Img to pc
+Requ[80867] est to you 6
+Got Ack for FLA[80867] G send to 6
+[81047] req Image from: 6; rec from:[81047]  6; source: 30 --- 19 19
+Got[81047]  the whole image from 30 ove[81047] r 6
+img from 0 send to pc
+Fi[81048] nished sending Msg to pc
+Fin[81048] ished sending Img to pc
+Requ[81049] est to you 6
+Got Ack for FLA[81049] G send to 6
+[81203] req Image from: 6; rec from:[81204]  6; source: 20 --- 20 20
+Got[81205]  the whole image from 20 ove[81205] r 6
+img from 0 send to pc
+Fi[81206] nished sending Msg to pc
+Fin[81206] ished sending Img to pc
+Requ[81210] est to you 6
+Got Ack for FLA[81210] G send to 6
+[81312] req Image from: 6; rec from:[81313]  6; source: 13 --- 21 21
+Got[81313]  the whole image from 13 ove[81313] r 6
+img from 0 send to pc
+Fi[81314] nished sending Msg to pc
+Fin[81315] ished sending Img to pc
+Requ[81315] est to you 6
+Got Ack for FLA[81316] G send to 6
+[81482] req Image from: 6; rec from:[81482]  6; source: 11 --- 22 22
+Got[81482]  the whole image from 11 ove[81491] r 6
+img from 0 send to pc
+Fi[81494] nished sending Msg to pc
+Fin[81494] ished sending Img to pc
+Requ[81495] est to you 6
+Got Ack for FLA[81495] G send to 6
+[81593] req Image from: 6; rec from:[81593]  6; source: 14 --- 23 23
+Got[81593]  the whole image from 14 ove[81593] r 6
+img from 0 send to pc
+Fi[81593] nished sending Msg to pc
+Fin[81593] ished sending Img to pc
+Requ[81594] est to you 6
+Got Ack for FLA[81594] G send to 6
+[81783] req Image from: 6; rec from:[81784]  6; source: 27 --- 24 24
+Got[81784]  the whole image from 27 ove[81784] r 6
+img from 0 send to pc
+Fi[81784] nished sending Msg to pc
+Fin[81784] ished sending Img to pc
+Requ[81785] est to you 6
+Got Ack for FLA[81785] G send to 6
+[81968] req Image from: 6; rec from:[81970]  6; source: 31 --- 25 25
+Got[81970]  the whole image from 31 ove[81971] r 6
+img from 0 send to pc
+Fi[81972] nished sending Msg to pc
+Fin[81973] ished sending Img to pc
+Requ[81974] est to you 6
+Got Ack for FLA[81974] G send to 6
+[82120] req Image from: 6; rec from:[82121]  6; source: 28 --- 26 26
+Got[82121]  the whole image from 28 ove[82121] r 6
+img from 0 send to pc
+Fi[82121] nished sending Msg to pc
+Fin[82121] ished sending Img to pc
+Requ[82122] est to you 6
+Got Ack for FLA[82122] G send to 6
+[82268] req Image from: 6; rec from:[82269]  6; source: 15 --- 27 27
+Got[82269]  the whole image from 15 ove[82270] r 6
+img from 0 send to pc
+Fi[82270] nished sending Msg to pc
+Fin[82271] ished sending Img to pc
+Requ[82271] est to you 6
+Got Ack for FLA[82272] G send to 6
+[82319] req Image from: 6; rec from:[82319]  6; source: 10 --- 28 28
+Got[82371]  the whole image from 10 ove[82371] r 6
+img from 0 send to pc
+Fi[82374] nished sending Msg to pc
+Fin[82374] ished sending Img to pc
+Requ[82374] est to you 6
+Got Ack for FLA[82374] G send to 6
+[82375] req Image from: 6; rec from:[82376]  6; source: 6 --- 29 29
+Got [82422] the whole image from 6 over [82423] 6
+img from 0 send to pc
+Fini[82423] shed sending Msg to pc
+Finis[82423] hed sending Img to pc
+Reques[82423] t to you 7
+Got Ack for FLAG [82424] send to 7
+[82424] req Image from: 7; rec from:[82424]  7; source: 7 --- 30 30
+Got [82475] the whole image from 7 over [82475] 7
+img from 0 send to pc
+Fini[82476] shed sending Msg to pc
+Finis[82476] hed sending Img to pc
+Reques[82476] t to you 8
+Got Ack for FLAG [82476] send to 8
+req Image from: 8;[82527]  rec from: 8; source: 8 --- [82527] 31 31
+Got the whole image fr[82528] om 8 over 8
+img from 0 send [82528] to pc
+Finished sending Msg t[82528] o pc
+Finished sending Img to[82529]  pc
+Finished sending Msg to [82529] pc
+Finished sending Img to p[82529] c
+HuHu
+Root send its image
+U[82530] pdate
+Collection done 1
+Next[82530]  Round!
+sen: 1->14: 40 until[82530]  me
+Time to wait: 800
+[82933] rec: 3->9: 22 until me
+[82933] Time to wait: 440
+[82933] rec: 9->8: 21 until me
+[82934] Time to wait: 420
+[82934] rec: 8->7: 20 until me
+Time [82934] to wait: 400
+rec: 7->21: 19 [82934] until me
+Time to wait: 380
+[82963] rec: 7->5: 16 until me
+[82996] Time to wait: 320
+[82996] rec: 5->6: 15 until me
+[83012] Time to wait: 300
+[83018] rec: 6->18: 14 until me
+[83018] Time to wait: 280
+[83194] rec: 6->28: 6 until me
+[83196] Time to wait: 120
+[83196] rec: 6->4: 4 until me
+[83196] Time to wait: 80
+rec: 4->2: [83229] 1 until me
+Time to wait: 20
+[83229] rec: 4->11: 3 until me
+Time [83230] to wait: 60
+Send To = 0
+fini[83230] shed Round2
+Got Ack for FLAG[83230]  send to 2
+req Image from: 2[83230] ; rec from: 2; source: 2 ---[83232]  1 1
+Got the whole image fro[83289] m 2 over 2
+img from 0 send t[83294] o pc
+Finished sending Msg to[83295]  pc
+Finished sending Img to [83295] pc
+Request to you 3
+Send To [83296] = 0
+finished Round3
+Got Ack [83296] for FLAG send to 3
+req Image[83296]  from: 3; rec from: 3; sourc[83296] e: 3 --- 2 3

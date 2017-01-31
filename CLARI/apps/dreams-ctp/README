@@ -1,0 +1,79 @@
+GENERAL DESCRIPTION
+-------------------
+TinyOS application for profiling a representative WSN data gathering application using CTP and LPL in a wired testbed.
+
+Includes a modified CTP from the TinyOS 2.1.2 (small changes in CTPDebug).
+
+The parameters such as radio channel and power, as well as LPL configuration can be found in the Makefile.
+The configuration of the application in terms of data intervals or sink id can be found in DemoCollection.h.
+
+## Logged messages ##
+
+// 0x01 - 0x10 - APP /normal/ events
+LOG_APP_SND = 0x01 [1] // On application send event (after DataSend.send() called)
+src host_ts local_ts APP SND origin seq_num
+
+LOG_APP_RCV = 0x02 [2] // On message received by the sink
+src host_ts local_ts APP RCV origin seq_num rssi
+
+LOG_APP_INT = 0x03 [3] // On message received for forwarding by relay
+src host_ts local_ts origin seq_num prev_hop
+
+// 0x11 - 0x20 - APP errors
+LOG_APP_ERR_SND = 0x11 [17] // On failed to send message (CTP sendDone() with error != SUCCESS)
+src host_ts local_ts APP ESN origin seq_num error
+
+LOG_APP_CNG = 0x12 [18] // CTP did not signal sendDone before timer expired
+src host_ts local_ts APP CNG
+
+// 0x21 - 0x30 - [33-48] "Last hop" events (DEPRECATED)  
+LOG_HOP_RCV = 0x21 // On receiving message from the previous hop
+src host_ts local_ts HOP RCV origin seq_num prev_hop rssi
+
+LOG_HOP_SND = 0x22 [34] // On sending message to the next hop
+src host_ts local_ts HOP SND origin seq_num next_hop error
+
+// CTP 
+// 0x41 - 0x50 - Control Plane events
+LOG_CTC_BCN = 0x41 [65] // On sending a beacon
+src host_ts local_ts CTC BCN src dst etx
+
+LOG_CTC_NPT	= 0x42 [66] // On changing the parent
+src host_ts local_ts CTC NPT src dst etx
+
+// 0x51 - 0x60 - [81-96] Data Plane events
+LOG_CTD_DRP_LOCAL = 0x51 // On local message drop
+src host_ts local_ts CTD DRP_LOCAL origin seq_num parent
+
+LOG_CTD_DRP_FWD = 0x52 [82] // On forwarded message drop
+src host_ts local_ts CTD DRP_FWD origin seq_num parent
+
+LOG_CTD_RTM_WAITACK = 0x53 [83] // On RTM due to missing ACK
+src host_ts local_ts CTD RTM_WAITACK origin seq_num parent
+
+LOG_CTD_RTM_FAIL = 0x54 [84] // On RTM due to LL failure
+src host_ts local_ts CTD RTM_FAIL origin seq_num parent
+
+LOG_CTD_SND = 0x55 [85] // On succesful delivery of the local message to the parent
+src host_ts local_ts CTD SND origin seq_num parent
+
+LOG_CTD_FWD = 0x56 [86] // On succesful delviery of the forwarded message to the parent
+src host_Ts local_ts CTD FWD origin seq_num next_hop
+
+// 0x61 - 0x70 - [97-112] Experiment control
+LOG_EXP_START = 0x61 // On experiment start
+src host_ts local_ts LOG EXP_STARTED 
+
+LOG_EXP_STOP = 0x62 [98] // On experiment stop
+src host_ts local_ts LOG EXP_STOPPED
+
+// 0x81 - 0x90 - [129-144] Hardware info
+LOG_HW_BOOT = 0x81 // On boot
+src host_ts local_ts HW BOOTED
+
+LOG_HW_RADIO_STAT = 0x82 [130] // Time radio was off duering the int_len
+src host_ts local_ts HW RADIO_STAT int_len time_off
+
+// Logger debugging: 0x91 - 0x99
+LOG_DBG_STAT = 0x91 [145] // Log statistics on timer fired 
+src host_ts local_ts LOG STA sent pool_empty enq_fail send_fail sdone_fail sdone_bug
