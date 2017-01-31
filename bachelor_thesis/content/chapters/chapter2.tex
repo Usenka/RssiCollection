@@ -76,27 +76,71 @@ TinyOS is an operating system for embedded systems, designed to manage the limit
 
 The main tasks of TinyOS is to schedule tasks and events to provide safe concurrent operations. However it also provides a large amount of reusable system components, like timers, sender or receiver, that provide a huge variety of functionalities. When compiling a application only the TinyOS components that are used are included into the application creating an application-specific OS.
 
-To provide functionality each component can have three different types of computational abstractions. First commands, then events than tasks.
+To provide functionality each component can have three different types of computational abstractions. First there are commands making it possible for other components to call a functionality of the component providing the command. Then there are events which can be signalled by a component. A component receiving the event can than react to it and act accordingly. These two constructs make interaction between components possible. For component intern functionality there are tasks. These can be posted by a component and then will be executed when its their turn. 
 
-flexible, application-specivic operation system for wireless sensor networks
-supports complex yet safe concurrent operations
-for sensor network research;
-Over one hundred groups worldwide use it, including several companies within their products
-and research topics
-core OS is 400 bytes
+Whenever a command, event or task get called it is pushed into the queue of the TinyOS scheduler. The scheduler then executes the tasks inside the queue using a FIFO scheduling policy.    
 
-Four broad requirements motivate the design of TinyOS:
-Limited resources
-Reactive Concurrency
-Flexibility
-Low Power
+\subsubsection{Programming for TinyOS}
+Applications for TinyOS are written in nesC which us a C dialect and integrates the possibility to implement configurations, modules, interfaces, commands, Events and Tasks. An application consists of components, represented by a nesC module, that provide and use interfaces. The components implement the functionality of the application. All the commands and events a component provides are defined by an interface. Moreover an application for TinyOS also has a configuration that defines which components are connected.   
 
-TinyOS supports an event-driven concurrency model based on split-phase interfaces, asynchronous events, and deferred computation called tasks. TinyOS is implemented in the NesC language.
+The Listings \ref{lis:Components}, \ref{lis:interface} and \ref{lis:configuration} show an example application for TinyOS with two components of which one provides an interface and the configuration for the application. This example shows the connections between components, interfaces and the configuration and also shows the use of commands, events and tasks. In Listing \ref{lis:Components} the two components $MainComponent$ and $ExampleC$ are represented. $MainComponent$ uses two interfaces. The first one is the $Boot$ interface. It requires the component to implement the $Boot.booted()$ event. This event is the first event signalled by TinyOS after the node booted. Moreover the $MainComponent$ uses the $ExampleI$ interface that is defined in Listing \ref{lis:interface}. It requires the component to implement the $ExampleI.exampleDone(error_t error)$. The $ExampleI$ interface is provided by the $ExampleC$ component and requires it to implement the $startExample()$ command. Moreover the $ExampleC$ component implements a task $doSomething()$.
 
-TinyOS is not an OS in the traditional sense; it is a programming framework for embedded systems and set of components that enable building an application-specific OS into each application
+Now to connect everything the configuration $Application$ in Listing \ref{lis:configuration} first calls all the components needed for the application. The first component used in this application is the $MainC$ component that provides the $Boot$ interface and is given by TinyOS. Next there are the two components from Listing \ref{lis:Components}. Know the configuration needs to connect the interfaces of the components to the components providing the corresponding interfaces. This means $MainComponent.Boot$ gets connected to $MainC$ and $MainComponent.ExampleI$ gets connected to $ExampleC$.
 
-TinyOS program is a graph of components, each of which is an independent computational entity that exposes one or more interfaces. Components have three computational abstractions: commands, events, and tasks. Commands and events are mechanisms for intercomponent communication, while tasks are used to express intra-component concurrency.
+When a device would get programmed with this example the first thing that would happens is that $MainC$ signals $Boot.booted()$ event resulting in executing the code for the event inside $MainComponent$. This code calls the $ExampleI.startExample$ command. Since the interface is connected to the $ExampleC$ the corresponding code posting the $doSomething()$ task gets executed. Then at the end of $doSomething()$ the $ExampleI.exampleDone(...)$ gets signalled by $ExampleC$. This means the the event gets triggered in $MainComponent$ and the corresponding code gets executed.      
 
-The standard TinyOS task scheduler uses a non-preemptive, FIFO scheduling policy
+\lstset{caption={Two example components. $MainComponent$ uses the example interface from \ref{lis:interface} and the interface $Boot$ that TinyOS provides. $Boot$ requires the $MainComponent$ to implement the $Boot.booted()$ event that is the first event that gets signalled by TinyOS after the node booted. The $ExampleC$ provides the example interface and therefore needs to implement the event and also implements a task $doSomething()$.},label={lis:Components}}
+\begin{lstlisting}
+module MainComponent {
+	uses interface Boot;
+	uses interface ExampleI;
+} implementation {
+	event void Boot.booted() {
+		call ExampleI.startExample();
+	}
+	
+	event void ExampleI.exampleDone(error_t error) {
+		if(error == SUCCESS) {
+			//some task...
+		}
+	}
+}
 
-TinyOS itself simply consists of a set of reusable system components along with a task scheduler.
+module ExampleC {
+	provides interface ExampleI;
+} implementation {
+	task void doSomething() {
+		//some task...
+		
+		signal ExampleI.exampleDone(SUCCESS);
+	}
+	
+	command void startExample() {
+		post doSomething();
+	}
+}
+\end{lstlisting}
+
+
+\lstset{caption={Example interface providing a command $startExample()$ and an event $exampleDone()$.},label={lis:interface}}
+\begin{lstlisting}
+interface ExampleI {
+	command void startExample();
+	event void exampleDone(error_t error);
+}
+\end{lstlisting}
+
+\lstset{caption={The configuration $Application$ links all the Components},label={lis:configuration}}
+\begin{lstlisting}
+configuration Application {
+} implementation {
+	components MainC;
+	components MainComponent
+	components ExampleC;
+		
+	MainComponent.Boot -> MainC;
+	MainComponent.ExampleI -> ExampleC;
+}
+\end{lstlisting} 
+
+Since whenever a task, command or event gets called it does not get executed directly but gets added to the queue of the TinyOS scheduler. This means that all the tasks, commands or events called before will execute first including the currently running one. 
