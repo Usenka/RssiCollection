@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.11.18)  31 JAN 2017 16:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.11.18)  1 FEB 2017 11:05
 entering extended mode
 **./Fristname_Lastname_Diplom_Master_arbeit.tex
 (Fristname_Lastname_Diplom_Master_arbeit.tex
@@ -1123,48 +1123,49 @@ chapter 2.
 File: content/images/Multispin.png Graphic file (type png)
 
 <use content/images/Multispin.png>
-Package pdftex.def Info: content/images/Multispin.png used on input line 35.
+Package pdftex.def Info: content/images/Multispin.png used on input line 51.
 (pdftex.def)             Requested size: 414.88818pt x 142.22752pt.
- [6 <./content/images/Multispin.png>]
+ [6]
 <content/images/Testbed.png, id=248, 441.90094pt x 264.23718pt>
 File: content/images/Testbed.png Graphic file (type png)
 
 <use content/images/Testbed.png>
-Package pdftex.def Info: content/images/Testbed.png used on input line 57.
+Package pdftex.def Info: content/images/Testbed.png used on input line 73.
 (pdftex.def)             Requested size: 331.42488pt x 198.17738pt.
 
 
-LaTeX Warning: Citation `telosb' on page 7 undefined on input line 65.
+LaTeX Warning: Citation `telosb' on page 7 undefined on input line 81.
 
-[7 <./content/images/Testbed.png>]
-<content/images/Mote1.png, id=257, 161.85469pt x 259.7203pt>
+[7 <./content/images/Multispin.png>]
+<content/images/Mote1.png, id=256, 161.85469pt x 259.7203pt>
 File: content/images/Mote1.png Graphic file (type png)
 
 <use content/images/Mote1.png>
-Package pdftex.def Info: content/images/Mote1.png used on input line 69.
+Package pdftex.def Info: content/images/Mote1.png used on input line 85.
 (pdftex.def)             Requested size: 113.2975pt x 181.80296pt.
 
 
-LaTeX Warning: Citation `telosb' on page 8 undefined on input line 70.
+LaTeX Warning: Citation `telosb' on page 8 undefined on input line 86.
 
 
-LaTeX Warning: Citation `telosb' on page 8 undefined on input line 70.
+LaTeX Warning: Citation `telosb' on page 8 undefined on input line 86.
 
-[8 <./content/images/Mote1.png>]
-Overfull \hbox (31.90582pt too wide) in paragraph at lines 86--87
-\OT1/cmr/m/n/10.95 List-ing [][]2.1[][]. It re-quires the com-po-nent to im-ple
+[8 <./content/images/Testbed.png>]
+Overfull \hbox (31.90582pt too wide) in paragraph at lines 102--103
+\OT1/cmr/m/n/10.95 List-ing [][]2.2[][]. It re-quires the com-po-nent to im-ple
 -ment the $\OML/cmm/m/it/10.95 ExampleI:exampleDone\OT1/cmr/m/n/10.95 (\OML/cmm
 /m/it/10.95 error[]error\OT1/cmr/m/n/10.95 )$.
  []
 
-[9] [10]
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 141.
+[9 <./content/images/Mote1.png>] [10]
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 157.
 
- ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
 File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 141.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 157.
 ) [11]
 \openout2 = `content/chapters/chapter3.aux'.
 
@@ -1783,7 +1784,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 227.
 Here is how much of TeX's memory you used:
  11905 strings out of 493333
  191634 string characters out of 3139193
- 387994 words of memory out of 3000000
+ 387998 words of memory out of 3000000
  14926 multiletter control sequences out of 15000+200000
  13058 words of font info for 45 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1804,7 +1805,7 @@ fonts/type1/public/amsfonts/cm/cmss17.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
 pe1/public/amsfonts/cm/cmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
 blic/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
 fonts/cm/cmti10.pfb>
-Output written on Fristname_Lastname_Diplom_Master_arbeit.pdf (49 pages, 108027
+Output written on Fristname_Lastname_Diplom_Master_arbeit.pdf (49 pages, 108072
 8 bytes).
 PDF statistics:
  761 PDF objects out of 1000 (max. 8388607)

@@ -10,17 +10,33 @@ The general structure is the following:
 \end{itemize}
 
 \section{Wireless Sensor Networks}
--A wireless sensor networks are a collection of small, low-cost, low-power and multifunctional sensor nodes.
--Able to communicate with each other. 
--Placed to monitore an area of intrest.
--Constrains.	
--Multi hop network not multi hop networks
--Stuff to take care of because of constrains
+A Wireless Sensor Networks(WSN) is a collection of small, low-cost, low-power sensor nodes that do not only have sensing capacities but also computing capacities. Additionally these nodes are able to communicate with each other via a wireless medium. Such a WSN deployed in an area of interest makes it possible to monitor the area in a desired way enabling applications for environmental and habitat monitoring, analysis of structures, or localization and tracking.
 
-TinyOS: An Operating System for Sensor Networks:
--Consists of potentialy thousands of nodes
--small, flexible, lowcost nodes that interact with their environment
--applications ranging from environmental and habitat monitoring [11, 51], seismic analysis of structures [10], and object localization and tracking [68].
+The typical architecture of a WSN includes one node that functions as the sink. This means that this node is the connection to a PC or the Internet to bring the informations collected by the nodes to the user. All the nodes then are spread over the area of interest. When placing the nodes it is important that each node can somehow communicate with the sink, may it be a direct connection or a indirect over other nodes. Are all the nodes in direct range of each other it is a single hop network meaning each node can transmit a message directly to all the other nodes. Otherwise the network is called multi hop. This means nodes can not necessary transmit messages directly to all the other nodes but may need to transmit the message over other node that forward it to the destination.
+
+The application running on the node is designed specific for the purpose of the WSN. Since the nodes should operate independent they are often powered by battery. This makes power one of the constrains of a WSN and applications need to be designed to have a low power consumption. Moreover the the application designed for the nodes needs to take the constrains of low computation capability and low storage of the sensor nodes have into account.   
+
+%-Able to communicate with each other. 
+%-Placed to monitore an area of intrest.
+%-Charasteristics.
+%	-Dense node Deployment
+%	-Battery Powered
+%	- Application Specific
+%	-Many to one Traffc patter
+%-Constrains.	
+%	-Energy
+%	-computation
+%	-storage
+%	-unreliable sensor nodes
+	
+%-Typical WSN architekture (Pc sink nodes )
+%-Multi hop network not multi hop networks
+%-Stuff to take care of because of constrains
+
+%TinyOS: An Operating System for Sensor Networks:
+%-Consists of potentialy thousands of nodes
+%-small, flexible, lowcost nodes that interact with their environment
+%-applications ranging from environmental and habitat monitoring [11, 51], seismic analysis of structures [10], and object localization and tracking [68].
 
 
 \section{Radio Tomographic Imaging}
