@@ -1,0 +1,793 @@
+INFO:    Stopping all local serial forwarders..
+INFO:    Install Null.conf...
+INFO:    Stopping all serial forwarders..
+         Executing command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true on host 134.91.76.101..
+         Executing command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true on host 134.91.76.102..
+         Executing command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true on host 134.91.76.103..
+         Executing command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true on host 134.91.76.104..
+         Executing command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true on host 134.91.76.105..
+         Executing command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true on host 134.91.76.106..
+         Executing command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true on host 134.91.76.107..
+         Executing command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true on host 134.91.76.108..
+         Executing command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true on host 134.91.76.109..
+         Executing command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true on host 134.91.76.110..
+OK:      Command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true executed on host 134.91.76.101
+Command output was: OK:      Command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true executed on host 134.91.76.102
+Command output was: OK:      Command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true executed on host 134.91.76.103
+Command output was: OK:      Command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true executed on host 134.91.76.104
+Command output was: OK:      Command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true executed on host 134.91.76.105
+Command output was: OK:      Command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true executed on host 134.91.76.106
+Command output was: OK:      Command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true executed on host 134.91.76.107
+Command output was: OK:      Command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true executed on host 134.91.76.108
+Command output was: OK:      Command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true executed on host 134.91.76.109
+Command output was: OK:      Command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true executed on host 134.91.76.110
+Command output was:          Installing applications to motes..
+INFO:    No application to be used on mote 4
+INFO:    No application to be used on mote 2
+INFO:    No application to be used on mote 11
+INFO:    No application to be used on mote 15
+INFO:    No application to be used on mote 7
+INFO:    No application to be used on mote 22
+INFO:    No application to be used on mote 26
+INFO:    No application to be used on mote 18
+INFO:    No application to be used on mote 32
+INFO:    No application to be used on mote 27
+INFO:    No application to be used on mote 1
+INFO:    No application to be used on mote 6
+INFO:    No application to be used on mote 21
+INFO:    No application to be used on mote 10
+INFO:    No application to be used on mote 9
+INFO:    No application to be used on mote 16
+INFO:    No application to be used on mote 24
+INFO:    No application to be used on mote 19
+INFO:    No application to be used on mote 28
+INFO:    No application to be used on mote 5
+INFO:    No application to be used on mote 31
+INFO:    No application to be used on mote 23
+INFO:    No application to be used on mote 3
+INFO:    No application to be used on mote 8
+INFO:    No application to be used on mote 13
+INFO:    No application to be used on mote 20
+INFO:    No application to be used on mote 25
+INFO:    No application to be used on mote 14
+INFO:    No application to be used on mote 29
+INFO:    No application to be used on mote 30
+INFO:    No application to be used on mote 12
+INFO:    No application to be used on mote 17
+SUCCESS: All applications have been installed on the motes.
+INFO:    Install jan.conf...
+INFO:    Stopping all serial forwarders..
+         Executing command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true on host 134.91.76.101..
+         Executing command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true on host 134.91.76.102..
+         Executing command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true on host 134.91.76.103..
+         Executing command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true on host 134.91.76.104..
+         Executing command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true on host 134.91.76.105..
+         Executing command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true on host 134.91.76.106..
+         Executing command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true on host 134.91.76.107..
+         Executing command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true on host 134.91.76.108..
+         Executing command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true on host 134.91.76.109..
+         Executing command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true on host 134.91.76.110..
+OK:      Command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true executed on host 134.91.76.101
+Command output was: 
+Usage:
+ kill [options] <pid> [...]
+
+Options:
+ <pid> [...]            send signal to every <pid> listed
+ -<signal>, -s, --signal <signal>
+                        specify the <signal> to be sent
+ -l, --list=[<signal>]  list all signal names, or convert one to a name
+ -L, --table            list all signal names in a nice table
+
+ -h, --help     display this help and exit
+ -V, --version  output version information and exit
+
+For more details see kill(1).
+OK:      Command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true executed on host 134.91.76.102
+Command output was: 
+Usage:
+ kill [options] <pid> [...]
+
+Options:
+ <pid> [...]            send signal to every <pid> listed
+ -<signal>, -s, --signal <signal>
+                        specify the <signal> to be sent
+ -l, --list=[<signal>]  list all signal names, or convert one to a name
+ -L, --table            list all signal names in a nice table
+
+ -h, --help     display this help and exit
+ -V, --version  output version information and exit
+
+For more details see kill(1).
+OK:      Command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true executed on host 134.91.76.103
+Command output was: 
+Usage:
+ kill [options] <pid> [...]
+
+Options:
+ <pid> [...]            send signal to every <pid> listed
+ -<signal>, -s, --signal <signal>
+                        specify the <signal> to be sent
+ -l, --list=[<signal>]  list all signal names, or convert one to a name
+ -L, --table            list all signal names in a nice table
+
+ -h, --help     display this help and exit
+ -V, --version  output version information and exit
+
+For more details see kill(1).
+OK:      Command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true executed on host 134.91.76.104
+Command output was: 
+Usage:
+ kill [options] <pid> [...]
+
+Options:
+ <pid> [...]            send signal to every <pid> listed
+ -<signal>, -s, --signal <signal>
+                        specify the <signal> to be sent
+ -l, --list=[<signal>]  list all signal names, or convert one to a name
+ -L, --table            list all signal names in a nice table
+
+ -h, --help     display this help and exit
+ -V, --version  output version information and exit
+
+For more details see kill(1).
+OK:      Command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true executed on host 134.91.76.105
+Command output was: 
+Usage:
+ kill [options] <pid> [...]
+
+Options:
+ <pid> [...]            send signal to every <pid> listed
+ -<signal>, -s, --signal <signal>
+                        specify the <signal> to be sent
+ -l, --list=[<signal>]  list all signal names, or convert one to a name
+ -L, --table            list all signal names in a nice table
+
+ -h, --help     display this help and exit
+ -V, --version  output version information and exit
+
+For more details see kill(1).
+OK:      Command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true executed on host 134.91.76.106
+Command output was: 
+Usage:
+ kill [options] <pid> [...]
+
+Options:
+ <pid> [...]            send signal to every <pid> listed
+ -<signal>, -s, --signal <signal>
+                        specify the <signal> to be sent
+ -l, --list=[<signal>]  list all signal names, or convert one to a name
+ -L, --table            list all signal names in a nice table
+
+ -h, --help     display this help and exit
+ -V, --version  output version information and exit
+
+For more details see kill(1).
+OK:      Command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true executed on host 134.91.76.107
+Command output was: 
+Usage:
+ kill [options] <pid> [...]
+
+Options:
+ <pid> [...]            send signal to every <pid> listed
+ -<signal>, -s, --signal <signal>
+                        specify the <signal> to be sent
+ -l, --list=[<signal>]  list all signal names, or convert one to a name
+ -L, --table            list all signal names in a nice table
+
+ -h, --help     display this help and exit
+ -V, --version  output version information and exit
+
+For more details see kill(1).
+OK:      Command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true executed on host 134.91.76.108
+Command output was: 
+Usage:
+ kill [options] <pid> [...]
+
+Options:
+ <pid> [...]            send signal to every <pid> listed
+ -<signal>, -s, --signal <signal>
+                        specify the <signal> to be sent
+ -l, --list=[<signal>]  list all signal names, or convert one to a name
+ -L, --table            list all signal names in a nice table
+
+ -h, --help     display this help and exit
+ -V, --version  output version information and exit
+
+For more details see kill(1).
+OK:      Command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true executed on host 134.91.76.109
+Command output was: 
+Usage:
+ kill [options] <pid> [...]
+
+Options:
+ <pid> [...]            send signal to every <pid> listed
+ -<signal>, -s, --signal <signal>
+                        specify the <signal> to be sent
+ -l, --list=[<signal>]  list all signal names, or convert one to a name
+ -L, --table            list all signal names in a nice table
+
+ -h, --help     display this help and exit
+ -V, --version  output version information and exit
+
+For more details see kill(1).
+OK:      Command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true executed on host 134.91.76.110
+Command output was: 
+Usage:
+ kill [options] <pid> [...]
+
+Options:
+ <pid> [...]            send signal to every <pid> listed
+ -<signal>, -s, --signal <signal>
+                        specify the <signal> to be sent
+ -l, --list=[<signal>]  list all signal names, or convert one to a name
+ -L, --table            list all signal names in a nice table
+
+ -h, --help     display this help and exit
+ -V, --version  output version information and exit
+
+For more details see kill(1).
+         Installing applications to motes..
+INFO:    No application to be used on mote 7
+INFO:    No application to be used on mote 11
+INFO:    No application to be used on mote 4
+INFO:    No application to be used on mote 18
+INFO:    No application to be used on mote 2
+INFO:    No application to be used on mote 15
+INFO:    No application to be used on mote 22
+INFO:    No application to be used on mote 26
+INFO:    No application to be used on mote 27
+INFO:    No application to be used on mote 32
+INFO:    No application to be used on mote 10
+INFO:    No application to be used on mote 6
+INFO:    No application to be used on mote 21
+INFO:    No application to be used on mote 19
+INFO:    No application to be used on mote 9
+INFO:    No application to be used on mote 1
+INFO:    No application to be used on mote 16
+INFO:    No application to be used on mote 28
+INFO:    No application to be used on mote 24
+INFO:    No application to be used on mote 31
+INFO:    No application to be used on mote 8
+INFO:    No application to be used on mote 23
+INFO:    No application to be used on mote 13
+INFO:    No application to be used on mote 3
+INFO:    No application to be used on mote 20
+INFO:    No application to be used on mote 5
+INFO:    No application to be used on mote 14
+INFO:    No application to be used on mote 29
+INFO:    No application to be used on mote 25
+INFO:    No application to be used on mote 30
+INFO:    No application to be used on mote 12
+INFO:    No application to be used on mote 17
+SUCCESS: All applications have been installed on the motes.
+         Executing command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true on host 134.91.76.101..
+         Executing command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true on host 134.91.76.102..
+         Executing command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true on host 134.91.76.103..
+         Executing command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true on host 134.91.76.104..
+         Executing command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true on host 134.91.76.105..
+         Executing command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true on host 134.91.76.106..
+         Executing command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true on host 134.91.76.107..
+         Executing command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true on host 134.91.76.108..
+         Executing command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true on host 134.91.76.109..
+         Executing command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true on host 134.91.76.110..
+OK:      Command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true executed on host 134.91.76.101
+Command output was: 
+Usage:
+ kill [options] <pid> [...]
+
+Options:
+ <pid> [...]            send signal to every <pid> listed
+ -<signal>, -s, --signal <signal>
+                        specify the <signal> to be sent
+ -l, --list=[<signal>]  list all signal names, or convert one to a name
+ -L, --table            list all signal names in a nice table
+
+ -h, --help     display this help and exit
+ -V, --version  output version information and exit
+
+For more details see kill(1).
+OK:      Command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true executed on host 134.91.76.102
+Command output was: 
+Usage:
+ kill [options] <pid> [...]
+
+Options:
+ <pid> [...]            send signal to every <pid> listed
+ -<signal>, -s, --signal <signal>
+                        specify the <signal> to be sent
+ -l, --list=[<signal>]  list all signal names, or convert one to a name
+ -L, --table            list all signal names in a nice table
+
+ -h, --help     display this help and exit
+ -V, --version  output version information and exit
+
+For more details see kill(1).
+OK:      Command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true executed on host 134.91.76.103
+Command output was: 
+Usage:
+ kill [options] <pid> [...]
+
+Options:
+ <pid> [...]            send signal to every <pid> listed
+ -<signal>, -s, --signal <signal>
+                        specify the <signal> to be sent
+ -l, --list=[<signal>]  list all signal names, or convert one to a name
+ -L, --table            list all signal names in a nice table
+
+ -h, --help     display this help and exit
+ -V, --version  output version information and exit
+
+For more details see kill(1).
+OK:      Command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true executed on host 134.91.76.104
+Command output was: 
+Usage:
+ kill [options] <pid> [...]
+
+Options:
+ <pid> [...]            send signal to every <pid> listed
+ -<signal>, -s, --signal <signal>
+                        specify the <signal> to be sent
+ -l, --list=[<signal>]  list all signal names, or convert one to a name
+ -L, --table            list all signal names in a nice table
+
+ -h, --help     display this help and exit
+ -V, --version  output version information and exit
+
+For more details see kill(1).
+OK:      Command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true executed on host 134.91.76.105
+Command output was: 
+Usage:
+ kill [options] <pid> [...]
+
+Options:
+ <pid> [...]            send signal to every <pid> listed
+ -<signal>, -s, --signal <signal>
+                        specify the <signal> to be sent
+ -l, --list=[<signal>]  list all signal names, or convert one to a name
+ -L, --table            list all signal names in a nice table
+
+ -h, --help     display this help and exit
+ -V, --version  output version information and exit
+
+For more details see kill(1).
+OK:      Command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true executed on host 134.91.76.106
+Command output was: 
+Usage:
+ kill [options] <pid> [...]
+
+Options:
+ <pid> [...]            send signal to every <pid> listed
+ -<signal>, -s, --signal <signal>
+                        specify the <signal> to be sent
+ -l, --list=[<signal>]  list all signal names, or convert one to a name
+ -L, --table            list all signal names in a nice table
+
+ -h, --help     display this help and exit
+ -V, --version  output version information and exit
+
+For more details see kill(1).
+OK:      Command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true executed on host 134.91.76.107
+Command output was: 
+Usage:
+ kill [options] <pid> [...]
+
+Options:
+ <pid> [...]            send signal to every <pid> listed
+ -<signal>, -s, --signal <signal>
+                        specify the <signal> to be sent
+ -l, --list=[<signal>]  list all signal names, or convert one to a name
+ -L, --table            list all signal names in a nice table
+
+ -h, --help     display this help and exit
+ -V, --version  output version information and exit
+
+For more details see kill(1).
+OK:      Command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true executed on host 134.91.76.108
+Command output was: 
+Usage:
+ kill [options] <pid> [...]
+
+Options:
+ <pid> [...]            send signal to every <pid> listed
+ -<signal>, -s, --signal <signal>
+                        specify the <signal> to be sent
+ -l, --list=[<signal>]  list all signal names, or convert one to a name
+ -L, --table            list all signal names in a nice table
+
+ -h, --help     display this help and exit
+ -V, --version  output version information and exit
+
+For more details see kill(1).
+OK:      Command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true executed on host 134.91.76.109
+Command output was: 
+Usage:
+ kill [options] <pid> [...]
+
+Options:
+ <pid> [...]            send signal to every <pid> listed
+ -<signal>, -s, --signal <signal>
+                        specify the <signal> to be sent
+ -l, --list=[<signal>]  list all signal names, or convert one to a name
+ -L, --table            list all signal names in a nice table
+
+ -h, --help     display this help and exit
+ -V, --version  output version information and exit
+
+For more details see kill(1).
+OK:      Command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true executed on host 134.91.76.110
+Command output was: 
+Usage:
+ kill [options] <pid> [...]
+
+Options:
+ <pid> [...]            send signal to every <pid> listed
+ -<signal>, -s, --signal <signal>
+                        specify the <signal> to be sent
+ -l, --list=[<signal>]  list all signal names, or convert one to a name
+ -L, --table            list all signal names in a nice table
+
+ -h, --help     display this help and exit
+ -V, --version  output version information and exit
+
+For more details see kill(1).
+         Executing command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true on host 134.91.76.101..
+         Executing command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true on host 134.91.76.102..
+         Executing command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true on host 134.91.76.103..
+         Executing command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true on host 134.91.76.104..
+         Executing command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true on host 134.91.76.105..
+         Executing command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true on host 134.91.76.106..
+         Executing command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true on host 134.91.76.107..
+         Executing command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true on host 134.91.76.108..
+         Executing command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true on host 134.91.76.109..
+         Executing command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true on host 134.91.76.110..
+OK:      Command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true executed on host 134.91.76.101
+Command output was: OK:      Command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true executed on host 134.91.76.102
+Command output was: OK:      Command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true executed on host 134.91.76.103
+Command output was: OK:      Command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true executed on host 134.91.76.104
+Command output was: OK:      Command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true executed on host 134.91.76.105
+Command output was: OK:      Command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true executed on host 134.91.76.106
+Command output was: OK:      Command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true executed on host 134.91.76.107
+Command output was: OK:      Command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true executed on host 134.91.76.108
+Command output was: OK:      Command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true executed on host 134.91.76.109
+Command output was: OK:      Command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true executed on host 134.91.76.110
+Command output was:          Executing command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true on host 134.91.76.101..
+         Executing command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true on host 134.91.76.102..
+         Executing command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true on host 134.91.76.103..
+         Executing command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true on host 134.91.76.104..
+         Executing command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true on host 134.91.76.105..
+         Executing command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true on host 134.91.76.106..
+         Executing command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true on host 134.91.76.107..
+         Executing command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true on host 134.91.76.108..
+         Executing command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true on host 134.91.76.109..
+         Executing command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true on host 134.91.76.110..
+OK:      Command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true executed on host 134.91.76.101
+Command output was: 
+Usage:
+ kill [options] <pid> [...]
+
+Options:
+ <pid> [...]            send signal to every <pid> listed
+ -<signal>, -s, --signal <signal>
+                        specify the <signal> to be sent
+ -l, --list=[<signal>]  list all signal names, or convert one to a name
+ -L, --table            list all signal names in a nice table
+
+ -h, --help     display this help and exit
+ -V, --version  output version information and exit
+
+For more details see kill(1).
+OK:      Command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true executed on host 134.91.76.102
+Command output was: 
+Usage:
+ kill [options] <pid> [...]
+
+Options:
+ <pid> [...]            send signal to every <pid> listed
+ -<signal>, -s, --signal <signal>
+                        specify the <signal> to be sent
+ -l, --list=[<signal>]  list all signal names, or convert one to a name
+ -L, --table            list all signal names in a nice table
+
+ -h, --help     display this help and exit
+ -V, --version  output version information and exit
+
+For more details see kill(1).
+OK:      Command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true executed on host 134.91.76.103
+Command output was: 
+Usage:
+ kill [options] <pid> [...]
+
+Options:
+ <pid> [...]            send signal to every <pid> listed
+ -<signal>, -s, --signal <signal>
+                        specify the <signal> to be sent
+ -l, --list=[<signal>]  list all signal names, or convert one to a name
+ -L, --table            list all signal names in a nice table
+
+ -h, --help     display this help and exit
+ -V, --version  output version information and exit
+
+For more details see kill(1).
+OK:      Command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true executed on host 134.91.76.104
+Command output was: 
+Usage:
+ kill [options] <pid> [...]
+
+Options:
+ <pid> [...]            send signal to every <pid> listed
+ -<signal>, -s, --signal <signal>
+                        specify the <signal> to be sent
+ -l, --list=[<signal>]  list all signal names, or convert one to a name
+ -L, --table            list all signal names in a nice table
+
+ -h, --help     display this help and exit
+ -V, --version  output version information and exit
+
+For more details see kill(1).
+OK:      Command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true executed on host 134.91.76.105
+Command output was: 
+Usage:
+ kill [options] <pid> [...]
+
+Options:
+ <pid> [...]            send signal to every <pid> listed
+ -<signal>, -s, --signal <signal>
+                        specify the <signal> to be sent
+ -l, --list=[<signal>]  list all signal names, or convert one to a name
+ -L, --table            list all signal names in a nice table
+
+ -h, --help     display this help and exit
+ -V, --version  output version information and exit
+
+For more details see kill(1).
+OK:      Command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true executed on host 134.91.76.106
+Command output was: 
+Usage:
+ kill [options] <pid> [...]
+
+Options:
+ <pid> [...]            send signal to every <pid> listed
+ -<signal>, -s, --signal <signal>
+                        specify the <signal> to be sent
+ -l, --list=[<signal>]  list all signal names, or convert one to a name
+ -L, --table            list all signal names in a nice table
+
+ -h, --help     display this help and exit
+ -V, --version  output version information and exit
+
+For more details see kill(1).
+OK:      Command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true executed on host 134.91.76.107
+Command output was: 
+Usage:
+ kill [options] <pid> [...]
+
+Options:
+ <pid> [...]            send signal to every <pid> listed
+ -<signal>, -s, --signal <signal>
+                        specify the <signal> to be sent
+ -l, --list=[<signal>]  list all signal names, or convert one to a name
+ -L, --table            list all signal names in a nice table
+
+ -h, --help     display this help and exit
+ -V, --version  output version information and exit
+
+For more details see kill(1).
+OK:      Command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true executed on host 134.91.76.108
+Command output was: 
+Usage:
+ kill [options] <pid> [...]
+
+Options:
+ <pid> [...]            send signal to every <pid> listed
+ -<signal>, -s, --signal <signal>
+                        specify the <signal> to be sent
+ -l, --list=[<signal>]  list all signal names, or convert one to a name
+ -L, --table            list all signal names in a nice table
+
+ -h, --help     display this help and exit
+ -V, --version  output version information and exit
+
+For more details see kill(1).
+OK:      Command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true executed on host 134.91.76.109
+Command output was: 
+Usage:
+ kill [options] <pid> [...]
+
+Options:
+ <pid> [...]            send signal to every <pid> listed
+ -<signal>, -s, --signal <signal>
+                        specify the <signal> to be sent
+ -l, --list=[<signal>]  list all signal names, or convert one to a name
+ -L, --table            list all signal names in a nice table
+
+ -h, --help     display this help and exit
+ -V, --version  output version information and exit
+
+For more details see kill(1).
+OK:      Command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true executed on host 134.91.76.110
+Command output was: 
+Usage:
+ kill [options] <pid> [...]
+
+Options:
+ <pid> [...]            send signal to every <pid> listed
+ -<signal>, -s, --signal <signal>
+                        specify the <signal> to be sent
+ -l, --list=[<signal>]  list all signal names, or convert one to a name
+ -L, --table            list all signal names in a nice table
+
+ -h, --help     display this help and exit
+ -V, --version  output version information and exit
+
+For more details see kill(1).
+         Executing command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true on host 134.91.76.101..
+         Executing command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true on host 134.91.76.102..
+         Executing command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true on host 134.91.76.103..
+         Executing command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true on host 134.91.76.104..
+         Executing command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true on host 134.91.76.105..
+         Executing command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true on host 134.91.76.106..
+         Executing command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true on host 134.91.76.107..
+         Executing command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true on host 134.91.76.108..
+         Executing command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true on host 134.91.76.109..
+         Executing command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true on host 134.91.76.110..
+OK:      Command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true executed on host 134.91.76.101
+Command output was: 
+Usage:
+ kill [options] <pid> [...]
+
+Options:
+ <pid> [...]            send signal to every <pid> listed
+ -<signal>, -s, --signal <signal>
+                        specify the <signal> to be sent
+ -l, --list=[<signal>]  list all signal names, or convert one to a name
+ -L, --table            list all signal names in a nice table
+
+ -h, --help     display this help and exit
+ -V, --version  output version information and exit
+
+For more details see kill(1).
+OK:      Command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true executed on host 134.91.76.102
+Command output was: 
+Usage:
+ kill [options] <pid> [...]
+
+Options:
+ <pid> [...]            send signal to every <pid> listed
+ -<signal>, -s, --signal <signal>
+                        specify the <signal> to be sent
+ -l, --list=[<signal>]  list all signal names, or convert one to a name
+ -L, --table            list all signal names in a nice table
+
+ -h, --help     display this help and exit
+ -V, --version  output version information and exit
+
+For more details see kill(1).
+OK:      Command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true executed on host 134.91.76.103
+Command output was: 
+Usage:
+ kill [options] <pid> [...]
+
+Options:
+ <pid> [...]            send signal to every <pid> listed
+ -<signal>, -s, --signal <signal>
+                        specify the <signal> to be sent
+ -l, --list=[<signal>]  list all signal names, or convert one to a name
+ -L, --table            list all signal names in a nice table
+
+ -h, --help     display this help and exit
+ -V, --version  output version information and exit
+
+For more details see kill(1).
+OK:      Command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true executed on host 134.91.76.104
+Command output was: 
+Usage:
+ kill [options] <pid> [...]
+
+Options:
+ <pid> [...]            send signal to every <pid> listed
+ -<signal>, -s, --signal <signal>
+                        specify the <signal> to be sent
+ -l, --list=[<signal>]  list all signal names, or convert one to a name
+ -L, --table            list all signal names in a nice table
+
+ -h, --help     display this help and exit
+ -V, --version  output version information and exit
+
+For more details see kill(1).
+OK:      Command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true executed on host 134.91.76.105
+Command output was: 
+Usage:
+ kill [options] <pid> [...]
+
+Options:
+ <pid> [...]            send signal to every <pid> listed
+ -<signal>, -s, --signal <signal>
+                        specify the <signal> to be sent
+ -l, --list=[<signal>]  list all signal names, or convert one to a name
+ -L, --table            list all signal names in a nice table
+
+ -h, --help     display this help and exit
+ -V, --version  output version information and exit
+
+For more details see kill(1).
+OK:      Command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true executed on host 134.91.76.106
+Command output was: 
+Usage:
+ kill [options] <pid> [...]
+
+Options:
+ <pid> [...]            send signal to every <pid> listed
+ -<signal>, -s, --signal <signal>
+                        specify the <signal> to be sent
+ -l, --list=[<signal>]  list all signal names, or convert one to a name
+ -L, --table            list all signal names in a nice table
+
+ -h, --help     display this help and exit
+ -V, --version  output version information and exit
+
+For more details see kill(1).
+OK:      Command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true executed on host 134.91.76.107
+Command output was: 
+Usage:
+ kill [options] <pid> [...]
+
+Options:
+ <pid> [...]            send signal to every <pid> listed
+ -<signal>, -s, --signal <signal>
+                        specify the <signal> to be sent
+ -l, --list=[<signal>]  list all signal names, or convert one to a name
+ -L, --table            list all signal names in a nice table
+
+ -h, --help     display this help and exit
+ -V, --version  output version information and exit
+
+For more details see kill(1).
+OK:      Command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true executed on host 134.91.76.108
+Command output was: 
+Usage:
+ kill [options] <pid> [...]
+
+Options:
+ <pid> [...]            send signal to every <pid> listed
+ -<signal>, -s, --signal <signal>
+                        specify the <signal> to be sent
+ -l, --list=[<signal>]  list all signal names, or convert one to a name
+ -L, --table            list all signal names in a nice table
+
+ -h, --help     display this help and exit
+ -V, --version  output version information and exit
+
+For more details see kill(1).
+OK:      Command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true executed on host 134.91.76.109
+Command output was: 
+Usage:
+ kill [options] <pid> [...]
+
+Options:
+ <pid> [...]            send signal to every <pid> listed
+ -<signal>, -s, --signal <signal>
+                        specify the <signal> to be sent
+ -l, --list=[<signal>]  list all signal names, or convert one to a name
+ -L, --table            list all signal names in a nice table
+
+ -h, --help     display this help and exit
+ -V, --version  output version information and exit
+
+For more details see kill(1).
+OK:      Command /usr/bin/screen -ls | grep motesf | cut -d. -f1 | awk '{print $1}' | xargs kill || true executed on host 134.91.76.110
+Command output was: 
+Usage:
+ kill [options] <pid> [...]
+
+Options:
+ <pid> [...]            send signal to every <pid> listed
+ -<signal>, -s, --signal <signal>
+                        specify the <signal> to be sent
+ -l, --list=[<signal>]  list all signal names, or convert one to a name
+ -L, --table            list all signal names in a nice table
+
+ -h, --help     display this help and exit
+ -V, --version  output version information and exit
+
+For more details see kill(1).

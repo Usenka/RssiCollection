@@ -1,0 +1,87 @@
+[31147] FIN calibration
+[68489] FIN collection
+[74699] FIN collection
+[79141] FIN collection
+[83391] FIN collection
+[87032] FIN collection
+[90531] FIN collection
+[94256] FIN collection
+[98416] FIN collection
+[99362] DROP
+[102322] FIN collection
+[106288] FIN collection
+[110436] FIN collection
+[114275] FIN collection
+[117798] FIN collection
+[121529] FIN collection
+[125882] FIN collection
+[129557] FIN collection
+[133756] FIN collection
+[138000] FIN collection
+[141794] FIN collection
+[142582] DROP
+[145817] FIN collection
+[146672] DROP
+[150295] FIN collection
+[154912] FIN collection
+[155882] DROP
+[159348] FIN collection
+[160287] DROP
+[163485] FIN collection
+[168010] FIN collection
+[172230] FIN collection
+[173086] DROP
+[176274] FIN collection
+[180062] FIN collection
+[183678] FIN collection
+[187993] FIN collection
+[192385] FIN collection
+[196558] FIN collection
+[200902] FIN collection
+[201860] DROP
+[205158] FIN collection
+[209076] FIN collection
+[213027] FIN collection
+[217188] FIN collection
+[218168] DROP
+[221488] FIN collection
+[225245] FIN collection
+[226242] DROP
+[229306] FIN collection
+[233598] FIN collection
+[237828] FIN collection
+[242167] FIN collection
+[245698] FIN collection
+[249581] FIN collection
+[253523] FIN collection
+[257164] FIN collection
+[257970] DROP
+[261155] FIN collection
+[264939] FIN collection
+[269224] FIN collection
+[272995] FIN collection
+[277204] FIN collection
+[281779] FIN collection
+[285568] FIN collection
+[286382] DROP
+[289190] FIN collection
+[292858] FIN collection
+[296707] FIN collection
+[300928] FIN collection
+[304572] FIN collection
+[308118] FIN collection
+[311905] FIN collection
+[315974] FIN collection
+[317025] DROP
+[320156] FIN collection
+[324303] FIN collection
+[328206] FIN collection
+[329067] DROP
+[332340] FIN collection
+[336216] FIN collection
+[340028] FIN collection
+[343942] FIN collection
+[348281] FIN collection
+[352037] FIN collection
+[356056] FIN collection
+[359799] FIN collection

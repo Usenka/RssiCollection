@@ -1,0 +1,94 @@
+[29174] FIN calibration
+[67010] FIN collection
+[72155] DROP
+[74185] FIN collection
+[79221] FIN collection
+[84086] FIN collection
+[88858] FIN collection
+[93581] FIN collection
+[98485] FIN collection
+[101469] DROP
+[103437] FIN collection
+[108343] FIN collection
+[112978] FIN collection
+[117758] FIN collection
+[122941] FIN collection
+[125978] DROP
+[127934] FIN collection
+[132946] FIN collection
+[137536] FIN collection
+[139883] DROP
+[141942] FIN collection
+[144852] DROP
+[146805] FIN collection
+[149987] DROP
+[151876] FIN collection
+[154955] DROP
+[156976] FIN collection
+[160194] DROP
+[162035] FIN collection
+[166748] FIN collection
+[171802] FIN collection
+[174854] DROP
+[176676] FIN collection
+[179672] DROP
+[181619] FIN collection
+[184852] DROP
+[186881] FIN collection
+[191873] FIN collection
+[196639] FIN collection
+[201523] FIN collection
+[206283] FIN collection
+[209286] DROP
+[211340] FIN collection
+[216079] FIN collection
+[219011] DROP
+[220911] FIN collection
+[226060] FIN collection
+[231029] FIN collection
+[233996] DROP
+[235822] FIN collection
+[240599] FIN collection
+[245207] FIN collection
+[248175] DROP
+[250112] FIN collection
+[254879] FIN collection
+[259502] FIN collection
+[262439] DROP
+[264585] FIN collection
+[267752] DROP
+[269603] FIN collection
+[272581] DROP
+[274484] FIN collection
+[279501] FIN collection
+[282679] DROP
+[284626] FIN collection
+[289530] FIN collection
+[294609] FIN collection
+[299526] FIN collection
+[302558] DROP
+[304406] FIN collection
+[309261] FIN collection
+[312262] DROP
+[314157] FIN collection
+[318926] FIN collection
+[323533] FIN collection
+[326629] DROP
+[328573] FIN collection
+[333673] FIN collection
+[336783] DROP
+[338779] FIN collection
+[341858] DROP
+[343874] FIN collection
+[346978] DROP
+[348680] FIN collection
+[351488] DROP
+[353593] FIN collection
+[358463] FIN collection
+[361405] DROP
+[363261] FIN collection
+[366464] DROP
+[368384] FIN collection
+[371623] DROP
+[373227] FIN collection
+[375518] DROP

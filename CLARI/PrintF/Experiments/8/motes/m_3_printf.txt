@@ -1,0 +1,87 @@
+[377] START calibration
+[14729] FIN calibration
+[64914] FIN collection
+[71775] FIN collection
+[75901] FIN collection
+[80406] FIN collection
+[84337] DROP
+[84707] FIN collection
+[87915] DROP
+[88240] FIN collection
+[91642] FIN collection
+[95313] FIN collection
+[99686] FIN collection
+[103471] FIN collection
+[107488] FIN collection
+[111511] FIN collection
+[115161] DROP
+[115486] FIN collection
+[118869] FIN collection
+[122604] FIN collection
+[126931] DROP
+[127268] FIN collection
+[130695] FIN collection
+[135018] FIN collection
+[139213] FIN collection
+[142916] FIN collection
+[147032] FIN collection
+[151630] FIN collection
+[156214] FIN collection
+[160624] FIN collection
+[164627] FIN collection
+[169319] FIN collection
+[173148] DROP
+[173421] FIN collection
+[177395] FIN collection
+[181235] FIN collection
+[184780] FIN collection
+[189289] FIN collection
+[193603] FIN collection
+[197726] FIN collection
+[202194] FIN collection
+[206406] FIN collection
+[210259] FIN collection
+[214143] FIN collection
+[218475] FIN collection
+[222546] FIN collection
+[226563] FIN collection
+[230393] FIN collection
+[234666] FIN collection
+[239218] FIN collection
+[243059] DROP
+[243358] FIN collection
+[246778] FIN collection
+[250694] FIN collection
+[254473] DROP
+[254761] FIN collection
+[258323] FIN collection
+[262288] FIN collection
+[266025] FIN collection
+[270352] DROP
+[270658] FIN collection
+[274073] FIN collection
+[278532] FIN collection
+[282967] FIN collection
+[286694] FIN collection
+[290388] FIN collection
+[293991] FIN collection
+[297898] FIN collection
+[301934] DROP
+[302267] FIN collection
+[305468] DROP
+[305752] FIN collection
+[309210] FIN collection
+[312957] FIN collection
+[317362] FIN collection
+[321262] FIN collection
+[325453] FIN collection
+[329381] FIN collection
+[333507] FIN collection
+[337421] FIN collection
+[341223] FIN collection
+[345059] FIN collection
+[349346] DROP
+[349646] FIN collection
+[353119] FIN collection
+[357203] FIN collection
+[360933] FIN collection

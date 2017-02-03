@@ -1,0 +1,17 @@
+[285] START calibration
+[18772] FIN calibration
+[69268] FIN collection
+[75846] FIN collection
+[80235] FIN collection
+[84662] FIN collection
+[88448] FIN collection
+[92523] FIN collection
+[97032] FIN collection
+[100958] FIN collection
+[104710] FIN collection
+[108572] FIN collection
+[112916] FIN collection
+[117075] FIN collection
+[121426] FIN collection
+[126059] FIN collection
+[129730] FIN collection

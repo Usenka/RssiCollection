@@ -64,7 +64,7 @@ implementation {
 	}
 
 	event void Calibrator.calibrationDone(Node* nodeList, BroadcastMsg* hopInfo, error_t error) {
-		_printf("Calibration finished %d, %d\n", nodeList[3].nextHop, hopInfo->nextHop);		
+		_printf("FIN calibration\n");		
 		call ScheduleSender.initializeScheduleSender();		
 		call ScheduleSender.attacheNodeList(nodeList);
 		call ScheduleSender.attacheHopInfo(hopInfo);	
@@ -76,31 +76,28 @@ implementation {
 		call Sampler.attacheNodeList(nodeList);	
 
 		if(TOS_NODE_ID == ROOT_NODE) {
-			_printf("start Collection\n");
 			call Collector.startCollection();
 		}
 	}
 
 	event void Collector.collectionDone(error_t error) {
-		_printf("Collection done %d\n", phase);
+		_printf("FIN collection\n");
 		if(TOS_NODE_ID == ROOT_NODE && phase == PHASE_SAMPLING) {
-			_printf("Next Round!\n");
+			//_printf("Start Round!\n");
 			call Sampler.startRound();
 		}
 	}
 
 	event void ScheduleSender.receivedSchedule(uint8_t* schedule) {
-		printf("Schedule Received\n");
-
 		call Sampler.attacheSchedule(schedule);				
 	}
 
 	event void ScheduleSender.scheduleSpreaded() {
-		_printf("Schedule Spreaded\n");
+		printf("FIN spreading\n");
 	}
 
 	event void Sampler.finishedRound() {
-		_printf("finished Round\n");
+		_printf("FIN round\n");
 		call Collector.startCollection();
 	}
 }

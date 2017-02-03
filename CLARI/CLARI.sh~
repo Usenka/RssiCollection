@@ -155,40 +155,47 @@ CLARI_executeCommandOnAllHosts(){
 }
 
 CLARI_experiment_jan() {
-	#CLARI_restartApp
-	
-	i=1
-	amount=1
+	#sleep 8h
 
-	while [ $i -le $amount ]
+	super_i=0
+	amount=9
+
+	while [ $super_i -lt $amount ]
 	do
 		#restart application
-		CLARI_restartApp
+		CLARI_jan
+
+		#create experiment direcory
+		mkdir ./PrintF/Experiments/$super_i
+		mkdir ./PrintF/Experiments/$super_i/motes
 
 		#startprintfListening
-		bash ./PrintF/run.sh &
+		cd ./PrintF
+		bash run.sh &
 		printRecID=$!
+		cd ../
+		
 
 		#start RSSIReceive
-  		java -jar RssiReceive.jar -comm network@localhost:60001 &
+  		java -jar RssiReceive.jar -comm sf@localhost:9001 > ./PrintF/Experiments/$super_i/rssiReceive.txt &
 		rssiRecID=$!
 
 		#sleep and stuff
-		sleep 1h
+		sleep 30m
 
 		#kill java applications
 		kill $rssiRecID
 		kill $printRecID
 
 		#save outputs
-		mkdir ./PrintF/Experiments/$i
-		mkdir ./PrintF/Experiments/$i/motes
-		mv ./PrintF/log/*.txt ./PrintF/Experiments/$i
-		mv ./PrintF/log/motes/*.txt ./PrintF/Experiments/$i/motes
+		mv ./PrintF/log/*.txt ./PrintF/Experiments/$super_i
+		mv ./PrintF/log/motes/*.txt ./PrintF/Experiments/$super_i/motes
 
-  		let "i=$i+1"
+		#increase i
+  		let super_i=$super_i+1
 	done
 	
+	CLARI_destructionOfTheUniverse
 	
 	# mv ./PrintF/log/*.txt ./PrintF
 }

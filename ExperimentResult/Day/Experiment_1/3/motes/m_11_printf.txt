@@ -1,0 +1,22 @@
+[20388] FIN calibration
+[69054] FIN collection
+[75723] FIN collection
+[76139] DROP
+[80087] FIN collection
+[84493] FIN collection
+[88367] FIN collection
+[92412] FIN collection
+[92820] DROP
+[96886] FIN collection
+[100865] FIN collection
+[104619] FIN collection
+[104975] DROP
+[108454] FIN collection
+[112769] FIN collection
+[113260] DROP
+[116957] FIN collection
+[117474] DROP
+[121258] FIN collection
+[121791] DROP
+[125894] FIN collection
+[129636] FIN collection

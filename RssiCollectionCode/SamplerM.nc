@@ -101,7 +101,7 @@ implementation {
 		return 0;
 	}
 
-	task void sendSample() {
+	void sendSample() {
 		if(!sBusy)
 			if (call SampleSend.send(AM_BROADCAST_ADDR, &s_msg, sizeof(SampleMsg)) == SUCCESS)
 				sBusy = TRUE;
@@ -110,7 +110,7 @@ implementation {
 	void sendMessageAccordingToSchedule(uint8_t source) {
 		uint8_t next = getNextInSchedule(source);
 		
-		call Leds.led0On();
+
 		//_printf("Send To = %d\n", next);
 
 		if(next > 0 && next < NUMBER_OF_NODES + 1) {
@@ -118,13 +118,12 @@ implementation {
 			spkt->receiver = next;
 
 
-			post sendSample();
+			sendSample();
 		} else if (next == 0) {
 			call Leds.led0Off();
 			signal Sampler.finishedRound();
 		} else {
 			call Leds.led1On();
-			//_printf("Some shit happened... next = %d", next);
 		}
 	}
 
@@ -144,8 +143,8 @@ implementation {
 			if(schedule[i] == TOS_NODE_ID) {
 				schedulePSCollection.preSuc[schedulePSCollection.size].predecessor = (i == 0) ? 0 : schedule[i-1];
 				schedulePSCollection.preSuc[schedulePSCollection.size].successor = schedule[i+1];
-				printf("SCHEDULE %d: %d -> %d -> %d\n",schedulePSCollection.size, schedulePSCollection.preSuc[schedulePSCollection.size].predecessor, TOS_NODE_ID, 
-					schedulePSCollection.preSuc[schedulePSCollection.size].successor);				
+				//printf("SCHEDULE %d: %d -> %d -> %d\n",schedulePSCollection.size, schedulePSCollection.preSuc[schedulePSCollection.size].predecessor, TOS_NODE_ID, 
+					//schedulePSCollection.preSuc[schedulePSCollection.size].successor);				
 				schedulePSCollection.size++;
 			}
 
@@ -166,6 +165,8 @@ implementation {
 	}
 
 	command void Sampler.startRound() {
+		_printf("START round\n");
+		call Leds.led0On();
 		sendMessageAccordingToSchedule(0);
 		/*SampleMsg* spkt = (SampleMsg*) (call Packet_.getPayload(&s_msg, sizeof(SampleMsg)));
 		spkt->receiver = schedule[1];
@@ -184,16 +185,17 @@ implementation {
 
 		call DropTimer.stop();	
 		if(bcpkt->receiver == TOS_NODE_ID) {
+			call Leds.led0On();
 			sendMessageAccordingToSchedule(source);
 		} else {
 			uint8_t hopps;
 			//call Leds.led0On();
 			hopps = getNodeCountUntilMe(source, bcpkt->receiver);
 			//call Leds.led0Off();
-			_printf("rec: %d->%d: %d until me\n", source, bcpkt->receiver, hopps);
+			//_printf("rec: %d->%d: %d until me\n", source, bcpkt->receiver, hopps);
 			if(hopps != 0) {
 				uint16_t timeToWait = hopps * TIME_MAX_MESSAGE_SENDING;
-				_printf("Time to wait: %d\n", timeToWait);
+				//_printf("Time to wait: %d\n", timeToWait);
 				call DropTimer.start(timeToWait);
 			}
 		
@@ -211,15 +213,16 @@ implementation {
 		if(err == SUCCESS)
 			sBusy = FALSE;
 
-		_printf("sen: %d->%d: %d until me\n", TOS_NODE_ID, spkt->receiver, hopps);
+		//_printf("sen: %d->%d: %d until me\n", TOS_NODE_ID, spkt->receiver, hopps);
 		if(hopps != 0) {
 			uint16_t timeToWait = hopps * TIME_MAX_MESSAGE_SENDING;
-			_printf("Time to wait: %d\n", timeToWait);
+			//_printf("Time to wait: %d\n", timeToWait);
 			call DropTimer.start(timeToWait);
 		}
 	}
 
 	async event void DropTimer.fired() {
+		call Leds.led0On();
 		sendMessageAccordingToSchedule(sourceInCaseOfDrop);
 	}
 }

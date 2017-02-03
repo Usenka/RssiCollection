@@ -1,0 +1,523 @@
+[25587] FIN calibration
+[68409] FIN collection
+[71279] DROP
+[74303] FIN collection
+[75058] DROP
+[78585] FIN collection
+[82403] FIN collection
+[86122] FIN collection
+[90082] FIN collection
+[94080] FIN collection
+[98030] FIN collection
+[101938] FIN collection
+[105811] FIN collection
+[106667] DROP
+[109816] FIN collection
+[113851] FIN collection
+[118032] FIN collection
+[121866] FIN collection
+[125784] FIN collection
+[129684] FIN collection
+[133705] FIN collection
+[134559] DROP
+[137652] FIN collection
+[141602] FIN collection
+[145518] FIN collection
+[149639] FIN collection
+[153469] FIN collection
+[154314] DROP
+[157858] FIN collection
+[161831] FIN collection
+[162653] DROP
+[165800] FIN collection
+[169686] FIN collection
+[173762] FIN collection
+[177252] FIN collection
+[181192] FIN collection
+[184999] FIN collection
+[189204] FIN collection
+[193003] FIN collection
+[196988] FIN collection
+[200709] FIN collection
+[204391] FIN collection
+[207990] FIN collection
+[212021] FIN collection
+[216148] FIN collection
+[217003] DROP
+[220229] FIN collection
+[223924] FIN collection
+[227288] FIN collection
+[227923] DROP
+[231302] FIN collection
+[234863] FIN collection
+[238748] FIN collection
+[242676] FIN collection
+[246653] FIN collection
+[247290] DROP
+[250208] FIN collection
+[250859] DROP
+[253823] FIN collection
+[257869] FIN collection
+[258658] DROP
+[261927] FIN collection
+[265899] FIN collection
+[269870] FIN collection
+[273999] FIN collection
+[278154] FIN collection
+[282249] FIN collection
+[286150] FIN collection
+[290198] FIN collection
+[294189] FIN collection
+[298225] FIN collection
+[298984] DROP
+[302334] FIN collection
+[306261] FIN collection
+[307003] DROP
+[309792] FIN collection
+[313708] FIN collection
+[314451] DROP
+[317436] FIN collection
+[321199] FIN collection
+[321987] DROP
+[324753] FIN collection
+[328226] FIN collection
+[328941] DROP
+[331738] FIN collection
+[335511] FIN collection
+[339506] FIN collection
+[343277] FIN collection
+[347130] FIN collection
+[347872] DROP
+[351001] FIN collection
+[354662] FIN collection
+[358656] FIN collection
+[362481] FIN collection
+[363312] DROP
+[366116] FIN collection
+[369811] FIN collection
+[373651] FIN collection
+[376980] FIN collection
+[380597] FIN collection
+[384713] FIN collection
+[388224] FIN collection
+[392055] FIN collection
+[396125] FIN collection
+[399680] FIN collection
+[403910] FIN collection
+[404735] DROP
+[408070] FIN collection
+[411855] FIN collection
+[412590] DROP
+[415341] FIN collection
+[416011] DROP
+[419087] FIN collection
+[423102] FIN collection
+[426406] FIN collection
+[427110] DROP
+[430698] FIN collection
+[434698] FIN collection
+[438529] FIN collection
+[442144] FIN collection
+[445985] FIN collection
+[450222] FIN collection
+[450907] DROP
+[453974] FIN collection
+[457825] FIN collection
+[458594] DROP
+[461764] FIN collection
+[465878] FIN collection
+[469814] FIN collection
+[473588] FIN collection
+[477970] FIN collection
+[482115] FIN collection
+[486349] FIN collection
+[487183] DROP
+[490509] FIN collection
+[491261] DROP
+[494455] FIN collection
+[498934] FIN collection
+[499777] DROP
+[503331] FIN collection
+[507212] FIN collection
+[511185] FIN collection
+[515056] FIN collection
+[519175] FIN collection
+[523251] FIN collection
+[527359] FIN collection
+[531513] FIN collection
+[532281] DROP
+[535288] FIN collection
+[539233] FIN collection
+[543450] FIN collection
+[547383] FIN collection
+[551307] FIN collection
+[555351] FIN collection
+[559360] FIN collection
+[563328] FIN collection
+[567439] FIN collection
+[571549] FIN collection
+[575229] FIN collection
+[578940] FIN collection
+[583315] FIN collection
+[587588] FIN collection
+[591615] FIN collection
+[592436] DROP
+[595565] FIN collection
+[599539] FIN collection
+[600352] DROP
+[603323] FIN collection
+[607400] FIN collection
+[608222] DROP
+[611101] FIN collection
+[611924] DROP
+[615173] FIN collection
+[619062] FIN collection
+[622882] FIN collection
+[627036] FIN collection
+[630752] FIN collection
+[634763] FIN collection
+[638851] FIN collection
+[642810] FIN collection
+[646603] FIN collection
+[650399] FIN collection
+[654335] FIN collection
+[658356] FIN collection
+[662515] FIN collection
+[666572] FIN collection
+[670483] FIN collection
+[671239] DROP
+[673878] FIN collection
+[674561] DROP
+[677585] FIN collection
+[681808] FIN collection
+[685732] FIN collection
+[686557] DROP
+[689643] FIN collection
+[693958] FIN collection
+[694814] DROP
+[697776] FIN collection
+[701939] FIN collection
+[702758] DROP
+[705687] FIN collection
+[709680] FIN collection
+[713577] FIN collection
+[714346] DROP
+[717391] FIN collection
+[721211] FIN collection
+[725330] FIN collection
+[729386] FIN collection
+[730132] DROP
+[733330] FIN collection
+[734156] DROP
+[736952] FIN collection
+[740770] FIN collection
+[744963] FIN collection
+[745781] DROP
+[749165] FIN collection
+[752937] FIN collection
+[753669] DROP
+[756837] FIN collection
+[760425] FIN collection
+[761126] DROP
+[763986] FIN collection
+[767835] FIN collection
+[772033] FIN collection
+[775585] FIN collection
+[776374] DROP
+[779791] FIN collection
+[784332] FIN collection
+[788526] FIN collection
+[792566] FIN collection
+[796765] FIN collection
+[800859] FIN collection
+[801590] DROP
+[804646] FIN collection
+[805480] DROP
+[808351] FIN collection
+[812243] FIN collection
+[816069] FIN collection
+[820055] FIN collection
+[824355] FIN collection
+[828865] FIN collection
+[832911] FIN collection
+[837127] FIN collection
+[841332] FIN collection
+[842558] DROP
+[845305] FIN collection
+[849562] FIN collection
+[853646] FIN collection
+[857813] FIN collection
+[861589] FIN collection
+[865886] FIN collection
+[869444] FIN collection
+[873240] FIN collection
+[876995] FIN collection
+[880892] FIN collection
+[884886] FIN collection
+[888982] FIN collection
+[893100] FIN collection
+[897146] FIN collection
+[900899] FIN collection
+[904340] FIN collection
+[908188] FIN collection
+[909064] DROP
+[911967] FIN collection
+[915595] FIN collection
+[919439] FIN collection
+[923533] FIN collection
+[927553] FIN collection
+[931850] FIN collection
+[935577] FIN collection
+[939570] FIN collection
+[943298] FIN collection
+[947309] FIN collection
+[951291] FIN collection
+[955648] FIN collection
+[956422] DROP
+[959897] FIN collection
+[963893] FIN collection
+[964722] DROP
+[967731] FIN collection
+[971464] FIN collection
+[975367] FIN collection
+[979337] FIN collection
+[983244] FIN collection
+[987235] FIN collection
+[991282] FIN collection
+[995369] FIN collection
+[999316] FIN collection
+[1000099] DROP
+[1002948] FIN collection
+[1007060] FIN collection
+[1010865] FIN collection
+[1014472] FIN collection
+[1018642] FIN collection
+[1022782] FIN collection
+[1023583] DROP
+[1026451] FIN collection
+[1030754] FIN collection
+[1034869] FIN collection
+[1038929] FIN collection
+[1042696] FIN collection
+[1043580] DROP
+[1046540] FIN collection
+[1049970] FIN collection
+[1054097] FIN collection
+[1058114] FIN collection
+[1058994] DROP
+[1062179] FIN collection
+[1066196] FIN collection
+[1070302] FIN collection
+[1074571] FIN collection
+[1078676] FIN collection
+[1082991] FIN collection
+[1087066] FIN collection
+[1087904] DROP
+[1091005] FIN collection
+[1091787] DROP
+[1094848] FIN collection
+[1095746] DROP
+[1098735] FIN collection
+[1102589] FIN collection
+[1103289] DROP
+[1106375] FIN collection
+[1109970] FIN collection
+[1113767] FIN collection
+[1117770] FIN collection
+[1121367] FIN collection
+[1125192] FIN collection
+[1129440] FIN collection
+[1133725] FIN collection
+[1138008] FIN collection
+[1139017] DROP
+[1142063] FIN collection
+[1146450] FIN collection
+[1150260] FIN collection
+[1153991] FIN collection
+[1158100] FIN collection
+[1162029] FIN collection
+[1165708] FIN collection
+[1166400] DROP
+[1169689] FIN collection
+[1170315] DROP
+[1173410] FIN collection
+[1177745] FIN collection
+[1178556] DROP
+[1182087] FIN collection
+[1185775] FIN collection
+[1189657] FIN collection
+[1190311] DROP
+[1193330] FIN collection
+[1197489] FIN collection
+[1201757] FIN collection
+[1205873] FIN collection
+[1210076] FIN collection
+[1213588] FIN collection
+[1217830] FIN collection
+[1218811] DROP
+[1222048] FIN collection
+[1226241] FIN collection
+[1230450] FIN collection
+[1234564] FIN collection
+[1235463] DROP
+[1238632] FIN collection
+[1239458] DROP
+[1242424] FIN collection
+[1246309] FIN collection
+[1249848] FIN collection
+[1253838] FIN collection
+[1258004] FIN collection
+[1261977] FIN collection
+[1266078] FIN collection
+[1266897] DROP
+[1269832] FIN collection
+[1270494] DROP
+[1274001] FIN collection
+[1278123] FIN collection
+[1281954] FIN collection
+[1286211] FIN collection
+[1290780] FIN collection
+[1294376] FIN collection
+[1295048] DROP
+[1298440] FIN collection
+[1299305] DROP
+[1302586] FIN collection
+[1307035] FIN collection
+[1311012] FIN collection
+[1315276] FIN collection
+[1319081] FIN collection
+[1319905] DROP
+[1323213] FIN collection
+[1327295] FIN collection
+[1331343] FIN collection
+[1332330] DROP
+[1335366] FIN collection
+[1339584] FIN collection
+[1343703] FIN collection
+[1347807] FIN collection
+[1351827] FIN collection
+[1355722] FIN collection
+[1359401] FIN collection
+[1363533] FIN collection
+[1367909] FIN collection
+[1372124] FIN collection
+[1376471] FIN collection
+[1380725] FIN collection
+[1384676] FIN collection
+[1388510] FIN collection
+[1392504] FIN collection
+[1396843] FIN collection
+[1401067] FIN collection
+[1404981] FIN collection
+[1405701] DROP
+[1409495] FIN collection
+[1413426] FIN collection
+[1417626] FIN collection
+[1422024] FIN collection
+[1422906] DROP
+[1426183] FIN collection
+[1429994] FIN collection
+[1434175] FIN collection
+[1438013] FIN collection
+[1438764] DROP
+[1438764] DROP
+[1442001] FIN collection
+[1446149] FIN collection
+[1446971] DROP
+[1449945] FIN collection
+[1454033] FIN collection
+[1454751] DROP
+[1458300] FIN collection
+[1462823] FIN collection
+[1467032] FIN collection
+[1470987] FIN collection
+[1474807] FIN collection
+[1475628] DROP
+[1478928] FIN collection
+[1482536] FIN collection
+[1483203] DROP
+[1486286] FIN collection
+[1490381] FIN collection
+[1494135] FIN collection
+[1494895] DROP
+[1498365] FIN collection
+[1502147] FIN collection
+[1502898] DROP
+[1506228] FIN collection
+[1510389] FIN collection
+[1514424] FIN collection
+[1518456] FIN collection
+[1522279] FIN collection
+[1526641] FIN collection
+[1530571] FIN collection
+[1534684] FIN collection
+[1539270] FIN collection
+[1543611] FIN collection
+[1548296] FIN collection
+[1552308] FIN collection
+[1556635] FIN collection
+[1560379] FIN collection
+[1564274] FIN collection
+[1568173] FIN collection
+[1572266] FIN collection
+[1576128] FIN collection
+[1580227] FIN collection
+[1583780] FIN collection
+[1587367] FIN collection
+[1590923] FIN collection
+[1595059] FIN collection
+[1599576] FIN collection
+[1603691] FIN collection
+[1607845] FIN collection
+[1611770] FIN collection
+[1615217] FIN collection
+[1619340] FIN collection
+[1624370] FIN collection
+[1628683] FIN collection
+[1633172] FIN collection
+[1637326] FIN collection
+[1641149] FIN collection
+[1645258] FIN collection
+[1649846] FIN collection
+[1653954] FIN collection
+[1659450] FIN collection
+[1667404] FIN collection
+[1671281] FIN collection
+[1675268] FIN collection
+[1678874] FIN collection
+[1682702] FIN collection
+[1683460] DROP
+[1686967] FIN collection
+[1687891] DROP
+[1690805] FIN collection
+[1694835] FIN collection
+[1699527] FIN collection
+[1703673] FIN collection
+[1708055] FIN collection
+[1712343] FIN collection
+[1713174] DROP
+[1716686] FIN collection
+[1721251] FIN collection
+[1725603] FIN collection
+[1729459] FIN collection
+[1733759] FIN collection
+[1734665] DROP
+[1738192] FIN collection
+[1738994] DROP
+[1742399] FIN collection
+[1746189] FIN collection
+[1750380] FIN collection
+[1754383] FIN collection
+[1758089] FIN collection
+[1762061] FIN collection
+[1766206] FIN collection
+[1767149] DROP
+[1770143] FIN collection
+[1774189] FIN collection
+[1778135] FIN collection
+[1782313] FIN collection
+[1786274] FIN collection
+[1790279] FIN collection
+[1794297] FIN collection
+[1798366] FIN collection
+[1799192] DROP

@@ -1,0 +1,165 @@
+[281] START calibration
+[64880] FIN calibration
+[64882] START collection
+[68558] FIN collection
+[68623] START spreading
+[69562] START spreading
+[70329] FIN spreading
+[70444] START round
+[70914] FIN round
+[70922] START collection
+[73975] FIN collection
+[73976] START round
+[74534] FIN round
+[74538] START collection
+[77474] FIN collection
+[77487] START round
+[77909] FIN round
+[77913] START collection
+[81339] FIN collection
+[81341] START round
+[81901] FIN round
+[81903] START collection
+[84752] FIN collection
+[84753] START round
+[85285] FIN round
+[85287] START collection
+[88542] FIN collection
+[88543] START round
+[89127] FIN round
+[89128] START collection
+FIN round
+E[89129] RROR 101
+[92789] FIN collection
+[92790] START round
+DROP
+[93266] FIN round
+[93267] START collection
+[96625] FIN collection
+[96628] START round
+DROP
+[97113] FIN round
+[97115] START collection
+[100381] FIN collection
+[100392] START round
+DROP
+[100910] FIN round
+[100911] START collection
+[103621] FIN collection
+[103622] START round
+DROP
+[104161] FIN round
+[104163] START collection
+[107201] FIN collection
+[107202] START round
+DROP
+[107776] FIN round
+[107780] START collection
+[111243] FIN collection
+[111244] START round
+DROP
+[111808] FIN round
+[111809] START collection
+[111811] FIN round
+[111812] ERROR 101
+[115040] FIN collection
+[115046] START round
+DROP
+[115538] FIN round
+[115539] START collection
+[118849] FIN collection
+[118850] START round
+DROP
+[119402] FIN round
+[119403] START collection
+[122742] FIN collection
+[122744] START round
+DROP
+[123289] FIN round
+[123289] START collection
+[126193] FIN collection
+[126194] START round
+DROP
+[126690] FIN round
+[126691] START collection
+[130007] FIN collection
+[130008] START round
+DROP
+[130551] FIN round
+[130572] START collection
+[130573] FIN round
+[130573] ERROR 101
+[134119] FIN collection
+[134169] START round
+DROP
+[134631] FIN round
+[134632] START collection
+[138086] FIN collection
+[138087] START round
+DROP
+[138646] FIN round
+[138648] START collection
+[141722] FIN collection
+[141724] START round
+DROP
+[142230] FIN round
+[142230] START collection
+[145529] FIN collection
+[145532] START round
+DROP
+[146022] FIN round
+[146023] START collection
+[149534] FIN collection
+[149534] START round
+DROP
+[150067] FIN round
+[150068] START collection
+[153191] FIN collection
+[153192] START round
+DROP
+[153693] FIN round
+[153694] START collection
+FIN round
+E[153694] RROR 101
+[157121] FIN collection
+[157122] START round
+DROP
+[157661] FIN round
+[157661] START collection
+[157662] FIN round
+[157662] ERROR 101
+[161314] FIN collection
+[161360] START round
+DROP
+[161882] FIN round
+[161883] START collection
+[165263] FIN collection
+[165264] START round
+DROP
+[165872] FIN round
+[165875] START collection
+[168513] FIN collection
+[168561] START round
+DROP
+[169116] FIN round
+[169117] START collection
+[171919] FIN collection
+[171923] START round
+DROP
+[172376] FIN round
+[172377] START collection
+[175742] FIN collection
+[175746] START round
+DROP
+[176301] FIN round
+[176301] START collection
+[179027] FIN collection
+[179028] START round
+DROP
+[179638] FIN round
+[179641] START collection
+[182410] FIN collection
+[182411] START round
+DROP
+[183036] FIN round
+[183037] START collection
