@@ -1,20 +1,11 @@
 \chapter{Materials and Methods}
 
-This section is to clarify the pre-existing tools, defining what was developed in this field until now, and why this tool was used instead of others.
-
-The general structure is the following:
-\begin{itemize}
-	\item Definition of the specific tool(s) studied (robots, sensor nodes, smart-phones). When relevant, pre-existing experiments.
-	\item Definition of the context of use (indoor/outdoor, humans/animals/robots, with/without connection).
-	\item Definition of used protocols (How the data are collected, when, etc.)
-\end{itemize}
-
 \section{Wireless Sensor Networks}
 A Wireless Sensor Networks(WSN) is a collection of small, low-cost, low-power sensor nodes that do not only have sensing capacities but also computing capacities. Additionally these nodes are able to communicate with each other via a wireless medium. Such a WSN deployed in an area of interest makes it possible to monitor the area in a desired way enabling applications for environmental and habitat monitoring, analysis of structures, or localization and tracking.
 
 The typical architecture of a WSN includes one node that functions as the sink. This means that this node is the connection to a PC or the Internet to bring the informations collected by the nodes to the user. All the nodes then are spread over the area of interest. When placing the nodes it is important that each node can somehow communicate with the sink, may it be a direct connection or a indirect over other nodes. Are all the nodes in direct range of each other it is a single hop network meaning each node can transmit a message directly to all the other nodes. Otherwise the network is called multi hop. This means nodes can not necessary transmit messages directly to all the other nodes but may need to transmit the message over other node that forward it to the destination.
 
-The application running on the node is designed specific for the purpose of the WSN. Since the nodes should operate independent they are often powered by battery. This makes power one of the constrains of a WSN and applications need to be designed to have a low power consumption. Moreover the the application designed for the nodes needs to take the constrains of low computation capability and low storage of the sensor nodes have into account.   
+The application running on the node is designed specific for the purpose of the WSN. Since the nodes should operate independent they are often powered by battery. This makes power one of the constrains of a WSN and applications need to be designed to have a low power consumption. Moreover the the application designed for the nodes needs to take the constrains of low computation capability and low storage of the sensor nodes have into account.  \cite{Wsn} \cite{Tinyos} 
 
 %-Able to communicate with each other. 
 %-Placed to monitore an area of intrest.
@@ -49,7 +40,7 @@ In Multi-Spin time is divided into $slots$ and $cycles$ where a $cycle$ is the t
 \begin{figure}[htbp]
 	\centering
     \includegraphics[scale=0.8]{content/images/Multispin}
-   	\caption{Time is  \cite{RtiMulti}}
+   	\caption{Time is devided into $slots$ and $cycles$. A $cycle$ is the time all the nodes need to send their message. A $cycle$ then devided by the number of nodes to create a $slot$ for each node where it can send its message. \cite{RtiMulti}}
     \label{fig:multi}
 \end{figure}
 
@@ -66,6 +57,7 @@ Therefore a different method is needed for a widely spread multi hop network.
 %very cool but not sufficient in a multi hop enviroment
  
 \section{Testbed}
+\label{chp:mat_testbed}
 The Testbed is a WSN located on the third floor of the SA building at the University of Duisburg-Essen. It is set up as a tool for researches on WSNs in an indoor environment. It covers half of the building including a large main corridor, two laboratories, two smaller corridors leading to three offices each, seven smaller storage rooms and one server room. The arrangement of the rooms is laid out in Figure \ref{fig:testbed}. All in all the area covers $531\ m^2$. All the rooms are in daily use by the people working in the offices and the laboratories, keeping the area under constant change.
 
 \begin{figure}[htbp]
@@ -78,12 +70,12 @@ The Testbed is a WSN located on the third floor of the SA building at the Univer
 To monitor the area 32 nodes are distributed over the rooms like shown in Figure \ref{fig:testbed}. The nodes are only placed inside the offices and laboratories and are not always placed at the same hight. To make programming of the devices easy all the devices are connected to Raspberry Pies via USB. A script then makes it possible to copy the source code to all the Raspberry Pis where the code is compiled and then sent to each node individual. The connection to the Raspberry Pies makes it also possible to collect information directly from each node individually over serial forwarder running on the Raspberry Pies.
 
 \subsection{TelosB Mote}
-The sensor nodes used for the Testbed are Crossbow's TelosB Motes TPR2420. The TPR2420 is an open source platform for researchers developed by the University of California, Berkeley. It provides an 8 MHz Texas Instrument MSP430 low power microcontroller with 10kB RAM that is programmable via a USB connector. For communication it includes an IEEE 802.15.4 compliant radio frequency transceiver with an embedded antenna. This makes transmissions in a frequency band from 2.4 to 2.4835 GHz possible. Moreover the TPR2420 has a light sensor, an infra-red sensor, a humidity sensor and a temperature sensor installed making it possible to monitor the environment. Last it has three LED lights installed that can be used for visual output of the mote. The USB connector that can be used to program the microcontroller can also be used to exchange data with and to power the TPR2420. If it is not connected via USB it can also be powered by two AA batteries. \cite{telosb}
+The sensor nodes used for the Testbed are Crossbow's TelosB Motes TPR2420. The TPR2420 is an open source platform for researchers developed by the University of California, Berkeley. It provides an 8 MHz Texas Instrument MSP430 low power microcontroller with 10kB RAM that is programmable via a USB connector. For communication it includes an IEEE 802.15.4 compliant radio frequency transceiver with an embedded antenna. This makes transmissions in a frequency band from 2.4 to 2.4835 GHz possible. Moreover the TPR2420 has a light sensor, an infra-red sensor, a humidity sensor and a temperature sensor installed making it possible to monitor the environment. Last it has three LED lights installed that can be used for visual output of the mote. The USB connector that can be used to program the microcontroller can also be used to exchange data with and to power the TPR2420. If it is not connected via USB it can also be powered by two AA batteries. \cite{Telosb}
 
 \begin{figure}[htbp]
 	\centering
     \includegraphics[scale=0.7]{content/images/Mote1}
-   	\caption{The structure of the TPR2420 and the included components \cite{telosb}}
+   	\caption{The structure of the TPR2420 and the included components \cite{Telosb}}
     \label{fig:telosb}
 \end{figure}
  
@@ -94,7 +86,7 @@ The main task of TinyOS is to schedule tasks and events to provide safe concurre
 
 To provide functionality each component can have three different types of computational abstractions. First there are commands making it possible for other components to call a functionality of the component providing the command. Then there are events which can be signalled by a component. A component receiving the event can then react to it and act accordingly. These two constructs make interaction between components possible. Last, for component intern functionality there are tasks. These can be posted by a component and then are executed when its their turn. 
 
-Whenever a command, event or task gets called it is pushed into the queue of the TinyOS scheduler. The scheduler then executes the tasks inside the queue using a FIFO scheduling policy.    
+Whenever a command, event or task gets called it is pushed into the queue of the TinyOS scheduler. The scheduler then executes the tasks inside the queue using a FIFO scheduling policy. \cite{Tinyos}     
 
 \subsubsection{Programming for TinyOS}
 Applications for TinyOS are written in nesC which is a C dialect and integrates the possibility to implement configurations, modules, interfaces, commands, events and tasks. An application consists of components, represented by a nesC module, that provide and use interfaces. The components implement the functionality of the application. All the commands and events a component provides are defined by an interface. Moreover an application for TinyOS also has a configuration that defines which components are connected.   
@@ -103,7 +95,7 @@ The Listings \ref{lis:Components}, \ref{lis:interface} and \ref{lis:configuratio
 
 Now to connect everything the configuration $Application$ in Listing \ref{lis:configuration} first calls all the components needed for the application. The first component used in this application is the $MainC$ component that provides the $Boot$ interface and is given by TinyOS. Next there are the two components from Listing \ref{lis:Components}. Now the configuration needs to connect the interfaces of the components to the components providing the corresponding interfaces. This means $MainComponent.Boot$ gets connected to $MainC$ and $MainComponent.ExampleI$ gets connected to $ExampleC$.
 
-When a device would get programmed with this example the first thing that would happen is that $MainC$ signals $Boot.booted()$ event resulting in executing the code for the event inside $MainComponent$. This code calls the $ExampleI.startExample$ command. Since the interface is connected to the $ExampleC$ the corresponding code posting the $doSomething()$ task gets executed. Then at the end of $doSomething()$ the $ExampleI.exampleDone(...)$ gets signalled by $ExampleC$. This means the event gets triggered in $MainComponent$ and the corresponding code gets executed.      
+When a device would get programmed with this example the first thing that would happen is that $MainC$ signals $Boot.booted()$ event resulting in executing the code for the event inside $MainComponent$. This code calls the $ExampleI.startExample$ command. Since the interface is connected to the $ExampleC$ the corresponding code posting the $doSomething()$ task gets executed. Then at the end of $doSomething()$ the $ExampleI.exampleDone(...)$ gets signalled by $ExampleC$. This means the event gets triggered in $MainComponent$ and the corresponding code gets executed. \cite{Tinyos} \cite{TinyosT}     
 
 \lstset{caption={Two example components. $MainComponent$ uses the example interface from \ref{lis:interface} and the interface $Boot$ that TinyOS provides. $Boot$ requires the $MainComponent$ to implement the $Boot.booted()$ event that is the first event that gets signalled by TinyOS after the node booted. The $ExampleC$ provides the example interface and therefore needs to implement the event and also implements a task $doSomething()$.},label={lis:Components}}
 \begin{lstlisting}

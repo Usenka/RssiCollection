@@ -12,17 +12,17 @@ The style file: geralpha.bst
 A level-1 auxiliary file: content/chapters/clause.aux
 Database file #1: content/references/references.bib
 Warning--I didn't find a database entry for "Ikeda1997"
-Warning--to sort, need author or key in levensthein65:_binar
-Name 1 in "Maurizio Bocca, Ossi Kaltiokallio, and Neal Patwari" has a comma at the end for entry RtiMulti
-while executing---line 1296 of file geralpha.bst
-Name 1 in "Maurizio Bocca, Ossi Kaltiokallio, and Neal Patwari" has a comma at the end for entry RtiMulti
-while executing---line 1296 of file geralpha.bst
-Warning--empty author in levensthein65:_binar
-Warning--empty journal in levensthein65:_binar
-Warning--empty year in levensthein65:_binar
-Name 1 in "Maurizio Bocca, Ossi Kaltiokallio, and Neal Patwari" has a comma at the end for entry RtiMulti
-while executing---line 1361 of file geralpha.bst
+Warning--I didn't find a database entry for "levensthein65:_binar"
+Warning--I didn't find a database entry for "Middleton2002"
+Warning--I didn't find a database entry for "salton89"
 Warning--empty journal in RtiMulti
 Warning--empty year in RtiMulti
-Warning--empty publisher in salton89
-(There were 3 error messages)
+Warning--empty journal in Telosb
+Warning--empty year in Telosb
+Warning--empty journal in Tinyos
+Warning--empty year in Tinyos
+Warning--empty journal in TinyosT
+Warning--empty year in TinyosT
+Warning--empty journal in Wsn
+Warning--empty year in Wsn
+(There were 14 warnings)

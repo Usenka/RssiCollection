@@ -19,11 +19,10 @@ The base station can be a computer running a Java application connected to the s
 \begin{figure}[htbp]
 	\centering
     \includegraphics[scale=0.6]{content/images/Motes/GeneralStructure}
-   	\caption{The interfaces each component provides. The $ControllModule$ does only use all the other interfaces and does not provide one itself}
+   	\caption{The interfaces each component provides. The $ControllModule$ does only use all the other interfaces and does not provide one itself.}
     \label{fig:moteStructure}
 \end{figure}
 
-\todo{Grafic: attach statt attache und spread statt spreaded, neighbourlist}
 As nodes the TelosB motes described in Chapter x.y can be used. The application running on the nodes can then be written in NESC for TinyOS. Since the application running on the motes has multiple independent tasks it makes sense to create one component for each task. In Figure \ref{fig:moteStructure} the suggested structure is displayed, containing the components $Control$, $Calibrator$, $Sampler$, $ScheduleSender$ and $Collector$ represented by their provided interfaces. 
 
 The $Control$ component connects all the other components and makes sure the informations the other components provide get delivered correctly to the component needing that information. Therefore it does not need an interface to provide functionality.     

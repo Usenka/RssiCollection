@@ -1,21 +1,24 @@
-\begin{thebibliography}{MAdR02}
+\newcommand{\etalchar}[1]{$^{#1}$}
+\begin{thebibliography}{LMP{\etalchar{+}}}
 
-\bibitem[lev]{levensthein65:_binar}
-{\em TelosB Mote Platform Datasheet}.
+\bibitem[BKP]{RtiMulti}
+{\sc Bocca, Maurizio}, {\sc Ossi Kaltiokallio} \btxandlong{}\ {\sc Neal
+  Patwari}: {\em Radio Tomographic Imaging for Ambient Assisted Living}.
 
-\bibitem[MAdR02]{Middleton2002}
-{\sc Middleton, S.~E.}, {\sc H.~Alani} \btxandlong{}\ {\sc D.~C. de~Roure}:
-  {\em Exploiting Synergy between Ontologies and Recommender Systems}.
-\newblock \Btxinlong{}\ {\em Proceedings of the Semantic Web Workshop at the
-  WWW Conference}, Honolulu, HI, 2002.
+\bibitem[CT]{Telosb}
+{\sc Crossbow~Technology, Inc.}: {\em TelosB Mote Platform Datasheet}.
 
-\bibitem[MBP]{RtiMulti}
-{\sc Maurizio~Bocca, Ossi~Kaltiokallio} \btxandlong{}\ {\sc Neal Patwari}: {\em
-  Radio Tomographic Imaging for Ambient Assisted Living}.
+\bibitem[LMP{\etalchar{+}}]{Tinyos}
+{\sc Levis, P.}, {\sc S.~Madden}, {\sc J.~Polastre}, {\sc R.~Szewczyk}, {\sc
+  K.~Whitehouse}, {\sc A.~Woo}, {\sc D.~Gay}, {\sc J.~Hill}, {\sc M.~Welsh},
+  {\sc E.~Brewer} \btxandlong{}\ {\sc D.~Culler}: {\em TinyOS: An Operating
+  System for Sensor Networks}.
 
-\bibitem[Sal89]{salton89}
-{\sc Salton, Gerard}: {\em Automatic text processing --- the transformation,
-  analysis, and retrieval of information by computer}.
-\newblock Addison-Wesley series in computer science. 1989.
+\bibitem[Soma]{TinyosT}
+{\sc Someone}: {\em
+  http://tinyos.stanford.edu/tinyos-wiki/index.php/TinyOS_Documentation_Wiki}.
+
+\bibitem[Somb]{Wsn}
+{\sc Someone}: {\em WSN book}.
 
 \end{thebibliography}
