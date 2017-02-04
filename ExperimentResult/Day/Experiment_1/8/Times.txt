@@ -1,0 +1,4 @@
+Calibration time: 64580
+Spread time: 778
+Collection time: 3494.3835616438355; Rounds: 73; Standard deviation: 370.9874875169835
+Round time: 527.5479452054794; Rounds: 73; Standard deviation: 46.11808580420021
