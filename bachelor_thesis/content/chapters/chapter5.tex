@@ -89,8 +89,7 @@ The results of the experiment are shown in Table \ref{tab:DayTable}
  \label{tab:DayTable}
 \end{table}
 
-All the values are not significantly different to the values at night. Again we look at the individual times of the collection in Figure \ref{fig:dayC} to see if they change over time. In general the time for a collection does not increase over time, however at around collection 400 we can see a huge eruption. Here the collection once takes 5186 ms and once
-7293 ms. After that the collection time normalizes again. This eruption could indicate that at that point in time a, for the links inside the Tesbed, huge change in the environment caused a lot of message drops creating this long collection. This could be an open door that has not been open before or maybe someone calling the elevator and going down with it. 
+All the values are not significantly different to the values at night. Again we look at the individual times of the collection in Figure \ref{fig:dayC} to see if they change over time. In general the time for a collection does not increase over time, however at around collection 400 we can see a huge eruption. Here the collection once takes 5186 ms and once 7293 ms. After that the collection time normalizes again. This eruption could indicate that at that point in time a, for the links inside the Tesbed, huge change in the environment caused a lot of message drops creating this long collection. This could be an open door that has not been open before or maybe someone calling the elevator and going down with it. 
 
 
 \begin{figure}[htbp]
@@ -100,7 +99,7 @@ All the values are not significantly different to the values at night. Again we 
 	\label{fig:dayC}
 \end{figure}
 
-
+Rounds slight decrease ? more analyse necessary...
 
 \begin{figure}[tbp]
 	\centering
@@ -111,3 +110,6 @@ All the values are not significantly different to the values at night. Again we 
     
 
 \section{Assessment}
+The experiments show that the system is usable in an office environment for at least half an our and delivers one full RSS measurement averagely every 4 seconds. The measurement should be fast enough to detect a moving person, however due to the long collection phase the tracking of the person could be quite bad since there are jumps of 3.5 seconds between each measurement.
+
+The experiments also show that the spreading is really fast compared to the collection and also faster than the rounds with the created schedule. This could indicate that changing the collection into something similar and following the same path while taking measurements could improver the system. 

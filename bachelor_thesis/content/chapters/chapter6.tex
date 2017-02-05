@@ -1,10 +1,26 @@
 \chapter{Discussion}
 
-The meaning of this paragraph is to interpret the results of the performed work. It will always connect the introduction, the postulated hypothesis and the results of the thesis/bachelor/master.
+%The meaning of this paragraph is to interpret the results of the performed work. It will always connect the %introduction, the postulated hypothesis and the results of the thesis/bachelor/master.
 
-It should answer the following questions:
-\begin{itemize}
-	\item Could your results answer your initial questions?
-	\item Did your results agree with your initial hypothesis?
-	\item Did you close your problem, or there are still things to be solved? If yes, what will you do to solve them? 
-\end{itemize}
+%It should answer the following questions:
+%\begin{itemize}
+%	\item Could your results answer your initial questions?
+%	\item Did your results agree with your initial hypothesis?
+%	\item Did you close your problem, or there are still things to be solved? If yes, what will you do to %solve them? 
+%\end{itemize}
+
+\section{Comparison to a Timeslot Based Approach}
+The approach suggested by this thesis tries to improve a fully timeslot based approach like Multi-Spin by defining predecessors and successors for each node to eliminate the in a timeslot included error. 
+These two it is possible to calculate how long each round takes in a fully timeslot based system by using the timeslot used for message drops in the suggested approach. 
+
+In the experiments a timeslot of 18 ms was used. There are 32 nodes inside the network meaning one round would take 576 ms. The average time a round needed in the experiments was around 520 ms which is actually faster although there are in average 10 messages more that need to be send with the successor predecessor. This however raises the question if the timeslot was chosen to big and therefore distorts the comparison since receiving a message from a predecessor saves to much time. Anyway a predecessor successor approach with a perfect schedule should always be at least equally fast as a timeslot based system. 
+
+Moreover an advantage of the timeslot based approach would be that the round would be that rounds would have a very stable time and also every node definitely sends a message while on the suggested approach it can happen that nodes to not send a message due to not receiving a single message until it is its turn.
+
+\section{Possible Improvements}
+The first improvement for the calibration was already explained here time can be saved by simply calculating the correct break and not having the system do nothing for 20 seconds.
+
+The next improvement is for the collection. When using nodes with a lot memory it could be a good idea to not always send the data from one node directly to the sink but first collect all the data of a nodes children before forwarding it. This way the requests and data messages would take the same path as the schedule while spreading it. This would reduce the amount of requests and the over all collection time.
+ 
+Another thing that can be improved is the algorithm that creates the schedule. Instead of just covering the network with rooted circles it is possible to later connect circles in a way that reduces the amount of messages. Also to improve choosing a next node it would be a good idea to change the calibration in a way that not only the last measured RSS for each link gets saved but a average RSS for a link.
+A different way to maybe improve the schedule is to simply pick the same path a schedule message would take while spreading it. The experiments already show that spreading the schedule is faster than the rounds with the created schedule. 
