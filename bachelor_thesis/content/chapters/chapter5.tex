@@ -25,17 +25,18 @@ The implemented system still had some bugs that could not be addressed due to la
 To calibrate the system 700 messages were sent. The timeslot for the drops was defined as 18 ms. This is really big but when running the system inside a simulation it could be measured that the processing and sending of a message took between 5 ms and 16 ms the extra 2 ms cover a possible error while measuring these values.  
 \section{Experiment Night}
 \begin{table}[htbp]
- \caption{Measured values for each run of the system. CT = Calibration Times; HOP = Number of hops inside the schedule; ST = Spread time; ACT = Average collection time; CSTD = Standard deviation of collection time; CR = Total number of collections; ART = Average round time; RSTD = Standard deviation of round time; RR = Total number of rounds}
+ \caption{Measured values for each run of the system. CT = Calibration Times; HOP = Number of hops inside the schedule; ST = Spread time; ACT = Average collection time; CSTD = Standard deviation of collection time; ART = Average round time; RSTD = Standard deviation of round time;}
  \centering
- \begin{tabular}{c||c|c|c|c|c|c|c|c|c}
-  Time & CT & HOP & ST & ACT & CSTD & CR & ART & RSTD & RR\\ \toprule
-  02:00 - 02:30 & 65611 & 44 & 784 & 3592 & 267 & 338 & 540 & 55 & 338\\
-  02:30 - 03:00 & 64545 & 42 & 842 & 3637 & 280 & 73 & 519 & 38 & 73\\
-  03:00 - 03:30 & 64630 & 42 & 767 & 4211 & 444 & 13 & 502 & 32 & 13\\
-  03:30 - 04:00 & 64539 & 41 & 740 & 3609 & 300 & 420 & 501 & 62 & 420\\
-  04:00 - 04:30 & 64565 & 44 & 804 & 3581 & 245 & 419 & 544 & 51 & 419\\
-  04:30 - 05:00 & 64699 & 40 & 756 & 4287 & 343 & 35 & 429 & 48 & 35\\
-  05:00 - 05:30 & 64587 & 44 & 787 & 4150 & 343 & 9 & 496 & 23 & 9\\
+ \begin{tabular}{c||c|c|c|c|c|c|c|c}
+  Time & CT & HOP & ST & ACT & CSTD & ART & RSTD & Rounds\\ \toprule
+  02:00 - 02:30 & 65611 & 44 & 784 & 3592 & 267 & 540 & 55 & 338\\
+  02:30 - 03:00 & 64545 & 42 & 842 & 3637 & 280 & 519 & 38 & 73\\
+  03:00 - 03:30 & 64630 & 42 & 767 & 4211 & 444 & 502 & 32 & 13\\
+  03:30 - 04:00 & 64539 & 41 & 740 & 3609 & 300 & 501 & 62 & 420\\
+  04:00 - 04:30 & 64565 & 44 & 804 & 3581 & 245 & 544 & 51 & 419\\
+  04:30 - 05:00 & 64699 & 40 & 756 & 4287 & 343 & 429 & 48 & 35\\
+  05:00 - 05:30 & 64587 & 44 & 787 & 4150 & 343 & 496 & 23 & 9\\ \toprule
+  Average & 64739 & 42 & 782 & 3738 & 290 & 518 & 48 & \\
  \end{tabular}
  \label{tab:NightTable}
 \end{table}
@@ -45,34 +46,35 @@ To calibrate the system 700 messages were sent. The timeslot for the drops was d
 	\begin{subfigure}[t]{1\textwidth}
 		\centering
     		\includegraphics[scale=0.75]{content/images/Experiment/NightRounds}
-   	 	\caption{The physical architecture of the system}
-    	\label{fig:architecture}
+   	 	\caption{Sampling times of the measurements from 03:30h to 04:00h}
+    	\label{fig:nightR}
     \end{subfigure}
  
     \begin{subfigure}[t]{1\textwidth}
 		\centering         
         \includegraphics[scale=0.75]{content/images/Experiment/NightCollection}
-        \caption{The general processes and the order in which they are executed}
-        \label{fig:processes}
+        \caption{Collection times of the measurements from 03:30h to 04:00h}
+        \label{fig:nightC}
     \end{subfigure}
     \caption{}
 \end{figure}
 
 \section{Experiment Day}
 \begin{table}[htbp]
- \caption{Measured values for each run of the system. CT = Calibration Times; HOP = Number of hops inside the schedule; ST = Spread time; ACT = Average collection time; CSTD = Standard deviation of collection time; CR = Total number of collections; ART = Average round time; RSTD = Standard deviation of round time; RR = Total number of rounds}
+ \caption{Measured values for each run of the system. CT = Calibration Times; HOP = Number of hops inside the schedule; ST = Spread time; ACT = Average collection time; CSTD = Standard deviation of collection time; ART = Average round time; RSTD = Standard deviation of round time;}
  \centering
- \begin{tabular}{c||c|c|c|c|c|c|c|c|c}
-  Time & CT & HOP & ST & ACT & CSTD & CR & ART & RSTD & RR\\ \toprule
-  09:15 - 09:45 & 64647 & 43 & 823 & 4401 & 296 & 63 & 492 & 41 & 63\\ 
-  09:45 - 10:15 & 64558 & 44 & 796 & 4035 & 322 & 121 & 563 & 59 & 121\\
-  10:15 - 10:45 & 64644 & 41 & 850 & 3740 & 282 & 231 & 482 & 40 & 231\\
-  10:45 - 11:15 & 64577 & 41 & 849 & 3746 & 423 & 14 & 533 & 60 & 14\\ 
-  11:15 - 11:45 & 64607 & 39 & 797 & 3498 & 358 & 433 & 495 & 42 & 433\\
-  11:45 - 12:15 & 64654 & 41 & 764 & 3556 & 294 & 240 & 495 & 45 & 240\\
-  12:15 - 12:45 & 64583 & 44 & 824 & 4160 & 511 & 368 & 539 & 65 & 368\\
-  12:45 - 13:15 & 64544 & 44 & 797 & 3697 & 398 & 183 & 542 & 58 & 183\\
-  13:15 - 13:45 & 64580 & 41 & 778 & 3494 & 371 & 73 & 528 & 46 & 73\\
+ \begin{tabular}{c||c|c|c|c|c|c|c|c}
+  Time & CT & HOP & ST & ACT & CSTD & ART & RSTD & Rounds\\ \toprule
+  09:15 - 09:45 & 64647 & 43 & 823 & 4401 & 296 & 492 & 41 & 63\\ 
+  09:45 - 10:15 & 64558 & 44 & 796 & 4035 & 322 & 563 & 59 & 121\\
+  10:15 - 10:45 & 64644 & 41 & 850 & 3740 & 282 & 482 & 40 & 231\\
+  10:45 - 11:15 & 64577 & 41 & 849 & 3746 & 423 & 533 & 60 & 14\\ 
+  11:15 - 11:45 & 64607 & 39 & 797 & 3498 & 358 & 495 & 42 & 433\\
+  11:45 - 12:15 & 64654 & 41 & 764 & 3556 & 294 & 495 & 45 & 240\\
+  12:15 - 12:45 & 64583 & 44 & 824 & 4160 & 511 & 539 & 65 & 368\\
+  12:45 - 13:15 & 64544 & 44 & 797 & 3697 & 398 & 542 & 58 & 183\\
+  13:15 - 13:45 & 64580 & 41 & 778 & 3494 & 371 & 528 & 46 & 73\\ \toprule
+  Average & 64599 & 42 & 809 & 3773 & 372 & 514 & 50 & \\
  \end{tabular}
  \label{tab:NightTable}
 \end{table}
@@ -82,15 +84,15 @@ To calibrate the system 700 messages were sent. The timeslot for the drops was d
 	\begin{subfigure}[t]{1\textwidth}
 		\centering
     		\includegraphics[scale=0.75]{content/images/Experiment/DayRounds}
-   	 	\caption{The physical architecture of the system}
-    	\label{fig:architecture}
+   	 	\caption{Sampling times of the measurements from 03:30h to 04:00h}
+    	\label{fig:DayR}
     \end{subfigure}
  
     \begin{subfigure}[t]{1\textwidth}
 		\centering         
         \includegraphics[scale=0.75]{content/images/Experiment/DayCollection}
-        \caption{The general processes and the order in which they are executed}
-        \label{fig:processes}
+        \caption{Collection times of the measurements from 03:30h to 04:00h}
+        \label{fig:dayC}
     \end{subfigure}
     \caption{}
 \end{figure}
