@@ -33,7 +33,8 @@
 \contentsline {chapter}{\numberline {5}Evaluation}{37}{chapter.5}
 \contentsline {section}{\numberline {5.1}Experiment Setup}{37}{section.5.1}
 \contentsline {section}{\numberline {5.2}Experiment Night}{37}{section.5.2}
-\contentsline {section}{\numberline {5.3}Experiment Day}{37}{section.5.3}
-\contentsline {chapter}{\numberline {6}Discussion}{41}{chapter.6}
-\contentsline {chapter}{\numberline {7}Acknowledgements}{43}{chapter.7}
-\contentsline {chapter}{\nonumberline Bibliography}{45}{chapter*.20}
+\contentsline {section}{\numberline {5.3}Experiment Day}{40}{section.5.3}
+\contentsline {section}{\numberline {5.4}Assessment}{40}{section.5.4}
+\contentsline {chapter}{\numberline {6}Discussion}{43}{chapter.6}
+\contentsline {chapter}{\numberline {7}Acknowledgements}{45}{chapter.7}
+\contentsline {chapter}{\nonumberline Bibliography}{47}{chapter*.22}

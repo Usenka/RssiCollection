@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.11.18)  4 FEB 2017 20:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=latex 2017.1.17)  5 FEB 2017 17:11
 entering extended mode
 **./Fristname_Lastname_Diplom_Master_arbeit.tex
 (Fristname_Lastname_Diplom_Master_arbeit.tex
@@ -789,11 +789,8 @@ Package typearea Info: These are the values describing the layout:
 (Fristname_Lastname_Diplom_Master_arbeit.aux (content/chapters/titlePage.aux)
 (content/chapters/abstract.aux) (content/chapters/chapter1.aux)
 (content/chapters/chapter2.aux) (content/chapters/chapter3.aux)
-(content/chapters/chapter4.aux) (content/chapters/chapter5.aux
-
-LaTeX Warning: Label `tab:NightTable' multiply defined.
-
-) (content/chapters/chapter6.aux) (content/chapters/chapter7.aux)
+(content/chapters/chapter4.aux) (content/chapters/chapter5.aux)
+(content/chapters/chapter6.aux) (content/chapters/chapter7.aux)
 (content/chapters/clause.aux))
 \openout1 = `Fristname_Lastname_Diplom_Master_arbeit.aux'.
 
@@ -951,7 +948,7 @@ you should replace it, e.g., by `\normalfont \bfseries '.
 To make it work for now, you can use the already also deprecated class option
 `enabledeprecatedfontcommands'.
 
-<content/images/NES_Logo.pdf, id=147, 1212.91142pt x 269.53499pt>
+<content/images/NES_Logo.pdf, id=151, 1212.91142pt x 269.53499pt>
 File: content/images/NES_Logo.pdf Graphic file (type pdf)
 
 <use content/images/NES_Logo.pdf>
@@ -1122,21 +1119,21 @@ chapter 2.
 
 
 
-] <content/images/Multispin.png, id=245, 518.60953pt x 177.7842pt>
+] <content/images/Multispin.png, id=250, 518.60953pt x 177.7842pt>
 File: content/images/Multispin.png Graphic file (type png)
 
 <use content/images/Multispin.png>
 Package pdftex.def Info: content/images/Multispin.png used on input line 42.
 (pdftex.def)             Requested size: 414.88818pt x 142.22752pt.
  [6 <./content/images/Multispin.png>]
-<content/images/Testbed.png, id=257, 441.90094pt x 264.23718pt>
+<content/images/Testbed.png, id=262, 441.90094pt x 264.23718pt>
 File: content/images/Testbed.png Graphic file (type png)
 
 <use content/images/Testbed.png>
 Package pdftex.def Info: content/images/Testbed.png used on input line 65.
 (pdftex.def)             Requested size: 331.42488pt x 198.17738pt.
  [7 <./content/images/Testbed.png>]
-<content/images/Mote1.png, id=267, 161.85469pt x 259.7203pt>
+<content/images/Mote1.png, id=272, 161.85469pt x 259.7203pt>
 File: content/images/Mote1.png Graphic file (type png)
 
 <use content/images/Mote1.png>
@@ -1162,7 +1159,7 @@ LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10.95> not available
 
 ]
 chapter 3.
-[13] <content/images/Architecture.png, id=359, 240.80363pt x 381.5856pt>
+[13] <content/images/Architecture.png, id=364, 240.80363pt x 381.5856pt>
 File: content/images/Architecture.png Graphic file (type png)
 
 <use content/images/Architecture.png>
@@ -1170,7 +1167,7 @@ Package pdftex.def Info: content/images/Architecture.png used on input line 20.
 
 (pdftex.def)             Requested size: 144.48329pt x 228.95311pt.
 
-<content/images/GeneralAproachM.png, id=360, 232.61906pt x 320.69812pt>
+<content/images/GeneralAproachM.png, id=365, 232.61906pt x 320.69812pt>
 File: content/images/GeneralAproachM.png Graphic file (type png)
 
 <use content/images/GeneralAproachM.png>
@@ -1182,7 +1179,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [14 <./content/images/Architecture.png> <./content/images/GeneralAproachM.png>
 ]
-<content/images/Collection/Part0.png, id=365, 210.7875pt x 113.67468pt>
+<content/images/Collection/Part0.png, id=370, 210.7875pt x 113.67468pt>
 File: content/images/Collection/Part0.png Graphic file (type png)
 
 <use content/images/Collection/Part0.png>
@@ -1190,7 +1187,7 @@ Package pdftex.def Info: content/images/Collection/Part0.png used on input line
  56.
 (pdftex.def)             Requested size: 126.47346pt x 68.20532pt.
 
-<content/images/Collection/Part1.png, id=366, 210.7875pt x 113.67468pt>
+<content/images/Collection/Part1.png, id=371, 210.7875pt x 113.67468pt>
 File: content/images/Collection/Part1.png Graphic file (type png)
 
 <use content/images/Collection/Part1.png>
@@ -1198,7 +1195,7 @@ Package pdftex.def Info: content/images/Collection/Part1.png used on input line
  64.
 (pdftex.def)             Requested size: 126.47346pt x 68.20532pt.
 
-<content/images/Collection/Part2.png, id=367, 210.7875pt x 113.67468pt>
+<content/images/Collection/Part2.png, id=372, 210.7875pt x 113.67468pt>
 File: content/images/Collection/Part2.png Graphic file (type png)
 
 <use content/images/Collection/Part2.png>
@@ -1206,7 +1203,7 @@ Package pdftex.def Info: content/images/Collection/Part2.png used on input line
  72.
 (pdftex.def)             Requested size: 126.47346pt x 68.20532pt.
 
-<content/images/Collection/Part3.png, id=368, 210.7875pt x 113.67468pt>
+<content/images/Collection/Part3.png, id=373, 210.7875pt x 113.67468pt>
 File: content/images/Collection/Part3.png Graphic file (type png)
 
 <use content/images/Collection/Part3.png>
@@ -1214,7 +1211,7 @@ Package pdftex.def Info: content/images/Collection/Part3.png used on input line
  80.
 (pdftex.def)             Requested size: 126.47346pt x 68.20532pt.
 
-<content/images/Collection/Part4.png, id=369, 210.7875pt x 113.67468pt>
+<content/images/Collection/Part4.png, id=374, 210.7875pt x 113.67468pt>
 File: content/images/Collection/Part4.png Graphic file (type png)
 
 <use content/images/Collection/Part4.png>
@@ -1222,7 +1219,7 @@ Package pdftex.def Info: content/images/Collection/Part4.png used on input line
  88.
 (pdftex.def)             Requested size: 126.47346pt x 68.20532pt.
 
-<content/images/Collection/Part5.png, id=370, 210.7875pt x 113.67468pt>
+<content/images/Collection/Part5.png, id=375, 210.7875pt x 113.67468pt>
 File: content/images/Collection/Part5.png Graphic file (type png)
 
 <use content/images/Collection/Part5.png>
@@ -1230,7 +1227,7 @@ Package pdftex.def Info: content/images/Collection/Part5.png used on input line
  96.
 (pdftex.def)             Requested size: 126.47346pt x 68.20532pt.
 
-<content/images/Collection/Part6.png, id=371, 210.7875pt x 113.67468pt>
+<content/images/Collection/Part6.png, id=376, 210.7875pt x 113.67468pt>
 File: content/images/Collection/Part6.png Graphic file (type png)
 
 <use content/images/Collection/Part6.png>
@@ -1238,7 +1235,7 @@ Package pdftex.def Info: content/images/Collection/Part6.png used on input line
  104.
 (pdftex.def)             Requested size: 126.47346pt x 68.20532pt.
 
-<content/images/Collection/Part7.png, id=372, 210.7875pt x 113.67468pt>
+<content/images/Collection/Part7.png, id=377, 210.7875pt x 113.67468pt>
 File: content/images/Collection/Part7.png Graphic file (type png)
 
 <use content/images/Collection/Part7.png>
@@ -1246,7 +1243,7 @@ Package pdftex.def Info: content/images/Collection/Part7.png used on input line
  112.
 (pdftex.def)             Requested size: 126.47346pt x 68.20532pt.
 
-<content/images/Collection/Part8.png, id=373, 210.7875pt x 113.67468pt>
+<content/images/Collection/Part8.png, id=378, 210.7875pt x 113.67468pt>
 File: content/images/Collection/Part8.png Graphic file (type png)
 
 <use content/images/Collection/Part8.png>
@@ -1258,7 +1255,7 @@ Underfull \hbox (badness 1442) in paragraph at lines 121--121
 [][][]|\OT1/cmr/m/n/10 All the chil-dren of node 3 are
  []
 
-<content/images/Collection/Part9.png, id=374, 210.7875pt x 113.67468pt>
+<content/images/Collection/Part9.png, id=379, 210.7875pt x 113.67468pt>
 File: content/images/Collection/Part9.png Graphic file (type png)
 
 <use content/images/Collection/Part9.png>
@@ -1282,7 +1279,7 @@ Part3.png> <./content/images/Collection/Part4.png> <./content/images/Collection
 /Part5.png> <./content/images/Collection/Part6.png> <./content/images/Collectio
 n/Part7.png> <./content/images/Collection/Part8.png> <./content/images/Collecti
 on/Part9.png>]
-<content/images/Schedule/Network.png, id=386, 258.9675pt x 241.65282pt>
+<content/images/Schedule/Network.png, id=391, 258.9675pt x 241.65282pt>
 File: content/images/Schedule/Network.png Graphic file (type png)
 
 <use content/images/Schedule/Network.png>
@@ -1290,7 +1287,7 @@ Package pdftex.def Info: content/images/Schedule/Network.png used on input line
  150.
 (pdftex.def)             Requested size: 155.38168pt x 144.9928pt.
 
-<content/images/Schedule/RootedCircle.png, id=387, 258.9675pt x 241.65282pt>
+<content/images/Schedule/RootedCircle.png, id=392, 258.9675pt x 241.65282pt>
 File: content/images/Schedule/RootedCircle.png Graphic file (type png)
 
 <use content/images/Schedule/RootedCircle.png>
@@ -1298,7 +1295,7 @@ Package pdftex.def Info: content/images/Schedule/RootedCircle.png used on input
  line 158.
 (pdftex.def)             Requested size: 155.38168pt x 144.9928pt.
  [17]
-<content/images/Schedule/FullSchedule.png, id=396, 258.9675pt x 241.65282pt>
+<content/images/Schedule/FullSchedule.png, id=401, 258.9675pt x 241.65282pt>
 File: content/images/Schedule/FullSchedule.png Graphic file (type png)
 
 <use content/images/Schedule/FullSchedule.png>
@@ -1322,7 +1319,7 @@ Overfull \hbox (2.48438pt too wide) in paragraph at lines 205--206
  []
 
 [20]
-<content/images/ScheduleSpreading/Part1.png, id=457, 210.7875pt x 113.67468pt>
+<content/images/ScheduleSpreading/Part1.png, id=462, 210.7875pt x 113.67468pt>
 File: content/images/ScheduleSpreading/Part1.png Graphic file (type png)
 
 <use content/images/ScheduleSpreading/Part1.png>
@@ -1330,7 +1327,7 @@ Package pdftex.def Info: content/images/ScheduleSpreading/Part1.png used on inp
 ut line 230.
 (pdftex.def)             Requested size: 126.47346pt x 68.20532pt.
 
-<content/images/ScheduleSpreading/Part2.png, id=458, 210.7875pt x 113.67468pt>
+<content/images/ScheduleSpreading/Part2.png, id=463, 210.7875pt x 113.67468pt>
 File: content/images/ScheduleSpreading/Part2.png Graphic file (type png)
 
 <use content/images/ScheduleSpreading/Part2.png>
@@ -1338,7 +1335,7 @@ Package pdftex.def Info: content/images/ScheduleSpreading/Part2.png used on inp
 ut line 238.
 (pdftex.def)             Requested size: 126.47346pt x 68.20532pt.
 
-<content/images/ScheduleSpreading/Part3.png, id=459, 210.7875pt x 113.67468pt>
+<content/images/ScheduleSpreading/Part3.png, id=464, 210.7875pt x 113.67468pt>
 File: content/images/ScheduleSpreading/Part3.png Graphic file (type png)
 
 <use content/images/ScheduleSpreading/Part3.png>
@@ -1346,7 +1343,7 @@ Package pdftex.def Info: content/images/ScheduleSpreading/Part3.png used on inp
 ut line 246.
 (pdftex.def)             Requested size: 126.47346pt x 68.20532pt.
 
-<content/images/ScheduleSpreading/Part4.png, id=460, 210.7875pt x 113.67468pt>
+<content/images/ScheduleSpreading/Part4.png, id=465, 210.7875pt x 113.67468pt>
 File: content/images/ScheduleSpreading/Part4.png Graphic file (type png)
 
 <use content/images/ScheduleSpreading/Part4.png>
@@ -1354,7 +1351,7 @@ Package pdftex.def Info: content/images/ScheduleSpreading/Part4.png used on inp
 ut line 254.
 (pdftex.def)             Requested size: 126.47346pt x 68.20532pt.
 
-<content/images/ScheduleSpreading/Part5.png, id=461, 210.7875pt x 113.67468pt>
+<content/images/ScheduleSpreading/Part5.png, id=466, 210.7875pt x 113.67468pt>
 File: content/images/ScheduleSpreading/Part5.png Graphic file (type png)
 
 <use content/images/ScheduleSpreading/Part5.png>
@@ -1362,7 +1359,7 @@ Package pdftex.def Info: content/images/ScheduleSpreading/Part5.png used on inp
 ut line 262.
 (pdftex.def)             Requested size: 126.47346pt x 68.20532pt.
 
-<content/images/ScheduleSpreading/Part6.png, id=462, 210.7875pt x 113.67468pt>
+<content/images/ScheduleSpreading/Part6.png, id=467, 210.7875pt x 113.67468pt>
 File: content/images/ScheduleSpreading/Part6.png Graphic file (type png)
 
 <use content/images/ScheduleSpreading/Part6.png>
@@ -1370,7 +1367,7 @@ Package pdftex.def Info: content/images/ScheduleSpreading/Part6.png used on inp
 ut line 270.
 (pdftex.def)             Requested size: 126.47346pt x 68.20532pt.
 
-<content/images/ScheduleSpreading/Part7.png, id=463, 210.7875pt x 113.67468pt>
+<content/images/ScheduleSpreading/Part7.png, id=468, 210.7875pt x 113.67468pt>
 File: content/images/ScheduleSpreading/Part7.png Graphic file (type png)
 
 <use content/images/ScheduleSpreading/Part7.png>
@@ -1378,7 +1375,7 @@ Package pdftex.def Info: content/images/ScheduleSpreading/Part7.png used on inp
 ut line 278.
 (pdftex.def)             Requested size: 126.47346pt x 68.20532pt.
 
-<content/images/ScheduleSpreading/Part8.png, id=464, 210.7875pt x 113.67468pt>
+<content/images/ScheduleSpreading/Part8.png, id=469, 210.7875pt x 113.67468pt>
 File: content/images/ScheduleSpreading/Part8.png Graphic file (type png)
 
 <use content/images/ScheduleSpreading/Part8.png>
@@ -1386,7 +1383,7 @@ Package pdftex.def Info: content/images/ScheduleSpreading/Part8.png used on inp
 ut line 286.
 (pdftex.def)             Requested size: 126.47346pt x 68.20532pt.
 
-<content/images/ScheduleSpreading/Part9.png, id=465, 210.7875pt x 113.67468pt>
+<content/images/ScheduleSpreading/Part9.png, id=470, 210.7875pt x 113.67468pt>
 File: content/images/ScheduleSpreading/Part9.png Graphic file (type png)
 
 <use content/images/ScheduleSpreading/Part9.png>
@@ -1394,7 +1391,7 @@ Package pdftex.def Info: content/images/ScheduleSpreading/Part9.png used on inp
 ut line 294.
 (pdftex.def)             Requested size: 126.47346pt x 68.20532pt.
 
-<content/images/ScheduleSpreading/Part10.png, id=466, 210.7875pt x 113.67468pt>
+<content/images/ScheduleSpreading/Part10.png, id=471, 210.7875pt x 113.67468pt>
 File: content/images/ScheduleSpreading/Part10.png Graphic file (type png)
 <use content/images/ScheduleSpreading/Part10.png>
 Package pdftex.def Info: content/images/ScheduleSpreading/Part10.png used on in
@@ -1404,7 +1401,7 @@ put line 302.
 
 LaTeX Warning: Float too large for page by 18.17664pt on input line 308.
 
-<content/images/MessageDrop.png, id=467, 498.37392pt x 144.54pt>
+<content/images/MessageDrop.png, id=472, 498.37392pt x 144.54pt>
 File: content/images/MessageDrop.png Graphic file (type png)
 
 <use content/images/MessageDrop.png>
@@ -1428,7 +1425,7 @@ nt/images/ScheduleSpreading/Part9.png> <./content/images/ScheduleSpreading/Part
 ]
 chapter 4.
 
-<content/images/BaseStation/Klassendiagram.png, id=487, 577.29276pt x 230.97491
+<content/images/BaseStation/Klassendiagram.png, id=492, 577.29276pt x 230.97491
 pt>
 File: content/images/BaseStation/Klassendiagram.png Graphic file (type png)
  <use content/images/BaseStation/Klassendiagram.png>
@@ -1436,7 +1433,7 @@ Package pdftex.def Info: content/images/BaseStation/Klassendiagram.png used on
 input line 12.
 (pdftex.def)             Requested size: 404.10217pt x 161.68134pt.
  [25 <./content/images/BaseStation/Klassendiagram.png>]
-<content/images/Motes/GeneralStructure.png, id=494, 733.97412pt x 431.38773pt>
+<content/images/Motes/GeneralStructure.png, id=499, 733.97412pt x 431.38773pt>
 File: content/images/Motes/GeneralStructure.png Graphic file (type png)
 
 <use content/images/Motes/GeneralStructure.png>
@@ -1449,7 +1446,7 @@ Overfull \hbox (22.38788pt too wide) in paragraph at lines 21--22
  []
 
 [26 <./content/images/Motes/GeneralStructure.png>]
-<content/images/Processes/ComandsEvents.png, id=502, 771.55452pt x 396.0396pt>
+<content/images/Processes/ComandsEvents.png, id=507, 771.55452pt x 396.0396pt>
 File: content/images/Processes/ComandsEvents.png Graphic file (type png)
 
 <use content/images/Processes/ComandsEvents.png>
@@ -1476,54 +1473,63 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ]
 chapter 5.
-
-<content/images/Experiment/NightRounds.png, id=617, 383.18156pt x 182.93344pt>
-File: content/images/Experiment/NightRounds.png Graphic file (type png)
-
-<use content/images/Experiment/NightRounds.png>
-Package pdftex.def Info: content/images/Experiment/NightRounds.png used on inpu
-t line 48.
-(pdftex.def)             Requested size: 287.38545pt x 137.19974pt.
-
-<content/images/Experiment/NightCollection.png, id=618, 490.83376pt x 229.60782
+[37] [38]
+<content/images/Experiment/NightCollection.png, id=633, 490.83376pt x 229.60782
 pt>
 File: content/images/Experiment/NightCollection.png Graphic file (type png)
  <use content/images/Experiment/NightCollection.png>
 Package pdftex.def Info: content/images/Experiment/NightCollection.png used on 
-input line 55.
+input line 56.
 (pdftex.def)             Requested size: 368.1244pt x 172.20543pt.
 
-<content/images/Experiment/DayRounds.png, id=619, 380.17032pt x 176.91093pt>
-File: content/images/Experiment/DayRounds.png Graphic file (type png)
+<content/images/Experiment/NightRounds.png, id=635, 383.18156pt x 182.93344pt>
+File: content/images/Experiment/NightRounds.png Graphic file (type png)
 
-<use content/images/Experiment/DayRounds.png>
-Package pdftex.def Info: content/images/Experiment/DayRounds.png used on input 
-line 86.
-(pdftex.def)             Requested size: 285.12703pt x 132.68286pt.
+<use content/images/Experiment/NightRounds.png>
+Package pdftex.def Info: content/images/Experiment/NightRounds.png used on inpu
+t line 65.
+(pdftex.def)             Requested size: 287.38545pt x 137.19974pt.
 
-<content/images/Experiment/DayCollection.png, id=620, 382.42876pt x 179.16937pt
+Overfull \hbox (17.09438pt too wide) in paragraph at lines 76--90
+ [][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [39 <./content/images/Experiment/NightCollection.png> <./content/images/Experi
+ment/NightRounds.png>]
+<content/images/Experiment/DayCollection.png, id=647, 382.42876pt x 179.16937pt
 >
 File: content/images/Experiment/DayCollection.png Graphic file (type png)
  <use content/images/Experiment/DayCollection.png>
 Package pdftex.def Info: content/images/Experiment/DayCollection.png used on in
-put line 93.
+put line 98.
 (pdftex.def)             Requested size: 286.82085pt x 134.3767pt.
-) [37] [38 <./content/images/Experiment/NightRounds.png> <./content/images/Expe
-riment/NightCollection.png>] [39 <./content/images/Experiment/DayRounds.png> <.
-/content/images/Experiment/DayCollection.png>]
+
+<content/images/Experiment/DayRounds.png, id=648, 380.17032pt x 176.91093pt>
+File: content/images/Experiment/DayRounds.png Graphic file (type png)
+
+<use content/images/Experiment/DayRounds.png>
+Package pdftex.def Info: content/images/Experiment/DayRounds.png used on input 
+line 107.
+(pdftex.def)             Requested size: 285.12703pt x 132.68286pt.
+) [40] [41 <./content/images/Experiment/DayCollection.png> <./content/images/Ex
+periment/DayRounds.png>]
 \openout2 = `content/chapters/chapter6.aux'.
 
- (content/chapters/chapter6.tex [40
+
+(content/chapters/chapter6.tex [42
 
 
 
 
 ]
 chapter 6.
-) [41]
+) [43]
 \openout2 = `content/chapters/chapter7.aux'.
 
- (content/chapters/chapter7.tex [42
+ (content/chapters/chapter7.tex [44
 
 
 
@@ -1532,7 +1538,7 @@ chapter 6.
 chapter 7.
 LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 4.
-) [43] (Fristname_Lastname_Diplom_Master_arbeit.bbl [44
+) [45] (Fristname_Lastname_Diplom_Master_arbeit.bbl [46
 
 
 
@@ -1995,10 +2001,10 @@ you should replace it, e.g., by `\normalfont \scshape '.
 To make it work for now, you can use the already also deprecated class option
 `enabledeprecatedfontcommands'.
 
-) [45]
+) [47]
 \openout2 = `content/chapters/clause.aux'.
 
- (content/chapters/clause.tex [46
+ (content/chapters/clause.tex [48
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 12--13
@@ -2020,7 +2026,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--225
 
  []
 
-[47
+[49
 
 
 ]
@@ -2036,21 +2042,21 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 227.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 227.
 Package rerunfilecheck Info: File `Fristname_Lastname_Diplom_Master_arbeit.out'
  has not changed.
-(rerunfilecheck)             Checksum: FD2700200B00A85AA67189A5152BC2FB;2380.
+(rerunfilecheck)             Checksum: C3D0CF094BE00061FC4FA5CFBDEB566D;2442.
 
 
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 227.
  ) 
 Here is how much of TeX's memory you used:
- 11936 strings out of 493333
- 192666 string characters out of 3139193
- 390540 words of memory out of 3000000
- 14958 multiletter control sequences out of 15000+200000
+ 11939 strings out of 493334
+ 192692 string characters out of 3139220
+ 386440 words of memory out of 3000000
+ 14956 multiletter control sequences out of 15000+200000
  12146 words of font info for 42 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  48i,10n,66p,8852b,1767s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2068,10 +2074,10 @@ am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss17.pfb><C:/Program Files
 /MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Program Files/MiKTe
 X 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fo
 nts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on Fristname_Lastname_Diplom_Master_arbeit.pdf (51 pages, 114006
-1 bytes).
+Output written on Fristname_Lastname_Diplom_Master_arbeit.pdf (53 pages, 114905
+0 bytes).
 PDF statistics:
- 782 PDF objects out of 1000 (max. 8388607)
- 248 named destinations out of 1000 (max. 500000)
- 474 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 804 PDF objects out of 1000 (max. 8388607)
+ 253 named destinations out of 1000 (max. 500000)
+ 482 words of extra memory for PDF output out of 10000 (max. 10000000)
 
