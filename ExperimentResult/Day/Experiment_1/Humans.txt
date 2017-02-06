@@ -3,3 +3,6 @@ someone arraives and leaves between 10 and 12
 arraives at 11:20
 arraives at 12
 arraives at 12:30
+
+arraives at 9:00
+leaves at 11:45
