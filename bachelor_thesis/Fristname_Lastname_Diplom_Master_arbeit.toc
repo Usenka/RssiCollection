@@ -8,8 +8,8 @@
 \contentsline {section}{\numberline {2.1}Wireless Sensor Networks}{5}{section.2.1}
 \contentsline {section}{\numberline {2.2}Radio Tomographic Imaging}{5}{section.2.2}
 \contentsline {section}{\numberline {2.3}Multi-Spin}{6}{section.2.3}
-\contentsline {section}{\numberline {2.4}Testbed}{7}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}TelosB Mote}{8}{subsection.2.4.1}
+\contentsline {section}{\numberline {2.4}Wireles Sonsor Network Testbed}{7}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}TelosB Mote}{7}{subsection.2.4.1}
 \contentsline {subsection}{\numberline {2.4.2}TinyOS}{8}{subsection.2.4.2}
 \contentsline {subsubsection}{\numberline {2.4.2.1}Programming for TinyOS}{9}{subsubsection.2.4.2.1}
 \contentsline {chapter}{\numberline {3}Approach}{13}{chapter.3}
@@ -20,23 +20,24 @@
 \contentsline {subsection}{\numberline {3.4.1}Rooted Circles}{17}{subsection.3.4.1}
 \contentsline {subsection}{\numberline {3.4.2}Creating a Full Schedule}{18}{subsection.3.4.2}
 \contentsline {section}{\numberline {3.5}Spreading the Schedule}{20}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}Sampling}{21}{subsection.3.5.1}
-\contentsline {subsection}{\numberline {3.5.2}Message Drops}{21}{subsection.3.5.2}
-\contentsline {chapter}{\numberline {4}Implementation}{25}{chapter.4}
-\contentsline {section}{\numberline {4.1}General Structure}{25}{section.4.1}
-\contentsline {section}{\numberline {4.2}Receiving and Storing Information at the Base Station}{28}{section.4.2}
-\contentsline {section}{\numberline {4.3}Calibration}{28}{section.4.3}
-\contentsline {section}{\numberline {4.4}Collection}{30}{section.4.4}
-\contentsline {section}{\numberline {4.5}Creating the Schedule}{32}{section.4.5}
-\contentsline {section}{\numberline {4.6}Spreading the Schedule}{32}{section.4.6}
-\contentsline {section}{\numberline {4.7}Sampling}{33}{section.4.7}
-\contentsline {chapter}{\numberline {5}Evaluation}{37}{chapter.5}
-\contentsline {section}{\numberline {5.1}Experiment Setup}{37}{section.5.1}
-\contentsline {section}{\numberline {5.2}Experiment Night}{37}{section.5.2}
-\contentsline {section}{\numberline {5.3}Experiment Day}{40}{section.5.3}
-\contentsline {section}{\numberline {5.4}Assessment}{42}{section.5.4}
-\contentsline {chapter}{\numberline {6}Discussion}{43}{chapter.6}
-\contentsline {section}{\numberline {6.1}Comparison to a Timeslot Based Approach}{43}{section.6.1}
-\contentsline {section}{\numberline {6.2}Possible Improvements}{43}{section.6.2}
-\contentsline {chapter}{\numberline {7}Acknowledgements}{45}{chapter.7}
-\contentsline {chapter}{\nonumberline Bibliography}{47}{chapter*.22}
+\contentsline {subsection}{\numberline {3.5.1}Sampling}{20}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Message Drops}{22}{subsection.3.5.2}
+\contentsline {chapter}{\numberline {4}Implementation}{23}{chapter.4}
+\contentsline {section}{\numberline {4.1}General Structure}{23}{section.4.1}
+\contentsline {section}{\numberline {4.2}Receiving and Storing Information at the Base Station}{26}{section.4.2}
+\contentsline {section}{\numberline {4.3}Calibration}{26}{section.4.3}
+\contentsline {section}{\numberline {4.4}Collection}{28}{section.4.4}
+\contentsline {section}{\numberline {4.5}Creating the Schedule}{30}{section.4.5}
+\contentsline {section}{\numberline {4.6}Spreading the Schedule}{30}{section.4.6}
+\contentsline {section}{\numberline {4.7}Sampling}{31}{section.4.7}
+\contentsline {chapter}{\numberline {5}Evaluation}{35}{chapter.5}
+\contentsline {section}{\numberline {5.1}Experiment Setup}{35}{section.5.1}
+\contentsline {section}{\numberline {5.2}Experiment Night}{35}{section.5.2}
+\contentsline {section}{\numberline {5.3}Experiment Day}{38}{section.5.3}
+\contentsline {section}{\numberline {5.4}Usability for RTI localisation}{40}{section.5.4}
+\contentsline {section}{\numberline {5.5}Comparison to a Timeslot Based Approach}{40}{section.5.5}
+\contentsline {chapter}{\numberline {6}Discussion}{41}{chapter.6}
+\contentsline {section}{\numberline {6.1}Possible Improvements}{41}{section.6.1}
+\contentsline {section}{\numberline {6.2}Conclusion}{41}{section.6.2}
+\contentsline {chapter}{\numberline {7}Acknowledgements}{43}{chapter.7}
+\contentsline {chapter}{\nonumberline Bibliography}{45}{chapter*.22}

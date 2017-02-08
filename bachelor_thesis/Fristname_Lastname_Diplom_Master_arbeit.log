@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.11.18)  6 FEB 2017 12:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=latex 2017.1.17)  8 FEB 2017 13:58
 entering extended mode
 **./Fristname_Lastname_Diplom_Master_arbeit.tex
 (Fristname_Lastname_Diplom_Master_arbeit.tex
@@ -653,8 +653,8 @@ File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 File: listings.cfg 2015/06/04 1.6 listings configuration
 ))
 Package: listings 2015/06/04 1.6 (Carsten Heinz)
-Package color Info: Redefining color red on input line 94.
-Package color Info: Redefining color yellow on input line 96.
+Package color Info: Redefining color red on input line 95.
+Package color Info: Redefining color yellow on input line 97.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
 Package: hyperref 2016/06/24 v6.83q Hypertext links for LaTeX
@@ -784,7 +784,7 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 11.0pt
 (typearea)              \footskip       = 47.60002pt
 (typearea)              \baselineskip   = 13.6pt
-(typearea)              on input line 141.
+(typearea)              on input line 142.
 
 (Fristname_Lastname_Diplom_Master_arbeit.aux (content/chapters/titlePage.aux)
 (content/chapters/abstract.aux) (content/chapters/chapter1.aux)
@@ -794,20 +794,20 @@ Package typearea Info: These are the values describing the layout:
 (content/chapters/clause.aux))
 \openout1 = `Fristname_Lastname_Diplom_Master_arbeit.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 169.
-LaTeX Font Info:    ... okay on input line 169.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 169.
-LaTeX Font Info:    ... okay on input line 169.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 169.
-LaTeX Font Info:    ... okay on input line 169.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 169.
-LaTeX Font Info:    ... okay on input line 169.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 169.
-LaTeX Font Info:    ... okay on input line 169.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 169.
-LaTeX Font Info:    ... okay on input line 169.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 169.
-LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 170.
+LaTeX Font Info:    ... okay on input line 170.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 170.
+LaTeX Font Info:    ... okay on input line 170.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 170.
+LaTeX Font Info:    ... okay on input line 170.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 170.
+LaTeX Font Info:    ... okay on input line 170.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 170.
+LaTeX Font Info:    ... okay on input line 170.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 170.
+LaTeX Font Info:    ... okay on input line 170.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 170.
+LaTeX Font Info:    ... okay on input line 170.
 
 
 bibgerm.sty: babel.sty detected
@@ -845,7 +845,7 @@ Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count124
 \AtBeginShipoutBox=\box35
-Package hyperref Info: Link coloring ON on input line 169.
+Package hyperref Info: Link coloring ON on input line 170.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -855,9 +855,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count125
 )
-LaTeX Info: Redefining \ref on input line 169.
-LaTeX Info: Redefining \pageref on input line 169.
-LaTeX Info: Redefining \nameref on input line 169.
+LaTeX Info: Redefining \ref on input line 170.
+LaTeX Info: Redefining \pageref on input line 170.
+LaTeX Info: Redefining \nameref on input line 170.
 
 (Fristname_Lastname_Diplom_Master_arbeit.out)
 (Fristname_Lastname_Diplom_Master_arbeit.out)
@@ -948,7 +948,7 @@ you should replace it, e.g., by `\normalfont \bfseries '.
 To make it work for now, you can use the already also deprecated class option
 `enabledeprecatedfontcommands'.
 
-<content/images/NES_Logo.pdf, id=159, 1212.91142pt x 269.53499pt>
+<content/images/NES_Logo.pdf, id=163, 1212.91142pt x 269.53499pt>
 File: content/images/NES_Logo.pdf Graphic file (type pdf)
 
 <use content/images/NES_Logo.pdf>
@@ -1104,12 +1104,12 @@ Class scrbook Warning: \float@addtolists detected!
 (scrbook)              a package that still implements the
 (scrbook)              deprecated \float@addtolist interface .
 
-) [3
+[3
 
 
 
 
-] [4]
+]) [4]
 \openout2 = `content/chapters/chapter2.aux'.
 
  (content/chapters/chapter2.tex
@@ -1119,47 +1119,67 @@ chapter 2.
 
 
 
-] <content/images/Multispin.png, id=260, 518.60953pt x 177.7842pt>
+]
+! Undefined control sequence.
+l.36 ...ed. In the literature the Multi-Spin\citep
+                                                  {RtiMulti} algorithm that ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<content/images/Multispin.png, id=265, 518.60953pt x 177.7842pt>
 File: content/images/Multispin.png Graphic file (type png)
 
 <use content/images/Multispin.png>
 Package pdftex.def Info: content/images/Multispin.png used on input line 42.
 (pdftex.def)             Requested size: 414.88818pt x 142.22752pt.
  [6 <./content/images/Multispin.png>]
-<content/images/Testbed.png, id=272, 441.90094pt x 264.23718pt>
+<content/images/Testbed.png, id=277, 441.90094pt x 264.23718pt>
 File: content/images/Testbed.png Graphic file (type png)
 
 <use content/images/Testbed.png>
-Package pdftex.def Info: content/images/Testbed.png used on input line 65.
+Package pdftex.def Info: content/images/Testbed.png used on input line 67.
 (pdftex.def)             Requested size: 331.42488pt x 198.17738pt.
- [7 <./content/images/Testbed.png>]
-<content/images/Mote1.png, id=282, 161.85469pt x 259.7203pt>
+ [7]
+<content/images/Mote1.png, id=286, 161.85469pt x 259.7203pt>
 File: content/images/Mote1.png Graphic file (type png)
 
 <use content/images/Mote1.png>
-Package pdftex.def Info: content/images/Mote1.png used on input line 77.
+Package pdftex.def Info: content/images/Mote1.png used on input line 80.
 (pdftex.def)             Requested size: 113.2975pt x 181.80296pt.
- [8 <./content/images/Mote1.png>] [9] [10]
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 149.
+ [8 <./content/images/Testbed.png>] [9 <./content/images/Mote1.png>]
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 105.
+ [10]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 152.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 152.
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 152.
 
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
 File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 149.
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <9> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 152.
 ) [11]
 \openout2 = `content/chapters/chapter3.aux'.
 
-
-(content/chapters/chapter3.tex [12
+ (content/chapters/chapter3.tex [12
 
 
 
 
 ]
 chapter 3.
-[13] <content/images/Architecture.png, id=374, 240.80363pt x 381.5856pt>
+[13]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 16.
+
+<content/images/Architecture.png, id=381, 240.80363pt x 381.5856pt>
 File: content/images/Architecture.png Graphic file (type png)
 
 <use content/images/Architecture.png>
@@ -1167,7 +1187,7 @@ Package pdftex.def Info: content/images/Architecture.png used on input line 20.
 
 (pdftex.def)             Requested size: 144.48329pt x 228.95311pt.
 
-<content/images/GeneralAproachM.png, id=375, 232.61906pt x 320.69812pt>
+<content/images/GeneralAproachM.png, id=382, 232.61906pt x 320.69812pt>
 File: content/images/GeneralAproachM.png Graphic file (type png)
 
 <use content/images/GeneralAproachM.png>
@@ -1175,103 +1195,96 @@ Package pdftex.def Info: content/images/GeneralAproachM.png used on input line
 29.
 (pdftex.def)             Requested size: 162.83221pt x 224.48714pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 6893) has occurred while \output is active []
 
  [14 <./content/images/Architecture.png> <./content/images/GeneralAproachM.png>
 ]
-<content/images/Collection/Part0.png, id=380, 210.7875pt x 113.67468pt>
+<content/images/Collection/Part0.png, id=388, 210.7875pt x 113.67468pt>
 File: content/images/Collection/Part0.png Graphic file (type png)
 
 <use content/images/Collection/Part0.png>
 Package pdftex.def Info: content/images/Collection/Part0.png used on input line
- 56.
+ 55.
 (pdftex.def)             Requested size: 126.47346pt x 68.20532pt.
 
-<content/images/Collection/Part1.png, id=381, 210.7875pt x 113.67468pt>
+<content/images/Collection/Part1.png, id=389, 210.7875pt x 113.67468pt>
 File: content/images/Collection/Part1.png Graphic file (type png)
 
 <use content/images/Collection/Part1.png>
 Package pdftex.def Info: content/images/Collection/Part1.png used on input line
- 64.
+ 63.
 (pdftex.def)             Requested size: 126.47346pt x 68.20532pt.
 
-<content/images/Collection/Part2.png, id=382, 210.7875pt x 113.67468pt>
+<content/images/Collection/Part2.png, id=390, 210.7875pt x 113.67468pt>
 File: content/images/Collection/Part2.png Graphic file (type png)
 
 <use content/images/Collection/Part2.png>
 Package pdftex.def Info: content/images/Collection/Part2.png used on input line
- 72.
+ 71.
 (pdftex.def)             Requested size: 126.47346pt x 68.20532pt.
 
-<content/images/Collection/Part3.png, id=383, 210.7875pt x 113.67468pt>
+<content/images/Collection/Part3.png, id=391, 210.7875pt x 113.67468pt>
 File: content/images/Collection/Part3.png Graphic file (type png)
 
 <use content/images/Collection/Part3.png>
 Package pdftex.def Info: content/images/Collection/Part3.png used on input line
- 80.
+ 79.
 (pdftex.def)             Requested size: 126.47346pt x 68.20532pt.
 
-<content/images/Collection/Part4.png, id=384, 210.7875pt x 113.67468pt>
+<content/images/Collection/Part4.png, id=392, 210.7875pt x 113.67468pt>
 File: content/images/Collection/Part4.png Graphic file (type png)
 
 <use content/images/Collection/Part4.png>
 Package pdftex.def Info: content/images/Collection/Part4.png used on input line
- 88.
+ 87.
 (pdftex.def)             Requested size: 126.47346pt x 68.20532pt.
 
-<content/images/Collection/Part5.png, id=385, 210.7875pt x 113.67468pt>
+<content/images/Collection/Part5.png, id=393, 210.7875pt x 113.67468pt>
 File: content/images/Collection/Part5.png Graphic file (type png)
 
 <use content/images/Collection/Part5.png>
 Package pdftex.def Info: content/images/Collection/Part5.png used on input line
- 96.
+ 95.
 (pdftex.def)             Requested size: 126.47346pt x 68.20532pt.
 
-<content/images/Collection/Part6.png, id=386, 210.7875pt x 113.67468pt>
+<content/images/Collection/Part6.png, id=394, 210.7875pt x 113.67468pt>
 File: content/images/Collection/Part6.png Graphic file (type png)
 
 <use content/images/Collection/Part6.png>
 Package pdftex.def Info: content/images/Collection/Part6.png used on input line
- 104.
+ 103.
 (pdftex.def)             Requested size: 126.47346pt x 68.20532pt.
 
-<content/images/Collection/Part7.png, id=387, 210.7875pt x 113.67468pt>
+<content/images/Collection/Part7.png, id=395, 210.7875pt x 113.67468pt>
 File: content/images/Collection/Part7.png Graphic file (type png)
 
 <use content/images/Collection/Part7.png>
 Package pdftex.def Info: content/images/Collection/Part7.png used on input line
- 112.
+ 111.
 (pdftex.def)             Requested size: 126.47346pt x 68.20532pt.
 
-<content/images/Collection/Part8.png, id=388, 210.7875pt x 113.67468pt>
+<content/images/Collection/Part8.png, id=396, 210.7875pt x 113.67468pt>
 File: content/images/Collection/Part8.png Graphic file (type png)
 
 <use content/images/Collection/Part8.png>
 Package pdftex.def Info: content/images/Collection/Part8.png used on input line
- 120.
+ 119.
 (pdftex.def)             Requested size: 126.47346pt x 68.20532pt.
 
-Underfull \hbox (badness 1442) in paragraph at lines 121--121
+Underfull \hbox (badness 1442) in paragraph at lines 120--120
 [][][]|\OT1/cmr/m/n/10 All the chil-dren of node 3 are
  []
 
-<content/images/Collection/Part9.png, id=389, 210.7875pt x 113.67468pt>
+<content/images/Collection/Part9.png, id=397, 210.7875pt x 113.67468pt>
 File: content/images/Collection/Part9.png Graphic file (type png)
 
 <use content/images/Collection/Part9.png>
 Package pdftex.def Info: content/images/Collection/Part9.png used on input line
- 128.
+ 127.
 (pdftex.def)             Requested size: 126.47346pt x 68.20532pt.
 
 
 LaTeX Warning: Float too large for page by 18.17664pt on input line 133.
-
-
-Package caption Warning: \label without proper reference on input line 52.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `fig:coll' on page 15 undefined on input line 135.
 
 [15] [16 <./content/images/Collection/Part0.png> <./content/images/Collection/P
 art1.png> <./content/images/Collection/Part2.png> <./content/images/Collection/
@@ -1279,7 +1292,7 @@ Part3.png> <./content/images/Collection/Part4.png> <./content/images/Collection
 /Part5.png> <./content/images/Collection/Part6.png> <./content/images/Collectio
 n/Part7.png> <./content/images/Collection/Part8.png> <./content/images/Collecti
 on/Part9.png>]
-<content/images/Schedule/Network.png, id=401, 258.9675pt x 241.65282pt>
+<content/images/Schedule/Network.png, id=409, 258.9675pt x 241.65282pt>
 File: content/images/Schedule/Network.png Graphic file (type png)
 
 <use content/images/Schedule/Network.png>
@@ -1287,7 +1300,7 @@ Package pdftex.def Info: content/images/Schedule/Network.png used on input line
  150.
 (pdftex.def)             Requested size: 155.38168pt x 144.9928pt.
 
-<content/images/Schedule/RootedCircle.png, id=402, 258.9675pt x 241.65282pt>
+<content/images/Schedule/RootedCircle.png, id=410, 258.9675pt x 241.65282pt>
 File: content/images/Schedule/RootedCircle.png Graphic file (type png)
 
 <use content/images/Schedule/RootedCircle.png>
@@ -1295,7 +1308,7 @@ Package pdftex.def Info: content/images/Schedule/RootedCircle.png used on input
  line 158.
 (pdftex.def)             Requested size: 155.38168pt x 144.9928pt.
  [17]
-<content/images/Schedule/FullSchedule.png, id=411, 258.9675pt x 241.65282pt>
+<content/images/Schedule/FullSchedule.png, id=419, 258.9675pt x 241.65282pt>
 File: content/images/Schedule/FullSchedule.png Graphic file (type png)
 
 <use content/images/Schedule/FullSchedule.png>
@@ -1303,23 +1316,8 @@ Package pdftex.def Info: content/images/Schedule/FullSchedule.png used on input
  line 171.
 (pdftex.def)             Requested size: 155.38168pt x 144.9928pt.
  [18 <./content/images/Schedule/Network.png> <./content/images/Schedule/RootedC
-ircle.png>]
-Overfull \hbox (55.04492pt too wide) in paragraph at lines 187--188
-[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-[19 <./content/images/Schedule/FullSchedule.png>]
-Overfull \hbox (28.76465pt too wide) in paragraph at lines 200--201
-[][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (2.48438pt too wide) in paragraph at lines 205--206
-[][][][][][][][][][][][][][][][] 
- []
-
-[20]
-<content/images/ScheduleSpreading/Part1.png, id=472, 210.7875pt x 113.67468pt>
+ircle.png>] [19 <./content/images/Schedule/FullSchedule.png>]
+<content/images/ScheduleSpreading/Part1.png, id=457, 210.7875pt x 113.67468pt>
 File: content/images/ScheduleSpreading/Part1.png Graphic file (type png)
 
 <use content/images/ScheduleSpreading/Part1.png>
@@ -1327,7 +1325,7 @@ Package pdftex.def Info: content/images/ScheduleSpreading/Part1.png used on inp
 ut line 230.
 (pdftex.def)             Requested size: 126.47346pt x 68.20532pt.
 
-<content/images/ScheduleSpreading/Part2.png, id=473, 210.7875pt x 113.67468pt>
+<content/images/ScheduleSpreading/Part2.png, id=458, 210.7875pt x 113.67468pt>
 File: content/images/ScheduleSpreading/Part2.png Graphic file (type png)
 
 <use content/images/ScheduleSpreading/Part2.png>
@@ -1335,7 +1333,7 @@ Package pdftex.def Info: content/images/ScheduleSpreading/Part2.png used on inp
 ut line 238.
 (pdftex.def)             Requested size: 126.47346pt x 68.20532pt.
 
-<content/images/ScheduleSpreading/Part3.png, id=474, 210.7875pt x 113.67468pt>
+<content/images/ScheduleSpreading/Part3.png, id=459, 210.7875pt x 113.67468pt>
 File: content/images/ScheduleSpreading/Part3.png Graphic file (type png)
 
 <use content/images/ScheduleSpreading/Part3.png>
@@ -1343,7 +1341,7 @@ Package pdftex.def Info: content/images/ScheduleSpreading/Part3.png used on inp
 ut line 246.
 (pdftex.def)             Requested size: 126.47346pt x 68.20532pt.
 
-<content/images/ScheduleSpreading/Part4.png, id=475, 210.7875pt x 113.67468pt>
+<content/images/ScheduleSpreading/Part4.png, id=460, 210.7875pt x 113.67468pt>
 File: content/images/ScheduleSpreading/Part4.png Graphic file (type png)
 
 <use content/images/ScheduleSpreading/Part4.png>
@@ -1351,7 +1349,7 @@ Package pdftex.def Info: content/images/ScheduleSpreading/Part4.png used on inp
 ut line 254.
 (pdftex.def)             Requested size: 126.47346pt x 68.20532pt.
 
-<content/images/ScheduleSpreading/Part5.png, id=476, 210.7875pt x 113.67468pt>
+<content/images/ScheduleSpreading/Part5.png, id=461, 210.7875pt x 113.67468pt>
 File: content/images/ScheduleSpreading/Part5.png Graphic file (type png)
 
 <use content/images/ScheduleSpreading/Part5.png>
@@ -1359,7 +1357,7 @@ Package pdftex.def Info: content/images/ScheduleSpreading/Part5.png used on inp
 ut line 262.
 (pdftex.def)             Requested size: 126.47346pt x 68.20532pt.
 
-<content/images/ScheduleSpreading/Part6.png, id=477, 210.7875pt x 113.67468pt>
+<content/images/ScheduleSpreading/Part6.png, id=462, 210.7875pt x 113.67468pt>
 File: content/images/ScheduleSpreading/Part6.png Graphic file (type png)
 
 <use content/images/ScheduleSpreading/Part6.png>
@@ -1367,7 +1365,7 @@ Package pdftex.def Info: content/images/ScheduleSpreading/Part6.png used on inp
 ut line 270.
 (pdftex.def)             Requested size: 126.47346pt x 68.20532pt.
 
-<content/images/ScheduleSpreading/Part7.png, id=478, 210.7875pt x 113.67468pt>
+<content/images/ScheduleSpreading/Part7.png, id=463, 210.7875pt x 113.67468pt>
 File: content/images/ScheduleSpreading/Part7.png Graphic file (type png)
 
 <use content/images/ScheduleSpreading/Part7.png>
@@ -1375,7 +1373,7 @@ Package pdftex.def Info: content/images/ScheduleSpreading/Part7.png used on inp
 ut line 278.
 (pdftex.def)             Requested size: 126.47346pt x 68.20532pt.
 
-<content/images/ScheduleSpreading/Part8.png, id=479, 210.7875pt x 113.67468pt>
+<content/images/ScheduleSpreading/Part8.png, id=464, 210.7875pt x 113.67468pt>
 File: content/images/ScheduleSpreading/Part8.png Graphic file (type png)
 
 <use content/images/ScheduleSpreading/Part8.png>
@@ -1383,7 +1381,7 @@ Package pdftex.def Info: content/images/ScheduleSpreading/Part8.png used on inp
 ut line 286.
 (pdftex.def)             Requested size: 126.47346pt x 68.20532pt.
 
-<content/images/ScheduleSpreading/Part9.png, id=480, 210.7875pt x 113.67468pt>
+<content/images/ScheduleSpreading/Part9.png, id=465, 210.7875pt x 113.67468pt>
 File: content/images/ScheduleSpreading/Part9.png Graphic file (type png)
 
 <use content/images/ScheduleSpreading/Part9.png>
@@ -1391,7 +1389,7 @@ Package pdftex.def Info: content/images/ScheduleSpreading/Part9.png used on inp
 ut line 294.
 (pdftex.def)             Requested size: 126.47346pt x 68.20532pt.
 
-<content/images/ScheduleSpreading/Part10.png, id=481, 210.7875pt x 113.67468pt>
+<content/images/ScheduleSpreading/Part10.png, id=466, 210.7875pt x 113.67468pt>
 File: content/images/ScheduleSpreading/Part10.png Graphic file (type png)
 <use content/images/ScheduleSpreading/Part10.png>
 Package pdftex.def Info: content/images/ScheduleSpreading/Part10.png used on in
@@ -1401,80 +1399,86 @@ put line 302.
 
 LaTeX Warning: Float too large for page by 18.17664pt on input line 308.
 
-<content/images/MessageDrop.png, id=482, 498.37392pt x 144.54pt>
+[20] [21 <./content/images/ScheduleSpreading/Part1.png> <./content/images/Sched
+uleSpreading/Part2.png> <./content/images/ScheduleSpreading/Part3.png> <./conte
+nt/images/ScheduleSpreading/Part4.png> <./content/images/ScheduleSpreading/Part
+5.png> <./content/images/ScheduleSpreading/Part6.png> <./content/images/Schedul
+eSpreading/Part7.png> <./content/images/ScheduleSpreading/Part8.png> <./content
+/images/ScheduleSpreading/Part9.png> <./content/images/ScheduleSpreading/Part10
+.png>] <content/images/MessageDrop.png, id=495, 498.37392pt x 144.54pt>
 File: content/images/MessageDrop.png Graphic file (type png)
 
 <use content/images/MessageDrop.png>
 Package pdftex.def Info: content/images/MessageDrop.png used on input line 317.
 
 (pdftex.def)             Requested size: 299.02666pt x 86.72466pt.
-) [21] [22 <./content/images/ScheduleSpreading/Part1.png> <./content/images/Sch
-eduleSpreading/Part2.png> <./content/images/ScheduleSpreading/Part3.png> <./con
-tent/images/ScheduleSpreading/Part4.png> <./content/images/ScheduleSpreading/Pa
-rt5.png> <./content/images/ScheduleSpreading/Part6.png> <./content/images/Sched
-uleSpreading/Part7.png> <./content/images/ScheduleSpreading/Part8.png> <./conte
-nt/images/ScheduleSpreading/Part9.png> <./content/images/ScheduleSpreading/Part
-10.png>] [23 <./content/images/MessageDrop.png>]
+) [22 <./content/images/MessageDrop.png>]
 \openout2 = `content/chapters/chapter4.aux'.
 
- (content/chapters/chapter4.tex [24
 
-
-
-
-]
+(content/chapters/chapter4.tex
 chapter 4.
 
-<content/images/BaseStation/Klassendiagram.png, id=502, 577.29276pt x 230.97491
+<content/images/BaseStation/Klassendiagram.png, id=503, 577.29276pt x 230.97491
 pt>
 File: content/images/BaseStation/Klassendiagram.png Graphic file (type png)
  <use content/images/BaseStation/Klassendiagram.png>
 Package pdftex.def Info: content/images/BaseStation/Klassendiagram.png used on 
-input line 12.
+input line 11.
 (pdftex.def)             Requested size: 404.10217pt x 161.68134pt.
- [25 <./content/images/BaseStation/Klassendiagram.png>]
-<content/images/Motes/GeneralStructure.png, id=509, 733.97412pt x 431.38773pt>
+ [23
+
+
+
+
+ <./content/images/BaseStation/Klassendiagram.png>]
+<content/images/Motes/GeneralStructure.png, id=510, 733.97412pt x 431.38773pt>
 File: content/images/Motes/GeneralStructure.png Graphic file (type png)
 
 <use content/images/Motes/GeneralStructure.png>
 Package pdftex.def Info: content/images/Motes/GeneralStructure.png used on inpu
-t line 21.
+t line 20.
 (pdftex.def)             Requested size: 440.38788pt x 258.83463pt.
 
-Overfull \hbox (22.38788pt too wide) in paragraph at lines 21--22
+Overfull \hbox (22.38788pt too wide) in paragraph at lines 20--21
  [][] 
  []
 
-[26 <./content/images/Motes/GeneralStructure.png>]
-<content/images/Processes/ComandsEvents.png, id=517, 771.55452pt x 396.0396pt>
+[24 <./content/images/Motes/GeneralStructure.png>]
+<content/images/Processes/ComandsEvents.png, id=519, 771.55452pt x 396.0396pt>
 File: content/images/Processes/ComandsEvents.png Graphic file (type png)
 
 <use content/images/Processes/ComandsEvents.png>
 Package pdftex.def Info: content/images/Processes/ComandsEvents.png used on inp
-ut line 33.
+ut line 32.
 (pdftex.def)             Requested size: 424.35631pt x 217.82245pt.
 
-Overfull \hbox (6.35631pt too wide) in paragraph at lines 33--34
+Overfull \hbox (6.35631pt too wide) in paragraph at lines 32--33
  [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--37
+\OT1/cmr/m/n/10.95 uleRe-ceived
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [27 <./content/images/Processes/ComandsEvents.png>] [28] [29] [30] [31] [32] [
-33])
-[34] [35]
+ [25 <./content/images/Processes/ComandsEvents.png>] [26] [27] [28] [29] [30] [
+31])
+[32] [33]
 \openout2 = `content/chapters/chapter5.aux'.
 
- (content/chapters/chapter5.tex [36
+ (content/chapters/chapter5.tex [34
 
 
 
 
 ]
 chapter 5.
-[37] [38]
-<content/images/Experiment/NightCollection.png, id=643, 490.83376pt x 229.60782
+[35] [36]
+<content/images/Experiment/NightCollection.png, id=646, 490.83376pt x 229.60782
 pt>
 File: content/images/Experiment/NightCollection.png Graphic file (type png)
  <use content/images/Experiment/NightCollection.png>
@@ -1482,7 +1486,7 @@ Package pdftex.def Info: content/images/Experiment/NightCollection.png used on
 input line 56.
 (pdftex.def)             Requested size: 368.1244pt x 172.20543pt.
 
-<content/images/Experiment/NightRounds.png, id=645, 383.18156pt x 182.93344pt>
+<content/images/Experiment/NightRounds.png, id=648, 383.18156pt x 182.93344pt>
 File: content/images/Experiment/NightRounds.png Graphic file (type png)
 
 <use content/images/Experiment/NightRounds.png>
@@ -1495,93 +1499,50 @@ Overfull \hbox (17.09438pt too wide) in paragraph at lines 76--90
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 6641) has occurred while \output is active []
 
- [39 <./content/images/Experiment/NightCollection.png> <./content/images/Experi
+ [37 <./content/images/Experiment/NightCollection.png> <./content/images/Experi
 ment/NightRounds.png>]
-Underfull \hbox (badness 6364) in paragraph at lines 92--92
-[][]\OT1/cmr/m/n/10.95 ToDo:[] Edu
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 92--92
-\OT1/cmr/m/n/10.95 ar-raved at
- []
-
-
-Underfull \hbox (badness 1259) in paragraph at lines 92--92
-\OT1/cmr/m/n/10.95 9:00 and left
- []
-
-
-Underfull \hbox (badness 3679) in paragraph at lines 92--92
-\OT1/cmr/m/n/10.95 at 12:00 via
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 92--92
-\OT1/cmr/m/n/10.95 the erup-tion
- []
-
-
-Underfull \hbox (badness 5231) in paragraph at lines 92--92
-\OT1/cmr/m/n/10.95 in the mea-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 92--92
-\OT1/cmr/m/n/10.95 sure-ments)
- []
-
-
-Underfull \hbox (badness 3838) in paragraph at lines 92--92
-\OT1/cmr/m/n/10.95 (This is not
- []
-
-
-<content/images/Experiment/DayCollection.png, id=657, 382.42876pt x 179.16937pt
+<content/images/Experiment/DayCollection.png, id=659, 382.42876pt x 179.16937pt
 >
 File: content/images/Experiment/DayCollection.png Graphic file (type png)
  <use content/images/Experiment/DayCollection.png>
 Package pdftex.def Info: content/images/Experiment/DayCollection.png used on in
-put line 99.
+put line 97.
 (pdftex.def)             Requested size: 286.82085pt x 134.3767pt.
 
-<content/images/Experiment/DayRounds.png, id=658, 380.17032pt x 176.91093pt>
+<content/images/Experiment/DayRounds.png, id=661, 380.17032pt x 176.91093pt>
 File: content/images/Experiment/DayRounds.png Graphic file (type png)
 
 <use content/images/Experiment/DayRounds.png>
 Package pdftex.def Info: content/images/Experiment/DayRounds.png used on input 
-line 108.
+line 106.
 (pdftex.def)             Requested size: 285.12703pt x 132.68286pt.
-
-Underfull \vbox (badness 3128) has occurred while \output is active []
-
- [40]
-[41 <./content/images/Experiment/DayCollection.png> <./content/images/Experimen
-t/DayRounds.png>]) [42]
+ [38] [39 <./content/images/Experiment/DayCollection.png> <./content/images/Exp
+eriment/DayRounds.png>]) [40]
 \openout2 = `content/chapters/chapter6.aux'.
 
- (content/chapters/chapter6.tex
+
+(content/chapters/chapter6.tex
 chapter 6.
-[43
+) [41
 
 
 
 
-]) [44]
+]
 \openout2 = `content/chapters/chapter7.aux'.
 
- (content/chapters/chapter7.tex
+ (content/chapters/chapter7.tex [42
+
+
+
+
+]
 chapter 7.
 LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 4.
-) [45
-
-
-
-
-] (Fristname_Lastname_Diplom_Master_arbeit.bbl [46
+) [43] (Fristname_Lastname_Diplom_Master_arbeit.bbl [44
 
 
 
@@ -2044,10 +2005,10 @@ you should replace it, e.g., by `\normalfont \scshape '.
 To make it work for now, you can use the already also deprecated class option
 `enabledeprecatedfontcommands'.
 
-) [47]
+) [45]
 \openout2 = `content/chapters/clause.aux'.
 
- (content/chapters/clause.tex [48
+ (content/chapters/clause.tex [46
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 12--13
@@ -2060,64 +2021,67 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--15
  []
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 16--225
+Underfull \hbox (badness 10000) in paragraph at lines 16--226
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 16--225
+Underfull \hbox (badness 10000) in paragraph at lines 16--226
 
  []
 
-[49
+[47
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 227.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 227.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 228.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 228.
  (Fristname_Lastname_Diplom_Master_arbeit.aux
 (content/chapters/titlePage.aux) (content/chapters/abstract.aux)
 (content/chapters/chapter1.aux) (content/chapters/chapter2.aux)
 (content/chapters/chapter3.aux) (content/chapters/chapter4.aux)
 (content/chapters/chapter5.aux) (content/chapters/chapter6.aux)
 (content/chapters/chapter7.aux) (content/chapters/clause.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 227.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 227.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 228.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 228.
 Package rerunfilecheck Info: File `Fristname_Lastname_Diplom_Master_arbeit.out'
  has not changed.
-(rerunfilecheck)             Checksum: 5C9B492543AD4AACFB6ECB7FD61E812C;2606.
+(rerunfilecheck)             Checksum: 36FF8EE94F2E752BAE7635266B1530B8;2711.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 227.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 228.
  ) 
 Here is how much of TeX's memory you used:
- 11943 strings out of 493333
- 192740 string characters out of 3139193
- 386443 words of memory out of 3000000
- 14958 multiletter control sequences out of 15000+200000
- 12146 words of font info for 42 fonts, out of 3000000 for 9000
+ 11954 strings out of 493334
+ 192864 string characters out of 3139220
+ 389804 words of memory out of 3000000
+ 14967 multiletter control sequences out of 15000+200000
+ 13058 words of font info for 45 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 48i,10n,66p,8852b,1767s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 48i,10n,66p,8852b,1812s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><C:/P
 rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program F
 iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiK
 TeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
 ype1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
-ts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl
-10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss10.pfb><
-C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Progr
-am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss17.pfb><C:/Program Files
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on Fristname_Lastname_Diplom_Master_arbeit.pdf (53 pages, 115110
-1 bytes).
+ic/amsfonts/cm/cmmi9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
+8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/
+Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Program 
+Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmss17.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmsy9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmti10.pfb>
+Output written on Fristname_Lastname_Diplom_Master_arbeit.pdf (51 pages, 119193
+9 bytes).
 PDF statistics:
- 814 PDF objects out of 1000 (max. 8388607)
- 255 named destinations out of 1000 (max. 500000)
- 498 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 827 PDF objects out of 1000 (max. 8388607)
+ 254 named destinations out of 1000 (max. 500000)
+ 506 words of extra memory for PDF output out of 10000 (max. 10000000)
 
