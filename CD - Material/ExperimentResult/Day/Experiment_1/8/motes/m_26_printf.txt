@@ -1,0 +1,89 @@
+[30485] FIN calibration
+[66280] FIN collection
+[72951] FIN collection
+[77309] FIN collection
+[80287] DROP
+[81564] FIN collection
+[84573] DROP
+[85627] FIN collection
+[89139] FIN collection
+[92584] FIN collection
+[95214] DROP
+[96568] FIN collection
+[100641] FIN collection
+[104571] FIN collection
+[108617] FIN collection
+[111395] DROP
+[112589] FIN collection
+[116445] FIN collection
+[119913] FIN collection
+[123871] FIN collection
+[128183] FIN collection
+[132002] FIN collection
+[136118] FIN collection
+[140232] FIN collection
+[144090] FIN collection
+[148349] FIN collection
+[152952] FIN collection
+[157406] FIN collection
+[160507] DROP
+[161689] FIN collection
+[164518] DROP
+[166006] FIN collection
+[170428] FIN collection
+[174502] FIN collection
+[177294] DROP
+[178407] FIN collection
+[182232] FIN collection
+[186005] FIN collection
+[190574] FIN collection
+[194816] FIN collection
+[199008] FIN collection
+[203301] FIN collection
+[207509] FIN collection
+[211368] FIN collection
+[215366] FIN collection
+[219546] FIN collection
+[223583] FIN collection
+[227649] FIN collection
+[231585] FIN collection
+[235957] FIN collection
+[239091] DROP
+[240392] FIN collection
+[244325] FIN collection
+[247830] FIN collection
+[251859] FIN collection
+[255679] FIN collection
+[259397] FIN collection
+[263298] FIN collection
+[267348] FIN collection
+[271572] FIN collection
+[275358] FIN collection
+[279731] FIN collection
+[283969] FIN collection
+[287586] FIN collection
+[290273] DROP
+[291277] FIN collection
+[295001] FIN collection
+[299035] FIN collection
+[303245] FIN collection
+[305642] DROP
+[306694] FIN collection
+[310303] FIN collection
+[312863] DROP
+[314162] FIN collection
+[317220] DROP
+[318331] FIN collection
+[322399] FIN collection
+[326503] FIN collection
+[329261] DROP
+[330472] FIN collection
+[334598] FIN collection
+[337276] DROP
+[338507] FIN collection
+[342309] FIN collection
+[346303] FIN collection
+[350577] FIN collection
+[354257] FIN collection
+[358195] FIN collection
+[362241] FIN collection

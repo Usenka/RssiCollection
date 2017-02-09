@@ -40,5 +40,4 @@
 \contentsline {chapter}{\numberline {6}Discussion}{43}{chapter.6}
 \contentsline {section}{\numberline {6.1}Possible Improvements}{43}{section.6.1}
 \contentsline {section}{\numberline {6.2}Conclusion}{43}{section.6.2}
-\contentsline {chapter}{\numberline {7}Acknowledgements}{45}{chapter.7}
-\contentsline {chapter}{\nonumberline Bibliography}{47}{chapter*.22}
+\contentsline {chapter}{\nonumberline Bibliography}{45}{chapter*.22}

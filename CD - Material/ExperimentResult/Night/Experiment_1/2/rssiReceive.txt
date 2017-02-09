@@ -1,0 +1,803 @@
+
+----------------------------------------Ready----------------------------------------
+
+
+--------------------------------Calibration started!--------------------------------
+
+Image received from 2; Data Left: 0
+1 3 4 5 6 7 8 9 10 11 
+
+
+Image received from 3; Data Left: 0
+1 2 4 5 6 7 8 9 10 15 17 
+
+
+Image received from 8; Data Left: 7
+Image received from 8; Data Left: 0
+1 2 3 4 5 6 7 9 10 11 12 14 15 16 17 18 19 20 28 
+
+
+Image received from 4; Data Left: 2
+Image received from 4; Data Left: 0
+1 2 3 5 6 7 8 9 10 11 13 14 15 17 
+
+
+Image received from 17; Data Left: 4
+Image received from 17; Data Left: 0
+1 2 4 6 7 8 9 10 11 12 13 14 15 20 27 28 
+
+
+Image received from 9; Data Left: 6
+Image received from 9; Data Left: 0
+1 2 3 4 5 6 7 8 10 11 13 14 15 16 17 18 19 20 
+
+
+Image received from 10; Data Left: 11
+Image received from 10; Data Left: 0
+1 2 3 4 5 6 7 8 9 11 12 13 14 15 16 17 18 19 20 23 24 28 30 
+
+
+Image received from 12; Data Left: 8
+Image received from 12; Data Left: 0
+6 8 10 11 13 14 15 16 17 18 19 20 21 22 23 24 26 27 28 30 
+
+
+Image received from 13; Data Left: 6
+Image received from 13; Data Left: 0
+4 6 9 10 11 12 14 15 16 17 19 20 21 22 23 27 28 30 
+
+
+Image received from 14; Data Left: 11
+Image received from 14; Data Left: 0
+1 4 5 6 8 9 10 11 12 13 15 16 17 18 19 20 22 23 24 28 30 31 32 
+
+
+Image received from 18; Data Left: 5
+Image received from 18; Data Left: 0
+8 9 10 11 12 14 15 16 19 20 21 22 23 25 26 30 32 
+
+
+Image received from 25; Data Left: 0
+16 18 19 20 21 22 23 24 26 30 
+
+
+Image received from 26; Data Left: 0
+12 16 18 19 20 21 22 23 24 25 30 
+
+
+Image received from 20; Data Left: 13
+Image received from 20; Data Left: 1
+Image received from 20; Data Left: 0
+6 8 9 10 11 12 13 14 15 16 17 18 19 21 22 23 24 25 26 27 28 29 30 31 32 
+
+
+Image received from 21; Data Left: 5
+Image received from 21; Data Left: 0
+9 10 11 12 13 16 18 19 20 22 23 24 25 26 27 29 30 
+
+
+Image received from 22; Data Left: 6
+Image received from 22; Data Left: 0
+10 11 12 13 14 15 16 18 19 20 21 23 24 25 26 27 30 31 
+
+
+Image received from 24; Data Left: 2
+Image received from 24; Data Left: 0
+10 11 12 14 15 16 19 20 21 22 23 25 26 30 
+
+
+Image received from 23; Data Left: 5
+Image received from 23; Data Left: 0
+10 11 12 13 14 15 16 18 19 20 21 22 24 25 26 27 30 
+
+
+Image received from 19; Data Left: 11
+Image received from 19; Data Left: 0
+7 8 9 10 11 12 13 14 15 16 18 20 21 22 23 24 25 26 27 28 29 30 31 
+
+
+Image received from 16; Data Left: 15
+Image received from 16; Data Left: 3
+Image received from 16; Data Left: 0
+1 5 6 7 8 9 10 11 12 13 14 15 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 
+
+
+Image received from 32; Data Left: 0
+14 18 20 27 28 29 30 31 
+
+
+Image received from 27; Data Left: 4
+Image received from 27; Data Left: 0
+11 12 13 15 16 17 19 20 21 22 23 28 29 30 31 32 
+
+
+Image received from 29; Data Left: 0
+15 16 19 20 21 27 28 30 31 32 
+
+
+Image received from 30; Data Left: 8
+Image received from 30; Data Left: 0
+10 11 12 14 15 16 18 19 20 21 22 23 24 25 26 27 28 29 31 32 
+
+
+Image received from 31; Data Left: 0
+14 15 16 19 20 22 27 28 29 30 32 
+
+
+Image received from 28; Data Left: 6
+Image received from 28; Data Left: 0
+8 9 10 11 12 13 14 15 16 17 18 19 20 27 29 30 31 32 
+
+
+Image received from 15; Data Left: 13
+Image received from 15; Data Left: 1
+Image received from 15; Data Left: 0
+1 3 4 6 7 8 9 10 11 12 13 14 16 17 18 19 20 22 23 24 27 28 29 30 31 
+
+
+Image received from 11; Data Left: 12
+Image received from 11; Data Left: 0
+1 2 5 6 7 8 9 10 12 13 14 15 16 17 18 19 20 21 22 23 24 27 28 30 
+
+
+Image received from 7; Data Left: 2
+Image received from 7; Data Left: 0
+1 2 3 4 5 6 8 9 10 11 15 16 17 19 
+
+
+Image received from 5; Data Left: 1
+Image received from 5; Data Left: 0
+1 2 3 4 6 7 8 9 10 11 14 16 17 
+
+
+Image received from 6; Data Left: 5
+Image received from 6; Data Left: 0
+1 2 3 4 5 7 8 9 10 11 12 13 14 15 16 17 20 
+
+
+Image received from 1; Data Left: 0
+2 3 4 5 6 7 8 9 10 11 15 17 
+
+
+
+
+Recived from: 2 3 8 4 17 9 10 12 13 14 18 25 26 20 21 22 24 23 19 16 32 27 29 30 31 28 15 11 7 5 6 1 ; 32
+
+--------------------------------Calibration Finished!--------------------------------
+
+
+---------------------------------Creating Schedule!---------------------------------
+
+Circle: 1 -> [6, 4, 2, 3, 5, 7, 8, 9, 17, 15, 10, 11, 14, 16]
+Circle: 6 -> [13, 12, 20]
+Circle: 7 -> [19]
+Circle: 8 -> [18]
+Circle: 8 -> [28]
+Circle: 17 -> [27]
+Circle: 15 -> [23, 22, 24, 30, 31, 29]
+Circle: 11 -> [21]
+Circle: 14 -> [32]
+Circle: 16 -> [26, 25]
+1
+Schedule: 1 16 25 26 16 14 32 14 11 21 11 10 15 29 31 30 24 22 23 15 17 27 17 9 8 18 8 28 8 7 19 7 5 3 2 4 6 20 12 13 6 1 - Schedule has 42hops
+
+----------------------------------Schedule created!----------------------------------
+
+1
+
+----------------------------------Sending schedule!----------------------------------
+
+Sending schedule part...
+Schedule part send!
+Recived schedule Msg
+1
+Sending schedule part...
+Schedule part send!
+Recived schedule Msg
+1
+
+----------------------------------Schedule spreded!----------------------------------
+
+
+----------------------------------Schedule started!----------------------------------
+
+Image received from 2; Data Left: 0
+Image received from 3; Data Left: 0
+Image received from 8; Data Left: 2
+Image received from 8; Data Left: 0
+Image received from 4; Data Left: 0
+Image received from 17; Data Left: 0
+Image received from 9; Data Left: 0
+Image received from 10; Data Left: 5
+Image received from 10; Data Left: 0
+Image received from 12; Data Left: 2
+Image received from 12; Data Left: 0
+Image received from 13; Data Left: 0
+Image received from 14; Data Left: 3
+Image received from 14; Data Left: 0
+Image received from 18; Data Left: 0
+Image received from 25; Data Left: 0
+Image received from 26; Data Left: 0
+Image received from 20; Data Left: 7
+Image received from 20; Data Left: 0
+Image received from 21; Data Left: 0
+Image received from 22; Data Left: 0
+Image received from 24; Data Left: 0
+Image received from 23; Data Left: 0
+Image received from 19; Data Left: 5
+Image received from 19; Data Left: 0
+Image received from 16; Data Left: 8
+Image received from 16; Data Left: 0
+Image received from 32; Data Left: 0
+Image received from 27; Data Left: 0
+Image received from 29; Data Left: 0
+Image received from 30; Data Left: 1
+Image received from 30; Data Left: 0
+Image received from 31; Data Left: 0
+Image received from 28; Data Left: 0
+Image received from 15; Data Left: 5
+Image received from 15; Data Left: 0
+Image received from 11; Data Left: 2
+Image received from 11; Data Left: 0
+Image received from 7; Data Left: 1
+Image received from 7; Data Left: 0
+Image received from 5; Data Left: 0
+Image received from 6; Data Left: 0
+Image received from 1; Data Left: 0
+Data collection finnished (Time needed: 1486088326502)
+Round 1 complete!
+
+
+Image received from 2; Data Left: 0
+Sampling finnished (Time needed: 540)
+Image received from 3; Data Left: 0
+Image received from 8; Data Left: 1
+Image received from 8; Data Left: 0
+Image received from 4; Data Left: 0
+Image received from 17; Data Left: 0
+Image received from 9; Data Left: 0
+Image received from 10; Data Left: 5
+Image received from 10; Data Left: 0
+Image received from 12; Data Left: 1
+Image received from 12; Data Left: 0
+Image received from 13; Data Left: 0
+Image received from 14; Data Left: 5
+Image received from 14; Data Left: 0
+Image received from 18; Data Left: 0
+Image received from 25; Data Left: 0
+Image received from 26; Data Left: 0
+Image received from 20; Data Left: 1
+Image received from 20; Data Left: 0
+Image received from 21; Data Left: 0
+Image received from 22; Data Left: 0
+Image received from 24; Data Left: 0
+Image received from 23; Data Left: 0
+Image received from 19; Data Left: 3
+Image received from 19; Data Left: 0
+Image received from 16; Data Left: 4
+Image received from 16; Data Left: 0
+Image received from 32; Data Left: 0
+Image received from 27; Data Left: 0
+Image received from 29; Data Left: 0
+Image received from 30; Data Left: 1
+Image received from 30; Data Left: 0
+Image received from 31; Data Left: 0
+Image received from 28; Data Left: 0
+Image received from 15; Data Left: 6
+Image received from 15; Data Left: 0
+Image received from 11; Data Left: 3
+Image received from 11; Data Left: 0
+Image received from 7; Data Left: 0
+Image received from 5; Data Left: 0
+Image received from 6; Data Left: 1
+Image received from 6; Data Left: 0
+Image received from 1; Data Left: 0
+Data collection finnished (Time needed: 3971)
+Round 2 complete!
+
+
+Image received from 2; Data Left: 0
+Sampling finnished (Time needed: 489)
+Image received from 3; Data Left: 0
+Image received from 8; Data Left: 2
+Image received from 8; Data Left: 0
+Image received from 4; Data Left: 1
+Image received from 4; Data Left: 0
+Image received from 17; Data Left: 0
+Image received from 9; Data Left: 0
+Image received from 10; Data Left: 5
+Image received from 10; Data Left: 0
+Image received from 12; Data Left: 3
+Image received from 12; Data Left: 0
+Image received from 13; Data Left: 1
+Image received from 13; Data Left: 0
+Image received from 14; Data Left: 3
+Image received from 14; Data Left: 0
+Image received from 18; Data Left: 0
+Image received from 25; Data Left: 0
+Image received from 26; Data Left: 0
+Image received from 20; Data Left: 6
+Image received from 20; Data Left: 0
+Image received from 21; Data Left: 0
+Image received from 22; Data Left: 0
+Image received from 24; Data Left: 0
+Image received from 23; Data Left: 0
+Image received from 19; Data Left: 5
+Image received from 19; Data Left: 0
+Image received from 16; Data Left: 9
+Image received from 16; Data Left: 0
+Image received from 32; Data Left: 0
+Image received from 27; Data Left: 0
+Image received from 29; Data Left: 0
+Image received from 30; Data Left: 2
+Image received from 30; Data Left: 0
+Image received from 31; Data Left: 0
+Image received from 28; Data Left: 1
+Image received from 28; Data Left: 0
+Image received from 15; Data Left: 5
+Image received from 15; Data Left: 0
+Image received from 11; Data Left: 2
+Image received from 11; Data Left: 0
+Image received from 7; Data Left: 0
+Image received from 5; Data Left: 0
+Image received from 6; Data Left: 3
+Image received from 6; Data Left: 0
+Image received from 1; Data Left: 0
+Data collection finnished (Time needed: 4177)
+Round 3 complete!
+
+
+Image received from 2; Data Left: 0
+Sampling finnished (Time needed: 518)
+Image received from 3; Data Left: 0
+Image received from 8; Data Left: 3
+Image received from 8; Data Left: 0
+Image received from 4; Data Left: 1
+Image received from 4; Data Left: 0
+Image received from 17; Data Left: 0
+Image received from 9; Data Left: 0
+Image received from 10; Data Left: 3
+Image received from 10; Data Left: 0
+Image received from 12; Data Left: 3
+Image received from 12; Data Left: 0
+Image received from 13; Data Left: 0
+Image received from 14; Data Left: 2
+Image received from 14; Data Left: 0
+Image received from 18; Data Left: 0
+Image received from 25; Data Left: 0
+Image received from 26; Data Left: 0
+Image received from 20; Data Left: 5
+Image received from 20; Data Left: 0
+Image received from 21; Data Left: 0
+Image received from 22; Data Left: 0
+Image received from 24; Data Left: 0
+Image received from 23; Data Left: 1
+Image received from 23; Data Left: 0
+Image received from 19; Data Left: 6
+Image received from 19; Data Left: 0
+Image received from 16; Data Left: 10
+Image received from 16; Data Left: 0
+Image received from 32; Data Left: 0
+Image received from 27; Data Left: 0
+Image received from 29; Data Left: 0
+Image received from 30; Data Left: 2
+Image received from 30; Data Left: 0
+Image received from 31; Data Left: 0
+Image received from 28; Data Left: 0
+Image received from 15; Data Left: 5
+Image received from 15; Data Left: 0
+Image received from 11; Data Left: 3
+Image received from 11; Data Left: 0
+Image received from 7; Data Left: 1
+Image received from 7; Data Left: 0
+Image received from 5; Data Left: 0
+Image received from 6; Data Left: 1
+Image received from 6; Data Left: 0
+Image received from 1; Data Left: 0
+Data collection finnished (Time needed: 4229)
+Round 4 complete!
+
+
+Image received from 2; Data Left: 0
+Sampling finnished (Time needed: 496)
+Image received from 3; Data Left: 0
+Image received from 8; Data Left: 2
+Image received from 8; Data Left: 0
+Image received from 4; Data Left: 0
+Image received from 17; Data Left: 0
+Image received from 9; Data Left: 0
+Image received from 10; Data Left: 5
+Image received from 10; Data Left: 0
+Image received from 12; Data Left: 0
+Image received from 13; Data Left: 0
+Image received from 14; Data Left: 1
+Image received from 14; Data Left: 0
+Image received from 18; Data Left: 0
+Image received from 25; Data Left: 0
+Image received from 26; Data Left: 0
+Image received from 20; Data Left: 4
+Image received from 20; Data Left: 0
+Image received from 21; Data Left: 0
+Image received from 22; Data Left: 0
+Image received from 24; Data Left: 0
+Image received from 23; Data Left: 1
+Image received from 23; Data Left: 0
+Image received from 19; Data Left: 4
+Image received from 19; Data Left: 0
+Image received from 16; Data Left: 5
+Image received from 16; Data Left: 0
+Image received from 32; Data Left: 0
+Image received from 27; Data Left: 0
+Image received from 29; Data Left: 0
+Image received from 30; Data Left: 0
+Image received from 31; Data Left: 0
+Image received from 28; Data Left: 0
+Image received from 15; Data Left: 5
+Image received from 15; Data Left: 0
+Image received from 11; Data Left: 0
+Image received from 7; Data Left: 1
+Image received from 7; Data Left: 0
+Image received from 5; Data Left: 0
+Image received from 6; Data Left: 1
+Image received from 6; Data Left: 0
+Image received from 1; Data Left: 0
+Data collection finnished (Time needed: 3886)
+Round 5 complete!
+
+
+Image received from 2; Data Left: 0
+Sampling finnished (Time needed: 593)
+Image received from 3; Data Left: 0
+Image received from 8; Data Left: 0
+Image received from 4; Data Left: 0
+Image received from 17; Data Left: 0
+Image received from 9; Data Left: 0
+Image received from 10; Data Left: 0
+Image received from 12; Data Left: 0
+Image received from 13; Data Left: 0
+Image received from 14; Data Left: 0
+Image received from 18; Data Left: 0
+Image received from 25; Data Left: 0
+Image received from 26; Data Left: 0
+Image received from 20; Data Left: 0
+Image received from 21; Data Left: 0
+Image received from 22; Data Left: 0
+Image received from 24; Data Left: 0
+Image received from 23; Data Left: 0
+Image received from 19; Data Left: 0
+Image received from 16; Data Left: 0
+Image received from 32; Data Left: 0
+Image received from 27; Data Left: 0
+Image received from 29; Data Left: 0
+Image received from 30; Data Left: 0
+Image received from 31; Data Left: 0
+Image received from 28; Data Left: 0
+Image received from 15; Data Left: 0
+Image received from 11; Data Left: 0
+Image received from 7; Data Left: 0
+Image received from 5; Data Left: 0
+Image received from 6; Data Left: 0
+Image received from 1; Data Left: 0
+Data collection finnished (Time needed: 3443)
+Round 6 complete!
+
+
+Image received from 2; Data Left: 0
+Sampling finnished (Time needed: 447)
+Image received from 3; Data Left: 0
+Image received from 8; Data Left: 6
+Image received from 8; Data Left: 0
+Image received from 4; Data Left: 0
+Image received from 17; Data Left: 1
+Image received from 17; Data Left: 0
+Image received from 9; Data Left: 2
+Image received from 9; Data Left: 0
+Image received from 10; Data Left: 5
+Image received from 10; Data Left: 0
+Image received from 12; Data Left: 5
+Image received from 12; Data Left: 0
+Image received from 13; Data Left: 1
+Image received from 13; Data Left: 0
+Image received from 14; Data Left: 4
+Image received from 14; Data Left: 0
+Image received from 18; Data Left: 4
+Image received from 18; Data Left: 0
+Image received from 25; Data Left: 0
+Image received from 26; Data Left: 0
+Image received from 20; Data Left: 12
+Image received from 20; Data Left: 0
+Image received from 21; Data Left: 2
+Image received from 21; Data Left: 0
+Image received from 22; Data Left: 2
+Image received from 22; Data Left: 0
+Image received from 24; Data Left: 1
+Image received from 24; Data Left: 0
+Image received from 23; Data Left: 5
+Image received from 23; Data Left: 0
+Image received from 19; Data Left: 8
+Image received from 19; Data Left: 0
+Image received from 16; Data Left: 11
+Image received from 16; Data Left: 0
+Image received from 32; Data Left: 0
+Image received from 27; Data Left: 2
+Image received from 27; Data Left: 0
+Image received from 29; Data Left: 0
+Image received from 30; Data Left: 5
+Image received from 30; Data Left: 0
+Image received from 31; Data Left: 0
+Image received from 28; Data Left: 2
+Image received from 28; Data Left: 0
+Image received from 15; Data Left: 9
+Image received from 15; Data Left: 0
+Image received from 11; Data Left: 7
+Image received from 11; Data Left: 0
+Image received from 7; Data Left: 2
+Image received from 7; Data Left: 0
+Image received from 5; Data Left: 0
+Image received from 6; Data Left: 4
+Image received from 6; Data Left: 0
+Image received from 1; Data Left: 0
+Data collection finnished (Time needed: 4895)
+Round 7 complete!
+
+
+Image received from 2; Data Left: 0
+Sampling finnished (Time needed: 490)
+Image received from 3; Data Left: 0
+Image received from 8; Data Left: 1
+Image received from 8; Data Left: 0
+Image received from 4; Data Left: 1
+Image received from 4; Data Left: 0
+Image received from 17; Data Left: 0
+Image received from 9; Data Left: 0
+Image received from 10; Data Left: 7
+Image received from 10; Data Left: 0
+Image received from 12; Data Left: 3
+Image received from 12; Data Left: 0
+Image received from 13; Data Left: 1
+Image received from 13; Data Left: 0
+Image received from 14; Data Left: 4
+Image received from 14; Data Left: 0
+Image received from 18; Data Left: 0
+Image received from 25; Data Left: 0
+Image received from 26; Data Left: 0
+Image received from 20; Data Left: 5
+Image received from 20; Data Left: 0
+Image received from 21; Data Left: 0
+Image received from 22; Data Left: 0
+Image received from 24; Data Left: 0
+Image received from 23; Data Left: 0
+Image received from 19; Data Left: 7
+Image received from 19; Data Left: 0
+Image received from 16; Data Left: 9
+Image received from 16; Data Left: 0
+Image received from 32; Data Left: 0
+Image received from 27; Data Left: 0
+Image received from 29; Data Left: 0
+Image received from 30; Data Left: 1
+Image received from 30; Data Left: 0
+Image received from 31; Data Left: 0
+Image received from 28; Data Left: 0
+Image received from 15; Data Left: 7
+Image received from 15; Data Left: 0
+Image received from 11; Data Left: 4
+Image received from 11; Data Left: 0
+Image received from 7; Data Left: 1
+Image received from 7; Data Left: 0
+Image received from 5; Data Left: 0
+Image received from 6; Data Left: 1
+Image received from 6; Data Left: 0
+Image received from 1; Data Left: 0
+Data collection finnished (Time needed: 4233)
+Round 8 complete!
+
+
+Image received from 2; Data Left: 0
+Sampling finnished (Time needed: 504)
+Image received from 3; Data Left: 0
+Image received from 8; Data Left: 3
+Image received from 8; Data Left: 0
+Image received from 4; Data Left: 0
+Image received from 17; Data Left: 0
+Image received from 9; Data Left: 1
+Image received from 9; Data Left: 0
+Image received from 10; Data Left: 6
+Image received from 10; Data Left: 0
+Image received from 12; Data Left: 1
+Image received from 12; Data Left: 0
+Image received from 13; Data Left: 0
+Image received from 14; Data Left: 3
+Image received from 14; Data Left: 0
+Image received from 18; Data Left: 0
+Image received from 25; Data Left: 0
+Image received from 26; Data Left: 0
+Image received from 20; Data Left: 5
+Image received from 20; Data Left: 0
+Image received from 21; Data Left: 0
+Image received from 22; Data Left: 0
+Image received from 24; Data Left: 0
+Image received from 23; Data Left: 1
+Image received from 23; Data Left: 0
+Image received from 19; Data Left: 5
+Image received from 19; Data Left: 0
+Image received from 16; Data Left: 8
+Image received from 16; Data Left: 0
+Image received from 32; Data Left: 0
+Image received from 27; Data Left: 0
+Image received from 29; Data Left: 0
+Image received from 30; Data Left: 2
+Image received from 30; Data Left: 0
+Image received from 31; Data Left: 0
+Image received from 28; Data Left: 1
+Image received from 28; Data Left: 0
+Image received from 15; Data Left: 6
+Image received from 15; Data Left: 0
+Image received from 11; Data Left: 2
+Image received from 11; Data Left: 0
+Image received from 7; Data Left: 1
+Image received from 7; Data Left: 0
+Image received from 5; Data Left: 0
+Image received from 6; Data Left: 0
+Image received from 1; Data Left: 0
+Data collection finnished (Time needed: 4103)
+Round 9 complete!
+
+
+Image received from 2; Data Left: 0
+Sampling finnished (Time needed: 563)
+Image received from 3; Data Left: 0
+Image received from 8; Data Left: 0
+Image received from 4; Data Left: 0
+Image received from 17; Data Left: 0
+Image received from 9; Data Left: 2
+Image received from 9; Data Left: 0
+Image received from 10; Data Left: 3
+Image received from 10; Data Left: 0
+Image received from 12; Data Left: 0
+Image received from 13; Data Left: 0
+Image received from 14; Data Left: 1
+Image received from 14; Data Left: 0
+Image received from 18; Data Left: 0
+Image received from 25; Data Left: 0
+Image received from 26; Data Left: 0
+Image received from 20; Data Left: 4
+Image received from 20; Data Left: 0
+Image received from 21; Data Left: 0
+Image received from 22; Data Left: 0
+Image received from 24; Data Left: 0
+Image received from 23; Data Left: 0
+Image received from 19; Data Left: 4
+Image received from 19; Data Left: 0
+Image received from 16; Data Left: 4
+Image received from 16; Data Left: 0
+Image received from 32; Data Left: 0
+Image received from 27; Data Left: 0
+Image received from 29; Data Left: 0
+Image received from 30; Data Left: 0
+Image received from 31; Data Left: 0
+Image received from 28; Data Left: 0
+Image received from 15; Data Left: 5
+Image received from 15; Data Left: 0
+Image received from 11; Data Left: 0
+Image received from 7; Data Left: 1
+Image received from 7; Data Left: 0
+Image received from 5; Data Left: 0
+Image received from 6; Data Left: 1
+Image received from 6; Data Left: 0
+Image received from 1; Data Left: 0
+Data collection finnished (Time needed: 3896)
+Round 10 complete!
+
+
+Image received from 2; Data Left: 0
+Sampling finnished (Time needed: 469)
+Image received from 3; Data Left: 0
+Image received from 8; Data Left: 4
+Image received from 8; Data Left: 0
+Image received from 4; Data Left: 1
+Image received from 4; Data Left: 0
+Image received from 17; Data Left: 1
+Image received from 17; Data Left: 0
+Image received from 9; Data Left: 2
+Image received from 9; Data Left: 0
+Image received from 10; Data Left: 8
+Image received from 10; Data Left: 0
+Image received from 12; Data Left: 2
+Image received from 12; Data Left: 0
+Image received from 13; Data Left: 1
+Image received from 13; Data Left: 0
+Image received from 14; Data Left: 2
+Image received from 14; Data Left: 0
+Image received from 18; Data Left: 3
+Image received from 18; Data Left: 0
+Image received from 25; Data Left: 0
+Image received from 26; Data Left: 0
+Image received from 20; Data Left: 8
+Image received from 20; Data Left: 0
+Image received from 21; Data Left: 0
+Image received from 22; Data Left: 1
+Image received from 22; Data Left: 0
+Image received from 24; Data Left: 1
+Image received from 24; Data Left: 0
+Image received from 23; Data Left: 3
+Image received from 23; Data Left: 0
+Image received from 19; Data Left: 6
+Image received from 19; Data Left: 0
+Image received from 16; Data Left: 11
+Image received from 16; Data Left: 0
+Image received from 32; Data Left: 0
+Image received from 27; Data Left: 3
+Image received from 27; Data Left: 0
+Image received from 29; Data Left: 0
+Image received from 30; Data Left: 3
+Image received from 30; Data Left: 0
+Image received from 31; Data Left: 0
+Image received from 28; Data Left: 3
+Image received from 28; Data Left: 0
+Image received from 15; Data Left: 7
+Image received from 15; Data Left: 0
+Image received from 11; Data Left: 4
+Image received from 11; Data Left: 0
+Image received from 7; Data Left: 1
+Image received from 7; Data Left: 0
+Image received from 5; Data Left: 0
+Image received from 6; Data Left: 3
+Image received from 6; Data Left: 0
+Image received from 1; Data Left: 0
+Data collection finnished (Time needed: 4850)
+Round 11 complete!
+
+
+Image received from 2; Data Left: 0
+Sampling finnished (Time needed: 500)
+Image received from 3; Data Left: 0
+Image received from 8; Data Left: 3
+Image received from 8; Data Left: 0
+Image received from 4; Data Left: 0
+Image received from 17; Data Left: 0
+Image received from 9; Data Left: 0
+Image received from 10; Data Left: 5
+Image received from 10; Data Left: 0
+Image received from 12; Data Left: 3
+Image received from 12; Data Left: 0
+Image received from 13; Data Left: 1
+Image received from 13; Data Left: 0
+Image received from 14; Data Left: 4
+Image received from 14; Data Left: 0
+Image received from 18; Data Left: 0
+Image received from 25; Data Left: 0
+Image received from 26; Data Left: 0
+Image received from 20; Data Left: 5
+Image received from 20; Data Left: 0
+Image received from 21; Data Left: 0
+Image received from 22; Data Left: 0
+Image received from 24; Data Left: 0
+Image received from 23; Data Left: 0
+Image received from 19; Data Left: 6
+Image received from 19; Data Left: 0
+Image received from 16; Data Left: 9
+Image received from 16; Data Left: 0
+Image received from 32; Data Left: 0
+Image received from 27; Data Left: 0
+Image received from 29; Data Left: 0
+Image received from 30; Data Left: 2
+Image received from 30; Data Left: 0
+Image received from 31; Data Left: 0
+Image received from 28; Data Left: 0
+Image received from 15; Data Left: 5
+Image received from 15; Data Left: 0
+Image received from 11; Data Left: 4
+Image received from 11; Data Left: 0
+Image received from 7; Data Left: 1
+Image received from 7; Data Left: 0
+Image received from 5; Data Left: 0
+Image received from 6; Data Left: 1
+Image received from 6; Data Left: 0
+Image received from 1; Data Left: 0
+Data collection finnished (Time needed: 4045)
+Round 12 complete!
+
+
+Image received from 2; Data Left: 0
+Sampling finnished (Time needed: 479)
+Image received from 3; Data Left: 0

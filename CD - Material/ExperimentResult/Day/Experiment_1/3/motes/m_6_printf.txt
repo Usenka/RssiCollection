@@ -1,0 +1,19 @@
+[286] START calibration
+[16812] FIN calibration
+[69596] FIN collection
+[76047] FIN collection
+[80515] FIN collection
+[84892] FIN collection
+[88649] FIN collection
+[92753] FIN collection
+[97331] FIN collection
+[101177] FIN collection
+[101693] DROP
+[104901] FIN collection
+[108872] FIN collection
+[113185] FIN collection
+[117393] FIN collection
+[117847] DROP
+[121718] FIN collection
+[126260] FIN collection
+[130591] ERROR max drops reached

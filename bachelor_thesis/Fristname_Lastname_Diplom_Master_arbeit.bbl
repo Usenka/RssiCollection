@@ -33,6 +33,11 @@
   \url{http://tinyos.stanford.edu/tinyos-wiki/index.php/TinyOS_Documentation_Wiki}.
 \newblock Accessed: 2017-01-20.
 
+\bibitem[WP10]{RTI}
+{\sc Wilson, Joey} \btxandlong{}\ {\sc Neal Patwari}: {\em Radio Tomographic
+  Imaging with Wireless Networks}.
+\newblock IEEE Trans. Mobile Computing, 2010.
+
 \bibitem[ZJ09]{Wsn}
 {\sc Zheng, Jun} \btxandlong{}\ {\sc Abbas Jamalipour}: {\em Wireless Sensor
   Networks: A Networking Perspective}.

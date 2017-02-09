@@ -1,0 +1,191 @@
+[20415] FIN calibration
+[69918] FIN collection
+[72202] DROP
+[76501] FIN collection
+[76812] DROP
+[81242] FIN collection
+[81570] DROP
+[85847] FIN collection
+[86188] DROP
+[90854] FIN collection
+[95639] FIN collection
+[100663] FIN collection
+[100976] DROP
+[105459] FIN collection
+[105819] DROP
+[110210] FIN collection
+[114446] FIN collection
+[118834] FIN collection
+[123897] FIN collection
+[128329] FIN collection
+[128598] DROP
+[132883] FIN collection
+[137380] FIN collection
+[137618] DROP
+[141973] FIN collection
+[142243] DROP
+[146630] FIN collection
+[151259] FIN collection
+[155639] FIN collection
+[155940] DROP
+[160241] FIN collection
+[160547] DROP
+[164968] FIN collection
+[169986] FIN collection
+[170295] DROP
+[174722] FIN collection
+[179063] FIN collection
+[179335] DROP
+[183674] FIN collection
+[183983] DROP
+[188332] FIN collection
+[192605] FIN collection
+[192870] DROP
+[197404] FIN collection
+[197705] DROP
+[201938] FIN collection
+[202266] DROP
+[206760] FIN collection
+[211187] FIN collection
+[211441] DROP
+[215723] FIN collection
+[219792] FIN collection
+[224352] FIN collection
+[224614] DROP
+[228910] FIN collection
+[229199] DROP
+[233457] FIN collection
+[233758] DROP
+[238182] FIN collection
+[238493] DROP
+[242790] FIN collection
+[243054] DROP
+[247553] FIN collection
+[247874] DROP
+[252515] FIN collection
+[252830] DROP
+[257366] FIN collection
+[257717] DROP
+[262022] FIN collection
+[262369] DROP
+[266789] FIN collection
+[271902] FIN collection
+[276559] FIN collection
+[276848] DROP
+[281128] FIN collection
+[285316] FIN collection
+[285576] DROP
+[290148] FIN collection
+[290478] DROP
+[294945] FIN collection
+[295225] DROP
+[299597] FIN collection
+[304229] FIN collection
+[304572] DROP
+[308747] FIN collection
+[309040] DROP
+[313308] FIN collection
+[313634] DROP
+[318131] FIN collection
+[318435] DROP
+[322797] FIN collection
+[323059] DROP
+[327413] FIN collection
+[327679] DROP
+[331960] FIN collection
+[336368] FIN collection
+[336650] DROP
+[341126] FIN collection
+[345882] FIN collection
+[346163] DROP
+[350180] FIN collection
+[354471] FIN collection
+[354748] DROP
+[359328] FIN collection
+[359668] DROP
+[364063] FIN collection
+[368893] FIN collection
+[369197] DROP
+[373512] FIN collection
+[373819] DROP
+[378404] FIN collection
+[378685] DROP
+[383083] FIN collection
+[387662] FIN collection
+[391931] FIN collection
+[392201] DROP
+[396665] FIN collection
+[396991] DROP
+[401458] FIN collection
+[406382] FIN collection
+[410552] FIN collection
+[410807] DROP
+[415166] FIN collection
+[415519] DROP
+[420004] FIN collection
+[420332] DROP
+[424790] FIN collection
+[429086] FIN collection
+[433267] FIN collection
+[437395] FIN collection
+[441649] FIN collection
+[445849] FIN collection
+[450155] FIN collection
+[454234] FIN collection
+[454515] DROP
+[458717] FIN collection
+[462811] FIN collection
+[467092] FIN collection
+[467355] DROP
+[471843] FIN collection
+[472176] DROP
+[476205] FIN collection
+[480295] FIN collection
+[484522] FIN collection
+[489124] FIN collection
+[489445] DROP
+[493554] FIN collection
+[497774] FIN collection
+[502356] FIN collection
+[502660] DROP
+[506859] FIN collection
+[511324] FIN collection
+[515550] FIN collection
+[515818] DROP
+[520041] FIN collection
+[524502] FIN collection
+[529570] FIN collection
+[529909] DROP
+[534181] FIN collection
+[538835] FIN collection
+[539119] DROP
+[543308] FIN collection
+[547631] FIN collection
+[552212] FIN collection
+[552680] DROP
+[557086] FIN collection
+[557413] DROP
+[561731] FIN collection
+[562053] DROP
+[566381] FIN collection
+[566658] DROP
+[571184] FIN collection
+[571464] DROP
+[575657] FIN collection
+[580346] FIN collection
+[580672] DROP
+[585256] FIN collection
+[585560] DROP
+[590152] FIN collection
+[590536] DROP
+[595085] FIN collection
+[599429] FIN collection
+[599681] DROP
+[604031] FIN collection
+[604281] DROP
+[609017] FIN collection
+[614200] FIN collection
+[614581] DROP
+[619015] FIN collection
+[623185] FIN collection
+[627489] FIN collection
