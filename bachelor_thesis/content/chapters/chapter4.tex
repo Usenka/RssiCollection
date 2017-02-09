@@ -34,8 +34,6 @@ The $Calibrator$ component is responsible for the calibration of the network. It
     \label{fig:commandEvents}
 \end{figure}
 
-\todo{scheduleReceived event fehlt}
-
 \section{Receiving and Storing Information at the Base Station}
 \label{chp:imp_baseStation}
 To receive and send messages from the sink, it is possible to make use of the TinyOS Java libraries. These provide the necessary tools to connect the application to the sink via a serial forwarder. To synchronize the message types sent by the motes and the Java application, TinyOS provides the possibility to generate message classes directly from the nesC message structures. The Java application needs to know two different messages. One that contains the information collected by a node and one that contains the information about the schedule. The application now needs to implement message listener for both types of messages so it is able to receive and react to each message individually.

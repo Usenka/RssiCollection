@@ -49,6 +49,9 @@ Now, to not only know the direction to the sink but also the dissemination from 
 \label{chp:apr_collection}
 
 \begin{figure}[htbp]
+ 
+	\vspace*{-2mm}
+
 	\centering
 	\begin{subfigure}[t]{0.4\textwidth}
 		\centering
@@ -145,11 +148,13 @@ A fitting schedule is a path through the graph structure of the WSN that visits 
 The optimal schedule would be a Hamilton-Circle, which is a circle inside a graph that visits each node exactly once. To figure out if a Hamilton-Circle exists, it is only possible to bruteforce all the possible combinations. This is highly inefficient and possibly we do not even get a result at the end. Therefore this thesis suggests a simple method that makes sure every node gets visited at least once and the path starts and ends at the same node. This method however is not able to create an optimal schedule.
 
 \subsection{Rooted Circles}
+The suggested method is based on smaller circles inside the graph. These circles have a root node that is the start and the end point of the circle. All the nodes inside this circle are in range of the root of the circle. These circles will be called rooted circles. In Figure \ref{fig:rootedCircle}, such a rooted circle is represented inside the network depicted in Figure \ref{fig:network}. To create a rooted circle, one node needs to be chosen as the root. Then the base station takes one node from the root's neighbour table and chooses it as the second node in the circle.  Then the base station looks into the second node's neighbour table and chooses a node that has the root node inside its neighbour table as the next node in the circle. The base station then does the same for the chosen node and this process is repeated until one node does not have a neighbour that has also the root as a neighbour. Then the circle is closed and the path goes back to the root. When we look at the example in Figure \ref{fig:rootedCircle}, this means node 1 was chosen as the root. Then node 2 was picked as the second node in the circle. Node 2 has multiple neighbours but only one of them, node 6, has the root node 1 as a neighbour. This means node 6 is chosen as the next node in the circle. Node 6 now has node 2 and node 7 as neighbours that also have the root as a neighbour, however node 2 is already inside the circle so node 7 is chosen as the next node. Node 7 now has no more neighbours that have the root as a neighbour and the circle is closed.
+
 \begin{figure}[htbp]
 	\centering
 	\begin{subfigure}[t]{0.4\textwidth}
 		\centering
-    		\includegraphics[scale=0.6]{content/images/Schedule/Network}
+    		\includegraphics[scale=0.5]{content/images/Schedule/Network}
    	 	\caption{The example network with all its connections between nodes.}
     	\label{fig:network}
     \end{subfigure}
@@ -157,7 +162,7 @@ The optimal schedule would be a Hamilton-Circle, which is a circle inside a grap
     \quad
     \begin{subfigure}[t]{0.4\textwidth}
 		\centering         
-        \includegraphics[scale=0.6]{content/images/Schedule/RootedCircle}
+        \includegraphics[scale=0.5]{content/images/Schedule/RootedCircle}
         \caption{Example for a rooted circle with node 1 as the root.}
         \label{fig:rootedCircle}
     \end{subfigure}
@@ -165,12 +170,10 @@ The optimal schedule would be a Hamilton-Circle, which is a circle inside a grap
     \caption{A rooted circle inside an example network.}
 \end{figure}
 
-The suggested method is based on smaller circles inside the graph. These circles have a root node that is the start and the end point of the circle. All the nodes inside this circle are in range of the root of the circle. These circles will be called rooted circles. In Figure \ref{fig:rootedCircle}, such a rooted circle is represented inside the network depicted in Figure \ref{fig:network}. To create a rooted circle, one node needs to be chosen as the root. Then the base station takes one node from the root's neighbour table and chooses it as the second node in the circle.  Then the base station looks into the second node's neighbour table and chooses a node that has the root node inside its neighbour table as the next node in the circle. The base station then does the same for the chosen node and this process is repeated until one node does not have a neighbour that has also the root as a neighbour. Then the circle is closed and the path goes back to the root. When we look at the example in Figure \ref{fig:rootedCircle}, this means node 1 was chosen as the root. Then node 2 was picked as the second node in the circle. Node 2 has multiple neighbours but only one of them, node 6, has the root node 1 as a neighbour. This means node 6 is chosen as the next node in the circle. Node 6 now has node 2 and node 7 as neighbours that also have the root as a neighbour, however node 2 is already inside the circle so node 7 is chosen as the next node. Node 7 now has no more neighbours that have the root as a neighbour and the circle is closed.
-
 \subsection{Creating a Full Schedule}
 \begin{figure}[htbp]
 	\centering         
-    \includegraphics[scale=0.6]{content/images/Schedule/FullSchedule}
+    \includegraphics[scale=0.5]{content/images/Schedule/FullSchedule}
     \caption{Full schedule for the example network of Figure \ref{fig:network}. The order in which the nodes send their messages would be: 1 2 3 4 2 6 5 6 7 8 9 10 7 1.}
     \label{fig:schedule}
 \end{figure} 
@@ -316,7 +319,7 @@ When all nodes received the schedule, it is possible to sample the received sign
 \label{chp:apr_samplingDrops}
 \begin{figure} [htbp]
 	\centering         
-    \includegraphics[scale=0.6]{content/images/MessageDrop}
+    \includegraphics[scale=0.8]{content/images/MessageDrop}
     \caption{Representation of a schedule. Node 3 sends a message. Node 4 drops the message but node 6 and 5 receive it so that they can calculate the time when they should send.}
     \label{fig:msgDrop}
 \end{figure}

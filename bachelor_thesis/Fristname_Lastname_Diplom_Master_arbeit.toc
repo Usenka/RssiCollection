@@ -21,8 +21,8 @@
 \contentsline {subsection}{\numberline {3.4.1}Rooted Circles}{18}{subsection.3.4.1}
 \contentsline {subsection}{\numberline {3.4.2}Creating a Full Schedule}{18}{subsection.3.4.2}
 \contentsline {section}{\numberline {3.5}Spreading the Schedule}{20}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}Sampling}{21}{subsection.3.5.1}
-\contentsline {subsection}{\numberline {3.5.2}Message Drops}{21}{subsection.3.5.2}
+\contentsline {subsection}{\numberline {3.5.1}Sampling}{22}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Message Drops}{22}{subsection.3.5.2}
 \contentsline {chapter}{\numberline {4}Implementation}{25}{chapter.4}
 \contentsline {section}{\numberline {4.1}General Structure}{25}{section.4.1}
 \contentsline {section}{\numberline {4.2}Receiving and Storing Information at the Base Station}{28}{section.4.2}

@@ -11,16 +11,5 @@ A level-1 auxiliary file: content/chapters/chapter7.aux
 The style file: geralpha.bst
 A level-1 auxiliary file: content/chapters/clause.aux
 Database file #1: content/references/references.bib
-Warning--empty journal in RtiMulti
-Warning--empty year in RtiMulti
-Warning--empty journal in Telosb
-Warning--empty year in Telosb
-Warning--empty journal in CTP
-Warning--empty year in CTP
-Warning--empty journal in Tinyos
-Warning--empty year in Tinyos
-Warning--empty journal in TinyosT
-Warning--empty year in TinyosT
-Warning--empty journal in Wsn
-Warning--empty year in Wsn
-(There were 12 warnings)
+Warning--to sort, need author or key in TinyosT
+(There was 1 warning)
