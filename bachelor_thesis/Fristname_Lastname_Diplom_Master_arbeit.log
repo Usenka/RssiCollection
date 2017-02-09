@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.11.18)  9 FEB 2017 09:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.11.18)  9 FEB 2017 12:56
 entering extended mode
 **./Fristname_Lastname_Diplom_Master_arbeit.tex
 (Fristname_Lastname_Diplom_Master_arbeit.tex
@@ -948,7 +948,7 @@ you should replace it, e.g., by `\normalfont \bfseries '.
 To make it work for now, you can use the already also deprecated class option
 `enabledeprecatedfontcommands'.
 
-<content/images/NES_Logo.pdf, id=163, 1212.91142pt x 269.53499pt>
+<content/images/NES_Logo.pdf, id=167, 1212.91142pt x 269.53499pt>
 File: content/images/NES_Logo.pdf Graphic file (type pdf)
 
 <use content/images/NES_Logo.pdf>
@@ -1097,74 +1097,65 @@ chapter 2.
 
 
 
-]
-! Undefined control sequence.
-l.36 ...ed. In the literature the Multi-Spin\citep
-                                                  {RtiMulti} algorithm that ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-<content/images/Multispin.png, id=265, 518.60953pt x 177.7842pt>
+] <content/images/Multispin.png, id=271, 518.60953pt x 177.7842pt>
 File: content/images/Multispin.png Graphic file (type png)
 
 <use content/images/Multispin.png>
 Package pdftex.def Info: content/images/Multispin.png used on input line 42.
 (pdftex.def)             Requested size: 414.88818pt x 142.22752pt.
  [6 <./content/images/Multispin.png>]
-<content/images/Testbed.png, id=276, 441.90094pt x 264.23718pt>
+[7] <content/images/Testbed.png, id=288, 441.90094pt x 264.23718pt>
 File: content/images/Testbed.png Graphic file (type png)
 
 <use content/images/Testbed.png>
-Package pdftex.def Info: content/images/Testbed.png used on input line 67.
+Package pdftex.def Info: content/images/Testbed.png used on input line 74.
 (pdftex.def)             Requested size: 331.42488pt x 198.17738pt.
- [7]
-<content/images/Mote1.png, id=285, 161.85469pt x 259.7203pt>
+ [8 <./content/images/Testbed.png>]
+<content/images/Mote1.png, id=298, 161.85469pt x 259.7203pt>
 File: content/images/Mote1.png Graphic file (type png)
 
 <use content/images/Mote1.png>
-Package pdftex.def Info: content/images/Mote1.png used on input line 80.
+Package pdftex.def Info: content/images/Mote1.png used on input line 87.
 (pdftex.def)             Requested size: 113.2975pt x 181.80296pt.
- [8 <./content/images/Testbed.png>] [9 <./content/images/Mote1.png>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 105.
+ [9 <./content/images/Mote1.png>] [10]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 112.
 
- ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 105.
-
-[10]
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 112.
+ [11]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 152.
+(Font)              <9> on input line 159.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 152.
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 152.
+(Font)              <5> on input line 159.
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 159.
 
- ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
 File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <9> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 152.
-) [11]
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 159.
+) [12]
 \openout2 = `content/chapters/chapter3.aux'.
 
 
-(content/chapters/chapter3.tex [12
+(content/chapters/chapter3.tex
+chapter 3.
+[13
 
 
 
 
 ]
-chapter 3.
-[13]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 16.
 
-<content/images/Architecture.png, id=380, 240.80363pt x 381.5856pt>
+<content/images/Architecture.png, id=388, 240.80363pt x 381.5856pt>
 File: content/images/Architecture.png Graphic file (type png)
 
 <use content/images/Architecture.png>
@@ -1172,7 +1163,7 @@ Package pdftex.def Info: content/images/Architecture.png used on input line 20.
 
 (pdftex.def)             Requested size: 144.48329pt x 228.95311pt.
 
-<content/images/GeneralAproachM.png, id=381, 232.61906pt x 320.69812pt>
+<content/images/GeneralAproachM.png, id=389, 232.61906pt x 320.69812pt>
 File: content/images/GeneralAproachM.png Graphic file (type png)
 
 <use content/images/GeneralAproachM.png>
@@ -1184,7 +1175,7 @@ Underfull \vbox (badness 6893) has occurred while \output is active []
 
  [14 <./content/images/Architecture.png> <./content/images/GeneralAproachM.png>
 ]
-<content/images/Collection/Part0.png, id=387, 210.7875pt x 113.67468pt>
+<content/images/Collection/Part0.png, id=395, 210.7875pt x 113.67468pt>
 File: content/images/Collection/Part0.png Graphic file (type png)
 
 <use content/images/Collection/Part0.png>
@@ -1192,7 +1183,7 @@ Package pdftex.def Info: content/images/Collection/Part0.png used on input line
  55.
 (pdftex.def)             Requested size: 126.47346pt x 68.20532pt.
 
-<content/images/Collection/Part1.png, id=388, 210.7875pt x 113.67468pt>
+<content/images/Collection/Part1.png, id=396, 210.7875pt x 113.67468pt>
 File: content/images/Collection/Part1.png Graphic file (type png)
 
 <use content/images/Collection/Part1.png>
@@ -1200,7 +1191,7 @@ Package pdftex.def Info: content/images/Collection/Part1.png used on input line
  63.
 (pdftex.def)             Requested size: 126.47346pt x 68.20532pt.
 
-<content/images/Collection/Part2.png, id=389, 210.7875pt x 113.67468pt>
+<content/images/Collection/Part2.png, id=397, 210.7875pt x 113.67468pt>
 File: content/images/Collection/Part2.png Graphic file (type png)
 
 <use content/images/Collection/Part2.png>
@@ -1208,7 +1199,7 @@ Package pdftex.def Info: content/images/Collection/Part2.png used on input line
  71.
 (pdftex.def)             Requested size: 126.47346pt x 68.20532pt.
 
-<content/images/Collection/Part3.png, id=390, 210.7875pt x 113.67468pt>
+<content/images/Collection/Part3.png, id=398, 210.7875pt x 113.67468pt>
 File: content/images/Collection/Part3.png Graphic file (type png)
 
 <use content/images/Collection/Part3.png>
@@ -1216,7 +1207,7 @@ Package pdftex.def Info: content/images/Collection/Part3.png used on input line
  79.
 (pdftex.def)             Requested size: 126.47346pt x 68.20532pt.
 
-<content/images/Collection/Part4.png, id=391, 210.7875pt x 113.67468pt>
+<content/images/Collection/Part4.png, id=399, 210.7875pt x 113.67468pt>
 File: content/images/Collection/Part4.png Graphic file (type png)
 
 <use content/images/Collection/Part4.png>
@@ -1224,7 +1215,7 @@ Package pdftex.def Info: content/images/Collection/Part4.png used on input line
  87.
 (pdftex.def)             Requested size: 126.47346pt x 68.20532pt.
 
-<content/images/Collection/Part5.png, id=392, 210.7875pt x 113.67468pt>
+<content/images/Collection/Part5.png, id=400, 210.7875pt x 113.67468pt>
 File: content/images/Collection/Part5.png Graphic file (type png)
 
 <use content/images/Collection/Part5.png>
@@ -1232,7 +1223,7 @@ Package pdftex.def Info: content/images/Collection/Part5.png used on input line
  95.
 (pdftex.def)             Requested size: 126.47346pt x 68.20532pt.
 
-<content/images/Collection/Part6.png, id=393, 210.7875pt x 113.67468pt>
+<content/images/Collection/Part6.png, id=401, 210.7875pt x 113.67468pt>
 File: content/images/Collection/Part6.png Graphic file (type png)
 
 <use content/images/Collection/Part6.png>
@@ -1240,7 +1231,7 @@ Package pdftex.def Info: content/images/Collection/Part6.png used on input line
  103.
 (pdftex.def)             Requested size: 126.47346pt x 68.20532pt.
 
-<content/images/Collection/Part7.png, id=394, 210.7875pt x 113.67468pt>
+<content/images/Collection/Part7.png, id=402, 210.7875pt x 113.67468pt>
 File: content/images/Collection/Part7.png Graphic file (type png)
 
 <use content/images/Collection/Part7.png>
@@ -1248,7 +1239,7 @@ Package pdftex.def Info: content/images/Collection/Part7.png used on input line
  111.
 (pdftex.def)             Requested size: 126.47346pt x 68.20532pt.
 
-<content/images/Collection/Part8.png, id=395, 210.7875pt x 113.67468pt>
+<content/images/Collection/Part8.png, id=403, 210.7875pt x 113.67468pt>
 File: content/images/Collection/Part8.png Graphic file (type png)
 
 <use content/images/Collection/Part8.png>
@@ -1260,7 +1251,7 @@ Underfull \hbox (badness 1442) in paragraph at lines 120--120
 [][][]|\OT1/cmr/m/n/10 All the chil-dren of node 3 are
  []
 
-<content/images/Collection/Part9.png, id=396, 210.7875pt x 113.67468pt>
+<content/images/Collection/Part9.png, id=404, 210.7875pt x 113.67468pt>
 File: content/images/Collection/Part9.png Graphic file (type png)
 
 <use content/images/Collection/Part9.png>
@@ -1277,7 +1268,7 @@ Part3.png> <./content/images/Collection/Part4.png> <./content/images/Collection
 /Part5.png> <./content/images/Collection/Part6.png> <./content/images/Collectio
 n/Part7.png> <./content/images/Collection/Part8.png> <./content/images/Collecti
 on/Part9.png>]
-<content/images/Schedule/Network.png, id=408, 258.9675pt x 241.65282pt>
+<content/images/Schedule/Network.png, id=416, 258.9675pt x 241.65282pt>
 File: content/images/Schedule/Network.png Graphic file (type png)
 
 <use content/images/Schedule/Network.png>
@@ -1285,7 +1276,7 @@ Package pdftex.def Info: content/images/Schedule/Network.png used on input line
  150.
 (pdftex.def)             Requested size: 155.38168pt x 144.9928pt.
 
-<content/images/Schedule/RootedCircle.png, id=409, 258.9675pt x 241.65282pt>
+<content/images/Schedule/RootedCircle.png, id=417, 258.9675pt x 241.65282pt>
 File: content/images/Schedule/RootedCircle.png Graphic file (type png)
 
 <use content/images/Schedule/RootedCircle.png>
@@ -1293,7 +1284,7 @@ Package pdftex.def Info: content/images/Schedule/RootedCircle.png used on input
  line 158.
 (pdftex.def)             Requested size: 155.38168pt x 144.9928pt.
  [17]
-<content/images/Schedule/FullSchedule.png, id=418, 258.9675pt x 241.65282pt>
+<content/images/Schedule/FullSchedule.png, id=426, 258.9675pt x 241.65282pt>
 File: content/images/Schedule/FullSchedule.png Graphic file (type png)
 
 <use content/images/Schedule/FullSchedule.png>
@@ -1302,7 +1293,7 @@ Package pdftex.def Info: content/images/Schedule/FullSchedule.png used on input
 (pdftex.def)             Requested size: 155.38168pt x 144.9928pt.
  [18 <./content/images/Schedule/Network.png> <./content/images/Schedule/RootedC
 ircle.png>] [19 <./content/images/Schedule/FullSchedule.png>]
-<content/images/ScheduleSpreading/Part1.png, id=456, 210.7875pt x 113.67468pt>
+<content/images/ScheduleSpreading/Part1.png, id=464, 210.7875pt x 113.67468pt>
 File: content/images/ScheduleSpreading/Part1.png Graphic file (type png)
 
 <use content/images/ScheduleSpreading/Part1.png>
@@ -1310,7 +1301,7 @@ Package pdftex.def Info: content/images/ScheduleSpreading/Part1.png used on inp
 ut line 230.
 (pdftex.def)             Requested size: 126.47346pt x 68.20532pt.
 
-<content/images/ScheduleSpreading/Part2.png, id=457, 210.7875pt x 113.67468pt>
+<content/images/ScheduleSpreading/Part2.png, id=465, 210.7875pt x 113.67468pt>
 File: content/images/ScheduleSpreading/Part2.png Graphic file (type png)
 
 <use content/images/ScheduleSpreading/Part2.png>
@@ -1318,7 +1309,7 @@ Package pdftex.def Info: content/images/ScheduleSpreading/Part2.png used on inp
 ut line 238.
 (pdftex.def)             Requested size: 126.47346pt x 68.20532pt.
 
-<content/images/ScheduleSpreading/Part3.png, id=458, 210.7875pt x 113.67468pt>
+<content/images/ScheduleSpreading/Part3.png, id=466, 210.7875pt x 113.67468pt>
 File: content/images/ScheduleSpreading/Part3.png Graphic file (type png)
 
 <use content/images/ScheduleSpreading/Part3.png>
@@ -1326,7 +1317,7 @@ Package pdftex.def Info: content/images/ScheduleSpreading/Part3.png used on inp
 ut line 246.
 (pdftex.def)             Requested size: 126.47346pt x 68.20532pt.
 
-<content/images/ScheduleSpreading/Part4.png, id=459, 210.7875pt x 113.67468pt>
+<content/images/ScheduleSpreading/Part4.png, id=467, 210.7875pt x 113.67468pt>
 File: content/images/ScheduleSpreading/Part4.png Graphic file (type png)
 
 <use content/images/ScheduleSpreading/Part4.png>
@@ -1334,7 +1325,7 @@ Package pdftex.def Info: content/images/ScheduleSpreading/Part4.png used on inp
 ut line 254.
 (pdftex.def)             Requested size: 126.47346pt x 68.20532pt.
 
-<content/images/ScheduleSpreading/Part5.png, id=460, 210.7875pt x 113.67468pt>
+<content/images/ScheduleSpreading/Part5.png, id=468, 210.7875pt x 113.67468pt>
 File: content/images/ScheduleSpreading/Part5.png Graphic file (type png)
 
 <use content/images/ScheduleSpreading/Part5.png>
@@ -1342,7 +1333,7 @@ Package pdftex.def Info: content/images/ScheduleSpreading/Part5.png used on inp
 ut line 262.
 (pdftex.def)             Requested size: 126.47346pt x 68.20532pt.
 
-<content/images/ScheduleSpreading/Part6.png, id=461, 210.7875pt x 113.67468pt>
+<content/images/ScheduleSpreading/Part6.png, id=469, 210.7875pt x 113.67468pt>
 File: content/images/ScheduleSpreading/Part6.png Graphic file (type png)
 
 <use content/images/ScheduleSpreading/Part6.png>
@@ -1350,7 +1341,7 @@ Package pdftex.def Info: content/images/ScheduleSpreading/Part6.png used on inp
 ut line 270.
 (pdftex.def)             Requested size: 126.47346pt x 68.20532pt.
 
-<content/images/ScheduleSpreading/Part7.png, id=462, 210.7875pt x 113.67468pt>
+<content/images/ScheduleSpreading/Part7.png, id=470, 210.7875pt x 113.67468pt>
 File: content/images/ScheduleSpreading/Part7.png Graphic file (type png)
 
 <use content/images/ScheduleSpreading/Part7.png>
@@ -1358,7 +1349,7 @@ Package pdftex.def Info: content/images/ScheduleSpreading/Part7.png used on inp
 ut line 278.
 (pdftex.def)             Requested size: 126.47346pt x 68.20532pt.
 
-<content/images/ScheduleSpreading/Part8.png, id=463, 210.7875pt x 113.67468pt>
+<content/images/ScheduleSpreading/Part8.png, id=471, 210.7875pt x 113.67468pt>
 File: content/images/ScheduleSpreading/Part8.png Graphic file (type png)
 
 <use content/images/ScheduleSpreading/Part8.png>
@@ -1366,7 +1357,7 @@ Package pdftex.def Info: content/images/ScheduleSpreading/Part8.png used on inp
 ut line 286.
 (pdftex.def)             Requested size: 126.47346pt x 68.20532pt.
 
-<content/images/ScheduleSpreading/Part9.png, id=464, 210.7875pt x 113.67468pt>
+<content/images/ScheduleSpreading/Part9.png, id=472, 210.7875pt x 113.67468pt>
 File: content/images/ScheduleSpreading/Part9.png Graphic file (type png)
 
 <use content/images/ScheduleSpreading/Part9.png>
@@ -1374,7 +1365,7 @@ Package pdftex.def Info: content/images/ScheduleSpreading/Part9.png used on inp
 ut line 294.
 (pdftex.def)             Requested size: 126.47346pt x 68.20532pt.
 
-<content/images/ScheduleSpreading/Part10.png, id=465, 210.7875pt x 113.67468pt>
+<content/images/ScheduleSpreading/Part10.png, id=473, 210.7875pt x 113.67468pt>
 File: content/images/ScheduleSpreading/Part10.png Graphic file (type png)
 <use content/images/ScheduleSpreading/Part10.png>
 Package pdftex.def Info: content/images/ScheduleSpreading/Part10.png used on in
@@ -1390,7 +1381,7 @@ nt/images/ScheduleSpreading/Part4.png> <./content/images/ScheduleSpreading/Part
 5.png> <./content/images/ScheduleSpreading/Part6.png> <./content/images/Schedul
 eSpreading/Part7.png> <./content/images/ScheduleSpreading/Part8.png> <./content
 /images/ScheduleSpreading/Part9.png> <./content/images/ScheduleSpreading/Part10
-.png>] <content/images/MessageDrop.png, id=494, 498.37392pt x 144.54pt>
+.png>] <content/images/MessageDrop.png, id=502, 498.37392pt x 144.54pt>
 File: content/images/MessageDrop.png Graphic file (type png)
 
 <use content/images/MessageDrop.png>
@@ -1404,7 +1395,7 @@ Package pdftex.def Info: content/images/MessageDrop.png used on input line 317.
 (content/chapters/chapter4.tex
 chapter 4.
 
-<content/images/BaseStation/Klassendiagram.png, id=502, 577.29276pt x 230.97491
+<content/images/BaseStation/Klassendiagram.png, id=510, 577.29276pt x 230.97491
 pt>
 File: content/images/BaseStation/Klassendiagram.png Graphic file (type png)
  <use content/images/BaseStation/Klassendiagram.png>
@@ -1417,7 +1408,7 @@ input line 11.
 
 
  <./content/images/BaseStation/Klassendiagram.png>]
-<content/images/Motes/GeneralStructure.png, id=509, 733.97412pt x 431.38773pt>
+<content/images/Motes/GeneralStructure.png, id=517, 733.97412pt x 431.38773pt>
 File: content/images/Motes/GeneralStructure.png Graphic file (type png)
 
 <use content/images/Motes/GeneralStructure.png>
@@ -1430,7 +1421,7 @@ Overfull \hbox (22.38788pt too wide) in paragraph at lines 20--21
  []
 
 [24 <./content/images/Motes/GeneralStructure.png>]
-<content/images/Processes/ComandsEvents.png, id=518, 771.55452pt x 396.0396pt>
+<content/images/Processes/ComandsEvents.png, id=526, 771.55452pt x 396.0396pt>
 File: content/images/Processes/ComandsEvents.png Graphic file (type png)
 
 <use content/images/Processes/ComandsEvents.png>
@@ -1463,7 +1454,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ]
 chapter 5.
 [35] [36]
-<content/images/Experiment/NightCollection.png, id=646, 490.83376pt x 229.60782
+<content/images/Experiment/NightCollection.png, id=654, 490.83376pt x 229.60782
 pt>
 File: content/images/Experiment/NightCollection.png Graphic file (type png)
  <use content/images/Experiment/NightCollection.png>
@@ -1471,7 +1462,7 @@ Package pdftex.def Info: content/images/Experiment/NightCollection.png used on
 input line 56.
 (pdftex.def)             Requested size: 368.1244pt x 172.20543pt.
 
-<content/images/Experiment/NightRounds.png, id=648, 383.18156pt x 182.93344pt>
+<content/images/Experiment/NightRounds.png, id=656, 383.18156pt x 182.93344pt>
 File: content/images/Experiment/NightRounds.png Graphic file (type png)
 
 <use content/images/Experiment/NightRounds.png>
@@ -1488,7 +1479,7 @@ Underfull \vbox (badness 6641) has occurred while \output is active []
 
  [37 <./content/images/Experiment/NightCollection.png> <./content/images/Experi
 ment/NightRounds.png>]
-<content/images/Experiment/DayCollection.png, id=659, 382.42876pt x 179.16937pt
+<content/images/Experiment/DayCollection.png, id=667, 382.42876pt x 179.16937pt
 >
 File: content/images/Experiment/DayCollection.png Graphic file (type png)
  <use content/images/Experiment/DayCollection.png>
@@ -1496,7 +1487,7 @@ Package pdftex.def Info: content/images/Experiment/DayCollection.png used on in
 put line 97.
 (pdftex.def)             Requested size: 286.82085pt x 134.3767pt.
 
-<content/images/Experiment/DayRounds.png, id=661, 380.17032pt x 176.91093pt>
+<content/images/Experiment/DayRounds.png, id=669, 380.17032pt x 176.91093pt>
 File: content/images/Experiment/DayRounds.png Graphic file (type png)
 
 <use content/images/Experiment/DayRounds.png>
@@ -1637,6 +1628,128 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.12 {\sc
+          Gnawali, Omprakash}, {\sc Rodrigo Fonseca}, {\sc Kyle Jamieson}, {\sc
+
+You should note that since 1994 LaTeX2e provides a new font selection scheme
+called NFSS2 with several new, combinable font commands. New KOMA-Script
+classes have defined the old font commands like `\sc' only for compatibility
+with old LaTeX 2.09 document styles of Script 2.0. Nevertheless, these
+commands are deprecated and undocumented at least since 2003. Since 2013
+KOMA-Script classes warn abouts soon removement of these deprecated commands.
+Now, after two decades of LaTeX2e and NFSS2, these commands will not work any
+more. If loading a package results in this error message, you should contact
+the author of that package and ask him to replace the deprecated font command
+`\sc', e.g., by `\normalfont \scshape `. Otherwise you should reconfigure
+or replace the package. If you have used the old font command `\sc' yourself,
+you should replace it, e.g., by `\normalfont \scshape '.
+To make it work for now, you can use the already also deprecated class option
+`enabledeprecatedfontcommands'.
+
+
+! Class scrbook Error: undefined old font command `\sc'.
+
+See the scrbook class documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.12 {\sc Gnawali, Omprakash}, {\sc
+                                    Rodrigo Fonseca}, {\sc Kyle Jamieson}, {\sc
+
+You should note that since 1994 LaTeX2e provides a new font selection scheme
+called NFSS2 with several new, combinable font commands. New KOMA-Script
+classes have defined the old font commands like `\sc' only for compatibility
+with old LaTeX 2.09 document styles of Script 2.0. Nevertheless, these
+commands are deprecated and undocumented at least since 2003. Since 2013
+KOMA-Script classes warn abouts soon removement of these deprecated commands.
+Now, after two decades of LaTeX2e and NFSS2, these commands will not work any
+more. If loading a package results in this error message, you should contact
+the author of that package and ask him to replace the deprecated font command
+`\sc', e.g., by `\normalfont \scshape `. Otherwise you should reconfigure
+or replace the package. If you have used the old font command `\sc' yourself,
+you should replace it, e.g., by `\normalfont \scshape '.
+To make it work for now, you can use the already also deprecated class option
+`enabledeprecatedfontcommands'.
+
+
+! Class scrbook Error: undefined old font command `\sc'.
+
+See the scrbook class documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.12 ...i, Omprakash}, {\sc Rodrigo Fonseca}, {\sc
+                                                   Kyle Jamieson}, {\sc
+You should note that since 1994 LaTeX2e provides a new font selection scheme
+called NFSS2 with several new, combinable font commands. New KOMA-Script
+classes have defined the old font commands like `\sc' only for compatibility
+with old LaTeX 2.09 document styles of Script 2.0. Nevertheless, these
+commands are deprecated and undocumented at least since 2003. Since 2013
+KOMA-Script classes warn abouts soon removement of these deprecated commands.
+Now, after two decades of LaTeX2e and NFSS2, these commands will not work any
+more. If loading a package results in this error message, you should contact
+the author of that package and ask him to replace the deprecated font command
+`\sc', e.g., by `\normalfont \scshape `. Otherwise you should reconfigure
+or replace the package. If you have used the old font command `\sc' yourself,
+you should replace it, e.g., by `\normalfont \scshape '.
+To make it work for now, you can use the already also deprecated class option
+`enabledeprecatedfontcommands'.
+
+
+! Class scrbook Error: undefined old font command `\sc'.
+
+See the scrbook class documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.12 ...odrigo Fonseca}, {\sc Kyle Jamieson}, {\sc
+                                                  
+You should note that since 1994 LaTeX2e provides a new font selection scheme
+called NFSS2 with several new, combinable font commands. New KOMA-Script
+classes have defined the old font commands like `\sc' only for compatibility
+with old LaTeX 2.09 document styles of Script 2.0. Nevertheless, these
+commands are deprecated and undocumented at least since 2003. Since 2013
+KOMA-Script classes warn abouts soon removement of these deprecated commands.
+Now, after two decades of LaTeX2e and NFSS2, these commands will not work any
+more. If loading a package results in this error message, you should contact
+the author of that package and ask him to replace the deprecated font command
+`\sc', e.g., by `\normalfont \scshape `. Otherwise you should reconfigure
+or replace the package. If you have used the old font command `\sc' yourself,
+you should replace it, e.g., by `\normalfont \scshape '.
+To make it work for now, you can use the already also deprecated class option
+`enabledeprecatedfontcommands'.
+
+
+! Class scrbook Error: undefined old font command `\sc'.
+
+See the scrbook class documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13   David Moss} \btxandlong{}\ {\sc
+                                       Philip Levis}: {\em Collection Tree
+You should note that since 1994 LaTeX2e provides a new font selection scheme
+called NFSS2 with several new, combinable font commands. New KOMA-Script
+classes have defined the old font commands like `\sc' only for compatibility
+with old LaTeX 2.09 document styles of Script 2.0. Nevertheless, these
+commands are deprecated and undocumented at least since 2003. Since 2013
+KOMA-Script classes warn abouts soon removement of these deprecated commands.
+Now, after two decades of LaTeX2e and NFSS2, these commands will not work any
+more. If loading a package results in this error message, you should contact
+the author of that package and ask him to replace the deprecated font command
+`\sc', e.g., by `\normalfont \scshape `. Otherwise you should reconfigure
+or replace the package. If you have used the old font command `\sc' yourself,
+you should replace it, e.g., by `\normalfont \scshape '.
+To make it work for now, you can use the already also deprecated class option
+`enabledeprecatedfontcommands'.
+
+
+! Class scrbook Error: undefined old font command `\sc'.
+
+See the scrbook class documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 {\sc
           Levis, P.}, {\sc S.~Madden}, {\sc J.~Polastre}, {\sc R.~Szewczyk},...
 
 You should note that since 1994 LaTeX2e provides a new font selection scheme
@@ -1661,7 +1774,7 @@ See the scrbook class documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.12 {\sc Levis, P.}, {\sc
+l.17 {\sc Levis, P.}, {\sc
                            S.~Madden}, {\sc J.~Polastre}, {\sc R.~Szewczyk},...
 
 You should note that since 1994 LaTeX2e provides a new font selection scheme
@@ -1686,7 +1799,7 @@ See the scrbook class documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.12 {\sc Levis, P.}, {\sc S.~Madden}, {\sc
+l.17 {\sc Levis, P.}, {\sc S.~Madden}, {\sc
                                             J.~Polastre}, {\sc R.~Szewczyk},...
 
 You should note that since 1994 LaTeX2e provides a new font selection scheme
@@ -1711,7 +1824,7 @@ See the scrbook class documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.12 ..., {\sc S.~Madden}, {\sc J.~Polastre}, {\sc
+l.17 ..., {\sc S.~Madden}, {\sc J.~Polastre}, {\sc
                                                    R.~Szewczyk}, {\sc
 You should note that since 1994 LaTeX2e provides a new font selection scheme
 called NFSS2 with several new, combinable font commands. New KOMA-Script
@@ -1735,7 +1848,7 @@ See the scrbook class documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.12 ...{\sc J.~Polastre}, {\sc R.~Szewczyk}, {\sc
+l.17 ...{\sc J.~Polastre}, {\sc R.~Szewczyk}, {\sc
                                                   
 You should note that since 1994 LaTeX2e provides a new font selection scheme
 called NFSS2 with several new, combinable font commands. New KOMA-Script
@@ -1759,7 +1872,7 @@ See the scrbook class documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.13   K.~Whitehouse}, {\sc
+l.18   K.~Whitehouse}, {\sc
                             A.~Woo}, {\sc D.~Gay}, {\sc J.~Hill}, {\sc M.~We...
 
 You should note that since 1994 LaTeX2e provides a new font selection scheme
@@ -1784,7 +1897,7 @@ See the scrbook class documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.13   K.~Whitehouse}, {\sc A.~Woo}, {\sc
+l.18   K.~Whitehouse}, {\sc A.~Woo}, {\sc
                                           D.~Gay}, {\sc J.~Hill}, {\sc M.~We...
 
 You should note that since 1994 LaTeX2e provides a new font selection scheme
@@ -1809,7 +1922,7 @@ See the scrbook class documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.13 ...tehouse}, {\sc A.~Woo}, {\sc D.~Gay}, {\sc
+l.18 ...tehouse}, {\sc A.~Woo}, {\sc D.~Gay}, {\sc
                                                    J.~Hill}, {\sc M.~Welsh},
 You should note that since 1994 LaTeX2e provides a new font selection scheme
 called NFSS2 with several new, combinable font commands. New KOMA-Script
@@ -1833,7 +1946,7 @@ See the scrbook class documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.13 ...A.~Woo}, {\sc D.~Gay}, {\sc J.~Hill}, {\sc
+l.18 ...A.~Woo}, {\sc D.~Gay}, {\sc J.~Hill}, {\sc
                                                    M.~Welsh},
 You should note that since 1994 LaTeX2e provides a new font selection scheme
 called NFSS2 with several new, combinable font commands. New KOMA-Script
@@ -1857,7 +1970,7 @@ See the scrbook class documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.14   {\sc
+l.19   {\sc
             E.~Brewer} \btxandlong{}\ {\sc D.~Culler}: {\em TinyOS: An Opera...
 
 You should note that since 1994 LaTeX2e provides a new font selection scheme
@@ -1882,7 +1995,7 @@ See the scrbook class documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.14   {\sc E.~Brewer} \btxandlong{}\ {\sc
+l.19   {\sc E.~Brewer} \btxandlong{}\ {\sc
                                            D.~Culler}: {\em TinyOS: An Opera...
 
 You should note that since 1994 LaTeX2e provides a new font selection scheme
@@ -1907,7 +2020,7 @@ See the scrbook class documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.18 {\sc
+l.23 {\sc
           Someone}: {\em
 You should note that since 1994 LaTeX2e provides a new font selection scheme
 called NFSS2 with several new, combinable font commands. New KOMA-Script
@@ -1927,13 +2040,13 @@ To make it work for now, you can use the already also deprecated class option
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.19 ...stanford.edu/tinyos-wiki/index.php/TinyOS_
+l.24 ...stanford.edu/tinyos-wiki/index.php/TinyOS_
                                                   Documentation_Wiki}.
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Extra }, or forgotten $.
-l.19 ...-wiki/index.php/TinyOS_Documentation_Wiki}
+l.24 ...-wiki/index.php/TinyOS_Documentation_Wiki}
                                                   .
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1944,7 +2057,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.20 
+l.25 
      
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1952,7 +2065,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.20 
+l.25 
      
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1961,7 +2074,7 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 18--20
+Underfull \hbox (badness 10000) in paragraph at lines 23--25
 []\OT1/cmr/m/sc/10.95 Someone\OT1/cmr/m/n/10.95 : \OT1/cmr/m/it/10.95 http://ti
 nyos.stanford.edu/tinyos-
  []
@@ -1973,7 +2086,7 @@ See the scrbook class documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.22 {\sc
+l.27 {\sc
           Someone}: {\em WSN book}.
 You should note that since 1994 LaTeX2e provides a new font selection scheme
 called NFSS2 with several new, combinable font commands. New KOMA-Script
@@ -2031,14 +2144,14 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 228.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 228.
 Package rerunfilecheck Info: File `Fristname_Lastname_Diplom_Master_arbeit.out'
  has not changed.
-(rerunfilecheck)             Checksum: 36FF8EE94F2E752BAE7635266B1530B8;2711.
+(rerunfilecheck)             Checksum: 3DEC6D1A773169FF44266C6F363BC0CB;2787.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 228.
  ) 
 Here is how much of TeX's memory you used:
- 11948 strings out of 493333
- 192775 string characters out of 3139193
- 389807 words of memory out of 3000000
- 14961 multiletter control sequences out of 15000+200000
+ 11952 strings out of 493333
+ 192812 string characters out of 3139193
+ 389842 words of memory out of 3000000
+ 14963 multiletter control sequences out of 15000+200000
  13058 words of font info for 45 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  48i,10n,66p,8852b,1812s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2059,10 +2172,10 @@ ype1/public/amsfonts/cm/cmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
 ublic/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
 sfonts/cm/cmsy9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
 /cmti10.pfb>
-Output written on Fristname_Lastname_Diplom_Master_arbeit.pdf (51 pages, 119080
-5 bytes).
+Output written on Fristname_Lastname_Diplom_Master_arbeit.pdf (51 pages, 119460
+1 bytes).
 PDF statistics:
- 827 PDF objects out of 1000 (max. 8388607)
- 254 named destinations out of 1000 (max. 500000)
- 506 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 835 PDF objects out of 1000 (max. 8388607)
+ 256 named destinations out of 1000 (max. 500000)
+ 514 words of extra memory for PDF output out of 10000 (max. 10000000)
 

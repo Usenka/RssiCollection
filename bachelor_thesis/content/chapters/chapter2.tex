@@ -33,7 +33,7 @@ The application running on the node is designed specific for the purpose of the 
 \section{Radio Tomographic Imaging}
 Radio Tomographic Imaging (RTI) is a method to localize people inside an area covered by a WSN. To do so, the WSN monitors the received signal strength (RSS) of each link inside the network by letting each node send broadcast messages over radio. Whenever a person stays or moves inside the monitored area, it affects RSS of some or all links. The changes can then be processed and a position of the person can be estimated. This makes it possible to localise a person without it having to carry any device \cite{RtiMulti}.
 \section{Multi-Spin}
-When monitoring the RSS of each link inside a WSN it is important to take into account that not only changes inside the environment can effect the RSS. Also multiple messages sent at the same time interfere with each other and distort the measured change of the RSS. To counteract this, a method to schedule the messages in a way that only one node sends at a given point in time is needed. In the literature the Multi-Spin\citep{RtiMulti} algorithm that defines for each node a point in time when it should send its message is suggested.
+When monitoring the RSS of each link inside a WSN it is important to take into account that not only changes inside the environment can effect the RSS. Also multiple messages sent at the same time interfere with each other and distort the measured change of the RSS. To counteract this, a method to schedule the messages in a way that only one node sends at a given point in time is needed. In the literature the Multi-Spin \cite{RtiMulti} algorithm that defines for each node a point in time when it should send its message is suggested.
 
 In Multi-Spin time is divided into $slots$ and $cycles$ where a $cycle$ is the time all the nodes need to send one message each. Then a $cycle$ is divided by the number of nodes inside the network resulting in one $slot$ for each node, as shown in Figure \ref{fig:multi}. Now each node sends in one of these slots. The order in which the nodes send is defined by their ID. To make this possible the nodes need to somehow synchronize at the beginning. Therefore each node broadcasts messages until one message is received by the nodes. Then the nodes synchronize their time with that message, define their timeslots and start sending in the order of their IDs. Whenever a node receives a message it can calculate the time until the next $cycle$, so the nodes stay synchronized all the time.  \cite{RtiMulti}
 
@@ -55,7 +55,14 @@ Therefore a different method is needed for a widely spread multi hop network.
 %every round needs a time sinchronization
 %data collection not possible like that
 %very cool but not sufficient in a multi hop enviroment
- 
+\section{Collection Tree Protocol}
+To collect data from a multi-hop WSN multiple data collection protocols exist. One of these is the Collection Tree Protocol (CTP). The CTP creates paths in form of trees. The nodes can then send their data along this path to a collection point. To schedule the forwarding of messages each node implements a message queue. 
+
+To create the paths every node maintains the cost of its path to the collection point. The cost of a nodes' path is the cost of the link between itself and its parent added to the cost of its parents' path. Collection points have path costs of zero. Now all the nodes send broadcast messages in a specific pattern which include the nodes path costs. If a node receives a broadcast message that provides a smaller path cost it can adjust its path to the new one.
+
+Whenever a node now needs to send data it can simply send it to its parent which will put the message inside its message queue and then forward it whenever it is possible. This makes it a good collection protocol for continuous data collection since nodes can send data whenever they have some, it recalibrates itself continuously and has high packet delivery rate. \cite{CTP}
+
+The problem with collecting the signal strength information for RTI is that it needs to be done at a specific point in time to not distort the measurements. This means a method is needed to start the collection and to know when it is finished. 
 \section{Wireles Sonsor Network Testbed}
 \label{chp:mat_testbed}
 A Wireless Sensor Network Testbed is a in a controlled environment deployed WSN to test applications. This creates a realistic test environment showing not only the theoretical functionality like a simulation but also makes it possible examine communication loss, energy constraints and the influence of the real environment.  

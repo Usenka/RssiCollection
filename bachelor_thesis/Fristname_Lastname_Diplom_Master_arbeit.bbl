@@ -8,6 +8,11 @@
 \bibitem[CT]{Telosb}
 {\sc Crossbow~Technology, Inc.}: {\em TelosB Mote Platform Datasheet}.
 
+\bibitem[GFJ{\etalchar{+}}]{CTP}
+{\sc Gnawali, Omprakash}, {\sc Rodrigo Fonseca}, {\sc Kyle Jamieson}, {\sc
+  David Moss} \btxandlong{}\ {\sc Philip Levis}: {\em Collection Tree
+  Protocol}.
+
 \bibitem[LMP{\etalchar{+}}]{Tinyos}
 {\sc Levis, P.}, {\sc S.~Madden}, {\sc J.~Polastre}, {\sc R.~Szewczyk}, {\sc
   K.~Whitehouse}, {\sc A.~Woo}, {\sc D.~Gay}, {\sc J.~Hill}, {\sc M.~Welsh},

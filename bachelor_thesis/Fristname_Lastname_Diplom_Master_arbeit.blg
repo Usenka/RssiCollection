@@ -11,18 +11,16 @@ A level-1 auxiliary file: content/chapters/chapter7.aux
 The style file: geralpha.bst
 A level-1 auxiliary file: content/chapters/clause.aux
 Database file #1: content/references/references.bib
-Warning--I didn't find a database entry for "Ikeda1997"
-Warning--I didn't find a database entry for "levensthein65:_binar"
-Warning--I didn't find a database entry for "Middleton2002"
-Warning--I didn't find a database entry for "salton89"
 Warning--empty journal in RtiMulti
 Warning--empty year in RtiMulti
 Warning--empty journal in Telosb
 Warning--empty year in Telosb
+Warning--empty journal in CTP
+Warning--empty year in CTP
 Warning--empty journal in Tinyos
 Warning--empty year in Tinyos
 Warning--empty journal in TinyosT
 Warning--empty year in TinyosT
 Warning--empty journal in Wsn
 Warning--empty year in Wsn
-(There were 14 warnings)
+(There were 12 warnings)
