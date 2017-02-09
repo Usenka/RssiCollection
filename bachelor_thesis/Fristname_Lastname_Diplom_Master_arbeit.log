@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=latex 2017.1.17)  8 FEB 2017 18:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.11.18)  8 FEB 2017 19:28
 entering extended mode
 **./Fristname_Lastname_Diplom_Master_arbeit.tex
 (Fristname_Lastname_Diplom_Master_arbeit.tex
@@ -2035,9 +2035,9 @@ Package rerunfilecheck Info: File `Fristname_Lastname_Diplom_Master_arbeit.out'
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 228.
  ) 
 Here is how much of TeX's memory you used:
- 11948 strings out of 493334
- 192775 string characters out of 3139220
- 389804 words of memory out of 3000000
+ 11948 strings out of 493333
+ 192775 string characters out of 3139193
+ 389807 words of memory out of 3000000
  14961 multiletter control sequences out of 15000+200000
  13058 words of font info for 45 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2059,8 +2059,8 @@ ype1/public/amsfonts/cm/cmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
 ublic/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
 sfonts/cm/cmsy9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
 /cmti10.pfb>
-Output written on Fristname_Lastname_Diplom_Master_arbeit.pdf (51 pages, 119195
-6 bytes).
+Output written on Fristname_Lastname_Diplom_Master_arbeit.pdf (51 pages, 119008
+8 bytes).
 PDF statistics:
  827 PDF objects out of 1000 (max. 8388607)
  254 named destinations out of 1000 (max. 500000)

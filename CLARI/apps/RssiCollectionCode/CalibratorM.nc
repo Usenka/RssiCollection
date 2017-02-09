@@ -97,8 +97,6 @@ module CalibratorM {
 			BroadcastMsg* bpkt = (BroadcastMsg*) (call Packet_.getPayload(&brca_msg, sizeof(BroadcastMsg)));
 			addHopInfoToBCMsg(bpkt, 0);
 		
-			//_printf("Broadcast: %d %d\n", bpkt->hopValue, bpkt->nextHop);
-
 			if(bpkt != NULL && !brcaBusy)
 				if (call BroadcastSend.send(AM_BROADCAST_ADDR, &brca_msg, sizeof(BroadcastMsg)) == SUCCESS)
 					brcaBusy = TRUE;

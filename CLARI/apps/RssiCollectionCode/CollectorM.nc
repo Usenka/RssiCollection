@@ -45,8 +45,6 @@ module CollectorM {
 	void nl_update() {
 		// update neighbor list -> nodes from which messages were received are in rang
 		uint8_t i;	
-		//printf("Update_nl\n");		
-
 		for(i = 0; i < NUMBER_OF_NODES+1; i++) {
 			if(nodeList[i].msg_counter == 0)
 				nodeList[i].inRange = FALSE;
@@ -124,12 +122,10 @@ module CollectorM {
 	}  
 
 	void fillRequestFlag(FlagMsg* fpkt) {
-		//printf("Hui ich erstelle nen request dingen :) %d\n", requestID);
 		fpkt->flag = FLAG_REQUEST;			
 		fpkt->round = c_round;		
 		fpkt->id = requestID +1;
 		requestID++;
-		//printf("Hui ich erstelle nen request dingen :) %d %d\n",fpkt->id , requestID);
 	}
 
 	command void Collector.initializeCollector() {
@@ -143,13 +139,11 @@ module CollectorM {
 	command void Collector.attacheNodeList(Node* nl) {
 		nodeList = nl;
 		nodeListAttached = TRUE;
-		//_printf("nodeListAttached %d\n", nodeList[4].nextHop);
 	}
 
 	command void Collector.attacheHopInfo(BroadcastMsg* hi) {
 		hopInfo = hi;
 		hopInfoAttached = TRUE;
-		//_printf("hopInfoAttached %d\n", hopInfo->nextHop);
 	}
 
 	command void Collector.startCollection() {
@@ -188,7 +182,6 @@ module CollectorM {
 			if (call RadioImageSend.send(hopInfo->nextHop, &ri_msg_queue[numberOfSendMsgs], sizeof(RadioImageMsg)) == SUCCESS)
 				riBusy = TRUE;
 		} else if(riBusy) {
-			//_printf("BUSY not forwarded to %d\n", hopInfo->nextHop);
 		}
 	}
 
@@ -204,12 +197,9 @@ module CollectorM {
 			uint8_t sour = call AMPacket.source(msg);
 			RadioImageMsg* ripkt = (RadioImageMsg*) (call Packet_.getPayload(&ri_msg_queue[numberOfReceivedMsgs], sizeof(RadioImageMsg)));		
 
-			//_printf("req Image from: %d; rec from: %d; source: %d --- %d %d\n", requestedFrom, sour, ((RadioImageMsg*)payload)->from, ((RadioImageMsg*)payload)->request_id, requestID);
 			if(requestedFrom == sour && ((RadioImageMsg*)payload)->request_id == requestID) {
 				//checks if the part of the image got received already				
 				if( ((RadioImageMsg*)payload)->motesLeft >= nodeList[((RadioImageMsg*)payload)->from].receivedImage) {
-					//_printf("allreadyReceived!\n");
-
 					return msg;
 				}	
 
@@ -225,18 +215,13 @@ module CollectorM {
 				}
 
 				numberOfSendMsgs = 0;
-				//_printf("Got the whole image from %d over %d\n", ripkt->from, sour);
-
+				
 				if(TOS_NODE_ID == ROOT_NODE && !pcBusy) {
-					//memcpy(&pc_msg, , sizeof(message_t));
-					//_printf("img from %d send to pc\n", hopInfo->nextHop);
 					post sendImgToPC();
 				}
 				else if(!riBusy) {
-					//_printf("forwarded to %d\n", hopInfo->nextHop);	
 					post forwardImage();
 				} else if(riBusy) {
-					//_printf("BUSY not forwarded to %d\n", hopInfo->nextHop);
 				}
 			}
 
@@ -249,15 +234,11 @@ module CollectorM {
 		RadioImageMsg* ripkt = (RadioImageMsg*) (call Packet_.getPayload(msg, sizeof(RadioImageMsg)));
 		uint8_t destination = call AMPacket.destination(msg);
 
-		/* if(TOS_NODE_ID == 2)      
-		printf("START RadioImageSend.sendDone\n");  */
-
 		if(err == SUCCESS) 
 			riBusy = FALSE;	
 
 		retransmissions_img++;
 		if (!call PacketAck.wasAcked(msg) && retransmissions_img < MAX_RETRANSMISSIONS && ripkt->request_id == requestID) {
-			//_printf("Retransmission IMG to %d\n", destination);
 			if (call RadioImageSend.send(destination, &ri_msg_queue[numberOfSendMsgs], sizeof(RadioImageMsg)) == SUCCESS)
 				riBusy = TRUE;	
 		} else {
@@ -269,7 +250,6 @@ module CollectorM {
 				//_printf("Max rtx dropped IMG.\n");}
 			}
 			else {
-				//_printf("Received next Request. my: %d yours %d\n",requestID ,ripkt->request_id);}
 			}*/
 
 			if(notSendImg == TRUE) {
@@ -283,18 +263,14 @@ module CollectorM {
 
 			retransmissions_img = 0;
 			numberOfSendMsgs++;
-			//_printf("received Image msgs %d | send Image msgs: %d\n",numberOfReceivedMsgs, numberOfSendMsgs);
-			//check if all the messages are send already
 			if(numberOfSendMsgs != numberOfReceivedMsgs) {
 				post forwardImage();
 			} else {
 				numberOfSendMsgs = 0;
 				numberOfReceivedMsgs = 0;
 
-				//Finished sending my own image?
 				if(ripkt->motesLeft == 0 && ripkt->from == TOS_NODE_ID) {
 					collection_update();
-					//_printf("HUIHUI %d\n", c_round);
 					running = FALSE;
 					signal Collector.collectionDone(SUCCESS);
 				}
@@ -306,21 +282,17 @@ module CollectorM {
 	void receivedRequest( void* payload, uint8_t len, uint8_t sour) {
 		FlagMsg* fpkt = (FlagMsg*) (call Packet_.getPayload(&f_msg, sizeof(FlagMsg)));
 
-		//printf("%d %d %d %d\n", ((FlagMsg*)payload)->round, c_round, ((FlagMsg*)payload)->id, requestID);
-		//check if the request is valid
 		if(((FlagMsg*)payload)->round == c_round && ((FlagMsg*)payload)->id > requestID) {
 			uint8_t next;
 			requestID = ((FlagMsg*)payload)->id;
 			
 			next = getNextLeft();
-			//_printf("Received Request: next = %d\n", next);
 			if(next > 0) {
 				memcpy(fpkt, payload, len);
 				post forwardRequest();		
 			} else if(!riBusy){
 				fillImgQueue();	
 				notSendImg = FALSE;
-				//_printf("received Image msgs %d | send Image msgs: %d\n",numberOfReceivedMsgs, numberOfSendMsgs);
 				post forwardImage();
 			} else if(riBusy) {
 				//some retransmission is blocking the stuff
@@ -332,7 +304,6 @@ module CollectorM {
 
 	/*This is a leftover from when i had multiple flags in the FlagMsg now it could be removed...*/
 	event message_t* FlagReceive.receive(message_t* msg, void* payload, uint8_t len) {	
-		//_printf("Flag received\n");
 		if(len == sizeof(FlagMsg) && call AMPacket.isForMe(msg)) {
 			FlagMsg* fpkt = (FlagMsg*) payload;
 			switch(fpkt->flag) {
@@ -358,7 +329,6 @@ module CollectorM {
 		requestedFrom = destination;
 		retransmissions_flag++;
 		if (!call PacketAck.wasAcked(msg) && retransmissions_flag < MAX_RETRANSMISSIONS && nodeList[destination].receivedImage == NUMBER_OF_NODES){
-			//_printf("Retransmission FLAG to %d\n", destination);
 			if (call FlagSend.send(destination, &f_msg, sizeof(FlagMsg)) == SUCCESS)
 				fBusy = TRUE;	
 		} else {
@@ -369,7 +339,6 @@ module CollectorM {
 				_printf("ERROR max drops reached\n");
 			}
 			else {      
-				//_printf("Received the image.\n");
 			}	
 
 			retransmissions_flag = 0;
@@ -378,7 +347,6 @@ module CollectorM {
 
 	event void PCSend.sendDone(message_t* msg, error_t err) {	
 		uint8_t next = 0;
-		//_printf("Finished sending Msg to pc\n");
 		if(err == SUCCESS) 
 			pcBusy = FALSE;
 		else
@@ -389,13 +357,11 @@ module CollectorM {
 			post sendImgToPC();
 		} else {
 			RadioImageMsg* ripkt = call Packet_.getPayload(msg, sizeof(RadioImageMsg));
-			//_printf("Finished sending Img to pc\n");
-
+		
 			numberOfSendMsgs = 0;
 			numberOfReceivedMsgs = 0;			
 
 			if(ripkt->from == ROOT_NODE && ripkt->motesLeft == 0) {
-				//_printf("Root send its image\n");
 				collection_update();
 				running = FALSE;
 				signal Collector.collectionDone(SUCCESS);
@@ -405,7 +371,6 @@ module CollectorM {
 					FlagMsg* fpkt = (FlagMsg*) (call Packet_.getPayload(&f_msg, sizeof(FlagMsg)));
 					fillRequestFlag(fpkt);
 
-					//_printf("Request to you %d\n", next);
 					post forwardRequest();			
 				} else if (!pcBusy) {
 					//The root starts sending its image
@@ -415,8 +380,6 @@ module CollectorM {
 				}
 			}	
 		}
-		/*if(TOS_NODE_ID == 2)      
-		printf("ENDT PCSend.sendDone\n"); */
 	}
 
 }

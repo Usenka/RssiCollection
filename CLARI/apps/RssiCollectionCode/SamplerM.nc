@@ -40,7 +40,6 @@ implementation {
 				return schedule[i+2];
 			}
 		}*/
-		//_printf("get next after: %d\n", before);
 		if(schedulePSCollection.preSuc[psPointer].predecessor == before) {
 			uint8_t next = schedulePSCollection.preSuc[psPointer].successor;
 			psPointer++;
@@ -117,8 +116,6 @@ implementation {
 		uint8_t next = getNextInSchedule(source);
 		
 
-		//_printf("Send To = %d\n", next);
-
 		if(next > 0 && next < NUMBER_OF_NODES + 1) {
 			SampleMsg* spkt = (SampleMsg*) (call Packet_.getPayload(&s_msg, sizeof(SampleMsg)));
 			spkt->receiver = next;
@@ -148,9 +145,7 @@ implementation {
 		for(i = 0; i<NUMBER_OF_NODES*2; i++) {
 			if(schedule[i] == TOS_NODE_ID) {
 				schedulePSCollection.preSuc[schedulePSCollection.size].predecessor = (i == 0) ? 0 : schedule[i-1];
-				schedulePSCollection.preSuc[schedulePSCollection.size].successor = schedule[i+1];
-				//printf("SCHEDULE %d: %d -> %d -> %d\n",schedulePSCollection.size, schedulePSCollection.preSuc[schedulePSCollection.size].predecessor, TOS_NODE_ID, 
-					//schedulePSCollection.preSuc[schedulePSCollection.size].successor);				
+				schedulePSCollection.preSuc[schedulePSCollection.size].successor = schedule[i+1];				
 				schedulePSCollection.size++;
 			}
 
@@ -198,10 +193,8 @@ implementation {
 			//call Leds.led0On();
 			hopps = getNodeCountUntilMe(source, bcpkt->receiver);
 			//call Leds.led0Off();
-			//_printf("rec: %d->%d: %d until me\n", source, bcpkt->receiver, hopps);
 			if(hopps != 0) {
 				uint16_t timeToWait = hopps * TIME_MAX_MESSAGE_SENDING;
-				//_printf("Time to wait: %d\n", timeToWait);
 				call DropTimer.start(timeToWait);
 			}
 		
@@ -219,10 +212,8 @@ implementation {
 		if(err == SUCCESS)
 			sBusy = FALSE;
 
-		//_printf("sen: %d->%d: %d until me\n", TOS_NODE_ID, spkt->receiver, hopps);
 		if(hopps != 0) {
 			uint16_t timeToWait = hopps * TIME_MAX_MESSAGE_SENDING;
-			//_printf("Time to wait: %d\n", timeToWait);
 			call DropTimer.start(timeToWait);
 		}
 	}

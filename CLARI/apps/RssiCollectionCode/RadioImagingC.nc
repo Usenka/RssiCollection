@@ -83,7 +83,6 @@ implementation {
 	event void Collector.collectionDone(error_t error) {
 		_printf("FIN collection\n");
 		if(TOS_NODE_ID == ROOT_NODE && phase == PHASE_SAMPLING) {
-			//_printf("Start Round!\n");
 			call Sampler.startRound();
 		}
 	}

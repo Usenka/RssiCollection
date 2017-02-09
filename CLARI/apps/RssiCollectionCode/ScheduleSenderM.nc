@@ -73,8 +73,6 @@ module ScheduleSenderM {
 		if(!nodeListAttached || !hopInfoAttached)
 			return msg;
 		
-		//_printf("Received Schdeule Part from pc");
-
 		if(len == sizeof(ScheduleMsg)) {
 			ScheduleMsg* spkt = (ScheduleMsg*) call Packet_.getPayload(&sd_msg, sizeof(ScheduleMsg));		
 			uint8_t next;
@@ -109,8 +107,6 @@ module ScheduleSenderM {
 		uint8_t from = call AMPacket.source(msg);
 		ScheduleMsg* spkt = (ScheduleMsg*) call Packet_.getPayload(&sd_msg, sizeof(ScheduleMsg));
 
-		//_printf("received from: %d\n",from);
-
 		/*TODO if an ack did not get received but the node still sends the schedule back the other node resends the part and will trigger that the node already got the part but won't forward it anymore to the 		next one strange stuff*/
 
 		if(((ScheduleMsg*)payload)->left < scheduleLeft) {
@@ -124,7 +120,6 @@ module ScheduleSenderM {
 		}
 
 		if(nodeList[from].receivedSchedule == TRUE || ((ScheduleMsg*)payload)->msgid < scheduleMsgId) {
-			//_printf("Already received that schedulepart from that node\n");
 			return msg;
 		}
 
@@ -134,14 +129,12 @@ module ScheduleSenderM {
 
 		next = getNextLeftSchedule();
 		if(next > 0 && sdBusy == FALSE) {
-			//_printf("Forward to: %d\n",next);
 			spkt->msgid = scheduleMsgId;
 			if (call ScheduleSend.send(next, &sd_msg, sizeof(ScheduleMsg)) == SUCCESS)
 				sdBusy = TRUE;
 			notForwarded = 0;
 		}  else if(sdBusy == TRUE){
 			notForwarded = 1;
-			//_printf("Something went horribly wrong dude...\n");
 		} else if(pcBusy == FALSE){
 			if (call PCScheduleSend.send(next, &sd_msg, sizeof(ScheduleMsg)) == SUCCESS)
 				pcBusy = TRUE;
@@ -158,7 +151,6 @@ module ScheduleSenderM {
 
 		retransmissions_sd++;
 		if (!call PacketAck.wasAcked(msg) && retransmissions_sd < MAX_RETRANSMISSIONS) {	
-			//_printf("Retransmission to %d\n", destination);
 			if (call ScheduleSend.send(destination, &sd_msg, sizeof(ScheduleMsg)) == SUCCESS)
 				sdBusy = TRUE;	
 		} else {
@@ -172,7 +164,6 @@ module ScheduleSenderM {
 
 			if(notForwarded) {
 				uint8_t next = getNextLeftSchedule();
-				//_printf("Was not forwarded, do it now\n");
 				if (call ScheduleSend.send(next, &sd_msg, sizeof(ScheduleMsg)) == SUCCESS)
 					sdBusy = TRUE;
 				notForwarded = 0;
