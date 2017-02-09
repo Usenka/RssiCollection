@@ -35,8 +35,8 @@
 \contentsline {section}{\numberline {5.1}Experiment Setup}{37}{section.5.1}
 \contentsline {section}{\numberline {5.2}Experiment Night}{37}{section.5.2}
 \contentsline {section}{\numberline {5.3}Experiment Day}{40}{section.5.3}
-\contentsline {section}{\numberline {5.4}Usability for RTI localisation}{41}{section.5.4}
-\contentsline {section}{\numberline {5.5}Comparison to a Timeslot Based Approach}{42}{section.5.5}
+\contentsline {section}{\numberline {5.4}Usability for RTI Localisation}{41}{section.5.4}
+\contentsline {section}{\numberline {5.5}Comparison to a Time Slot Based Approach}{42}{section.5.5}
 \contentsline {chapter}{\numberline {6}Discussion}{43}{chapter.6}
 \contentsline {section}{\numberline {6.1}Possible Improvements}{43}{section.6.1}
 \contentsline {section}{\numberline {6.2}Conclusion}{43}{section.6.2}
